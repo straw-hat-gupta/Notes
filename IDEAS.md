@@ -2,3 +2,4 @@
 - can i somehow add ai to bitaxe type lottery mining? what is the ai + crypto situation? is ai used in mining in any way?
 - can i use the compute cluster to mine? to lottery mine?
 - i made some changes 
+
