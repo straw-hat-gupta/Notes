@@ -7,9 +7,11 @@ laptops:
 
 - dell latitude e7450: i7 5600U, 16gb ram (2x8gb)
 desktops:
-- D1: i7 4790, 32gb ram (4x8gb), nvidia 1070ti gpu 
-- D2: i7 4790, 16gb ram (2x8gb)
-
-
+- d1: i7 4790, 32gb ram (4x8gb), nvidia 1070ti gpu 
+- d2: i7 4790, 16gb ram (2x8gb)
+- storage: 
+Nodes:
+- d1: i7 4790, 32gb ram (4x8gb), nvidia 1070ti gpu, sata ssd (proxmo)
+- d2: i7 4790, 16gb ram (2x8gb)
 
 
