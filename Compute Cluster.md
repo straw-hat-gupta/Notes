@@ -7,4 +7,4 @@ Nodes:
 
 
 disks:
- - d1: 
+ - d1: 250gb ssd 
