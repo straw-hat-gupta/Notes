@@ -8,3 +8,6 @@ Nodes:
 
 disks:
  - d1: 250gb ssd 
+
+
+[[Monitoring container]]
