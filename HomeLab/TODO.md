@@ -5,4 +5,3 @@
 - Setup skills: data centre manager
 
 [[Monitoring container]]
-[[Compute Cluster Hardware]]
