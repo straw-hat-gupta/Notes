@@ -1,5 +1,5 @@
 - setup monitoring
-- Monitoring should monitor the cluster and be able to run simple benchmarks with a click like netw
+
 - Setup vm for harness + codex
 - Setup easy access of vm
 - Setup harness + codex
