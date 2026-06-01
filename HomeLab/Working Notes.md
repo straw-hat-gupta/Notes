@@ -6,4 +6,4 @@ aaea4b0f-fad7-4592-9fe6-b0beaa42ff7b
 01:00.1 Audio device [0403]: NVIDIA Corporation GP104 High Definition Audio Controller [10de:10f0] (rev a1)
 
 
-options vfio-pci ids=10de:xxxx,10de:yyyy disable_vga=1
+options vfio-pci ids=10de:1b81,10de:10f0 disable_vga=1
