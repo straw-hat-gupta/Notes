@@ -1,1 +1,7 @@
-- i want there to be a ai harness (openclaw/hermes) with the main brain will be codex. there will be a local llm running on the 1070 (Qwen3.5-9B) for smaller tasks to save usage with the codex plan i have. then there will other offloading whwere possible to other nodes or vms to make everything faster. i want to use my entire cluster a much as possible to maximize the performance/utility of my agent. what is the best way to have everything setup? should the vm with openclaw/hermes be the same one running the local llm? or should the openclaw/hermes vm be on another node and access the local llm through the network. what other stuff can i use my cluster nodes for to maximize the performance and utility of my agent setup.
+- i want there to be a ai harness (openclaw/hermes) with the main brain being be codex. 
+- there will be a local llm running on the 1070 (Qwen3.5-9B) for smaller tasks to save usage with the codex plan i have.
+- then there will other offloading where possible to other nodes or vms to make everything faster. 
+- i want to use my entire cluster a much as possible to maximize the performance/utility of my agent. 
+- what is the best way to have everything setup? 
+- should the vm with openclaw/hermes be the same one running the local llm? or should the openclaw/hermes vm be on another node and access the local llm through the network?
+- what other stuff can i use my cluster nodes for to maximize the performance and utility of my agent setup.
