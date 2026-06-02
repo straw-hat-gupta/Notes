@@ -325,6 +325,50 @@ VRAM: 8192 MiB
 ```
 
 ---
+# Future AI Harness Plan
+
+The long-term AI setup should be separated like this:
+
+```text
+D1 / llm-gpu VM
+Runs local models through llama.cpp server using GTX 1070
+
+Separate agent harness VM or LXC
+Runs OpenClaw / Hermes / Codex-based orchestration
+Calls local llama.cpp server over HTTP
+
+Storage node
+Stores models, backups, Obsidian vault copies, RAG data, shared files
+
+Monitoring LXC
+Prometheus + Grafana + exporters
+```
+
+Main brain:
+
+```text
+Codex
+```
+
+Local helper model:
+
+```text
+llama.cpp server on llm-gpu using GTX 1070
+```
+
+Potential local models:
+
+```text
+llama3.1 8B Q4_K_M
+qwen3.5 4B
+gemma3 4B
+qwen2.5-coder 7B
+```
+
+Qwen 9B may be too large for full GPU use on the GTX 1070.
+
+
+---
 
 # Ollama Testing Results
 
@@ -624,49 +668,6 @@ Use LXCs for supporting services like monitoring, RAG, Grafana, Prometheus, APIs
 ```
 
 ---
-
-# Future AI Harness Plan
-
-The long-term AI setup should be separated like this:
-
-```text
-D1 / llm-gpu VM
-Runs local models through llama.cpp server using GTX 1070
-
-Separate agent harness VM or LXC
-Runs OpenClaw / Hermes / Codex-based orchestration
-Calls local llama.cpp server over HTTP
-
-Storage node
-Stores models, backups, Obsidian vault copies, RAG data, shared files
-
-Monitoring LXC
-Prometheus + Grafana + exporters
-```
-
-Main brain:
-
-```text
-Codex
-```
-
-Local helper model:
-
-```text
-llama.cpp server on llm-gpu using GTX 1070
-```
-
-Potential local models:
-
-```text
-llama3.1 8B Q4_K_M
-qwen3.5 4B
-gemma3 4B
-qwen2.5-coder 7B
-```
-
-Qwen 9B may be too large for full GPU use on the GTX 1070.
-
 ---
 
 # Current Immediate Next Step
