@@ -276,37 +276,6 @@ They are separate.
 
 ---
 
-# Laptop Lid Sleep Fix
-
-For Proxmox installed on laptops, I disabled sleeping when the lid is closed.
-
-Commands used:
-
-```bash
-mkdir -p /etc/systemd/logind.conf.d
-nano /etc/systemd/logind.conf.d/ignore-lid.conf
-```
-
-The config should contain:
-
-```ini
-[Login]
-HandleLidSwitch=ignore
-HandleLidSwitchExternalPower=ignore
-HandleLidSwitchDocked=ignore
-```
-
-Then:
-
-```bash
-systemctl restart systemd-logind
-systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-```
-
-This prevents the laptop Proxmox nodes from sleeping or suspending.
-
----
-
 # LLM GPU VM
 
 I created an Ubuntu VM on `pve-d1` for local LLM testing.
@@ -333,7 +302,7 @@ VM CPU/RAM plan:
 ```text
 CPU: several cores from i7-4790, likely 6 vCPU is reasonable
 RAM: around 20 to 24 GB recommended
-GPU: NVIDIA GTX 1070 / 1070 Ti passed through
+GPU: NVIDIA GTX 1070 passed through
 ```
 
 VM network:
