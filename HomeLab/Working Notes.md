@@ -324,8 +324,6 @@ GPU: NVIDIA GeForce GTX 1070
 VRAM: 8192 MiB
 ```
 
-Note: The GPU appears as GTX 1070 in `nvidia-smi`, even though I originally thought it was a 1070 Ti.
-
 ---
 
 # Ollama Testing Results
