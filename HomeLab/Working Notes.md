@@ -89,30 +89,6 @@ A VM gets its own virtual NIC and its own MAC address. That is why the VM MAC ad
 
 ---
 
-# Proxmox Cluster Notes
-
-I created the Proxmox cluster from `pve-d1` and joined the other nodes.
-
-There were issues where reinstalled nodes still appeared in the cluster. The fix was to remove stale nodes from the cluster config and then rejoin the cleanly reinstalled node.
-
-Useful commands used:
-
-```bash
-pvecm status
-pvecm nodes
-cat /etc/pve/corosync.conf
-ls -la /etc/pve/nodes/
-```
-
-If a node was reinstalled but Proxmox still thought it existed, the important concept was:
-
-```text
-The old cluster identity remains in corosync until removed.
-The reinstalled machine is treated as a different machine with the same name/IP.
-```
-
----
-
 # Storage Setup
 
 On `pve-d1`, the 256 GB Samsung SSD was added and configured through the Proxmox GUI as LVM-thin storage.
