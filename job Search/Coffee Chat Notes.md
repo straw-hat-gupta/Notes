@@ -7,4 +7,7 @@ questions:
 - how can i standout for manager? how does a product match even happen? 
 - what did she do between aug 2022 - oct 2023? were you stressed?
 - 
+
+common things between us:
+- common friend aradhya (she went to the same school as her)
 - 
