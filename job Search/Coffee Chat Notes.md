@@ -18,7 +18,7 @@ common things between us:
 𝟮. 𝗜𝗱𝗲𝗻𝘁𝗶𝗳𝘆 𝘆𝗼𝘂𝗿 𝗺𝗮𝗶𝗻 𝗴𝗼𝗮𝗹. 
 ↳ Understand why you want to talk with them before you actually do. 
 ↳ Do you want career advice, company insights, or resource recommendations? 
-i want company insights. to figure out how i can stand out from other candidates in the TM process. also want to ask if there is anyone 
+i want company insights. to figure out how i can stand out from other candidates in the TM process. also want to ask if there is anyone in the montreal or waterloo offices i could connect to. 
 ↳ It's way easier to come up with questions when your purpose is clear. 
 𝟯. 𝗣𝗿𝗲𝗽𝗮𝗿𝗲 𝟱 𝗼𝗿 𝗺𝗼𝗿𝗲 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝗳𝘂𝗹 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀. 
 ↳ Avoid generic ones like “What do you do?” Instead, ask “What do you wish you knew before starting in [industry]?” 
