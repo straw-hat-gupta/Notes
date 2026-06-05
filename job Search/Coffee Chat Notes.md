@@ -26,7 +26,11 @@ i want company insights. to figure out how i can stand out from other candidates
 
 
 # Coffee Chat Prep Guide: Jenny Song
-
+start with your experience from apm intern to fulld time
+experince in tm
+what does a pm do
+what does a product match look like?
+how to bett
 ## 1. Main goal for the conversation
 
 Your goal is to get company insights about Google’s team matching process, especially how to stand out while you are waiting to be matched. You also want to understand what teams might exist in Waterloo and Montreal, and whether Jenny knows anyone in those offices who would be open to speaking with you.
@@ -96,6 +100,7 @@ Ask this gently. Avoid “were you stressed?” directly at first. Make it about
 
 Good phrasing:  
 “I noticed there was some time between your Google internship and starting full-time. I’d be curious how you navigated that period, especially with the uncertainty around next steps.”
+
 
 ## 6. Questions you can ask Jenny
 
