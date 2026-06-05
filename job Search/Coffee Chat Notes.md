@@ -106,6 +106,11 @@ Good phrasing:
 “I noticed there was some time between your Google internship and starting full-time. I’d be curious how you navigated that period, especially with the uncertainty around next steps.”
 
 
+
+emails:
+
+
+
 ## 6. Questions you can ask Jenny
 
 1. “I’d love to start by hearing about your path. How did you end up in product management at Google?”
