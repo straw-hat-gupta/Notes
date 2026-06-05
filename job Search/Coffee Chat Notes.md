@@ -129,7 +129,9 @@ Good phrasing:
     
 15. “If you were in my position right now, waiting in team matching and trying to be proactive, what would you do?”
     
-16. " What kind of products do you wor"
+16. " What kind of products do you work on?"
+    
+17. " did i give too much of a notice?"
     
 
 ## 7. Questions to prioritize if the call is short
