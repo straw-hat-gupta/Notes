@@ -26,11 +26,15 @@ i want company insights. to figure out how i can stand out from other candidates
 
 
 # Coffee Chat Prep Guide: Jenny Song
+hi ia m sam good fit
 start with your experience from apm intern to fulld time
 experince in tm
 what does a pm do
 what does a product match look like?
-how to bett
+how to better communicate fit? 
+working in the us as canada citizen
+thank you
+do you know wnyone
 ## 1. Main goal for the conversation
 
 Your goal is to get company insights about Google’s team matching process, especially how to stand out while you are waiting to be matched. You also want to understand what teams might exist in Waterloo and Montreal, and whether Jenny knows anyone in those offices who would be open to speaking with you.
