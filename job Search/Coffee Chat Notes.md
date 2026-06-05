@@ -109,7 +109,7 @@ Good phrasing:
     
 5. “When you were going through the process, was there anything you wish you had known earlier about Google recruiting or matching?”
     
-6. “I’m currently in team matching, and I’ve heard different explanations of how it works. From your understanding, what actually happens during the matching stage?”
+6. “I’m currently in team matching, and I’ve heard different explanations of how it works. From your understanding, what actually happens during the matching stage with product fit or the match calls from the hiring managers?”
     
 7. “When a hiring manager or team is evaluating someone during matching, what do you think they are really looking for?”
     
