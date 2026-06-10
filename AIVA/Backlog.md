@@ -4,4 +4,4 @@
 - make CI pipeline
 - delete user endpoint
 - go through all the oauth connections
-- lets you connect 
+- lets you create a new user even if the email already exists in the db
