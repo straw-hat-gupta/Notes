@@ -3,4 +3,4 @@
 - hardening for oauth
 - make CI pipeline
 - delete user endpoint
-- go through all the a
+- go through all the oauth connections
