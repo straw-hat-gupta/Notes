@@ -4,3 +4,4 @@
 - make CI pipeline
 - delete user endpoint
 - go through all the oauth connections
+- lets you connect 
