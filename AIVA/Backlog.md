@@ -6,3 +6,5 @@
 - go through all the oauth connections
 - lets you create a new user even if the email already exists in the db this is most likely a frontend thing since it deals with it.
 	- we have two dbs ones on the supabase side and ones on the 
+	- need to figure out if they are connected in anyway
+	- 
