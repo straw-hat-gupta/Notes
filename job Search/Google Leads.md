@@ -27,4 +27,4 @@ looked at what roles for me
 there is one team with count that is coming to waterloo soon ish its a network sre team 
 saidn automation and security is good fit
 theres is a dev partner. dev team 
-he has a team o
+he has a team of 12 split across two locations
