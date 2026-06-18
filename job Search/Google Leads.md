@@ -24,4 +24,4 @@ teytanna@google.com (route profile to anna tell recruiter that someone at ads to
 Kevin McCall:
 
 looked at what roles for me
-there is one team with count 
+there is one team with count that is coming to waterloo soon ish its a network sre team 
