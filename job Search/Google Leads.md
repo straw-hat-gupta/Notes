@@ -29,4 +29,5 @@ saidn automation and security is good fit
 theres is a dev partner. dev team 
 he has a team of 12 split across two locations
 use basically all google technologies
-look at all the systems incol
+look at all the systems involed
+secops is security monitoring serivice
