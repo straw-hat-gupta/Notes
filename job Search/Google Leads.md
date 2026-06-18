@@ -28,4 +28,5 @@ there is one team with count that is coming to waterloo soon ish its a network s
 saidn automation and security is good fit
 theres is a dev partner. dev team 
 he has a team of 12 split across two locations
-use basical
+use basically all google technologies
+look at 
