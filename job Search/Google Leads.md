@@ -31,3 +31,4 @@ he has a team of 12 split across two locations
 use basically all google technologies
 look at all the systems involed
 secops is security monitoring serivice
+they write code too whether it be configs or modifuing dev teams code for better reliability
