@@ -25,7 +25,7 @@ i want company insights. to figure out how i can stand out from other candidates
 ↳ Avoid yes or no questions like “Do you like your job?” Instead, ask what or why questions like “What are the biggest challenges in your role?” Remember, the more questions, the better. I prepare 8-10 just to be safe. What are your thoughts on this?
 
 
-# Coffee Chat Prep Guide: Jenny Song
+# Coffee Chat Prep Guide: Jenny  Song
 hi ia m sam good fit
 start with your experience from apm intern to fulld time
 experince in tm

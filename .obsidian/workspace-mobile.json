@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "job Search/Coffee Chat Notes.md",
+                "file": "job Search/Things to do to help get job.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Coffee Chat Notes"
+              "title": "Things to do to help get job"
             }
           }
         ],
@@ -184,14 +184,21 @@
   },
   "active": "4f21aa14f5f16995",
   "lastOpenFiles": [
-    "job Search/Google Leads.md",
+    "job Search/Coffee Chat Notes.md",
+    "job Search/Things to do to help get job.md",
+    "TODO.md",
+    "AIVA/Things i did.md",
+    "/job Search/Things to do to help get job.md",
     "/job Search/Google Leads.md",
-    "/job Search/Coffee Chat Notes.md",
     "/job Search",
+    "/TODO.md",
+    "/AIVA/Things i did.md",
+    "/AIVA/Backlog.md",
+    "/AIVA",
+    "job Search/Google Leads.md",
+    "/job Search/Coffee Chat Notes.md",
     "IDEAS.md",
     "Compute Cluster.md",
-    "TODO.md",
-    "job Search/Coffee Chat Notes.md",
     "job Search",
     "HomeLab/TODO.md",
     "HomeLab/Monitoring container.md",
@@ -206,15 +213,8 @@
     "/HomeLab/Monitoring container.md",
     "/HomeLab/Compute Cluster Hardware.md",
     "/HomeLab/AI Agent Build.md",
-    "/AIVA/Backlog.md",
-    "/AIVA",
     "/HomeLab",
     "Monitoring container.md",
-    "README.md",
-    "/Compute Cluster.md",
-    "/TODO.md",
-    "/IDEAS.md",
-    "conflict-files-obsidian-git.md",
     "AIVA"
   ]
 }
