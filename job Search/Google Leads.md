@@ -37,4 +37,4 @@ they write code too whether it be configs or modifuing dev teams code for better
 things to ask Larrissa:
 
 what trends have you seen what skills do you see being more attractive on cadidates profiles 
-would changing things in my gmatch 
+would changing things in my gmatch slow down stuff a lot? if so how 
