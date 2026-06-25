@@ -8,7 +8,7 @@
 -  things to ask Larrissa:
 	- what trends have you seen what skills do you see being more attractive on cadidates profiles 
 	- would changing things in my gmatch slow down stuff a lot? if so how 
-	- has she put in the notes about the two teams?
+	- has she put in the notes about the two teams and sre?
 - message Zaber person Adam Hurrell
 - message paige
 - 
