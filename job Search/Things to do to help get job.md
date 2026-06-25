@@ -12,6 +12,5 @@
 - they consider the speech a lot 
 - she changed first language to c++
 - ------------------
-- message Zaber person Adam Hurrell
 - message paige
 - 
