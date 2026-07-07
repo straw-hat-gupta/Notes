@@ -7,5 +7,7 @@ Need to grind to harder to to do something about this -> ‘this’ is feeling p
 Maybe won’t see daf for a while and need to work toward making that end more intentionally 
 
 Need to stop consuming weed -> replace with running?!?
-Weed make it too hard to deal with things and ma
+Weed make it too hard to deal with things and makes taking action harder but easier to think about all the problems 
+
+
 
