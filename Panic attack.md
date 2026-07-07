@@ -9,5 +9,5 @@ Maybe won’t see daf for a while and need to work toward making that end more i
 Need to stop consuming weed -> replace with running?!?
 Weed make it too hard to deal with things and makes taking action harder but easier to think about all the problems 
 
-
+Things to be done actionable 
 
