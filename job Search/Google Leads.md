@@ -35,4 +35,5 @@ they write code too whether it be configs or modifuing dev teams code for better
 
 
 thinngs i need to ask larissa:
-- she told me 
+- she told me that i should apply and let larissa know 
+- 
