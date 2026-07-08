@@ -34,3 +34,5 @@ secops is security monitoring serivice
 they write code too whether it be configs or modifuing dev teams code for better reliability
 
 
+thinngs i need to ask larissa:
+- she told me 
