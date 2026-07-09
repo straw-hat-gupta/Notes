@@ -5,5 +5,9 @@
 
 - Hit up these people: Sanid (Microsoft Seattle), sankit (vancouver), Davik (sf)
 - message daniel
-- 
+- need to build more expertise in a specific field
+	- ai agents integration and deployment
+	- cloud stuff
+	- security
+	- opensource 
 - 
