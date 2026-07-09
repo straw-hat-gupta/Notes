@@ -7,6 +7,6 @@
 	- needs to have
 		- my resume full
 		- star stories
-		- all the projects i have done should have a complete description that wou
+		- all the projects i have done should have a complete description that would give the agent the technical and archetech
 
 [[Monitoring container]]
