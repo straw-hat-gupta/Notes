@@ -7,6 +7,6 @@
 	- needs to have
 		- my resume full
 		- star stories
-		- all the 
+		- all the projects i have done should have a complete description that wou
 
 [[Monitoring container]]
