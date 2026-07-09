@@ -4,6 +4,7 @@
 - Setup harness + codex
 - Setup skills: data centre manager
 - job applyer:
-	- needs to 
+	- needs to have
+		- my resume full
 
 [[Monitoring container]]
