@@ -6,5 +6,7 @@
 - job applyer:
 	- needs to have
 		- my resume full
+		- star stories
+		- all the 
 
 [[Monitoring container]]
