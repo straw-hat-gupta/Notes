@@ -9,5 +9,5 @@
 	- ai agents integration and deployment -> become the guy that can integrate ai into their bussiness
 	- cloud stuff
 	- security
-	- opensource -> so ma
+	- opensource -> so many companies use opensource shit and startups especially -> Ceph, debian, juju, 
 - 
