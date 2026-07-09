@@ -1,7 +1,9 @@
-- setup monitoring
+
 - Setup vm for harness + codex
 - Setup easy access of vm
 - Setup harness + codex
 - Setup skills: data centre manager
+- job applyer:
+	- needs to 
 
 [[Monitoring container]]
