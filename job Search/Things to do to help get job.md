@@ -4,13 +4,6 @@
 - make a post on linkedin about being in team matching
 
 - Hit up these people: Sanid (Microsoft Seattle), sankit (vancouver), Davik (sf)
------------------
--  things to ask Larrissa:
-	- what trends have you seen what skills do you see being more attractive on cadidates profiles 
-	- would changing things in my gmatch slow down stuff a lot? if so how 
-	- has she put in the notes about the two teams and sre?
-- they consider the speech a lot 
-- she changed first language to c++
-- ------------------
-- message paigeyah 
+- message daniel
+- 
 - 
