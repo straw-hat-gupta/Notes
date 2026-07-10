@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "job Search/Things to do to help get job.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Things to do to help get job"
             }
           }
         ],
@@ -141,7 +141,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "README.md",
+            "file": "job Search/Things to do to help get job.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -199,11 +199,15 @@
   "active": "b44f443ddd211f69",
   "lastOpenFiles": [
     "TODO.md",
-    "Panic attack.md",
+    "/README.md",
     "/job Search/Things to do to help get job.md",
     "/job Search/Google Leads.md",
-    "/job Search/Coffee Chat Notes.md",
     "/job Search",
+    "/HomeLab/TODO.md",
+    "/HomeLab/AI Agent Build.md",
+    "/HomeLab",
+    "Panic attack.md",
+    "/job Search/Coffee Chat Notes.md",
     "job Search/Coffee Chat Notes.md",
     "job Search/Things to do to help get job.md",
     "AIVA/Things i did.md",
@@ -224,11 +228,7 @@
     "HomeLab",
     "/HomeLab/llm-gpu VM.md",
     "/HomeLab/Working Notes.md",
-    "/HomeLab/TODO.md",
     "/HomeLab/Monitoring container.md",
-    "/HomeLab/Compute Cluster Hardware.md",
-    "/HomeLab/AI Agent Build.md",
-    "/HomeLab",
     "AIVA"
   ]
 }
