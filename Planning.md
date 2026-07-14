@@ -8,15 +8,15 @@ things i want to do:
 	- Oracle/SAP jobs
 - gym at 7am X
 - run in the afternoon  X
-- work on some personal project that can be put on the resume
+- work on some personal project that can be put on the resume X
 - learn Oracle/SAP modules
-- study for security+ cert 
+- study for security+ cert X
 - work on AIVA
 - leetcode practice X
 - system design practice (dev max) X
-- work on AI setup with cluster 
-- spend time doing some networking
-- take breaks regularly
+- work on AI setup with cluster X
+- spend time doing some networking X
+- take breaks regularly X
 
 
 1 month goal:
