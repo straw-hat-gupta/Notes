@@ -17,7 +17,12 @@ things i want to do:
 - work on AI setup with cluster
 - spend time doing some networking
 - take breaks regularly
-1 month goal
-3 month goal
-6 month goal
-1 year 
+
+
+1 month goal:
+
+3 month goal:
+
+6 month goal:
+
+12 month goal:
