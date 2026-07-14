@@ -1,6 +1,7 @@
 
-## I CAN. I WILL
-things i want to do
+## I CAN. I WILL. I AM
+
+things i want to do:
 - apply to jobs:
 	- IT Support Jobs
 	- Software Developer Jobs
@@ -11,4 +12,7 @@ things i want to do
 - learn oracle or sap modules
 - study for security+ cert
 - work on AIVA
+- leetcode coding practice
+- system design practice
+- 
 
