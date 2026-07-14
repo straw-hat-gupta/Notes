@@ -1,3 +1,5 @@
+
+## I CAN. I WILL
 things i want to do
 - apply to jobs:
 	- IT Support Jobs
@@ -7,4 +9,6 @@ things i want to do
 - run in the afternoon
 - work on some personal project that can be put on the resume
 - learn oracle or sap modules
-- learn 
+- study for security+ cert
+- work on AIVA
+
