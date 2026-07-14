@@ -11,7 +11,7 @@ things i want to do:
 - work on some personal project that can be put on the resume X
 - learn Oracle/SAP modules
 - study for security+ cert X
-- work on AIVA
+- work on AIVA X
 - leetcode practice X
 - system design practice (dev max) X
 - work on AI setup with cluster X
