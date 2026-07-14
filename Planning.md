@@ -12,8 +12,10 @@ things i want to do:
 - learn Oracle/SAP modules
 - study for security+ cert
 - work on AIVA
-- leetcode coding practice
-- system design practice
+- leetcode practice
+- system design practice (dev max)
 - work on AI setup with cluster
+- spend time doing some networking
+- take breaks regularly
 - 
 
