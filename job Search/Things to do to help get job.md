@@ -14,4 +14,9 @@
 - need to post projects on linkedIn
 - work on a project for 7 days and post use google technologies
 - need to reach out to all Google leads people impacted like me are all scrambling rn so I need to get ahead
+
+
+
+Wonsulting notes:
+
 - 
