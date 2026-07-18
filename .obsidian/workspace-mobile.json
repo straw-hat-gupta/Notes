@@ -141,7 +141,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "job Search/Things to do to help get job.md",
+            "file": "TODO.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -198,11 +198,14 @@
   },
   "active": "b44f443ddd211f69",
   "lastOpenFiles": [
+    "Planning.md",
+    "/job Search/Things to do to help get job.md",
+    "/job Search",
+    "/TODO.md",
+    "/Planning.md",
     "TODO.md",
     "/README.md",
-    "/job Search/Things to do to help get job.md",
     "/job Search/Google Leads.md",
-    "/job Search",
     "/HomeLab/TODO.md",
     "/HomeLab/AI Agent Build.md",
     "/HomeLab",
@@ -211,7 +214,6 @@
     "job Search/Coffee Chat Notes.md",
     "job Search/Things to do to help get job.md",
     "AIVA/Things i did.md",
-    "/TODO.md",
     "/AIVA/Things i did.md",
     "/AIVA/Backlog.md",
     "/AIVA",
@@ -227,8 +229,6 @@
     "HomeLab/AI Agent Build.md",
     "HomeLab",
     "/HomeLab/llm-gpu VM.md",
-    "/HomeLab/Working Notes.md",
-    "/HomeLab/Monitoring container.md",
     "AIVA"
   ]
 }
