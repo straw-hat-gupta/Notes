@@ -13,4 +13,5 @@
 9. Ownership
 10. Have backbone
 11. Be right a lot
-12. 
+12. Dive deep
+13. 
