@@ -1,7 +1,3 @@
-
-- AIVA contracts and payment
-- fix up linkedIn
-- message at least 3 new peoplergr brfhrrbgbrfmbri  h g m 
-- iimeeo
-- S
-- 
+- have a set of good prompts ready
+- Set up Lp chat
+- Get common error cod
