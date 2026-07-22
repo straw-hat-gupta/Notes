@@ -11,4 +11,6 @@
 7. Frugal
 8. Invent and simplify
 9. Ownership
-10. 
+10. Have backbone
+11. Be right a lot
+12. 
