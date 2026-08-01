@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "IDEAS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "IDEAS"
             }
           }
         ],
@@ -66,7 +66,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical",
-            "autoReveal": false
+            "autoReveal": false,
+            "showSearch": false,
+            "searchQuery": ""
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
@@ -198,6 +200,21 @@
   },
   "active": "b44f443ddd211f69",
   "lastOpenFiles": [
+    "TODO.md",
+    "Manifestation Journal.md",
+    "Manish Setia.md",
+    "Arggrawl Associates.md",
+    "Call with Elanor (Geocomply).md",
+    "GOALS Journal.md",
+    "Coding setup/Untitled.md",
+    "Coding setup",
+    "/Manish Setia.md",
+    "/Manifestation Journal.md",
+    "/GOALS Journal.md",
+    "/Coding setup/Untitled.md",
+    "/Call with Elanor (Geocomply).md",
+    "/Arggrawl Associates.md",
+    "/Coding setup",
     "/job Search/Wonsulting.md",
     "job Search/Wonsulting.md",
     "/job Search",
@@ -208,26 +225,13 @@
     "/job Search/Things to do to help get job.md",
     "/TODO.md",
     "/Planning.md",
-    "TODO.md",
     "/README.md",
     "/job Search/Google Leads.md",
     "/HomeLab/TODO.md",
     "/HomeLab/AI Agent Build.md",
     "Panic attack.md",
-    "/job Search/Coffee Chat Notes.md",
-    "job Search/Coffee Chat Notes.md",
-    "job Search/Things to do to help get job.md",
-    "AIVA/Things i did.md",
-    "/AIVA/Things i did.md",
-    "/AIVA/Backlog.md",
     "/AIVA",
-    "job Search/Google Leads.md",
-    "IDEAS.md",
-    "Compute Cluster.md",
     "job Search",
-    "HomeLab/TODO.md",
-    "HomeLab/Monitoring container.md",
-    "HomeLab/Compute Cluster Hardware.md",
     "HomeLab",
     "AIVA"
   ]
