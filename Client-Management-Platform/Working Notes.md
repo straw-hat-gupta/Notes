@@ -27,4 +27,5 @@ For a formal read-only Codex review:
 codex --sandbox read-only --ask-for-approval never
 ```
 
-- codex project setting i did not disable web search like 
+- codex project setting i did not disable web search like gpt reccomended
+- 
