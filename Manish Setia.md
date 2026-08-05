@@ -62,3 +62,7 @@ Which SQL database was used: PostgreSQL, MySQL, SQL Server, or another database?
 
 
 come up with ideas for using ai in the rebate application as well as oter applications
+
+
+things i need to ask:
+how many concurrent user or requests were there?.
