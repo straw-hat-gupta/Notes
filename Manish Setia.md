@@ -66,3 +66,4 @@ come up with ideas for using ai in the rebate application as well as oter applic
 
 things i need to ask:
 how many concurrent user or requests were there?.
+i need some info about the impact 
