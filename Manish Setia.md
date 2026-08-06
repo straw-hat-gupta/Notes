@@ -68,22 +68,33 @@ how many concurrent user or requests were there?.
 i need some info about the impact 
 
 
-Ask these first. They affect every other answer.
+Since you were the newest developer and mainly handled smaller tasks, focus on accurately identifying **your contribution**, not mastering every detail of the entire platform.
 
-1. Which features did I personally implement?
-2. Which features did I contribute to but not own?
-3. Which features were already present before I joined?
-4. Which React components did I personally build or modify?
-5. Which backend routes, controllers, services, or middleware did I personally build?
-6. Which MySQL tables, queries, migrations, or indexes did I work on?
-7. Which Python scripts or pipeline stages did I write?
-8. Did I implement any authentication or authorization logic?
-9. Did I write or modify any tests?
-10. Did I participate in deployments, production validation, or incident response?
-11. Which technical decisions did I make independently?
-12. Which decisions came from another developer, manager, or client?
-13. Which feature did I own most completely from requirement through release?
-14. Which pull requests or commits best demonstrate my work?
-15. What should I describe as “I built” versus “I contributed to” versus “the team built”?
-16. Is there anything in my current resume wording that overstates my contribution?
-17. Is there anything important I contributed that my resume currently understates?
+Ask these 18 questions:
+
+1. **What features or tasks did I personally work on?**  
+    Ask them to list the specific tickets, components, endpoints, database changes, or bug fixes they remember.
+2. **Which parts can I accurately say “I built,” and which should I describe as “I contributed to”?**
+3. **Which one feature or task best represents my technical contribution?**  
+    Choose one that you can explain in depth during an interview.
+4. **Can you walk me through how that feature worked from the React frontend to the Express backend and MySQL database?**
+5. **Which React components or pages did I create or modify?**
+6. **Which API endpoints, controllers, services, or middleware did I work on?**
+7. **Did I write or modify any SQL queries, tables, relationships, migrations, or indexes?**
+8. **What exactly did the Python ingestion script process, and what part of it did I work on?**  
+    Confirm the data source, input format, transformations, validation, and destination.
+9. **How was authentication implemented in the platform?**
+10. **How was authorization enforced for clients, administrators, and other roles?**  
+    In particular, confirm whether the backend checked permissions or the frontend only hid certain features.
+11. **Did I personally implement any security-related functionality that justifies saying “secure REST APIs”?**
+12. **What was Redis used for?**  
+    Confirm whether it supported caching, sessions, queues, chat, rate limiting, or something else.
+13. **Where were project files stored, and how were files connected to specific projects and users?**
+14. **What tests did I write or perform?**  
+    Ask about unit tests, API tests, manual testing, role testing, file-upload testing, or staging validation.
+15. **What was one bug or technical problem I personally helped investigate or fix?**  
+    Record the symptoms, root cause, your actions, and how the fix was verified.
+16. **Did I participate in deployment or production validation, and what exactly did I do?**  
+    Confirm the roles of Hostinger and GitHub Actions.
+17. **Did my work actually improve runtime scalability, or would “maintainability” and “extensibility” be more accurate?**
+18. **Based on what you saw me do, how would you rewrite my resume bullets so they are technically accurate and still strong?**
