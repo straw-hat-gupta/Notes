@@ -30,7 +30,6 @@ there is chat bot for onboarding
 there is a subricption payment model for different kind of services. different tiers. 
 
 technologies:
-aws hosted
 hostinger 
 react.js
 sql
