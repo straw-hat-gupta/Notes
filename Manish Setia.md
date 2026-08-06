@@ -98,3 +98,13 @@ Ask these 18 questions:
     Confirm the roles of Hostinger and GitHub Actions.
 17. **Did my work actually improve runtime scalability, or would “maintainability” and “extensibility” be more accurate?**
 18. **Based on what you saw me do, how would you rewrite my resume bullets so they are technically accurate and still strong?**
+
+Before ending the discussion, make sure you know:
+
+- one feature you can explain end to end
+- one API endpoint you worked on
+- one database interaction you understand
+- one bug you helped solve
+- one example of testing you performed
+- exactly what you personally owned
+- which resume claims should be softened or removed
