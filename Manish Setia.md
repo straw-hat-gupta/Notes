@@ -66,3 +66,24 @@ come up with ideas for using ai in the rebate application as well as oter applic
 things i need to ask:
 how many concurrent user or requests were there?.
 i need some info about the impact 
+
+
+Ask these first. They affect every other answer.
+
+1. Which features did I personally implement?
+2. Which features did I contribute to but not own?
+3. Which features were already present before I joined?
+4. Which React components did I personally build or modify?
+5. Which backend routes, controllers, services, or middleware did I personally build?
+6. Which MySQL tables, queries, migrations, or indexes did I work on?
+7. Which Python scripts or pipeline stages did I write?
+8. Did I implement any authentication or authorization logic?
+9. Did I write or modify any tests?
+10. Did I participate in deployments, production validation, or incident response?
+11. Which technical decisions did I make independently?
+12. Which decisions came from another developer, manager, or client?
+13. Which feature did I own most completely from requirement through release?
+14. Which pull requests or commits best demonstrate my work?
+15. What should I describe as “I built” versus “I contributed to” versus “the team built”?
+16. Is there anything in my current resume wording that overstates my contribution?
+17. Is there anything important I contributed that my resume currently understates?
