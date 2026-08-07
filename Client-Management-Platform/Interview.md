@@ -728,7 +728,7 @@ Ask:
     
 
 ### 41. When should overdue work be escalated?
-
+no grace period 
 Determine:
 
 - Who receives the escalation
@@ -750,9 +750,9 @@ Ask the stakeholder to define terms such as:
 
 - Person
     
-- Client
+- Client yes; opens account with the firm they client number 
     
-- Prospective client
+- Prospective client: 
     
 - Household
     
