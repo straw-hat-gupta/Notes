@@ -59,8 +59,7 @@ Possible examples, without suggesting that these are necessarily true:
 - Following up on overdue tasks
     
 - Correcting spreadsheet errors
-    
-- Controlling access to sensitive information
+
     
 
 Follow up on each problem:
@@ -83,7 +82,7 @@ This helps create the one-sentence product vision.
 If the answer becomes a feature list, redirect with:
 
 > What business outcome would those features produce?
-
+to make the bussiness more eff
 ### 4. What would make you consider this project a failure?
 
 This often reveals critical expectations that do not appear in feature discussions.
