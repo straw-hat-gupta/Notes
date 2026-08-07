@@ -398,7 +398,7 @@ Tell the stakeholder:
 As they explain, capture:
 
 - Starting event
-    
+    getting and intro, then we use rms to put their details, book the first meeting, new referral is part of the pillar 
 - People involved
     
 - Documents or systems used
