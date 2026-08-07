@@ -752,9 +752,9 @@ Ask the stakeholder to define terms such as:
     
 - Client yes; opens account with the firm they client number 
     
-- Prospective client: 
+- Prospective client: phone number , anyone who might become a clinet, 
     
-- Household
+- Household: a group of all family mebers, 
     
 - Account
     
