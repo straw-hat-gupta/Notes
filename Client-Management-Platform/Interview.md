@@ -561,18 +561,7 @@ The platform may need to record that an external action occurred without perform
 Ask whether they currently rely on:
 going through all the spreadsheets. 
 - Memory
-    
-- Email
-    
-- Calendar reminders
-    
-- Spreadsheet colours
-    
-- Personal task lists
-    
-- Meetings
-    
-- Another system
+    put stuff from the spreadsheets into sales force or copying stuff into the calendar from the spreadsheets.  
     
 
 Then ask what they would prefer to see in the platform.
