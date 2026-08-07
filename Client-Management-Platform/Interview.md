@@ -630,13 +630,13 @@ wrong amount, not doing task assigned, not updating, input errors
 For each mistake, ask:
 
 - How is it detected?
-    
+    from manual review,
 - What damage can it cause?
-    
+    dont follow up lose client, dont follow uup refs
 - Who can correct it?
     
 - Should correction require approval?
-    
+    no
 - Should the original value remain visible?
     
 - Should anyone be notified?
