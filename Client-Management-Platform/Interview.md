@@ -806,7 +806,7 @@ Ask:
 ### 44. Which information changes frequently, and which information should be treated as historical?
 
 This helps distinguish editable current values from records that require version history.
-
+next activity and its date, pillar list has potential, in progress, actual 
 ### 45. Which system or document is authoritative for each kind of information?
 
 Ask this separately for:
