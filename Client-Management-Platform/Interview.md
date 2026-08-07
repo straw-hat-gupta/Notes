@@ -398,16 +398,16 @@ Tell the stakeholder:
 As they explain, capture:
 
 - Starting event
-    getting and intro, then we use rms to put their details, book the first meeting, new referral is part of the pillar list, identifu potential bussiness, discuss nccp and all those meetings, once confirmed we add them to investment transfer. rms stops when ref becomes cleint, pillar list is for new bus
+    getting and intro, then we use rms to put their details, book the first meeting, new referral is part of the pillar list, identifu potential bussiness, discuss nccp and all those meetings, once confirmed we add them to investment transfer. rms stops when ref becomes cleint, pillar list is for new bussiness either from new old clients. 
 - People involved
-    
+    rms is managented by by 1 pillar list is managed by 2 people, reports are needed. 
 - Documents or systems used
     
 - Sequence of actions
     
 - Decisions
     
-- Handoffs
+- Handoffs: 
     
 - Final outcome
     
