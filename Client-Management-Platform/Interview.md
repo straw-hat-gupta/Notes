@@ -204,6 +204,7 @@ You are looking for outcomes such as:
 Ask for concrete examples of current risks.
 
 ### 11. What decisions should the platform help employees make?
+lots, all the tasks the system is creating that the team is missing. 
 
 Clarify whether the platform should:
 
