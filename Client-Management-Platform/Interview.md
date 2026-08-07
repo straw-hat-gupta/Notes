@@ -378,7 +378,7 @@ Possible baseline measurements:
 ### 19. What would success look like three months after launch?
 
 Then ask the same question for twelve months after launch. This separates immediate adoption from longer-term value.
-be able to provide value to the clients. more prompt to get to clients more 
+be able to provide value to the clients. more prompt to get to clients more consistant. les s time managing the workflow more time spent interacting with clients. 
 ### 20. Who is responsible for evaluating whether the product is successful?
 
 # Session 2: Current workflows and journeys
