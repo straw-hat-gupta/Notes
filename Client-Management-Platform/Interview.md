@@ -787,7 +787,7 @@ For every term, ask:
 These definitions should eventually go into your glossary, likely `CONTEXT.md`, rather than `vision.md`.
 
 ### 43. How do you determine whether two records refer to the same person or entity?
-
+name, 
 Ask:
 
 - Which fields are compared?
