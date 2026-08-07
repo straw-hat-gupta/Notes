@@ -579,12 +579,12 @@ For example, a prospect might be:
 ### 32. Are the status definitions currently consistent across employees?
 
 If not, capture each interpretation and mark the final definition as `TBD`.
-no further action required, apna ()
+no further action required, apna (advneced prep for n), bna book next appointemetn, 
 ### 33. Which changes should happen automatically, and which require confirmation?
 
 Ask what should occur when:
 
-- Required information is completed
+- Required information is completed: 
     
 - A deadline passes
     
