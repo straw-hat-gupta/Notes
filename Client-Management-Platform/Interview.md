@@ -47,11 +47,10 @@ Possible examples, without suggesting that these are necessarily true:
 
 - Finding current client information
     
-- Duplicate information
+- Duplicate information--
     
-- Manual data entry
+- Manual data entry-- 
     
-- Preparing reports
     
 - Tracking workflow status
     
