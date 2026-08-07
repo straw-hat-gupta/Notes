@@ -570,7 +570,7 @@ reminders / alerts / emails
 ## C. Statuses and state changes
 
 ### 31. What statuses can this item move through?
-
+terminilogy not in place but would be good to have. 
 For example, a prospect might be:
 
 - New
