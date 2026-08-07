@@ -760,7 +760,7 @@ Ask the stakeholder to define terms such as:
     
 - Referral
     
-- Opportunity
+- Opportunity: potential bussiness, estimated amount 
     
 - Transfer
     
@@ -768,7 +768,7 @@ Ask the stakeholder to define terms such as:
     
 - Advisor or portfolio manager
     
-- External professional
+
     
 
 For every term, ask:
