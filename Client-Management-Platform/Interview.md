@@ -619,7 +619,7 @@ Examples:
     
 - A task is assigned incorrectly: sometimes need to change who the task is assigned to. 
     
-- Information conflicts between systems: 
+- Information conflicts between systems: could be possible. 
     
 - A process needs to be reopened
     
