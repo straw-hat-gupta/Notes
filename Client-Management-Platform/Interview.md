@@ -660,7 +660,7 @@ You need to understand whether the system should:
     
 
 ### 37. Can completed work be reopened or reversed?
-
+yes it can be reopened
 Ask:
 
 - Who can do it?
