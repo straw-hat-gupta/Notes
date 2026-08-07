@@ -418,7 +418,7 @@ A trigger is the event that causes someone to begin the workflow.
 
 Examples:
 
-- A referral is received
+- A referral is received<-
     
 - A prospect agrees to proceed
     
@@ -436,7 +436,7 @@ Ask whether the trigger can arrive through multiple channels.
 ### 23. Who starts the process, and who is responsible for completing it?
 
 Starting a workflow and owning its final outcome may belong to different people.
-
+anyone in the firm
 Ask:
 
 - Can ownership change?
@@ -452,10 +452,10 @@ Ask:
 
 Separate information into:
 
-- Required to start
+- Required to start, refferals name phone email
     
 - Required before completion
-    
+    in
 - Helpful but optional
     
 - Unknown at the beginning
