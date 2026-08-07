@@ -647,7 +647,7 @@ For each mistake, ask:
 You need to understand whether the system should:
 
 - Preserve completed steps
-    
+    preserve
 - Roll back the entire operation
     
 - Allow safe retry
