@@ -541,13 +541,13 @@ For every handoff, ask:
 
 Examples include:
 
-- Phone calls
+- Phone calls: recorded in rms, when date, 
     
-- Emails
+- Emails: not recorded, 
     
-- Meetings
+- Meetings: recorded, 
     
-- Document signing
+- Document signing: 
     
 - Work in another application
     
