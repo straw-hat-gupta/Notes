@@ -980,7 +980,7 @@ Work through actions, not only screens:
     
 
 ### 53. Is access based only on role, or also on relationships to the record?
-
+everybody is equal
 For example:
 
 - All portfolio managers can see all clients
