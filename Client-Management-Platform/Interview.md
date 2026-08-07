@@ -19,12 +19,13 @@ These answers will primarily populate `vision.md`.
 ## A. Why the platform is being built
 
 ### 1. Can you describe why you decided to build this platform?
-
+to simplyfy my office life. there are so many different parts that we are maintaining separatly. get rid of redundant jobs
 What you are trying to learn:
 
 - What triggered the project
     
 - Why the current approach is no longer sufficient
+		the spreadsheets used to maintained the workflows are maintained separatly. 
     
 - Whether the primary motivation is efficiency, risk reduction, growth, reporting, client service, or something else
     
