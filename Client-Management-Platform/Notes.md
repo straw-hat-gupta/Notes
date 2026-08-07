@@ -32,7 +32,7 @@ GQ is an agency that markets in-person events/webinars they charge $3500 to get 
 - M&M (Monitoring and management) -> once they have finifshed disscussing wihthe clients all the nccp stuff they are then in m&m phase
 - Pillar list -> Excel -> figuring out how many assets they have, people who have booked a meeting. people with potential assets to be added. tangibles, follow ups, 
 name, amount they can invest
-- Focus 10 -> Excel Sheet -> business we can get from them in 3 months, could be not clinets but very close to becoming clients within 3 months. tangibles. top 10 people from pillar that can have investments within inthe next 3 months. 
+- Focus 10 -> Excel Sheet -> business we can get from them in 3 months, could be not clinets but very close to becoming clients within 3 months. tangibles. top 10 people from pillar that can have investments within inthe next 3 months. how much insurance bussiness is identified. 
 - investment transfer ->excel sheet -> investments that have signed documents but havent received yet. 
 - Insurance Business monitor -> excel sheet -> insurance business that can potentially be added. 
 - Transfer Reconciliation -> excel sheet when we get money when it was invested, each client separate, to use in the meeting and show to client. additional info is 
