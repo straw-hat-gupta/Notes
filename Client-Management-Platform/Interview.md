@@ -586,7 +586,7 @@ Ask what should occur when:
 
 - Required information is completed: 
     
-- A deadline passes
+- A deadline passes: yes be informed, 
     
 - An import finishes
     
