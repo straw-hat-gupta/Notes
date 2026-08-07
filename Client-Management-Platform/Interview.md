@@ -82,16 +82,16 @@ This helps create the one-sentence product vision.
 If the answer becomes a feature list, redirect with:
 
 > What business outcome would those features produce?
-to make the bussiness more eff
+
 ### 4. What would make you consider this project a failure?
 
 This often reveals critical expectations that do not appear in feature discussions.
-
+if we are not able to produce the reports we want. 
 Possible follow-ups:
 
 - What outcomes would be unacceptable?
     
-- What would cause employees not to use it?
+- What would cause employees not to use it? too time consuming and not intuitive. 
     
 - What could cause the firm to stop using it?
     
