@@ -398,7 +398,7 @@ Tell the stakeholder:
 As they explain, capture:
 
 - Starting event
-    getting and intro, then we use rms to put their details, book the first meeting, new referral is part of the pillar 
+    getting and intro, then we use rms to put their details, book the first meeting, new referral is part of the pillar list, identifu potential bussiness, discuss nccp and all those meetings, once confirmed we add them to investment transfer. rms stops when ref becomes cleint, pillar list is for new bus
 - People involved
     
 - Documents or systems used
