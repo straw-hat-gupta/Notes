@@ -607,13 +607,13 @@ Examples:
 
 - Missing information: 
     
-- Duplicate client: 
+- Duplicate client: might happen 
     
-- Incorrect spreadsheet
+- Incorrect spreadsheet: no
     
-- Client changes their mind
+- Client changes their mind: all the time. 
     
-- Transfer is rejected
+- Transfer is rejected: happens 
     
 - Owner is unavailable
     
