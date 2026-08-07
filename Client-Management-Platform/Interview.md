@@ -204,19 +204,18 @@ You are looking for outcomes such as:
 Ask for concrete examples of current risks.
 
 ### 11. What decisions should the platform help employees make?
-lots, all the tasks the system is creating that the team is missing. 
+lots, all the tasks the system is creating that the team is missing. tasks should not be missed. 
 
 Clarify whether the platform should:
 
 - Present information
     
-- Calculate or summarize information
+- Calculate or summarize information yes
     
-- Recommend an action
+- Recommend an action: yes
     
-- Automatically take an action
-    
-
+- Automatically take an action: no
+-
 These are very different levels of responsibility.
 
 For each decision, ask:
