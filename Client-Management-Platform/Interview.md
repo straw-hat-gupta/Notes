@@ -9,7 +9,7 @@ Do not try to ask every question in one meeting. I recommend three sessions:
     
 3. Business rules, permissions, data, and exceptions
     
-
+			
 Record the meeting if the stakeholder agrees. Do not put real client names, account numbers, financial details, or other confidential information into Claude or Codex afterward. Replace them with synthetic examples.
 
 # Session 1: Product vision and priorities
