@@ -756,7 +756,7 @@ Ask the stakeholder to define terms such as:
     
 - Household: a group of all family mebers, 
     
-- Account
+- Account: account number 
     
 - Referral
     
@@ -764,7 +764,7 @@ Ask the stakeholder to define terms such as:
     
 - Transfer
     
-- Task
+- Task: any actionable event
     
 - Advisor or portfolio manager
     
