@@ -233,17 +233,17 @@ For each decision, ask:
 
 Possible outcomes include:
 
-- Faster responses
+- Faster responses: yes 
     
-- Fewer repeated information requests
+- Fewer repeated information requests: not really as this platform is more internal. 
     
-- Better follow-ups
+- Better follow-ups: very important
     
-- Smoother onboarding
+- Smoother onboarding: yes
     
-- Fewer errors
+- Fewer errors: yes
     
-- More consistent communication
+- More consistent communication: yes
     
 
 ## D. Scope and priorities
