@@ -28,14 +28,14 @@ What you are trying to learn:
 		the spreadsheets used to maintained the workflows are maintained separatly. 
     
 - Whether the primary motivation is efficiency, risk reduction, growth, reporting, client service, or something else
-    
+    efficient and smoothness.
 
 Useful follow-ups:
 
 - Was there a particular event or recurring problem that led to this decision?
-    
+    the reoccuring problem is they are not able to update and sometimes they are missed.
 - Why does the firm need this now?
-    
+    needed it before as well. 
 - What happens if the firm continues using its current process?
     
 
