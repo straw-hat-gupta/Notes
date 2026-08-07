@@ -564,7 +564,8 @@ going through all the spreadsheets.
     put stuff from the spreadsheets into sales force or copying stuff into the calendar from the spreadsheets.  
     
 
-Then ask what they would prefer to see in the platform.
+Then ask what they would prefer to see in the platform. 
+reminders / alerts / emails
 
 ## C. Statuses and state changes
 
