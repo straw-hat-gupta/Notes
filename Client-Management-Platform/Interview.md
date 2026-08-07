@@ -102,7 +102,7 @@ Possible follow-ups:
 
 ### 5. Who will use the platform regularly?
 
-For each type of user, determine:
+For each type of user, determine: consutants and the assistant angela
 
 - Their job or role
     
@@ -124,17 +124,6 @@ Do not assume that formal job titles map directly to system roles.
 Examples might include:
 
 - Clients
-    
-- Compliance reviewers
-    
-- External advisors
-    
-- Accountants
-    
-- Custodians
-    
-- Firm leadership
-    
 
 This distinguishes direct users from affected stakeholders.
 
