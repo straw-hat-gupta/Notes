@@ -455,7 +455,7 @@ Separate information into:
 - Required to start, refferals name phone email
     
 - Required before completion
-    in
+    assets, 
 - Helpful but optional
     
 - Unknown at the beginning
@@ -487,7 +487,7 @@ Examples:
 ### 26. What is the first action the employee takes?
 
 Then repeat:
-
+entering info in the rms
 - What happens next?
     
 - Who performs that action?
