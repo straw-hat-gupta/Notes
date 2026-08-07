@@ -254,19 +254,19 @@ Ask the stakeholder to rank the workflows instead of declaring all of them essen
 
 Possible candidates:
 
-- Referrals: most impartant
+- Referrals: most impartant 1
     
-- Prospective clients
+- Prospective clients 5
     
-- Client onboarding
+- Client onboarding 4
     
 - Client and household information
     
-- Investment opportunities
+- Investment opportunities 3
     
-- Transfers
+- Transfers: 2
     
-- Relationship-management tasks
+- Relationship-management tasks 6
     
 - Spreadsheet imports
     
