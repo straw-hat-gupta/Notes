@@ -270,9 +270,9 @@ becase this is the core of the bussiness as this is what gives more money
     
 - Spreadsheet imports
     
-- Search: 
+- Search: 1
     
-- Reports: 
+- Reports: 1
     
 - Audit history 7
     
