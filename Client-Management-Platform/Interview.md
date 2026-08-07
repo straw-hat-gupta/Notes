@@ -255,7 +255,7 @@ Ask the stakeholder to rank the workflows instead of declaring all of them essen
 Possible candidates:
 
 - Referrals: most impartant 1
-    
+becase this 
 - Prospective clients 5
     
 - Client onboarding 4
@@ -274,7 +274,7 @@ Possible candidates:
     
 - Reports
     
-- Audit history
+- Audit history 7
     
 - User and permission management
     
