@@ -255,7 +255,7 @@ Ask the stakeholder to rank the workflows instead of declaring all of them essen
 Possible candidates:
 
 - Referrals: most impartant 1
-becase this 
+becase this is the core of the bussiness as this is what gives more money
 - Prospective clients 5
     
 - Client onboarding 4
@@ -270,9 +270,9 @@ becase this
     
 - Spreadsheet imports
     
-- Search
+- Search: 
     
-- Reports
+- Reports: 
     
 - Audit history 7
     
@@ -286,7 +286,7 @@ Ask:
 ### 14. What does the first version explicitly not need to do?
 
 This protects the project from uncontrolled scope growth.
-
+investment transfer
 Ask about possible exclusions such as:
 
 - Trading
