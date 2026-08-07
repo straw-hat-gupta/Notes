@@ -570,47 +570,16 @@ reminders / alerts / emails
 ## C. Statuses and state changes
 
 ### 31. What statuses can this item move through?
-terminilogy not in place but would be good to have. 
+terminilogy not in place but would be good to have terminology. 
 For example, a prospect might be:
 
-- New
-    
-- Contacted
-    
-- Evaluating
-    
-- Deferred
-    
-- Accepted
-    
-- Declined
-    
-- Converted
-    
-
-Do not adopt these examples automatically.
-
-For each actual status, ask:
-
-- What does it mean?
-    
-- Who can assign it?
-    
-- What must be true before entering it?
-    
-- What actions become available?
-    
-- Can the item move backward?
-    
-- Is the status terminal?
-    
-- Does changing it require a reason?
+-
     
 
 ### 32. Are the status definitions currently consistent across employees?
 
 If not, capture each interpretation and mark the final definition as `TBD`.
-
+no further action required, apna ()
 ### 33. Which changes should happen automatically, and which require confirmation?
 
 Ask what should occur when:
