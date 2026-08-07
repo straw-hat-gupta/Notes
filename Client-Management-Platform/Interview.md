@@ -42,23 +42,14 @@ Useful follow-ups:
 ### 2. What are the three biggest problems with the current way of working?
 
 Ask the stakeholder to rank them.
-
-Possible examples, without suggesting that these are necessarily true:
-
-- Finding current client information
     
 - Duplicate information--
     
 - Manual data entry-- 
     
     
-- Tracking workflow status and knowing if there is a task that is coming up
+- Tracking workflow status and knowing if there is a task that is coming up, Following up on overdue tasks
     
-- Knowing who is responsible for the next action
-    
-- Following up on overdue tasks
-    
-- Correcting spreadsheet errors
 
     
 
