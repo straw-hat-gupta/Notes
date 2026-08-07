@@ -625,6 +625,7 @@ Examples:
     
 
 ### 35. What mistakes do employees commonly make?
+wrong amount, not doing task assigned, not updating, input errors 
 
 For each mistake, ask:
 
