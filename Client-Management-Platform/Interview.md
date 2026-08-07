@@ -617,9 +617,9 @@ Examples:
     
 - Owner is unavailable
     
-- A task is assigned incorrectly
+- A task is assigned incorrectly: sometimes need to change who the task is assigned to. 
     
-- Information conflicts between systems
+- Information conflicts between systems: 
     
 - A process needs to be reopened
     
