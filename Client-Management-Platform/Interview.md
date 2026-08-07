@@ -605,9 +605,9 @@ Encourage the stakeholder to describe inconvenient real cases.
 
 Examples:
 
-- Missing information
+- Missing information: 
     
-- Duplicate client
+- Duplicate client: 
     
 - Incorrect spreadsheet
     
