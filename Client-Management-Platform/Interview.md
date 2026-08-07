@@ -547,19 +547,19 @@ Examples include:
     
 - Meetings: recorded, 
     
-- Document signing: 
+- Document signing: date of document signed. 
     
 - Work in another application
     
 - External professional review
-    
+    no
 
 The platform may need to record that an external action occurred without performing it.
 
 ### 30. How do employees know what needs attention next?
 
 Ask whether they currently rely on:
-
+going through all the spreadsheets. 
 - Memory
     
 - Email
