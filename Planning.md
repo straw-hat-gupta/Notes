@@ -20,7 +20,6 @@ things i want to do:
 
 
 1 month goal:
-- get comptia security+ cert
 - 
 3 month goal:
 
