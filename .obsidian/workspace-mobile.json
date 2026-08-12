@@ -49,8 +49,7 @@
               "title": "Working Notes"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,13 +124,16 @@
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {},
+          "state": {
+            "showSearch": false,
+            "searchQuery": ""
+          },
           "icon": "lucide-bookmark",
           "title": "Bookmarks"
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 4
   },
   "right": {
     "id": "df5ad2fdac01f234",
@@ -198,7 +200,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b44f443ddd211f69",
+  "active": "5a21bb3adb503ce7",
   "lastOpenFiles": [
     "TODO.md",
     "Client-Management-Platform/Working Notes.md",
