@@ -53,4 +53,4 @@ Focus 10 will be like select 10 clients/couples from pillar list and have them i
 ---
 Additional Questions:
 
-if you add some to focus 10 should you be able to take them out of focus 10 easily? is there like a once you add someone to focus 10 there is time limit before they can b
+if you add some to focus 10 should you be able to take them out of focus 10 easily? is there like a once you add someone to focus 10 there is time limit before they can be removed?
