@@ -44,3 +44,13 @@ RMS -> first meeting -> pillar list -> asstes that can be added in 3 months - >
 
 
 Coolify for testing and hosting the prototypes. this will be so helpful when i want to run long tests. 
+
+
+---
+
+Focus 10 will be like select 10 clients/couples from pillar list and have them in a separate view
+
+---
+Additional Questions:
+
+if you 
