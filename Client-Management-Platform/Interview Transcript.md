@@ -480,7 +480,7 @@ Well done.
 [SPEAKER_01]: Yes.
 [SPEAKER_01]: Investment transfer.
 [SPEAKER_00]: And we should able to, should be able to create a report of focus 10.
-[SPEAKER_00]: If I identify from pillar list, these 10 potential businesses,
+[SPEAKER_00]: If I identify from pillar list, these top 10 potential businesses,
 [SPEAKER_00]: we should be like closing it in three months, next three months, then I should be able to identify that as a focus 10 and create a report out of only focus 10.
 [SPEAKER_01]: Focus 10, each item on the focus 10 is a separate client.
 [SPEAKER_00]: Yes.
@@ -493,7 +493,13 @@ Well done.
 [SPEAKER_00]: Yeah, account number.
 [SPEAKER_01]: Referral I already have.
 [SPEAKER_01]: Task is any actionable event.
-[SPEAKER_01]: advisor portfolio manager that's you guys um are there any external professionals that you guys deal with that might use this no okay take that away transfer we have opportunity that is below this yeah opportunity is potential assets that can be invested or yeah opportunities estimated amount of investments you could get
+[SPEAKER_01]: advisor portfolio manager that's you guys um are there any external professionals that you guys deal with that might use this 
+[SPEAKER_00]: no 
+[SPEAKER_01]: transfer, ok already got this
+[SPEAKER_01]: opportunity 
+[SPEAKER_00]: that is in pillar list his yeah opportunity is potential assets that can be invested or yeah opportunities estimated amount of investments you could get
+52:51
+---------------------------------
 [SPEAKER_01]: How do you determine whether two records refer the same person?
 [SPEAKER_01]: That would never happen, right?
 [SPEAKER_00]: Two records, two spreadsheets, same person?
