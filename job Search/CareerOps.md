@@ -48,3 +48,7 @@ Write the result to data/shortlist.md, newest posted first, grouped as:
 Each line: `- <company> — <title> — <one-line reason> <url>`.
 
 Leave data/pipeline.md unchanged — this only reads it and writes data/shortlist.md.
+
+
+good commands:
+
