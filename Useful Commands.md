@@ -1,329 +1,94 @@
+# File Transfer
 
-
-## SSH With Tailscale
-
-```bash
-ssh sam@llm-gpu
-ssh root@pve-d1
-```
-
-## SSH Without Tailscale
-
-### Local Network
+## Computer to LLM-GPU With Tailscale
 
 ```bash
-ssh sam@10.44.0.170
-ssh root@<PROXMOX_LAN_IP>
+scp <FILE> sam@llm-gpu:~/
+scp -r <FOLDER> sam@llm-gpu:~/
 ```
 
-### Away From Home
-
-Requires router port forwarding:
+## LLM-GPU to Computer With Tailscale
 
 ```bash
-ssh -p 2222 sam@<PUBLIC_IP>
+scp sam@llm-gpu:/path/to/file .
+scp -r sam@llm-gpu:/path/to/folder .
 ```
 
-## SSH Aliases
+## Computer to LLM-GPU Without Tailscale
 
 ```bash
-nano ~/.ssh/config
+scp <FILE> sam@10.44.0.170:~/
+scp -r <FOLDER> sam@10.44.0.170:~/
 ```
 
+## LLM-GPU to Computer Without Tailscale
 
 ```bash
-chmod 600 ~/.ssh/config
-
-ssh llm-gpu-ts
-ssh pve-d1-ts
+scp sam@10.44.0.170:/path/to/file .
+scp -r sam@10.44.0.170:/path/to/folder .
 ```
 
-# Tailscale
-
-## Install on Proxmox or Debian/Ubuntu
+## Transfer Using SSH Alias
 
 ```bash
-curl -fsSL https://tailscale.com/install.sh | sh
-systemctl enable --now tailscaled
-tailscale up --hostname=pve-d1 --accept-dns=false
+scp <FILE> llm-gpu:~/
+scp -r <FOLDER> llm-gpu:~/
+scp llm-gpu:/path/to/file .
+scp -r llm-gpu:/path/to/folder .
 ```
 
-## Install on LLM-GPU
+## Transfer With Progress and Resume
+
+### Computer to LLM-GPU
 
 ```bash
-curl -fsSL https://tailscale.com/install.sh | sh
-sudo systemctl enable --now tailscaled
-sudo tailscale up --hostname=llm-gpu
+rsync -avhP <FILE_OR_FOLDER> sam@llm-gpu:/path/to/destination/
 ```
 
-## Common Commands
+### LLM-GPU to Computer
 
 ```bash
-tailscale status
-tailscale ip -4
-tailscale ping pve-d1
-tailscale ping llm-gpu
-sudo tailscale up
-sudo tailscale down
-sudo tailscale logout
-sudo systemctl restart tailscaled
-sudo systemctl status tailscaled
-journalctl -u tailscaled -n 100 --no-pager
+rsync -avhP sam@llm-gpu:/path/to/file-or-folder/ .
 ```
 
-## Proxmox Web Interface
-
-```text
-https://pve-d1:8006
-```
-
-# Career-Ops
-
-## Open Career-Ops
+## Transfer Using Public IP
 
 ```bash
-ssh llm-gpu
-cd /home/sam/services/career-ops
+scp -P 2222 <FILE> sam@<PUBLIC_IP>:~/
+scp -P 2222 sam@<PUBLIC_IP>:/path/to/file .
 ```
 
-## Full Scan
-
 ```bash
-npm run scan -- --verify
+rsync -avhP -e "ssh -p 2222" <FILE_OR_FOLDER> sam@<PUBLIC_IP>:/path/to/destination/
 ```
 
-## Verify Pipeline
+## Voice Memo to Transcription Folder
 
 ```bash
-node verify-pipeline.mjs
-node cv-sync-check.mjs
+scp "<RECORDING>.m4a" sam@llm-gpu:~/private-transcription/audio/
 ```
 
-## Sync Tracker
+## Download Transcription Results
 
 ```bash
-node tracker.mjs sync
+scp -r sam@llm-gpu:~/private-transcription/output/ .
 ```
 
-## Triage Jobs
+## Create Transfer Archive
 
 ```bash
-node tracker.mjs query
-sed -n '1,260p' data/pipeline.md
+tar -czf archive.tar.gz <FOLDER>
 ```
 
-## View Scan Results
+## Extract Transfer Archive
 
 ```bash
-sed -n '1,220p' data/pipeline.md
-tail -n 40 data/scan-history.tsv
-tail -n 20 data/scan-runs.tsv
-find reports -maxdepth 2 -type f | sort | tail -n 30
+tar -xzf archive.tar.gz
 ```
 
-# Scheduled Scans
-
-## Check All Career-Ops Timers
+## Check File
 
 ```bash
-systemctl --user list-timers --all | grep careerops
-```
-
-## Scan Status
-
-```bash
-systemctl --user status careerops-scan.timer --no-pager
-systemctl --user status careerops-scan.service --no-pager
-```
-
-## Scan Logs
-
-```bash
-tail -n 100 /home/sam/services/career-ops/data/systemd-scan.log
-journalctl --user -u careerops-scan.service -n 100 --no-pager
-```
-
-## Start Scan Schedule
-
-```bash
-systemctl --user daemon-reload
-systemctl --user enable --now careerops-scan.timer
-```
-
-## Run Scan Now
-
-```bash
-systemctl --user start careerops-scan.service
-```
-
-# Scheduled Discovery and Triage
-
-## Status
-
-```bash
-systemctl --user status careerops-discovery.timer --no-pager
-systemctl --user status careerops-discovery.service --no-pager
-```
-
-## Logs
-
-```bash
-tail -n 100 /home/sam/services/career-ops/data/systemd-discovery.log
-journalctl --user -u careerops-discovery.service -n 100 --no-pager
-```
-
-## Run Now
-
-```bash
-systemctl --user start careerops-discovery.service
-```
-
-## Restart Schedules
-
-```bash
-systemctl --user restart careerops-scan.timer
-systemctl --user restart careerops-discovery.timer
-```
-
-## Stop Schedules
-
-```bash
-systemctl --user stop careerops-scan.timer careerops-discovery.timer
-```
-
-## Start Schedules
-
-```bash
-systemctl --user start careerops-scan.timer careerops-discovery.timer
-```
-
-# Proxmox VM 301
-
-## Status
-
-```bash
-qm status 301
-```
-
-## Start
-
-```bash
-qm start 301
-```
-
-## Shutdown
-
-```bash
-qm shutdown 301
-```
-
-## Restart
-
-```bash
-qm reboot 301
-```
-
-## Configuration
-
-```bash
-qm config 301
-```
-
-## Enter VM Console
-
-```bash
-qm terminal 301
-```
-
-# LLM-GPU Status
-
-```bash
-hostnamectl
-lsb_release -a
-df -h /
-free -h
-nvidia-smi
-uptime
-```
-
-## GPU Monitoring
-
-```bash
-watch -n 1 nvidia-smi
-```
-
-## Processes
-
-```bash
-ps aux
-top
-htop
-```
-
-## Services
-
-```bash
-systemctl status <SERVICE>
-sudo systemctl restart <SERVICE>
-journalctl -u <SERVICE> -n 100 --no-pager
-```
-
-# Files and Directories
-
-```bash
-pwd
-ls -lah
-cd <DIRECTORY>
-mkdir <DIRECTORY>
-cp <SOURCE> <DESTINATION>
-mv <SOURCE> <DESTINATION>
-nano <FILE>
-less <FILE>
-tail -f <FILE>
-```
-
-## Search
-
-```bash
-rg "SEARCH_TEXT"
-rg --files
-find . -name "<FILE_NAME>"
-```
-
-## Disk Usage
-
-```bash
-df -h
-du -sh *
-du -sh <DIRECTORY>
-```
-
-## Network
-
-```bash
-ip addr
-ip route
-hostname -I
-ping 1.1.1.1
-curl ifconfig.me
-ss -tulpn
-```
-
-## Git
-
-```bash
-git status
-git pull
-git log --oneline -10
-git branch
-git diff
-```
-
-## Versions
-
-```bash
-git --version
-node --version
-npm --version
-python3 --version
+ls -lh <FILE>
+sha256sum <FILE>
 ```
