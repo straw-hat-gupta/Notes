@@ -34,9 +34,8 @@ nano ~/.ssh/config
 ```bash
 chmod 600 ~/.ssh/config
 
-ssh llm-gpu
-ssh llm-gpu-
-ssh proxmox
+ssh llm-gpu-ts
+ssh pve-d1-ts
 ```
 
 # Tailscale
