@@ -1,4 +1,4 @@
-# Useful Commands
+
 
 ## SSH With Tailscale
 
@@ -30,29 +30,12 @@ ssh -p 2222 sam@<PUBLIC_IP>
 nano ~/.ssh/config
 ```
 
-```sshconfig
-Host llm-gpu
-    HostName llm-gpu
-    User sam
-    ServerAliveInterval 30
-    ServerAliveCountMax 6
-
-Host llm-gpu-lan
-    HostName 10.44.0.170
-    User sam
-
-Host proxmox
-    HostName pve-d1
-    User root
-    ServerAliveInterval 30
-    ServerAliveCountMax 6
-```
 
 ```bash
 chmod 600 ~/.ssh/config
 
 ssh llm-gpu
-ssh llm-gpu-lan
+ssh llm-gpu-
 ssh proxmox
 ```
 
