@@ -90,4 +90,4 @@ signed an offer with them but they recidnied
 started applying everywhere
 a lot of cold emailing got a few interviews
 nick lam - he went to california and went to a coffee shop and talked to people in there and asked- decagon 
-
+a lot of features added to his project. its a bit of a mess. 
