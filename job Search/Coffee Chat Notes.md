@@ -91,3 +91,4 @@ started applying everywhere
 a lot of cold emailing got a few interviews
 nick lab - he went to california and went to a coffee shop and talked to people in there 
 
+
