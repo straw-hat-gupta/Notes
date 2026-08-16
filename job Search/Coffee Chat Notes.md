@@ -88,6 +88,6 @@ asked if i could come to office they said no
 final year of uni had done intership at mark43
 signed an offer with them but they recidnied
 started applying everywhere
-a lot of cold emailing 
+a lot of cold emailing got a few interviews
 
 
