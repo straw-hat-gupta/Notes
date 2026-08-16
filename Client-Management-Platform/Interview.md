@@ -33,7 +33,7 @@ What you are trying to learn:
 Useful follow-ups:
 
 - Was there a particular event or recurring problem that led to this decision?
-    the reoccuring problem is they are not able to update and sometimes they are missed.
+    the reoccurring problem is they are not able to update and sometimes they are missed.
 - Why does the firm need this now?
     needed it before as well. 
 - What happens if the firm continues using its current process?
