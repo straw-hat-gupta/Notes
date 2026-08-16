@@ -90,3 +90,4 @@ signed an offer with them but they recidnied
 started applying everywhere
 a lot of cold emailing 
 
+
