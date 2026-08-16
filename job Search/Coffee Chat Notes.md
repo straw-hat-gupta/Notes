@@ -84,5 +84,5 @@ i want company insights. to figure out how i can stand out from other candidates
 ---
 David George August 16th 
 
-
+asked if i could come to office they said no 
 
