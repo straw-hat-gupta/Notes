@@ -8,5 +8,8 @@
 
 
 
-- APPLE 
+- APPLE PENCIL
+	- be able to connect the pencil to other devices and be able to use its various functions as buttons
+	- be able to assign actions after pressing the button. like pre recorded gestures 
+	- 
 
