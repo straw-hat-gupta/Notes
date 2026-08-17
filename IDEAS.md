@@ -11,5 +11,6 @@
 - APPLE PENCIL
 	- be able to connect the pencil to other devices and be able to use its various functions as buttons
 	- be able to assign actions after pressing the button. like pre recorded gestures 
+	- how does it recognize that it is connected to ipad or that it should be connected to an ipad? maybe there is a way to spoof that signal? maybe you need a mangnet to make it think it is connected? 
 	- 
 
