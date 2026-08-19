@@ -1,3 +1,5 @@
+
+```
 Act as an experienced startup engineer and technical educator. Create a personalized 3-4 week intensive study guide to prepare me for working at a fast-paced startup. The guide must balance deep technical learning with practical business acumen, because engineers at startups need to handle ambiguity and collaborate with product and sales teams.
 Target startups: I will provide the list in a follow-up message. Once provided, tailor examples, tooling, and project ideas to their industry and likely stack. If no list is provided, assume a typical B2B SaaS startup using modern JavaScript/TypeScript + Python.
 Technical topics to cover (expand as needed):
@@ -40,6 +42,9 @@ Total time commitment: 3-4 weeks, assuming 4-6 hours of dedicated study per day
 Prioritize quick wins and practical skills over theory
 Use clear, actionable language and avoid fluff
 Explicitly include Vercel in the deployment/hosting modules and in project setup where relevant
+
+
+```
 
 
 ---
