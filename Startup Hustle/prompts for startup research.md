@@ -1,5 +1,5 @@
 
-i want to find startups that are vancouver or sf based that fit my criteria. these are the startups i wil be targeting to get a job at. they should be accepting new grad / early careers in some way. i will use this info to create a 3-4 study guide. the prompt for the study guide is below. i want ot 
+i want to find tech startups that are vancouver or sf based that fit my criteria. these are the startups i wil be targeting to get a job at. they should be accepting new grad / early careers in some way. i will use this info to create a 3-4 study guide. the prompt for the study guide is below. i want to do stuff with ai. 
 
 ```
 Act as an experienced startup engineer and technical educator. Create a personalized 3-4 week intensive study guide to prepare me for working at a fast-paced startup. The guide must balance deep technical learning with practical business acumen, because engineers at startups need to handle ambiguity and collaborate with product and sales teams.
