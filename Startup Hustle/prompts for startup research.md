@@ -622,7 +622,7 @@ Use the following companies as relevance signals for the curriculum. Do not crea
     
 - VRIFY
 - Koah Labs
-- 
+- Nexthop Systems Inc
     
 
 Relevant themes across these companies include agent orchestration, workflow automation, OAuth and tool integrations, durable execution, backend APIs, search, industrial systems, security, data platforms, Kubernetes, Terraform, cloud infrastructure, observability, and reliability.
