@@ -508,3 +508,837 @@ Before returning the research, confirm that:
 - The output is specific, concise, and actionable.
 
 ---
+Act as a staff-level startup platform engineer, production AI engineer, and technical educator. Create a deeply personalized four-week intensive study guide that prepares me to contribute quickly as a backend or platform engineer at an AI-native startup.
+
+Do not produce a generic curriculum. Use my background, gaps, target companies, desired architecture, available infrastructure, and time constraints to decide what deserves depth and what should be excluded.
+
+## Primary objective
+
+Optimize the guide for these outcomes, in order:
+
+1. Become capable of contributing quickly to an agent-platform or backend-infrastructure team.
+    
+2. Develop deeper production experience with agent execution, distributed workflows, databases, reliability, Kubernetes, and deployment.
+    
+3. Improve my ability to convert ambiguous product requests into technical specifications.
+    
+4. Improve my ability to prioritize scope and explain technical tradeoffs.
+    
+5. Produce a coherent portfolio system that demonstrates these capabilities.
+    
+
+Interview preparation is secondary. The main goal is genuine engineering readiness.
+
+## Learner profile
+
+I recently completed a Bachelor of Science in Computer Science and Physics at the University of British Columbia.
+
+My existing experience includes:
+
+- Strong working experience with Python and TypeScript.
+    
+- Backend development with Django REST Framework, FastAPI, Flask, Node.js, and Express.js.
+    
+- React experience, although frontend development is not the focus of this guide.
+    
+- REST APIs, OAuth 2.0, JWT, RBAC, Celery, PostgreSQL, MySQL, Redis, MongoDB, Docker, GitHub Actions, Linux, and AWS.
+    
+- A production automation platform using Python, React, TypeScript, FastAPI, hardware integrations, structured logging, alerts, and live monitoring.
+    
+- An agentic productivity platform with 60 tools and actions, seven OAuth integrations, Celery scheduling, retries, backoff, rate-limit handling, and a 256-test backend suite.
+    
+- Production work involving stakeholder requirements, financial workflows, validation, relational constraints, audit history, and role-based access.
+    
+- Experience with Git and GitHub, but limited exposure to mature collaborative workflows involving disciplined branching, rebasing, pull-request review, release management, and team conventions.
+    
+
+Calibrate the curriculum to these actual starting levels:
+
+- Python: experienced.
+    
+- TypeScript: novice.
+    
+- Go: built a small CLI or API, but have not built a substantial production service.
+    
+- Agent development: implemented tool calling and action execution.
+    
+- LangChain: new.
+    
+- LangGraph: new.
+    
+- Kubernetes: no hands-on experience.
+    
+- Databases: comfortable with basic CRUD and ORM usage, but not confident with query plans, indexing strategy, transactions, locking, isolation, or performance diagnosis.
+    
+- Docker, CI, Linux, APIs, authentication, and automated testing: existing practical experience, so provide targeted advancement rather than beginner repetition.
+    
+
+Do not spend significant time reteaching Python syntax, TypeScript syntax, basic REST concepts, basic Docker commands, basic CRUD, or introductory Git commands.
+
+## Target-company context
+
+Use the following companies as relevance signals for the curriculum. Do not create 27 separate company profiles or attempt to cover every technology equally.
+
+### Highest-priority targets
+
+- Cohere: enterprise agents, workflow automation, Python, TypeScript, PostgreSQL, Kubernetes, integrations, execution engines, observability, evaluations, security, and retrieval.
+    
+- Waabi: physical AI, Python, PyTorch, C++, CUDA, simulation, datasets, research infrastructure, and performance.
+    
+- Cerebras: AI compute infrastructure, C, C++, Python, Linux, networking, distributed systems, CI/CD, Kubernetes, AWS, and observability.
+    
+- Parallel Web Systems: agent-facing search, retrieval, embeddings, ranking, retrieval evaluation, Python, data pipelines, and APIs.
+    
+- Exa: AI-native search infrastructure, Kubernetes, AWS, Ray, distributed systems, GPU infrastructure, reliability, observability, and capacity planning.
+    
+- Wispr Flow: voice AI, Python, FastAPI, PostgreSQL, Redis, AWS, Terraform, low-latency inference, and backend reliability.
+    
+
+### Vancouver and Canada-focused targets
+
+- Novarc Technologies
+    
+- Gumloop
+    
+- Phaidra
+    
+- GeoComply
+    
+- Visier
+    
+- Parallel Domain
+    
+- Klue
+    
+- Clio
+    
+- Ada
+    
+- Procurify
+    
+- Trulioo
+    
+- Hootsuite
+    
+- VRIFY
+- Koah Labs
+- 
+    
+
+Relevant themes across these companies include agent orchestration, workflow automation, OAuth and tool integrations, durable execution, backend APIs, search, industrial systems, security, data platforms, Kubernetes, Terraform, cloud infrastructure, observability, and reliability.
+
+### Additional AI infrastructure and developer-tool targets
+
+- Replit
+    
+- Browserbase
+    
+- Patronus AI
+    
+- Applied Intuition
+    
+- Glean
+    
+- Vapi
+    
+- LangChain
+    
+- GC AI
+    
+
+Relevant themes include coding agents, browser infrastructure, agent tools, evaluations, developer platforms, distributed execution, SDKs, observability, low-latency services, and production AI infrastructure.
+
+### Curriculum prioritization rule
+
+The chosen lane is agent platforms and backend infrastructure. Allocate curriculum attention approximately as follows:
+
+- 60%: agent execution, backend/platform engineering, databases, asynchronous workflows, testing, and reliability.
+    
+- 25%: Kubernetes, deployment, CI/CD, observability, and operational readiness.
+    
+- 15%: retrieval, agent evaluation, security, and cross-functional decision-making.
+    
+
+C++, CUDA, model training, robotics, computer vision, compilers, and deep GPU infrastructure may appear in a short optional section, but they must not displace the selected core lane during this four-week sprint.
+
+When connecting curriculum topics to companies, emphasize the strongest matches, including Cohere, Gumloop, Ada, LangChain, Browserbase, Replit, Parallel Web Systems, Exa, Glean, Wispr Flow, Hootsuite, Clio, and Procurify.
+
+## Capstone structure
+
+The four weekly mini-projects must be connected milestones that collectively form one coherent system:
+
+**An agent execution and workflow platform for internal AI platform teams.**
+
+The platform should let developers define, submit, execute, inspect, evaluate, and troubleshoot agent workflows.
+
+Use this architecture:
+
+- Go control-plane service.
+    
+- Python execution workers using LangChain and LangGraph.
+    
+- TypeScript SDK and command-line interface.
+    
+- PostgreSQL for durable workflow definitions, execution state, history, and audit records.
+    
+- Redis for queueing, caching, or ephemeral coordination where justified.
+    
+- Hosted model APIs only, accessed through a small provider abstraction.
+    
+- Docker for local packaging.
+    
+- kind for initial local Kubernetes learning and deployment.
+    
+- k3s on a remote Linux VM for the final deployment.
+    
+- GitHub Actions for testing, image builds, and deployment automation.
+    
+- Vendor-neutral logs, metrics, and traces as the baseline.
+    
+- LangSmith may be used as an optional agent-specific comparison, but do not make the entire observability design dependent on it.
+    
+
+Do not add a substantial frontend. TypeScript should primarily be used for the SDK and CLI. A minimal operational page is optional only if time remains.
+
+Do not include Vercel.
+
+## Definition of production-ready
+
+Treat “production-ready” as a measurable engineering standard. The completed platform should address:
+
+- Clear service boundaries and documented APIs.
+    
+- Durable workflow and run state.
+    
+- Explicit workflow lifecycle and state transitions.
+    
+- Database migrations.
+    
+- Index design supported by query evidence.
+    
+- Transactions and appropriate concurrency control.
+    
+- Timeouts, cancellation, retries, exponential backoff, and bounded retry policies.
+    
+- Idempotency and duplicate-delivery handling.
+    
+- Worker crash recovery.
+    
+- Rate limiting and backpressure.
+    
+- Structured logs with correlation identifiers.
+    
+- Metrics and distributed traces.
+    
+- Health, readiness, and liveness checks.
+    
+- Agent evaluation datasets and regression checks.
+    
+- Tool-selection and tool-argument evaluation.
+    
+- Latency and model-cost measurement.
+    
+- Authentication, authorization, secrets management, and audit history.
+    
+- Tool permission boundaries and prompt-injection defenses.
+    
+- Unit, integration, contract, end-to-end, and selected load or failure tests.
+    
+- Reproducible containers and environments.
+    
+- CI checks and deployment automation.
+    
+- Kubernetes resource requests, limits, configuration, secrets, rollout, rollback, and troubleshooting.
+    
+- A runbook, architecture decision records, and an incident postmortem exercise.
+    
+
+Do not pretend that a feature is production-ready merely because it is containerized or deployed.
+
+## Required technical coverage
+
+### Go control plane
+
+Cover only the Go knowledge needed to build the platform effectively:
+
+- Idiomatic project structure.
+    
+- HTTP API design and middleware.
+    
+- Context propagation and cancellation.
+    
+- Goroutines, channels, synchronization, and bounded concurrency.
+    
+- Error handling and structured logging.
+    
+- Database access, migrations, and transaction boundaries.
+    
+- Dependency injection without unnecessary framework complexity.
+    
+- Graceful shutdown.
+    
+- Unit, integration, and race testing.
+    
+- Profiling or benchmarking where relevant.
+    
+
+### Python agent workers
+
+Cover:
+
+- LangChain’s useful abstractions and where direct SDK usage is preferable.
+    
+- LangGraph state, nodes, edges, conditional routing, persistence, checkpoints, interrupts, and recovery.
+    
+- Typed workflow state.
+    
+- Tool definitions and validation.
+    
+- Hosted-model provider abstraction.
+    
+- Safe tool execution.
+    
+- Durable execution patterns.
+    
+- Deterministic mocks for tests.
+    
+- Live-model smoke tests kept separate from deterministic CI.
+    
+- Evaluation datasets, trajectory checks, tool correctness, task success, latency, and cost.
+    
+- Failure handling for invalid model output, tool failure, timeouts, and partial completion.
+    
+
+Avoid framework-driven development where underlying execution behavior is unclear.
+
+### TypeScript SDK and CLI
+
+Cover:
+
+- Typed API client design.
+    
+- Authentication and configuration.
+    
+- Commands for submitting workflows, inspecting runs, retrying or cancelling work, and viewing failures.
+    
+- Validation and error presentation.
+    
+- Unit and integration testing.
+    
+- Versioning and release practices.
+    
+- Developer experience and documentation.
+    
+
+### PostgreSQL and Redis
+
+Progress beyond CRUD and ORM usage:
+
+- Relational modeling for workflows, runs, steps, attempts, events, and audit history.
+    
+- Constraints and invariants.
+    
+- Migrations and rollback planning.
+    
+- Index selection.
+    
+- `EXPLAIN` and `EXPLAIN ANALYZE`.
+    
+- Query performance diagnosis.
+    
+- Transactions, isolation levels, locking, and race conditions.
+    
+- Optimistic versus pessimistic concurrency.
+    
+- Connection management.
+    
+- Queue, cache, and coordination tradeoffs.
+    
+- Redis durability limitations and appropriate use.
+    
+- Idempotency keys and duplicate prevention.
+    
+- At-least-once delivery implications.
+    
+- Outbox or similar reliability patterns if justified by the architecture.
+    
+
+### Distributed systems and reliability
+
+Cover the practical reasoning behind:
+
+- Synchronous versus asynchronous execution.
+    
+- Delivery guarantees.
+    
+- State machines.
+    
+- Retry safety.
+    
+- Backpressure.
+    
+- Rate limiting.
+    
+- Worker leases or heartbeats.
+    
+- Partial failure.
+    
+- Event ordering.
+    
+- Consistency boundaries.
+    
+- Failure recovery.
+    
+- Horizontal scaling.
+    
+- Capacity estimation.
+    
+- Graceful degradation.
+    
+- Load testing and failure injection.
+    
+
+Prefer a small number of well-understood services over unnecessary microservices.
+
+### Kubernetes and deployment
+
+Assume no prior Kubernetes experience. Build progressively from local containers to kind and then k3s on the Linux VM.
+
+Cover:
+
+- Pods, Deployments, Services, Jobs, ConfigMaps, Secrets, namespaces, and persistent storage.
+    
+- Cluster networking at a practical level.
+    
+- Readiness, liveness, and startup probes.
+    
+- Resource requests and limits.
+    
+- Rolling deployments and rollbacks.
+    
+- Logs, events, and common troubleshooting commands.
+    
+- Image registries.
+    
+- Local kind deployment.
+    
+- Remote k3s deployment.
+    
+- CI/CD integration.
+    
+- Basic scaling and failure recovery.
+    
+- Platform-neutral principles that transfer to EKS, GKE, and other managed environments.
+    
+
+Treat Helm, ingress controllers, autoscaling, and advanced cluster security as optional unless required by the capstone. Do not introduce service meshes, operators, or multi-cluster architecture.
+
+### Observability and agent evaluation
+
+Cover:
+
+- Structured logging.
+    
+- Correlation and trace identifiers across Go and Python.
+    
+- Metrics for throughput, queue depth, success rate, retries, latency, and cost.
+    
+- Distributed tracing with OpenTelemetry.
+    
+- Dashboards and actionable alerts.
+    
+- Agent evaluation datasets.
+    
+- Offline deterministic evaluation.
+    
+- Live-model evaluation.
+    
+- Regression testing.
+    
+- Tool-selection and argument correctness.
+    
+- Human review criteria.
+    
+- LLM-as-judge limitations.
+    
+- Debugging workflow failures from traces and execution history.
+    
+
+### Git and professional delivery
+
+Because I will work alone, simulate a lightweight professional team workflow without adding performative bureaucracy.
+
+Require:
+
+- A GitHub issue for each meaningful unit of work.
+    
+- Acceptance criteria before implementation.
+    
+- Short-lived feature branches.
+    
+- Conventional or otherwise consistent commit practices.
+    
+- Pull requests with summaries, testing evidence, screenshots or command output where relevant, and risk notes.
+    
+- Self-review using a structured checklist.
+    
+- At least one interactive rebase exercise.
+    
+- At least one merge-conflict resolution exercise.
+    
+- Pull-request templates.
+    
+- Architecture decision records.
+    
+- Release tags and a changelog.
+    
+- A rollback or revert exercise.
+    
+- Weekly retrospectives.
+    
+
+Explain when rebasing, merging, squashing, trunk-based development, or longer-lived branches are appropriate. Do not teach GitFlow as an unquestioned default.
+
+## Business and ambiguity training
+
+Every week must begin with an intentionally incomplete startup-style request from a fictional product lead, customer-success lead, or internal platform user.
+
+I must then produce one or more of the following before building:
+
+- Clarifying questions.
+    
+- Explicit assumptions.
+    
+- A concise technical specification.
+    
+- User stories.
+    
+- Acceptance criteria.
+    
+- Non-goals.
+    
+- Risks and dependencies.
+    
+- A prioritized backlog.
+    
+- A tradeoff memo.
+    
+- A short stakeholder update.
+    
+
+Focus particularly on:
+
+1. Turning ambiguity into a buildable technical specification.
+    
+2. Prioritizing the smallest valuable scope.
+    
+3. Distinguishing must-have, should-have, and stretch work.
+    
+4. Explaining reliability, delivery time, complexity, and operational cost in business language.
+    
+5. Making a decision when information is incomplete.
+    
+
+Tie every major technical feature to an internal customer need or measurable platform outcome. Possible metrics include workflow success rate, time to diagnose failures, deployment frequency, recovery time, queue latency, cost per run, and developer onboarding time.
+
+## Weekly milestone direction
+
+Use this sequence unless a clearly explained dependency requires a small adjustment:
+
+### Week 1: Control plane, Git workflow, and durable data model
+
+Build the Go control-plane foundation, API, workflow lifecycle, PostgreSQL schema, migrations, basic TypeScript client, tests, issues, pull requests, and architecture records.
+
+### Week 2: LangGraph execution and asynchronous workflow reliability
+
+Build Python workers, LangChain and LangGraph workflows, tool execution, Redis-backed coordination where appropriate, retries, idempotency, cancellation, state persistence, and deterministic tests.
+
+### Week 3: Evaluations, observability, security, and developer experience
+
+Add evaluation datasets, regression checks, tracing, logs, metrics, auditability, permissions, failure diagnosis, and the usable TypeScript SDK and CLI.
+
+### Week 4: Kubernetes, CI/CD, operations, and production hardening
+
+Deploy first to kind and then to k3s on the remote Linux VM. Add probes, resource limits, rollout and rollback workflows, CI/CD, load testing, failure injection, a runbook, an incident exercise, and final documentation.
+
+Each weekly milestone must be independently demoable while remaining part of the same repository and architecture.
+
+## Schedule constraints
+
+Create a complete 28-day schedule:
+
+- Four weeks.
+    
+- Monday through Sunday.
+    
+- Four to six focused hours every day.
+    
+- Approximately 28 to 42 hours per week.
+    
+- At least 60% of total time must involve implementation, debugging, testing, deployment, or technical documentation.
+    
+- Limit passive learning to what is required for the day’s build.
+    
+- Use the seventh day of each week for integration, troubleshooting, review, documentation, benchmarking, or retrospective work. It must still contain four to six hours of meaningful work, but should introduce fewer entirely new concepts.
+    
+
+For every day, provide:
+
+1. Learning objectives.
+    
+2. Exact resources and sections.
+    
+3. Estimated time per resource.
+    
+4. Hands-on tasks.
+    
+5. Expected repository artifacts.
+    
+6. Commands, tests, measurements, or other proof of completion.
+    
+7. Must-have versus stretch tasks.
+    
+8. Total estimated time between four and six hours.
+    
+
+Ensure every prerequisite is taught before it is used.
+
+## Resource requirements
+
+Browse and verify resources before finalizing the guide.
+
+For every resource:
+
+- Provide a working Markdown link.
+    
+- Give the exact documentation page, chapter, module, lesson, or section.
+    
+- State why that specific section is relevant.
+    
+- Estimate the time required.
+    
+- Prefer official documentation, official tutorials, primary engineering blogs, authoritative books, and maintained repositories.
+    
+- Prefer free resources.
+    
+- Clearly label paid resources and always provide a free alternative.
+    
+- Do not recommend pirated or unauthorized copies.
+    
+- Use documentation compatible with the versions selected for the project.
+    
+- State the date on which links and versions were checked.
+    
+- Do not fabricate a chapter name, URL, company stack, or documentation section.
+    
+- If a resource cannot be verified, omit it and state the gap.
+    
+- Limit each day to two core resources and one optional resource.
+    
+
+When making claims about target-company technology, verify them using current job postings, official engineering blogs, documentation, or repositories. Clearly distinguish verified facts from reasonable inferences.
+
+## Cost and environment constraints
+
+The primary path should use:
+
+- Local Docker.
+    
+- A local kind cluster.
+    
+- An existing remote Linux VM running k3s.
+    
+- Hosted model APIs.
+    
+- GitHub and GitHub Actions.
+    
+- A small cloud or API budget.
+    
+
+Do not require a paid course or a managed Kubernetes cluster.
+
+Provide:
+
+- A rough expected cost range.
+    
+- Free or local alternatives where possible.
+    
+- Model mocks for normal CI so tests do not repeatedly spend API credits.
+    
+- Cleanup instructions for any resource that can continue generating charges.
+    
+- A minimal laptop path when the GPU-enabled machine is unnecessary.
+    
+
+## Assessment and validation
+
+For every weekly project, provide:
+
+- A startup-style problem statement.
+    
+- Functional acceptance criteria.
+    
+- Production-readiness acceptance criteria.
+    
+- Required tests.
+    
+- Failure scenarios.
+    
+- A short design-review checklist.
+    
+- A demonstration script.
+    
+- A scoring rubric from “incomplete” to “strong portfolio evidence.”
+    
+- A definition of done.
+    
+
+Include checkpoints that require me to explain:
+
+- Why the architecture uses Go and Python instead of one language.
+    
+- Why PostgreSQL is the durable source of truth.
+    
+- When Redis is and is not appropriate.
+    
+- What delivery guarantees the system actually provides.
+    
+- How duplicate work is prevented.
+    
+- What happens when a worker crashes.
+    
+- How a failed execution is diagnosed.
+    
+- How an agent change is evaluated before release.
+    
+- How Kubernetes improves deployment and where it adds complexity.
+    
+- Which features were intentionally deferred and why.
+    
+
+Do not provide a complete implementation for me to copy. Provide specifications, focused examples, scaffolding guidance, diagnostic commands, and validation criteria that force me to make and defend engineering decisions.
+
+## Required output format
+
+Produce the guide in this order:
+
+1. **Personalized strategy**
+    
+    - What I already know.
+        
+    - What the guide will deepen.
+        
+    - What is intentionally excluded.
+        
+    - Why this focus fits the selected target companies.
+        
+2. **Capstone architecture**
+    
+    - Concise component explanation.
+        
+    - Mermaid architecture diagram.
+        
+    - Proposed monorepo structure.
+        
+    - Key request, execution, persistence, and observability flows.
+        
+    - Initial architectural risks and tradeoffs.
+        
+3. **Four-week roadmap**
+    
+    - Summary table showing each week’s theme, milestone, business skill, system-design concept, and tangible output.
+        
+4. **Detailed 28-day schedule**
+    
+    - Separate section for every week.
+        
+    - Monday-through-Sunday table.
+        
+    - Resources, exact sections, time estimates, build tasks, artifacts, and completion evidence.
+        
+5. **Weekly milestone specifications**
+    
+    - Problem statement.
+        
+    - Ambiguities to resolve.
+        
+    - Required features.
+        
+    - Non-goals.
+        
+    - Acceptance criteria.
+        
+    - Tests.
+        
+    - Failure scenarios.
+        
+    - Git workflow artifacts.
+        
+    - Demonstration plan.
+        
+    - Scoring rubric.
+        
+6. **Production-readiness checklist**
+    
+    - Architecture.
+        
+    - Database correctness.
+        
+    - Agent evaluation.
+        
+    - Reliability.
+        
+    - Observability.
+        
+    - Security.
+        
+    - Testing.
+        
+    - Kubernetes.
+        
+    - CI/CD.
+        
+    - Documentation and operations.
+        
+7. **What to show in interviews**
+    
+    - Three to five concrete portfolio artifacts.
+        
+    - Architecture and tradeoff talking points.
+        
+    - A five-minute demo outline.
+        
+    - Likely interviewer questions.
+        
+    - Honest sample resume bullets with placeholders for measured results.
+        
+    - Never invent performance improvements or usage metrics.
+        
+8. **After the four weeks**
+    
+    - Highest-value next steps.
+        
+    - Which advanced topics were intentionally postponed.
+        
+    - How to adapt the platform toward specific target companies.
+        
+9. **Final compliance audit**
+    
+    - Confirm there are exactly 28 scheduled days.
+        
+    - Confirm every day totals four to six hours.
+        
+    - Confirm links were checked.
+        
+    - Confirm no prerequisite appears after its dependent task.
+        
+    - Confirm Vercel is absent.
+        
+    - Confirm Go, Python, TypeScript, PostgreSQL, Redis, LangChain, LangGraph, GitHub Actions, kind, and k3s are covered.
+        
+    - Confirm the projects remain connected and realistically scoped.
+        
+    - Identify any requirement that could not be fully satisfied.
+        
+
+Use clear, direct, technically precise language. Avoid filler, motivational clichés, generic lists, and unexplained jargon. Make concrete prioritization decisions rather than treating every topic as equally important.
