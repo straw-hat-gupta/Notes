@@ -123,8 +123,8 @@ ssh sam@llm-gpu
 ## Computer to LLM-GPU With Tailscale
 
 ```bash
-scp <FILE> sam@llm-gpu:~/
-scp -r <FOLDER> sam@llm-gpu:~/
+scp <FILE> sam@llm-gpu-ts:~/
+scp -r <FOLDER> sam@llm-gpu-ts:~/
 ```
 
 ## LLM-GPU to Computer With Tailscale
