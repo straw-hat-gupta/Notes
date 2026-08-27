@@ -28,3 +28,8 @@ codex --sandbox read-only --ask-for-approval never
 ```
 
 - codex project setting i did not disable web search like gpt reccomended
+Work, Referrals, Households, Appreciation, Events, COIs, Tasks, Reports, and Associates
+pages needed for sure
+
+Referrals, Households, events, COIS, and Associates
+dont understand the difference between 
