@@ -32,4 +32,6 @@ Work, Referrals, Households, Appreciation, Events, COIs, Tasks, Reports, and Ass
 pages needed for sure
 
 Referrals, Households, events, COIS, and Associates
-dont understand the difference between 
+dont understand the difference between work and tasks
+and reports should be upon request only
+i dont understand the appreciation page
