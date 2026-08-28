@@ -14,3 +14,4 @@
 	- how does it recognize that it is connected to ipad or that it should be connected to an ipad? maybe there is a way to spoof that signal? maybe you need a mangnet to make it think it is connected? 
 	- maybe not other devices but just within an ipad you can add gestures to it.
 
+- the notes app that is built for 
