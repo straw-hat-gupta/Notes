@@ -130,15 +130,15 @@ scp -r <FOLDER> sam@llm-gpu-ts:~/
 ## LLM-GPU to Computer With Tailscale
 
 ```bash
-scp sam@llm-gpu:/path/to/file .
-scp -r sam@llm-gpu:/path/to/folder .
+scp sam@llm-gpu-ts:/path/to/file .
+scp -r sam@llm-gpu-ts:/path/to/folder .
 ```
 
 ## Computer to LLM-GPU on Local Network
 
 ```bash
-scp <FILE> sam@10.44.0.170:~/
-scp -r <FOLDER> sam@10.44.0.170:~/
+scp <FILE> sam@llm-gpu:~/
+scp -r <FOLDER> sam@llm-gpu:~/
 ```
 
 ## LLM-GPU to Computer on Local Network
