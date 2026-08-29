@@ -18,4 +18,4 @@
 	- its like a second brain + obsidian + CLaude/Codex
 	- be able to brain dump it can organzize thought for me
 
-[Bra]
+
