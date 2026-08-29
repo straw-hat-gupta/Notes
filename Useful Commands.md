@@ -144,8 +144,8 @@ scp -r <FOLDER> sam@llm-gpu:~/
 ## LLM-GPU to Computer on Local Network
 
 ```bash
-scp sam@10.44.0.170:/path/to/file .
-scp -r sam@10.44.0.170:/path/to/folder .
+scp sam@llm-gpu:/path/to/file .
+scp -r sam@llm-gpu:/path/to/folder .
 ```
 
 ## Transfer Using SSH Alias
