@@ -16,4 +16,5 @@
 
 - the notes app that is built for people trying to learn and build stuff
 	- its like a second brain + obsidian + CLaude/Codex
-	- be able to brain dump 
+	- be able to brain dump it can organzize thought for me
+	- 
