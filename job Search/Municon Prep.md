@@ -6,7 +6,7 @@ Interviewers: Kelvin Filyk (Full-stack Software Developer), Eric Rojo, Elliott R
 
 How are you?
 Bring the excitement
-had a great w
+had a great workout this morning 
 
 Tell me about yourself.
 
