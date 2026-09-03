@@ -4,7 +4,7 @@ Interviewers Kelvin Filyk (Full-stack Software Developer),
 - Kelvin Filyk (Full-stack Software Developer)
 	- About from LinkedIn: Full-stack software developer with an adaptable, polyglot programming mindset, excited to take on new design challenges to bring ideas to life.
 - Eric Rojo (Full Stack Software Developer)
-	- About from LinkedIn: has the same first line for about as Kelvin
+	- About from LinkedIn: has the same first line for the about section as Kelvin
 - Elliott Routly (Director)
 	- About from LinkedIn: Professional Expertise: Finance professional in the construction industry. Previously Infrastructure and M&A Advisory, Corporate Development (M&A, investor presentations, project development), Financial Modelling, Fundamental Valuation (project, company, and macro-economic levels), and Professional Trading and Portfolio Strategy.
 ## Questions:
