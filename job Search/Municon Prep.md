@@ -3,7 +3,7 @@ Interviewers Kelvin Filyk (Full-stack Software Developer),
 
 - Kelvin Filyk (Full-stack Software Developer)
 	- 
-- Eric Rojo
+- Eric Rojo (Full Stack Software)
 	- 
 - Elliott Routly (Director)
 	- 
@@ -43,7 +43,9 @@ What questions do you have for us?
 Questions to ask them:
 - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
 - The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
-- How is the software team structured, and how closely does the developer work with the product and field teams using the monitoring systems?
+- How is the software team structured, and how closely does the developer work with the product and field teams using the data systems systems?
+- What would you want someone in this role to have accomplished after their first six months?
+- How does data typically move through the system today, from an instrument in the field all the way to what a customer sees in the application?
 
 
 
