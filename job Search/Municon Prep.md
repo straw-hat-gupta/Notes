@@ -31,6 +31,8 @@ What questions do you have for us?
 
 how did you ensure you kept 
 
+Once you moved to the implementation phase, can you describe how you translated those requirements into specific architecture or technical decisions? For instance, what considerations shaped your design of data models, API endpoints, state management on the front end, or other architectural aspects to ensure reliability and maintainability as things scaled up for their business?
+
 |Responsibility / expectation|Behavioral question we should prepare|
 |---|---|
 |**1. Build reliable production software**|**Tell me about a time you built a system that people depended on in a real production environment.**|
