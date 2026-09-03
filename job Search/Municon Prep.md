@@ -41,7 +41,8 @@ Once you moved to the implementation phase, can you describe how you translated 
 - what framwork i follow
 	- requirements: functional and non-functional
 	- core entities and bussiness rules
-	- figure out the apis/interfaces im gonna need based on the workflows i identified in the 
+	- figure out the apis/interfaces im gonna need based on the workflows i identified in the gathering requirements stage
+	- then ni map how the data will flow which shows me 
 
 You might say that if security and traceability were important (given it's financial data), you designed your API endpoints to include authentication, implemented robust input validation, added detailed audit trails in your change history design at the database level. - For reliable scaling as user count increased, perhaps you broke workflows into modular services or properly indexed relevant client tables for fast queries. - On the front-end side (React), maybe state management was handled via Redux or Context to maintain one source of truth—even supporting search/filter functionality within large datasets.
 
