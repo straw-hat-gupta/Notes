@@ -3,3 +3,17 @@ Interviewers: Kelvin Filyk (Full-stack Software Developer), Eric Rojo, Elliott R
 
 
 ## Questions:
+
+How are you?
+
+
+Tell me about yourself.
+
+Past
+Present 
+Future
+Outside of work
+
+Why this role?
+
+Why this
