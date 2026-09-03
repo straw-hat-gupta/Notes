@@ -43,7 +43,7 @@ What questions do you have for us?
 Questions to ask them:
 - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
 - The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
-- 
+- How is the software team structured, and how closely does the developer work with the product and field teams using the monitoring systems?
 
 
 
