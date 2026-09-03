@@ -5,7 +5,8 @@ Interviewers: Kelvin Filyk (Full-stack Software Developer), Eric Rojo, Elliott R
 ## Questions:
 
 How are you?
-
+Bring the excitement
+had a great w
 
 Tell me about yourself.
 
