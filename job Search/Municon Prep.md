@@ -10,8 +10,9 @@ had a great workout this morning
 
 Tell me about yourself.
 
-Past
-Present 
+Current:
+- 
+Past 
 Future
 Outside of work
 
