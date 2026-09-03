@@ -33,6 +33,8 @@ how did you ensure you kept
 
 Once you moved to the implementation phase, can you describe how you translated those requirements into specific architecture or technical decisions? For instance, what considerations shaped your design of data models, API endpoints, state management on the front end, or other architectural aspects to ensure reliability and maintainability as things scaled up for their business?
 
+You might say that if security and traceability were important (given it's financial data), you designed your API endpoints to include authentication, implemented robust input validation, added detailed audit trails in your change history design at the database level. - For reliable scaling as user count increased, perhaps you broke workflows into modular services or properly indexed relevant client tables for fast queries. - On the front-end side (React), maybe state management was handled via Redux or Context to maintain one source of truth—even supporting search/filter functionality within large datasets. Does that help clarify what could be included? Would like another chance now? Please give me some specific details based on how *you* approached these kinds of architecture decisions when turning those business needs into software!
+
 |Responsibility / expectation|Behavioral question we should prepare|
 |---|---|
 |**1. Build reliable production software**|**Tell me about a time you built a system that people depended on in a real production environment.**|
