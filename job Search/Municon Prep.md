@@ -37,6 +37,8 @@ You might say that if security and traceability were important (given it's finan
 
 “I use a fairly consistent progression when translating requirements into architecture: first identify the functional and non-functional requirements, then define the core domain entities and business rules, map the major workflows, identify the system boundaries and interfaces those workflows require, and finally choose the data model and infrastructure based on the constraints we identified.”
 
+“One requirement was that clients belonged to households, referrals could come from existing clients, households could attend events, and associates could own tasks. Because those entities had strong relationships and we needed consistency across them, I chose a relational model rather than a document-oriented database.”
+
 |Responsibility / expectation|Behavioral question we should prepare|
 |---|---|
 |**1. Build reliable production software**|**Tell me about a time you built a system that people depended on in a real production environment.**|
