@@ -33,6 +33,11 @@ how did you ensure you kept
 
 Once you moved to the implementation phase, can you describe how you translated those requirements into specific architecture or technical decisions? For instance, what considerations shaped your design of data models, API endpoints, state management on the front end, or other architectural aspects to ensure reliability and maintainability as things scaled up for their business?
 
+- what framwork i follow
+	- requirements: functional and non-functional
+	- core entities and bussiness rules
+	- 
+
 You might say that if security and traceability were important (given it's financial data), you designed your API endpoints to include authentication, implemented robust input validation, added detailed audit trails in your change history design at the database level. - For reliable scaling as user count increased, perhaps you broke workflows into modular services or properly indexed relevant client tables for fast queries. - On the front-end side (React), maybe state management was handled via Redux or Context to maintain one source of truth—even supporting search/filter functionality within large datasets.
 
 I start with the functional and non-functional requirements, then identify the core domain entities and business rules, map the major workflows, determine what operations and system interfaces those workflows require, and then make the architecture decisions based on the constraints that come out of that process.
