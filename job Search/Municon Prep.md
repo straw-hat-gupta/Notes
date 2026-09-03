@@ -41,7 +41,8 @@ What questions do you have for us?
 |**8. Communicate technical information effectively**|**Tell me about a time you had to explain a technical problem or decision to someone with a different technical background.**|
 
 Questions to ask them:
-- What are the biggest technical challenges with the monitoring platform today that you'd want the person coming into this role to help solve?
+- What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
+- The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
 - 
 
 
