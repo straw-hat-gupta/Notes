@@ -16,7 +16,7 @@ had a great workout this morning
 Tell me about yourself.
 
 Current:
-- working freelance 
+- working freelance projects 
 Past 
 Future
 Outside of work
