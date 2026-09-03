@@ -29,6 +29,8 @@ Why this company?
 
 What questions do you have for us?
 
+how did you ensure you kept 
+
 |Responsibility / expectation|Behavioral question we should prepare|
 |---|---|
 |**1. Build reliable production software**|**Tell me about a time you built a system that people depended on in a real production environment.**|
