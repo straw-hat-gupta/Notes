@@ -16,8 +16,8 @@ had a great workout this morning
 Tell me about yourself.
 
 Current:
-- working freelance projects, most recent one being the client management platform, I love work with a local businesses 
-Past 
+- I recently graduated from UBC working freelance projects, most recent one being the client management platform, I love work with a local businesses. 
+Past
 Future
 Outside of work
 
@@ -40,5 +40,12 @@ What questions do you have for us?
 |**7. Take ownership and be self-directed**|**Tell me about a time you identified something that needed to be done and took ownership without being explicitly told to do it.**|
 |**8. Communicate technical information effectively**|**Tell me about a time you had to explain a technical problem or decision to someone with a different technical background.**|
 
+Questions to ask them:
 
 
+
+
+
+Questions for Athena:
+
+for the tell me about yourself 
