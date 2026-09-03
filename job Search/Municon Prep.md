@@ -35,7 +35,7 @@ Once you moved to the implementation phase, can you describe how you translated 
 
 You might say that if security and traceability were important (given it's financial data), you designed your API endpoints to include authentication, implemented robust input validation, added detailed audit trails in your change history design at the database level. - For reliable scaling as user count increased, perhaps you broke workflows into modular services or properly indexed relevant client tables for fast queries. - On the front-end side (React), maybe state management was handled via Redux or Context to maintain one source of truth—even supporting search/filter functionality within large datasets.
 
-“I use a fairly consistent progression when translating requirements into architecture: first identify the functional and non-functional requirements, then define the core domain entities and business rules, map the major workflows, identify the system boundaries and interfaces those workflows require, and finally choose the data model and infrastructure based on the constraints we identified.”
+I start with the functional and non-functional requirements, then identify the core domain entities and business rules, map the major workflows, determine what operations and system interfaces those workflows require, and then make the architecture decisions based on the constraints that come out of that process.
 
 “One requirement was that clients belonged to households, referrals could come from existing clients, households could attend events, and associates could own tasks. Because those entities had strong relationships and we needed consistency across them, I chose a relational model rather than a document-oriented database.”
 
