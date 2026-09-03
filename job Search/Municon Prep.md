@@ -28,6 +28,11 @@ Why this company?
 **Connect the company’s mission or values to something personal and professional. The more specific, the more memorable.**
 
 What questions do you have for us?
+ - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
+- The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
+- How is the software team structured, and how closely does the developer work with the product and field teams using the data systems systems?
+- What would you want someone in this role to have accomplished after their first six months?
+- How does data typically move through the system today, from an instrument in the field all the way to what a customer sees in the application?
 
 how did you ensure you kept 
 
@@ -36,7 +41,7 @@ Once you moved to the implementation phase, can you describe how you translated 
 - what framwork i follow
 	- requirements: functional and non-functional
 	- core entities and bussiness rules
-	- 
+	- figure out the apis/interface im gonna need based on 
 
 You might say that if security and traceability were important (given it's financial data), you designed your API endpoints to include authentication, implemented robust input validation, added detailed audit trails in your change history design at the database level. - For reliable scaling as user count increased, perhaps you broke workflows into modular services or properly indexed relevant client tables for fast queries. - On the front-end side (React), maybe state management was handled via Redux or Context to maintain one source of truth—even supporting search/filter functionality within large datasets.
 
@@ -56,11 +61,7 @@ I start with the functional and non-functional requirements, then identify the c
 |**8. Communicate technical information effectively**|**Tell me about a time you had to explain a technical problem or decision to someone with a different technical background.**|
 
 Questions to ask them:
-- What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
-- The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
-- How is the software team structured, and how closely does the developer work with the product and field teams using the data systems systems?
-- What would you want someone in this role to have accomplished after their first six months?
-- How does data typically move through the system today, from an instrument in the field all the way to what a customer sees in the application?
+
 
 
 
