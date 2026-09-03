@@ -16,7 +16,7 @@ had a great workout this morning
 Tell me about yourself.
 
 Current:
-- I recently graduated from UBC and am working freelance projects, most recent one being the client management platform for a wealth mangement firm in calgary, I love work with a local businesses. 
+- I recently graduated from UBC and am working on freelance projects, most recent one being the client management platform for a wealth mangement firm in calgary. I built a
 Past
 Future
 Outside of work
