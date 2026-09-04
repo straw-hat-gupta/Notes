@@ -20,7 +20,7 @@ Current:
 Past
 Right before this I did contract work at a company web development company where I learnt a lot about interacting with clients and before that i worked at lux bio a biotech startup based out vancouver. 
 Future
-In the future i hope to be in a role where I am able to work along more knowledgable people who i can learn from and in an en
+In the future i hope to be in a role where I am able to work along more knowledgable people who i can learn from and in and solve challenging problems
 Outside of work
 
 Why this role?
