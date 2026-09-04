@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b37d68557f6ad388",
+        "id": "bbd2a09b01aeb0cd",
         "type": "tabs",
         "children": [
           {
-            "id": "cdbfc28b9f3b5d17",
+            "id": "3382a5fc06d21d7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "job Search/Municon Prep.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Municon Prep"
             }
           }
         ]
@@ -167,38 +171,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cdbfc28b9f3b5d17",
+  "active": "3382a5fc06d21d7e",
   "lastOpenFiles": [
+    "job Search/Manish Setia.md",
+    "job Search/Jobs 2 Optimize 4.md",
+    "job Search/Call with Elanor (Geocomply).md",
+    "Startup Hustle/Datalane Research.md",
+    "Startup Hustle/prompts for startup research.md",
+    "Startup Hustle",
+    "job Search/Things to save about jobs.md",
+    "Project Ideas/IDEAS.md",
+    "Project Ideas/Brain-Dump-Product-Spec.md",
+    "Project Ideas",
+    "LinkedIn Influencer ERA/Post Ideas.md",
+    "LinkedIn Influencer ERA",
+    "job Search/Municon Prep.md",
+    "/job Search/Manish Setia.md",
+    "/job Search/Call with Elanor (Geocomply).md",
+    "/job Search/Things to save about jobs.md",
+    "/job Search/Municon Prep.md",
+    "/job Search/Jobs 2 Optimize 4.md",
+    "/job Search/Coffee Chat Notes.md",
+    "/Useful Commands.md",
+    "/TODO.md",
+    "/Startup Hustle/prompts for startup research.md",
+    "/Project Ideas/IDEAS.md",
+    "/Project Ideas/Brain-Dump-Product-Spec.md",
+    "/LinkedIn Influencer ERA/Post Ideas.md",
+    "/Client-Management-Platform/Working Notes.md",
+    "/Client-Management-Platform/Interview.md",
+    "/Client-Management-Platform",
+    "/Startup Hustle/Datalane Research.md",
+    "/Startup Hustle",
+    "/Project Ideas",
+    "/LinkedIn Influencer ERA",
+    "/job Search",
     "Useful Commands.md",
-    "Datalane Research.md",
-    "Manish Setia.md",
-    "TODO.md",
-    "Manifestation Journal.md",
-    "Coding setup/Untitled.md",
     "Coding setup",
-    "Call with Elanor (Geocomply).md",
-    "GOALS Journal.md",
-    "AIVA/Backlog.md",
-    "AIVA/Things i did.md",
-    "AIVA",
-    "README.md",
-    "HomeLab/TODO.md",
-    "HomeLab/Monitoring container.md",
-    "HomeLab/Compute Cluster Hardware.md",
-    "HomeLab/Working Notes.md",
-    "HomeLab/llm-gpu VM.md",
-    "HomeLab/AI Agent Build.md",
-    "HomeLab/Useful Commands.md",
-    "HomeLab",
-    "Planning.md",
-    "job Search/Google Leads.md",
-    "job Search/Things to do to help get job.md",
-    "job Search/CareerOps.md",
-    "job Search/Resume.md",
-    "job Search/Coffee Chat Notes.md",
-    "job Search/Wonsulting.md",
-    "job Search/Job Search Queries.md",
-    "job Search",
-    "Client-Management-Platform"
+    "AIVA"
   ]
 }
