@@ -21,14 +21,14 @@ Past
 Right before this I did contract work at a company web development company where I learnt a lot about interacting with clients and before that i worked at lux bio a biotech startup based out vancouver. 
 Future
 In the future i hope to be in a role where I am able to work along more knowledgable people who i can learn from and in and solve challenging problems
-Outside of work i li
+Outside of work i like to cook new recipes and climb
 
 Why this role?
 **how the role connects to your experience and skills, how you’ll make an impact, and what makes you uniquely suited for it.**
 Ive had experince building production systems i will make an impact by actively seeking out 
 Why this company?
 **Connect the company’s mission or values to something personal and professional. The more specific, the more memorable.**
-
+a chance to work at the intersection of hardware and software. Working with real time data. 
 What questions do you have for us?
  - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
 - The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
