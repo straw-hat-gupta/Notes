@@ -547,4 +547,78 @@ Municon is an established, credible niche engineering company with real infrastr
 
 For you, the main attraction is the overlap with Lux Sense and your hardware-to-dashboard experience. The main uncertainties to resolve are Cavio’s maturity, the size of the software team, how much legacy modernization is required, and whether the company has a healthy engineering process around testing, deployments, and production support.
 
-If helpful, I can set up “Review Municon notes before interview” so these points are fresh beforehand.
+
+---
+### Description
+
+_Municon West Coast is a dynamic and rapidly growing geotechnical and structural instrumentation services company that has been in business for over 30 years. We specialize in providing advanced automated monitoring systems to help ensure the safety and integrity of buildings, excavations, dams, bridges, mines, embankments, and slopes. Our cutting-edge technology and contemporary monitoring systems enable us to provide real-time data and analysis, ensuring that all parties have the information they need to manage the risk and ensure project success. We provide monitoring services on both public and private projects to contractors, engineers, and other stakeholders. With a proven track record of success and a dedication to innovation, we are committed to delivering unparalleled service to our clients._ _We exist in a fast-paced technical work environment and are a performance driven company. We take pride in providing high quality work and services to our clients and expect the same from our employees._
+
+We are looking for a **Software Developer** to join our Vancouver-based team and contribute to the continued development of our in-house data systems platform.
+
+This is an opportunity to work on a growing software product with significant expansion ahead. The successful candidate will be hands-on in building, improving, and scaling applications that support real-world monitoring and infrastructure projects.
+
+This is a **full-time, in-office position based in Vancouver, BC**. We are currently considering **local candidates only**.
+
+  
+
+**What You'll Work With**
+
+Our current technology stack includes:
+
+- Node.js, Express, React, and Redux Toolkit (RTK)
+- TypeScript and JavaScript
+- Microsoft Azure
+- Azure SQL Database
+- Azure Data Lake
+- Multiprocess applications using PM2
+- Modern frontend state management and unidirectional data flow
+
+**What We're Looking For**
+
+You have strong software development fundamentals and can apply sound design and architecture principles to build reliable, scalable applications. Your experience should include:
+
+- Object-oriented design principles, including encapsulation, abstraction, and polymorphism
+- Design patterns such as Delegate, Factory/Builder, Decorator, Adapter, and Facade
+- SOLID design principles
+- Domain-Driven Design and Onion Architecture
+- Model-View-ViewModel architecture
+- Caching strategies and scalable application design
+- Thread-safe coding and multiprocess applications
+- Unidirectional state flow and single-source-of-truth approaches to application state
+- Scalable SQL query strategies, database indexing, and database normalization
+- Database tools such as DBeaver or similar platforms
+- Microsoft Azure and horizontal scaling strategies
+
+Experience with **Docker, container orchestration, and production application health monitoring** is considered an asset, particularly within an Azure environment.
+
+  
+
+**What You'll Bring**
+
+- A degree in Software Engineering, Computer Science, or an equivalent field
+- Relevant professional software development experience aligned with the technologies and principles above
+- Strong technical problem-solving skills
+- Excellent written and verbal communication skills
+- The ability to work accurately and efficiently in a fast-paced environment
+- Strong time management skills and the ability to meet deadlines
+- A motivated, self-driven approach with a high level of ownership over your work
+
+  
+
+Salary: $80,000-$130,000
+
+### Requirements
+
+- Object-oriented design principles, including encapsulation, abstraction, and polymorphism
+- Design patterns such as Delegate, Factory/Builder, Decorator, Adapter, and Facade
+- SOLID design principles
+- Domain-Driven Design and Onion Architecture
+- Model-View-ViewModel architecture
+- Caching strategies and scalable application design
+- Thread-safe coding and multiprocess applications
+- Unidirectional state flow and single-source-of-truth approaches to application state
+- Scalable SQL query strategies, database indexing, and database normalization
+- Database tools such as DBeaver or similar platforms
+- Microsoft Azure and horizontal scaling strategies
+
+
