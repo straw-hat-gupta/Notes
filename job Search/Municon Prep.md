@@ -74,3 +74,7 @@ Questions for Athena:
 For the tell me about yourself question, I want to mention that I'm doing this, like, freelance project and stuff in my current part of it, but then also want to be like, you know, I'm a recent graduate. But do I put the recent graduate part in my past? And then also, how do I, like, they know I'm a recent graduate, right? Like, and I'm just doing this, like, freelance thing as, like, a filler in between when I get a job. So how do I say that, like, I am a recent grad from UBC, currently doing freelance work.
 
 On my resume I put Vancouver for my location
+
+
+----
+Company Research
