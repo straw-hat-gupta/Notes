@@ -486,17 +486,17 @@ It is software engineering inside an engineering-services business, not a conven
 
 This is one of the strongest domain matches between your experience and a job posting.
 
-|Municon need|Your relevant experience|
-|---|---|
-|Physical sensor data platform|Lux Sense SCADA and production automation|
-|Real-time telemetry|MQTT-based monitoring and device communication|
-|Hardware integrations|Modbus RTU, serial devices, ESP32, ESP-NOW, Raspberry Pi|
-|Full-stack development|React, Node.js, Express, TypeScript, Python|
-|Data processing|OCR pipelines, image analysis, sensor processing|
-|Operational reliability|Supporting systems used directly in production|
-|Networking and concurrency|TCP project and distributed-systems work|
-|Deployment|Docker, Linux, homelab, production services|
-|Cross-functional communication|Working directly with operators and non-software stakeholders|
+| Municon need                   | Your relevant experience                                      |
+| ------------------------------ | ------------------------------------------------------------- |
+| Physical sensor data platform  | Lux Sense SCADA and production automation                     |
+| Real-time telemetry            | MQTT-based monitoring and device communication                |
+| Hardware integrations          | Modbus RTU, serial devices, ESP32, ESP-NOW, Raspberry Pi      |
+| Full-stack development         | React, Node.js, Express, TypeScript, Python                   |
+| Data processing                | OCR pipelines, image analysis, sensor processing              |
+| Operational reliability        | Supporting systems used directly in production                |
+| Networking and concurrency     | TCP project and distributed-systems work                      |
+| Deployment                     | Docker, Linux, homelab, production services                   |
+| Cross-functional communication | Working directly with operators and non-software stakeholders |
 
 Your strongest interview framing is:
 
