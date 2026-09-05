@@ -35,6 +35,7 @@ What questions do you have for us?
 - How is the software team structured, and how closely does the developer work with the product and field teams using the data systems systems?
 - What would you want someone in this role to have accomplished after their first six months?
 - How does data typically move through the system today, from an instrument in the field all the way to what a customer sees in the application?
+- is the project we will be working on the Cavio application
 
 how did you ensure you kept 
 
