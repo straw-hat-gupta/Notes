@@ -25,10 +25,14 @@ Outside of work i like to cook new recipes and climb
 
 Why this role?
 **how the role connects to your experience and skills, how you’ll make an impact, and what makes you uniquely suited for it.**
-Ive had experince building production systems i will make an impact by actively seeking out 
+Ive had experince building production systems i will make an impact by actively seeking out places i can contribute without being asked. 
+
+
 Why this company?
 **Connect the company’s mission or values to something personal and professional. The more specific, the more memorable.**
-a chance to work at the intersection of hardware and software. Working with real time data. Be able to work in cross functional team working with geoscientists, instrumentation technicians, managers, and external construction teams. I enjoy working in eviroments where I get to build software in close relation with stakeholder domain 
+a chance to work at the intersection of hardware and software. Working with real time data. Be able to work in cross functional team working with geoscientists, instrumentation technicians, managers, and external construction teams. I enjoy working in eviroments where I get to build software in close relation with stakeholders and domain experts.
+
+
 What questions do you have for us?
  - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
 - The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
