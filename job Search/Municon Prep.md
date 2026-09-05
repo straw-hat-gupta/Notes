@@ -96,18 +96,18 @@ Municon is not primarily a sensor manufacturer or software company. Its product 
 
 ## Company snapshot
 
-|Category|Details|
-|---|---|
-|Founded|1991 as Municon Consultants|
-|Current company|Successor to Municon Consultants following a September 2018 acquisition|
-|Ownership|Privately held; exact ownership and financials are not publicly disclosed|
-|Reported size|11 to 50 employees|
-|Legal entities|Municon West Coast, Inc. in the US and Municon West Coast Monitoring Ltd. in Canada|
-|Offices|San Francisco, Pasadena, Vancouver, and Bellingham|
-|Primary market|Western Canada and the western United States|
-|Main business|Geotechnical and structural instrumentation and monitoring|
-|Software product|Cavio monitoring and notification platform|
-|Current developer role|Associate-level, full-time in-office Vancouver, CA$80,000 to CA$130,000|
+| Category               | Details                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| Founded                | 1991 as Municon Consultants                                                         |
+| Current company        | Successor to Municon Consultants following a September 2018 acquisition             |
+| Ownership              | Privately held; exact ownership and financials are not publicly disclosed           |
+| Reported size          | 11 to 50 employees                                                                  |
+| Legal entities         | Municon West Coast, Inc. in the US and Municon West Coast Monitoring Ltd. in Canada |
+| Offices                | San Francisco, Pasadena, Vancouver, and Bellingham                                  |
+| Primary market         | Western Canada and the western United States                                        |
+| Main business          | Geotechnical and structural instrumentation and monitoring                          |
+| Software product       | Cavio monitoring and notification platform                                          |
+| Current developer role | Associate-level, full-time in-office Vancouver, CA$80,000 to CA$130,000             |
 
 Its LinkedIn profile lists about 20 employees and identifies San Francisco as headquarters, although much of the management, software, and related GeoPacific activity appears connected to Vancouver. [Municon LinkedIn profile](https://www.linkedin.com/company/municon-west-coast-inc)
 
