@@ -28,7 +28,7 @@ Why this role?
 Ive had experince building production systems i will make an impact by actively seeking out 
 Why this company?
 **Connect the company’s mission or values to something personal and professional. The more specific, the more memorable.**
-a chance to work at the intersection of hardware and software. Working with real time data. Be able to work in cross functional team working with  
+a chance to work at the intersection of hardware and software. Working with real time data. Be able to work in cross functional team working with geoscientists, instrumentation technicians, managers, and external construction teams. I enjoy working in eviroments where I get to build software in close relation with stakeholder domain 
 What questions do you have for us?
  - What are the biggest technical challenges with the data systems platform today that you'd want the person coming into this role to help solve?
 - The posting mentions that the platform has significant expansion ahead. What does that expansion look like from a product and engineering perspective?
