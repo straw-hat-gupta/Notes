@@ -82,6 +82,7 @@ On my resume I put Vancouver for my location
 
 how do i do the connect/relate thing with 3 different interviewers without it seeming weird?
 
+how do i mention that what interests me in municon is that we 
 
 ----
 # Municon West Coast company research
