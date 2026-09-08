@@ -80,6 +80,7 @@ For the tell me about yourself question, I want to mention that I'm doing this, 
 
 On my resume I put Vancouver for my location
 
+how do i do the connect/relate thing
 
 ----
 # Municon West Coast company research
