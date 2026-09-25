@@ -6,7 +6,6 @@
 3. When a newer engineer becomes especially useful on your team, what are they usually doing well? Is it understanding the system quickly, spotting edge cases, improving tooling, working with other teams, or something else?”  
     
 
-Two strong backups:
 
 - “What’s a recurring problem your team has that looks small from the outside but takes a surprising amount of engineering effort to get right?”
 - “When you change a payment flow or API that other teams and businesses depend on, how do you build confidence that it’s safe to release?”
