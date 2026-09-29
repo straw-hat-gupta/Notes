@@ -12,4 +12,9 @@ use ai only with a plan
 you make the approach and use ai to execute it
 
 
-inte
+integration:
+be comfortable with git can easily do what needs to be done
+
+
+bug squash
+should be able to 
