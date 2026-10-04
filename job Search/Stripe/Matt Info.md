@@ -58,3 +58,5 @@ if __name__ == "__main__":
     raw_output = handler.call("endpoint1", **{"foo": 1, "bar": "baz"})
     handler.save_output(raw_output)
 
+Mine was something super roughly like this. Then at the bottom I just modified the stuff
+For each part
