@@ -33,4 +33,5 @@ problem solver - have solved problems in multiple places in different industries
 
 go getter: i dont wait for someone to give me a problem to solve i go find problems myself and solve them
 
-passionate about working with real clients and understanding their needs 
+well rounded: working with real clients and understanding their needs and being able to implement solutions due a strong background in software development
+
