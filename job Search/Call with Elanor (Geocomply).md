@@ -25,3 +25,8 @@ ios sdk
 web sdk
 forward deployed engineer - handy man with a toolkit solving client problems. the toolkit being the products of the geocomply. 
 innovation team
+
+
+strengths:
+
+problem solver - have solved problems in multiple places in different industries ,
