@@ -33,4 +33,4 @@ problem solver - have solved problems in multiple places in different industries
 
 go getter: i dont wait for someone to give me a problem to solve i go find problems myself and solve them
 
-passionate about 
+passionate about working with real clients and understanding their needs 
