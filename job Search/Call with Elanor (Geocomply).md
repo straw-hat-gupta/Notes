@@ -19,3 +19,7 @@ at the beginning of the internship how of the prototype or archetechture would a
 based on what we have discussed and what you know of my application is there any part of my background that you think i should explain more clearly to the engineering team?
 
 
+
+
+ios sdk
+web sdk
