@@ -37,3 +37,10 @@ well rounded: working with real clients and understanding their needs and being 
 
 
 
+- How do STRETCH proposals get matched with a team and prospective manager?
+- How specific should the initial project pitch be, and how much does it usually change after that match?
+- With the MCP rollout, where is the greatest need for someone who has built AI tool and API workflows?
+- Which recurring integration or verification problems would be valuable for an intern to own?
+- What would a strong, visible outcome after four months look like to you?
+- What does the knowledge and competency test assess, and what preparation do you recommend?
+- Is the case study based on the proposed project, the prospective team's work, or a standard exercise?
