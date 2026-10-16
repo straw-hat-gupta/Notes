@@ -44,3 +44,5 @@ well rounded: working with real clients and understanding their needs and being 
 - What would a strong, visible outcome after four months look like to you?
 - What does the knowledge and competency test assess, and what preparation do you recommend?
 - Is the case study based on the proposed project, the prospective team's work, or a standard exercise?
+
+past 
