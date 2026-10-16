@@ -45,4 +45,4 @@ well rounded: working with real clients and understanding their needs and being 
 - What does the knowledge and competency test assess, and what preparation do you recommend?
 - Is the case study based on the proposed project, the prospective team's work, or a standard exercise?
 
-past 
+past thing they worked on and what they want to work on.
