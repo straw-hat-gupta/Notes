@@ -23,5 +23,5 @@ based on what we have discussed and what you know of my application is there any
 
 ios sdk
 web sdk
-forward deployed engineer - handy man with a toolkit. the toolkit being 
+forward deployed engineer - handy man with a toolkit solving client problems. the toolkit being the products of the geocomply. 
 innovation team
