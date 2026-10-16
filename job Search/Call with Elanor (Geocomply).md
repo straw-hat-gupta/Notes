@@ -29,4 +29,8 @@ innovation team
 
 strengths:
 
-problem solver - have solved problems in multiple places in different industries, physics background give me a different way of thinking about the problem and exp looking at abstract problems 
+problem solver - have solved problems in multiple places in different industries, physics background give me a different way of thinking about the problem and made me comfortable looking at abstract problems 
+
+go getter: i dont wait for someone to give me a problem to solve i go find problems myself and solve them
+
+passionate about 
