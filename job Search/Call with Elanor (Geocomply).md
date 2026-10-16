@@ -23,3 +23,5 @@ based on what we have discussed and what you know of my application is there any
 
 ios sdk
 web sdk
+forward deployed engineer
+innovation team
