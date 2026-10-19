@@ -1,5 +1,5 @@
-- geocomply g -intern assesment
-- ibm assesment
+- geocomply g -intern assesment 
+- ibm assesment (oct 20)
 - prep evidnce call (12-1230 oct 21)
 - prep calgary coop call (oct 23)
 - 
