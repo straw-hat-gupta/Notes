@@ -2,4 +2,6 @@
 
 
 questions to ask
-it seems very natural to use ai to create reports and analytics with the framework Evidence has put together. Was it always the plan to have ai be able to do that or was that a happy coincedence that ai evolved in the direction it did?
+Evidence’s code-based approach seems like a natural fit for AI agents creating reports and analytics. Was AI part of the original vision, or did that opportunity emerge as the technology became more capable?
+
+What have you had to rethink in the framework now that agents are doing more of the work of creating and maintaining analytics?
