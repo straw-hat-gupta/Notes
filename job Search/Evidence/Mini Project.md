@@ -6,6 +6,6 @@ Here's what I'm thinking. I'm going to spend tonight figuring out exactly what m
 
 legend:
 pr_claude = the claude chat that i asked to look at the evidence repo and it created a fix for issue #3335 and figured out some other stuff to fix and bring up
-claude_code = 
+code_claude = the claude code agent that i will be setting up that i will actually be using to do all my work and to which all the info from chatgpt e
 
 1. get prompt to scan the setup we did locally and make a detailed summary of 
