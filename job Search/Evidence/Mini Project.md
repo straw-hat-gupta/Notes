@@ -8,9 +8,9 @@ legend:
 pr_claude = the claude chat that i asked to look at the evidence repo and it created a fix for issue #3335 and figured out some other stuff to fix and bring up
 code_claude = the claude code agent that i will be setting up that i will actually be using to do all my work and to which all the info from the evidence chatgpt project, and pr_claude will be going to
 cg = the chatgpt work session im talking to rn
-setup_sum = the summary step 1 produces
+curr_setup = the summary step 1 produces
 
 
-1. get prompt to scan the setup we did locally and make a detailed summary of it (setup_sum)
-2. get prompt to give to pr_claude so it
+1. get prompt to scan the setup we did locally and make a detailed doc of it (curr_setup)
+2. get prompt to give to pr_claude so it will create a detailed doc of all of its finding and everything else it su
 3. i give the summary to the you (cg) and 
