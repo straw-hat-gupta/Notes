@@ -9,8 +9,9 @@ pr_claude = the claude chat that i asked to look at the evidence repo and it cre
 code_claude = the claude code agent that i will be setting up that i will actually be using to do all my work and to which all the info from the evidence chatgpt project, and pr_claude will be going to
 cg = the chatgpt work session im talking to rn
 curr_setup = the summary step 1 produces
+pr_doc = a doc of all of pr_claudes finding and everything else it suggested other than the telemetry project it suggested
 
 
 1. get prompt to scan the setup we did locally and make a detailed doc of it (curr_setup)
-2. get prompt to give to pr_claude so it will create a detailed doc of all of its finding and everything else it su
+2. get prompt to give to pr_claude so it will create a detailed doc of all of its finding and everything else it suggested other than the telemetry project it suggested. lets call this doc pr_doc
 3. i give the summary to the you (cg) and 
