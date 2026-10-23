@@ -11,8 +11,9 @@ cg = the chatgpt work session im talking to rn
 curr_setup_doc = the summary step 1 produces
 pr_doc = a doc of all of pr_claudes finding and everything else it suggested other than the telemetry project it suggested
 cg_evi_proj = the chatgpt evidence project cg is in
+master_dir = 
 
 
 1. get prompt to scan the setup we did locally and make a detailed doc of it (curr_setup). i will run this prompt in a codex session i run through my terminal in the directory that all the different evidence worktrees, evidence-review-lab directory and the patches pr_claude made
 2. get prompt to give to pr_claude so it will create a detailed doc of all of its finding and everything else it suggested other than the telemetry project it suggested. lets call this doc pr_doc
-3. i give you (cg) the curr_setup_doc and the pr_doc and you use that info to create a set of master documents to give to code_claude so it is fully upto speed and has ALL of the context from the cg_evi_proj, the exact current state of the local setup, all of pr_claudes findings
+3. i give you (cg) the curr_setup_doc and the pr_doc and you use that info to create a set of master documents to give to code_claude so it is fully upto speed and has ALL of the context from the cg_evi_proj, the exact current state of the local setup, all of pr_claude's findings, and what the plan is over the next 3 days. the plan can also include
