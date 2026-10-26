@@ -22,3 +22,4 @@ if you could any question about our companies data what would you ask and how wo
 what is the first thing you would improve about our product when you join our team
 
 
+they wanna know you can take all your past experiences and be able to translate that into a strong plan to s
