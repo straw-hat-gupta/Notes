@@ -9,3 +9,9 @@ What have you had to rethink in the framework now that agents are doing more of 
 I noticed you moved from associate to director in data science at Birch Hill quite quickly. What do you think helped you grow into that level of responsibility?
 
 Which of those skills have been most useful in building Evidence, and what have you had to learn along the way?
+
+
+
+
+questions to prep:
+
