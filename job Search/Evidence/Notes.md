@@ -15,3 +15,5 @@ Which of those skills have been most useful in building Evidence, and what have 
 
 questions to prep:
 
+who are first customers you would talk and what do you want to learn from them?
+
