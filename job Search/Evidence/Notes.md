@@ -17,3 +17,8 @@ questions to prep:
 
 who are first customers you would talk and what do you want to learn from them?
 
+if you could any question about our companies data what would you ask and how would you use that to create your product strategy
+
+what is the first thing you would improve about our product when you join our team
+
+
