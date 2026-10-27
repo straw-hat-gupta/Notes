@@ -1,0 +1,4 @@
+- finish client 
+- rea on https://apps.apple.com/ca/app/savetolist-smart-bookmarks/id6767503936
+- download photocraft
+- 
