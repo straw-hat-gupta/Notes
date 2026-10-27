@@ -3,7 +3,10 @@ personal
 - get a sweater like her cat one but as dogs
 - book vancouver flights
 - book birthday for daf
-	- as naz/aryan for help
+	- ask naz/aryan for help
+	- have a theme 
+	- minimal stress for dafne
+	- surprise aspect - take her out for dinner 
 	- 
 
 
