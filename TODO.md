@@ -8,5 +8,6 @@ personal
 	- minimal stress for daf
 	- surprise aspect 
 - make a plan for learning line dancing before dafne comes over. 
+- 
 
 
