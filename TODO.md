@@ -8,6 +8,11 @@ personal
 	- minimal stress for daf
 	- surprise aspect 
 - make a plan for learning line dancing and learn it before dafne comes over. 
-- 
 
+# DEV SHIT
+- finish client 
+- rea on https://apps.apple.com/ca/app/savetolist-smart-bookmarks/id6767503936
+- download photocraft
+- construction app
+- 
 
