@@ -14,5 +14,6 @@ personal
 - rea on https://apps.apple.com/ca/app/savetolist-smart-bookmarks/id6767503936
 - download photocraft
 - construction app
-- 
+- portfolio website so people can see demos
+- configure 
 
