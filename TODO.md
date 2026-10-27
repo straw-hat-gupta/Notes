@@ -6,7 +6,7 @@ personal
 	- ask naz/aryan for help
 	- have a theme 
 	- minimal stress for dafne
-	- surprise aspect - take her out for dinner 
+	- surprise aspect - take her out for dinner then have people come 
 	- 
 
 
