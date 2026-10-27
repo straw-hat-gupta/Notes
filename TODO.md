@@ -16,4 +16,6 @@ personal
 - portfolio website so people can see demos
 - configure the homelab
 - get 2 nics
+- CLEAN LAPTOP all dev shit should be on homelab
+- 
 
