@@ -15,5 +15,6 @@ personal
 - download photocraft
 - construction app
 - portfolio website so people can see demos
-- configure 
+- configure the homelab
+- get 2 nics
 
