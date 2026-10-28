@@ -7,3 +7,7 @@ S4: i dont know what the tradeoffs of either options are. I dont know what will 
 S5: IDK, need to learn what is best in my case and what those things mean
 
 
+N1: idk how can we figure this out
+N2: yes and yes
+N3: idk, need to learn what is best here 
+N4: i dont really know what is supo
