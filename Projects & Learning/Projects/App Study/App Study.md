@@ -9,7 +9,7 @@ Use the reverse-engineering repository to understand the App Store app's behavio
 ## Known references
 
 - Tool repository: [straw-hat-gupta/rea](https://github.com/straw-hat-gupta/rea), described as “Reverse engineer anything with agents”.
-- Likely target from [[TODO]]: [SaveToList — Smart Bookmarks](https://apps.apple.com/ca/app/savetolist-smart-bookmarks/id6767503936). Confirm this is the app meant in the brain dump before investigating it.
+- Previously recorded App Store target: [SaveToList — Smart Bookmarks](https://apps.apple.com/ca/app/savetolist-smart-bookmarks/id6767503936). This app was explicitly paired with rea in the earlier task list. Confirm it is still the intended target before investigating it.
 - A personal local version is a possibility, not a committed feature list or public product.
 
 ## Connections

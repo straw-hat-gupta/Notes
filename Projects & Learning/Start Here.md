@@ -26,6 +26,7 @@ These are [native Obsidian embeds](https://help.obsidian.md/embeds); use Reading
 - Link shared dependencies instead of duplicating them: development VM setup belongs to HomeLab; a project's environment work links to it.
 - Preserve existing task completion and decisions; distinguish user statements, old source notes, and unverified hypotheses.
 - Keep unresolved details in Inbox and the relevant project note. Do not invent priorities, dates, or configuration choices.
-- Existing notes outside Projects & Learning remain untouched; link to them as sources.
+- Projects & Learning is self-contained. Every vault link and embed must point inside this folder. When information from elsewhere is useful, bring the needed text or complete document into the appropriate folder and link to that internal copy. Assume other vault folders may disappear.
+- Keep older material clearly marked when it is unverified. The existing VM name llm-gpu and GPU inventory are hardware/workload facts, not a requirement to host models.
 
-Updated 2026-10-27 after the first detailed brain dump.
+Updated 2026-10-27: self-contained project material and the Heap brain-dump app concept added.

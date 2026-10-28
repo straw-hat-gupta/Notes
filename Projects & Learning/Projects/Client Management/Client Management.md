@@ -16,7 +16,7 @@ Finish the client management platform for a local wealth management firm, starti
 
 ## Sources and decisions
 
-[[Projects & Learning/Projects/Client Management/Source Map|Source map]] lists the known notes and gaps. Other documentation still needs locating.
+[[Projects & Learning/Projects/Client Management/Source Map|Source map]] links to the complete discovery documents now stored in this project folder and lists the remaining gaps. Other documentation still needs locating.
 
 ## Connections
 

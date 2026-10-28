@@ -30,6 +30,10 @@ Each outcome links to its own folder. Its checklist is displayed directly from t
 
 ![[Projects & Learning/HomeLab/Hardware Inventory/Tasks]]
 
+### [[Projects & Learning/HomeLab/Monitoring/Monitoring|Review cluster monitoring and benchmark ideas]]
+
+![[Projects & Learning/HomeLab/Monitoring/Tasks]]
+
 ## Projects
 
 ### [[Projects & Learning/Projects/Client Management/Client Management|Finish Client Management]]
@@ -52,6 +56,10 @@ Each outcome links to its own folder. Its checklist is displayed directly from t
 
 ![[Projects & Learning/Projects/AIVA/Tasks]]
 
+### [[Projects & Learning/Projects/Heap/Heap|Build Heap, the brain-dump organizer]]
+
+![[Projects & Learning/Projects/Heap/Tasks]]
+
 ## Learning
 
 ### [[Projects & Learning/Learning/Cloudflare/Cloudflare|Learn Cloudflare for the homelab]]
@@ -64,4 +72,4 @@ Each outcome links to its own folder. Its checklist is displayed directly from t
 
 ## Existing work without a new action requested
 
-[[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]] is already running on llm-gpu. Its source notes remain linked in its project overview.
+[[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]] is already running on llm-gpu. Its preserved workflow notes are stored in its project folder.

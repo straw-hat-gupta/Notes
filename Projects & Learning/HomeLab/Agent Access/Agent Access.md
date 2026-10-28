@@ -19,7 +19,7 @@ Earlier in this chat, direct SSH to pve-d2 as root succeeded; cluster membership
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]] provides reusable tools; [[Projects & Learning/Learning/Agents and MCP/Agents and MCP|Agents and MCP]] tracks the concepts to learn. Existing source: [[HomeLab/TODO]].
+[[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]] provides reusable tools; [[Projects & Learning/Learning/Agents and MCP/Agents and MCP|Agents and MCP]] tracks the concepts to learn. Existing goals carried forward: easy VM access and reusable data-centre-management skills.
 
 ## Tasks
 

@@ -10,8 +10,8 @@ Finish AIVA — Artificial Intelligence Virtual Assistant — so it is a usable 
 
 - Repository found: [Arceus-Aiva/Aiva](https://github.com/Arceus-Aiva/Aiva).
 - It is already on the resume but is not finished.
-- [[AIVA/Backlog]] records prior issues around OAuth connections, duplicate-user handling, credential/account state, CI, deletion, and workflow ownership. These are historical leads to re-check, not newly confirmed bugs.
-- [[AIVA/Things i did]] exists but contains little detail.
+- [[Projects & Learning/Projects/AIVA/Historical Backlog|Historical Backlog]] records prior issues around OAuth connections, duplicate-user handling, credential/account state, CI, deletion, and workflow ownership. These are historical leads to re-check, not newly confirmed bugs.
+- The prior progress record had no completed-work details; this is recorded in the Historical Backlog note.
 
 ## Connections
 

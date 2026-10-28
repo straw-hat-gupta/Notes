@@ -4,6 +4,7 @@
 
 | Project | Outcome / current context |
 | --- | --- |
+| [[Projects & Learning/Projects/Heap/Heap|Heap — Brain-Dump App]] | Turn brain dumps into an organized Obsidian workspace with tasks, links, and recall |
 | [[Projects & Learning/Projects/Client Management/Client Management|Client Management]] | Consolidate existing material and finish the application for the wealth management firm |
 | [[Projects & Learning/Projects/Construction Manager/Construction Manager|Construction Manager]] | Review requirements, contribute missing detail, and settle a tentative stack with friends |
 | [[Projects & Learning/Projects/App Study/App Study|App Study]] | Study the App Store app using rea; consider a personal local version |
@@ -15,4 +16,4 @@
 
 [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] supports the workspace. [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]] supports selected demos and personal services.
 
-Original sources: [[TODO]] · [[Arceus/job tracker]] · [[AIVA/Backlog]] · [[Client-Management-Platform/Notes]].
+Supporting material is kept inside the relevant project folders: complete Client Management discovery documents, AIVA’s historical backlog, and Career Ops workflow notes. App Study and Construction Manager include their original idea context inline.

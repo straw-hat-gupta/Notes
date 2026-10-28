@@ -10,9 +10,9 @@ A repository that helps with finding jobs.
 
 Per the 2026-10-27 brain dump, Career Ops runs inside the llm-gpu VM on pve-d1. The VM also has access to the node's graphics card; whether Career Ops itself uses the GPU has not been established.
 
-## Existing source
+## Preserved workflow
 
-[[job Search/CareerOps]] records earlier ideas for remote VM access, daily scanning, and a low-cost job-queue triage workflow. These have not been revalidated as current tasks or completed features in this organization pass.
+[[Projects & Learning/Projects/Career Ops/Workflow Notes|Workflow Notes]] records earlier ideas for remote VM access, daily scanning, and a low-cost job-queue triage workflow. These have not been revalidated as current tasks or completed features in this organization pass.
 
 ## Next steps
 

@@ -1,25 +1,26 @@
-# Client Management — Source Map
+# Client Management — Reference Index
 
 [[Projects & Learning/Projects/Client Management/Client Management|Client Management]] · [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]]
 
-## Known sources
+## Collected material
 
-| Source | What belongs here |
+These documents are stored inside this project folder in full; no older vault folder is needed to read them.
+
+| Document | Contents |
 | --- | --- |
-| [[Client-Management-Platform/Notes]] | Business context, current workflows, open questions, and prototype-hosting idea |
-| [[Client-Management-Platform/Interview]] | Structured discovery questions and recorded answers; reconcile unanswered or ambiguous requirements |
-| [[Client-Management-Platform/Interview Transcript]] | Existing interview transcript; not yet reviewed in this organization pass |
-| [[Client-Management-Platform/Working Notes]] | Prior agent workflow notes and questions about application pages |
-| [GitHub repository](https://github.com/straw-hat-gupta/Client-Management-Platform) | Existing code and any project documentation; implementation inventory still to do |
+| [[Projects & Learning/Projects/Client Management/Reference/Business Notes|Business Notes]] | Business context, terminology, spreadsheet workflows, marketing/growth notes, and open questions |
+| [[Projects & Learning/Projects/Client Management/Reference/Discovery Interview|Discovery Interview]] | Structured discovery questions and recorded answers |
+| [[Projects & Learning/Projects/Client Management/Reference/Interview Transcript|Interview Transcript]] | Full interview transcript |
+| [[Projects & Learning/Projects/Client Management/Reference/Working Notes|Working Notes]] | Prior agent workflow guidance and questions about pages, reports, Work versus Tasks, and Appreciation |
+
+## Existing implementation
+
+[Client Management repository](https://github.com/straw-hat-gupta/Client-Management-Platform) holds the code and any repository documentation. Its implementation still needs an inventory; this notes migration does not claim that review is complete.
 
 ## Still to locate
 
-Other documents, notes, and completed work mentioned in the brain dump. Their locations are not known yet.
+Other documents and work mentioned in the brain dump whose locations are not yet known. Preserve them in this project folder when found, rather than linking to another vault folder.
 
-## Consolidation target
+## Development workspace
 
-A central project workspace on the development VM, with one documentation index linking the material. VM and filesystem location remain undecided. The original Obsidian notes stay in place.
-
-## Scope of this pass
-
-This note maps sources. It does not claim that all documentation has already been collected or that the implementation has been reviewed.
+The chosen remote development VM will hold the working code and environment. The project documentation collected here remains independently readable in Projects & Learning. VM placement and workspace path are undecided.
