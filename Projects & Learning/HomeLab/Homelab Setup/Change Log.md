@@ -2,9 +2,11 @@
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]]
 
-Record confirmed hardware/configuration changes here and update the affected current-state record in the same edit. Include when the change happened, its evidence, and validation when known. Documentation-only entries must say so.
+| Date | Change | Result / source |
+| --- | --- | --- |
+| 2026-10-27 | Set up Homelab Setup for hardware, storage, networking, configuration, status, and tasks. | Documentation structure; existing inventory retained. |
+| 2026-10-27 | Removed the obsolete inventory folder. | Inventory and tasks retained under Homelab Setup. |
+| 2026-10-27 | Collected the live baseline from all five nodes and inspected the four running guests. | [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|SSH/Proxmox evidence]]. Corrected E6420 CPU, D1 SSD capacity, and GPU identification; recorded configuration and service status. |
+| 2026-10-27 | Reorganized the notes into personal records with linked Open Questions files. | Updated HomeLab writing/maintenance instructions. |
 
-| Date | Change | Evidence / source | Validation / uncertainty |
-| --- | --- | --- | --- |
-| 2026-10-27 | Documentation only: established Homelab Setup folders and record templates; preserved the existing inventory and checklist. | User request in this chat. | No live infrastructure inspection or configuration change. |
-| 2026-10-27 | Documentation only: removed the obsolete inventory folder and its forwarding notes. | User request in this chat. | Inventory and tasks already reside in Homelab Setup; no remaining note links target the removed folder. |
+No running infrastructure settings changed during these inventory updates.

@@ -2,29 +2,29 @@
 
 [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-The maintained home for hardware, storage, networking, configuration, and operational status. Structure established 2026-10-27 at the user's request. Existing inventory is preserved; the other records are ready to fill in as facts are confirmed.
+My five-node Proxmox cluster: hardware, storage, networking, workloads, and current status.
 
-## Records
+Latest inventory: **2026-10-27, 21:37–21:42 MDT**. All five hosts were reachable over SSH and the cluster had quorum.
 
-| Record | Keep here |
+## Setup records
+
+| Record | Contents |
 | --- | --- |
-| [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware / Node Inventory]] | Nodes, CPUs, RAM modules and slots, GPUs, NICs, and physical disks |
-| [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration|Storage Configuration]] | Boot layout, pools, RAID/ZFS, filesystems, datasets, mounts, shares, and workload storage |
-| [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]] | Network devices, addresses, interfaces, bridges, VLANs, routing, DNS, and access |
-| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration|Cluster Configuration]] | Proxmox versions, cluster membership, repositories, passthrough, and host settings |
-| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]] | VM/container placement, allocations, service configuration, and dependencies |
-| [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]] | Dated node/service observations, faults, and verified recoveries |
-| [[Projects & Learning/HomeLab/Homelab Setup/Change Log|Change Log]] | Confirmed setup changes and their supporting evidence |
+| [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware]] | Systems, CPUs, RAM slots, disks, GPUs, and NICs |
+| [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration|Storage]] | Boot layout, LVM pools, filesystems, capacity, guest disks, and backups |
+| [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Networking]] | Addresses, bridges, interfaces, routing, DNS, and firewall state |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration|Cluster configuration]] | Proxmox versions, membership, quorum, repositories, and passthrough |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and services]] | VMs, containers, resource allocations, service endpoints, and data locations |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Access|Access]] | Saved SSH connections, administrative permissions, and guest access |
+| [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]] | Dated health observations and active faults |
+| [[Projects & Learning/HomeLab/Homelab Setup/Open Questions|Open questions]] | Missing details, conflicting records, and decisions to make |
+| [[Projects & Learning/HomeLab/Homelab Setup/Change Log|Change log]] | Setup changes and inventory updates |
 
-## Maintaining these records
+[[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|2026-10-27 evidence snapshot]] contains the filtered command results behind this inventory. Credentials and secret-bearing configuration contents are excluded.
 
-Follow [[Projects & Learning/HomeLab/AGENTS|HomeLab agent instructions]]. Keep one authoritative record for each fact and link to it elsewhere. Record the observation date and source when updating a setting or status; distinguish confirmed, reported, historical, conflicting, and unknown details. A documentation update date does not mean the hardware was freshly checked.
+## Related work
 
-Use focused notes within these folders as the setup grows. Add sanitized configuration extracts only when available; never store credentials or private keys. Plans and unchecked tasks do not establish installed configuration or current health.
-
-## Connections
-
-The setup records support [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]], [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]], and [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]].
+[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] · [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]] · [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] · [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]]
 
 ## Tasks
 

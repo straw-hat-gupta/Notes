@@ -2,25 +2,25 @@
 
 [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-## Outcome
+## Goal
 
-Use the homelab and a Cloudflare-managed domain to host projects, demos, and personal tools, with different subdomains pointing to the appropriate services.
+I want projects, demos, and personal tools hosted on the homelab, with subdomains routed to the appropriate services.
 
-## Requirements captured
+## Current context
 
-- Domain reported as `smarthg.dev`; confirm the exact registered spelling first.
-- Cloudflare is already involved, but current DNS and other configuration have not been inspected.
-- The portfolio should run on the homelab and be reachable through the domain.
-- Selected demos should be accessible to other people; personal services should be accessible remotely with the intended access restrictions.
-- Different applications need distinct addresses and routing to the right VM/container/service.
+LXC 101 cf-tunnel runs cloudflared on pve-d2. LXC 100 app-runner runs the AI dashboard. Runtime details are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].
 
-## Decisions still open
+The domain was recorded as `smarthg.dev`. Its exact spelling, DNS, public tunnel routes, and access policies are tracked in [[Projects & Learning/HomeLab/Project Hosting/Open Questions|Open Questions]].
 
-Where services run, how deployment works, how traffic reaches the cluster, how subdomains are routed, and which services are public versus private. Compare appropriate routing/access approaches before choosing one. Existing Client Management notes mention Coolify as a candidate for prototypes; it is not selected yet.
+## Requirements
+
+- Host the portfolio on the homelab and make it reachable through the domain.
+- Give selected demos public access and personal services the intended remote restrictions.
+- Route distinct application hostnames to their VM/container/service.
 
 ## Connections
 
-[[Projects & Learning/Learning/Cloudflare/Cloudflare|Learn Cloudflare]] supports this task. Consumers include [[Projects & Learning/Projects/Portfolio/Portfolio|Portfolio]], [[Projects & Learning/Projects/AIVA/AIVA|AIVA]], and a possible personal [[Projects & Learning/Projects/App Study/App Study|App Study]] application.
+[[Projects & Learning/Learning/Cloudflare/Cloudflare|Cloudflare]] · [[Projects & Learning/Projects/Portfolio/Portfolio|Portfolio]] · [[Projects & Learning/Projects/AIVA/AIVA|AIVA]] · [[Projects & Learning/Projects/App Study/App Study|App Study]]
 
 ## Tasks
 

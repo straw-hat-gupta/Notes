@@ -2,26 +2,26 @@
 
 [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-## Outcome
+## Goal
 
-Move development off the Mac into a homelab VM so repositories, tools, and long-running agents can stay there. Keep the Mac as a way to connect to the workspace.
+I want development repositories, tools, and long-running agents on a homelab VM, with the Mac used to connect to the workspace.
 
-## Requirements captured
+## Requirements
 
-- A dedicated place for all development work, with access from the Mac and eventually other devices.
-- Agents and development processes can continue running remotely.
-- Centralize [[Projects & Learning/Projects/Client Management/Client Management|Client Management]] first, including its notes, code, and environment.
-- GPU access was mentioned as a possible development convenience. It is not a prerequisite for the development VM or connected agents.
-- llm-gpu is a candidate, or a separate VM could be created. No VM/host choice or GPU-sharing arrangement has been decided.
-- Existing llm-gpu on pve-d1 already has GPU access and runs [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]].
+- A persistent development workspace accessible from the Mac and eventually other devices.
+- Agents and development processes that can continue remotely.
+- Centralize [[Projects & Learning/Projects/Client Management/Client Management|Client Management]] first, including notes, code, and environment.
+- GPU access is optional for this workspace.
 
-## Decisions to make
+## Existing context
 
-VM placement, resources, OS, repository locations, remote access, editor workflow, and persistent agent sessions. Clarify what was meant by “Reverb Node” before treating it as a hostname or product.
+VM 301 llm-gpu on pve-d1 is one candidate; a separate VM is another. Its current allocation and observed services are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]]. Career Ops is recorded there in the existing project notes.
+
+Workspace placement, access, editor/session workflow, and the meaning of “Reverb Node” are in [[Projects & Learning/HomeLab/Remote Development/Open Questions|Open Questions]].
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] informs host reliability; [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] informs capacity. Earlier requirements carried forward: an always-on programming environment, a clean laptop, and convenient access from any device. A Cloudflare tunnel was floated as one option, not selected.
+[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] informs host reliability. [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware]] supplies capacity information.
 
 ## Tasks
 

@@ -2,24 +2,21 @@
 
 [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-## Outcome
+## Goal
 
-Explore running MCP servers on the cluster so multiple agents can use a common set of tools, including a possible homelab-management server.
+I want to explore cluster-hosted MCP servers so multiple agents can use common tools, including homelab inspection and management.
 
-## Requirements captured
+## Requirements
 
-- Host reusable MCP tools on the cluster, reachable by the intended agents.
-- Explore tools for homelab inspection and management.
-- Agents may have different skills and permissions even when sharing a server.
-- Keep agent instructions/skills distinct from the MCP servers that expose tools.
+- Shared tools reachable by the intended clients.
+- Separate agent skills/instructions from the servers that expose operations.
+- Permissions appropriate to each agent and operation.
 
-## Decisions still open
-
-Which servers/tools are needed, where they run, supported client/transport options, authentication, network access, and permissions. No particular server or transport has been selected.
+Server selection, placement, transport, authentication, and client access are in [[Projects & Learning/HomeLab/Shared MCP Servers/Open Questions|Open Questions]].
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] is a first consumer; [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] hosts other agent sessions; [[Projects & Learning/Learning/Agents and MCP/Agents and MCP|Agents and MCP]] supports the design.
+[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] · [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] · [[Projects & Learning/Learning/Agents and MCP/Agents and MCP|Agents and MCP]]
 
 ## Tasks
 

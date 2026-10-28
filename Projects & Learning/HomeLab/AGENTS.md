@@ -2,6 +2,14 @@
 
 These instructions apply to this directory and all descendants. Follow [[Projects & Learning/AGENTS|the Projects & Learning agent guide]] as well.
 
+## Writing style and organization
+
+Write HomeLab notes as my own organized personal records. Use first person for my goals, decisions, and actions when needed, and direct factual language for hardware and configuration. Do not invent personal actions or decisions. Avoid assistant narration, references to "the user," explanations of what an agent did, template instructions, and repeated disclaimers. Keep collection dates, command sources, and verification limits concise and factual.
+
+Each fact has one maintained home. Use clear headings, compact tables for comparable details, and links between related records. Keep actionable checklists in Tasks.md.
+
+Keep unresolved questions, conflicting records, and missing information in one Open Questions.md within the relevant outcome folder. For setup questions, use [[Projects & Learning/HomeLab/Homelab Setup/Open Questions|Homelab Setup — Open Questions]], grouped by hardware, storage, networking, configuration, and status. Link to the relevant question from the affected record instead of repeating the discussion. Keep unknown values explicit in tables, with a link to their question. Resolve questions when evidence answers them; record confirmed results in the appropriate setup note.
+
 ## Inventory and setup records
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] is the home for the homelab's current hardware, configuration, and operational status. Keep the setup documents in that folder as the source of truth. This includes:

@@ -1,0 +1,5263 @@
+{
+  "observed_date": "2026-10-27",
+  "timezone": "America/Edmonton",
+  "sources": [
+    "SSH root sessions",
+    "lscpu",
+    "dmidecode -t 17",
+    "lsblk",
+    "lspci -nnk",
+    "ethtool",
+    "pvesh get",
+    "qm config",
+    "pct config",
+    "pvs/vgs/lvs",
+    "findmnt",
+    "smartctl -H -A",
+    "sensors",
+    "systemctl --failed"
+  ],
+  "nodes": {
+    "pve-d1": {
+      "node": "pve-d1",
+      "collected_utc": "2026-10-28T03:37:16.142263+00:00",
+      "user": "uid=0(root) gid=0(root) groups=0(root)",
+      "version": {
+        "rc": 0,
+        "out": "pve-manager/9.2.3/d0fde103346cf89a (running kernel: 7.0.2-7-pve)",
+        "err": ""
+      },
+      "uptime": {
+        "rc": 0,
+        "out": "21:37:16 up  6:47,  3 users,  load average: 0.07, 0.15, 0.16",
+        "err": ""
+      },
+      "cpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "8"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "4"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "VT-x"
+        }
+      ],
+      "disks": [
+        {
+          "name": "sda",
+          "path": "/dev/sda",
+          "model": "Samsung SSD 850 EVO 250GB",
+          "size": 250059350016,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "d1--ssd--lvm-d1--ssd--lvm_tmeta",
+          "path": "/dev/mapper/d1--ssd--lvm-d1--ssd--lvm_tmeta",
+          "model": null,
+          "size": 2499805184,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "d1--ssd--lvm-d1--ssd--lvm-tpool",
+          "path": "/dev/mapper/d1--ssd--lvm-d1--ssd--lvm-tpool",
+          "model": null,
+          "size": 244926382080,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "d1--ssd--lvm-d1--ssd--lvm_tmeta"
+        },
+        {
+          "name": "d1--ssd--lvm-d1--ssd--lvm",
+          "path": "/dev/mapper/d1--ssd--lvm-d1--ssd--lvm",
+          "model": null,
+          "size": 244926382080,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "d1--ssd--lvm-d1--ssd--lvm-tpool"
+        },
+        {
+          "name": "d1--ssd--lvm-vm--301--disk--1",
+          "path": "/dev/mapper/d1--ssd--lvm-vm--301--disk--1",
+          "model": null,
+          "size": 171798691840,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "d1--ssd--lvm-d1--ssd--lvm-tpool"
+        },
+        {
+          "name": "d1--ssd--lvm-vm--301--disk--0",
+          "path": "/dev/mapper/d1--ssd--lvm-vm--301--disk--0",
+          "model": null,
+          "size": 4194304,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "d1--ssd--lvm-d1--ssd--lvm-tpool"
+        },
+        {
+          "name": "d1--ssd--lvm-d1--ssd--lvm_tdata",
+          "path": "/dev/mapper/d1--ssd--lvm-d1--ssd--lvm_tdata",
+          "model": null,
+          "size": 244926382080,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sdb",
+          "path": "/dev/sdb",
+          "model": "TOSHIBA THNSNK128GCS8 SATA 128GB",
+          "size": 128035676160,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sdb1",
+          "path": "/dev/sdb1",
+          "model": null,
+          "size": 1031168,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdb"
+        },
+        {
+          "name": "sdb2",
+          "path": "/dev/sdb2",
+          "model": null,
+          "size": 1073741824,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "vfat",
+          "mountpoints": [],
+          "parent": "sdb"
+        },
+        {
+          "name": "sdb3",
+          "path": "/dev/sdb3",
+          "model": null,
+          "size": 126960868864,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": "sdb"
+        },
+        {
+          "name": "pve-swap",
+          "path": "/dev/mapper/pve-swap",
+          "model": null,
+          "size": 8589934592,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "swap",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "parent": "sdb3"
+        },
+        {
+          "name": "pve-root",
+          "path": "/dev/mapper/pve-root",
+          "model": null,
+          "size": 42475716608,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [
+            "/"
+          ],
+          "parent": "sdb3"
+        },
+        {
+          "name": "pve-data_tmeta",
+          "path": "/dev/mapper/pve-data_tmeta",
+          "model": null,
+          "size": 1073741824,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdb3"
+        },
+        {
+          "name": "pve-data",
+          "path": "/dev/mapper/pve-data",
+          "model": null,
+          "size": 57902366720,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data_tmeta"
+        },
+        {
+          "name": "pve-data_tdata",
+          "path": "/dev/mapper/pve-data_tdata",
+          "model": null,
+          "size": 57902366720,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdb3"
+        }
+      ],
+      "pci": {
+        "rc": 0,
+        "out": "00:19.0 Ethernet controller [0200]: Intel Corporation Ethernet Connection I217-LM [8086:153a] (rev 04)\n\tDeviceName:  Onboard LAN\n\tSubsystem: Dell Device [1028:05a4]\n\tKernel driver in use: e1000e\n\tKernel modules: e1000e\n01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GP104 [GeForce GTX 1070] [10de:1b81] (rev a1)\n\tSubsystem: ASUSTeK Computer Inc. Device [1043:8599]\n\tKernel driver in use: vfio-pci\n\tKernel modules: nvidiafb, nouveau, nova_core\n01:00.1 Audio device [0403]: NVIDIA Corporation GP104 High Definition Audio Controller [10de:10f0] (rev a1)\n\tSubsystem: ASUSTeK Computer Inc. Device [1043:8599]\n\tKernel driver in use: vfio-pci\n\tKernel modules: snd_hda_intel\n05:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Caicos XT [Radeon HD 7470/8470 / R5 235/310 OEM] [1002:6778]\n\tSubsystem: Dell Radeon HD 7470 [1028:2120]\n\tKernel driver in use: radeon\n\tKernel modules: radeon, amdgpu\n",
+        "err": ""
+      },
+      "pvs": {
+        "report": [
+          {
+            "pv": [
+              {
+                "pv_name": "/dev/sda",
+                "vg_name": "d1-ssd-lvm",
+                "pv_size": "250056015872",
+                "pv_free": "130023424"
+              },
+              {
+                "pv_name": "/dev/sdb3",
+                "vg_name": "pve",
+                "pv_size": "126957387776",
+                "pv_free": "15841886208"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "vgs": {
+        "report": [
+          {
+            "vg": [
+              {
+                "vg_name": "d1-ssd-lvm",
+                "vg_size": "250056015872",
+                "vg_free": "130023424"
+              },
+              {
+                "vg_name": "pve",
+                "vg_size": "126957387776",
+                "vg_free": "15841886208"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "lvs": {
+        "report": [
+          {
+            "lv": [
+              {
+                "lv_name": "d1-ssd-lvm",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "244926382080",
+                "segtype": "thin-pool",
+                "data_percent": "29.49",
+                "metadata_percent": "1.73",
+                "devices": "d1-ssd-lvm_tdata(0)"
+              },
+              {
+                "lv_name": "[d1-ssd-lvm_tdata]",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "244926382080",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda(596)"
+              },
+              {
+                "lv_name": "[d1-ssd-lvm_tmeta]",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "2499805184",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda(58991)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "2499805184",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda(0)"
+              },
+              {
+                "lv_name": "vm-301-disk-0",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "4194304",
+                "segtype": "thin",
+                "data_percent": "14.06",
+                "metadata_percent": "",
+                "devices": ""
+              },
+              {
+                "lv_name": "vm-301-disk-1",
+                "vg_name": "d1-ssd-lvm",
+                "lv_size": "171798691840",
+                "segtype": "thin",
+                "data_percent": "42.05",
+                "metadata_percent": "",
+                "devices": ""
+              },
+              {
+                "lv_name": "data",
+                "vg_name": "pve",
+                "lv_size": "57902366720",
+                "segtype": "thin-pool",
+                "data_percent": "0.00",
+                "metadata_percent": "1.59",
+                "devices": "data_tdata(0)"
+              },
+              {
+                "lv_name": "[data_tdata]",
+                "vg_name": "pve",
+                "lv_size": "57902366720",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdb3(12175)"
+              },
+              {
+                "lv_name": "[data_tmeta]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdb3(25980)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdb3(26236)"
+              },
+              {
+                "lv_name": "root",
+                "vg_name": "pve",
+                "lv_size": "42475716608",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdb3(2048)"
+              },
+              {
+                "lv_name": "swap",
+                "vg_name": "pve",
+                "lv_size": "8589934592",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdb3(0)"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "mounts": {
+        "filesystems": [
+          {
+            "target": "/",
+            "source": "/dev/mapper/pve-root",
+            "fstype": "ext4",
+            "size": "38.6G",
+            "used": "14.5G",
+            "avail": "22.2G"
+          }
+        ]
+      },
+      "ip_addresses": [
+        {
+          "ifindex": 2,
+          "ifname": "nic0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "fq_codel",
+          "master": "vmbr0",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "64:00:6a:4f:c9:55",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "enp0s25",
+            "enx64006a4fc955"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 3,
+          "ifname": "vmbr0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "noqueue",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "64:00:6a:4f:c9:55",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "addr_info": [
+            {
+              "family": "inet",
+              "local": "10.44.0.50",
+              "prefixlen": 24,
+              "scope": "global",
+              "label": "vmbr0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "fe80::6600:6aff:fe4f:c955",
+              "prefixlen": 64,
+              "scope": "link",
+              "protocol": "kernel_ll",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "dst": "default",
+          "gateway": "10.44.0.1",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "dst": "10.44.0.0/24",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "scope": "link",
+          "prefsrc": "10.44.0.50",
+          "flags": []
+        }
+      ],
+      "cluster_status": {
+        "rc": 0,
+        "out": "Cluster information\n-------------------\nName:             homelab\nConfig Version:   9\nTransport:        knet\nSecure auth:      on\n\nQuorum information\n------------------\nDate:             Tue Oct 27 21:37:17 2026\nQuorum provider:  corosync_votequorum\nNodes:            5\nNode ID:          0x00000001\nRing ID:          1.1b7\nQuorate:          Yes\n\nVotequorum information\n----------------------\nExpected votes:   5\nHighest expected: 5\nTotal votes:      5\nQuorum:           3  \nFlags:            Quorate \n\nMembership information\n----------------------\n    Nodeid      Votes Name\n0x00000001          1 10.44.0.50 (local)\n0x00000002          1 10.44.0.51\n0x00000003          1 10.44.0.53\n0x00000004          1 10.44.0.54\n0x00000005          1 10.44.0.52",
+        "err": ""
+      },
+      "ha": {
+        "rc": 0,
+        "out": "quorum OK\nfencing standby (CRM watchdog standby)",
+        "err": ""
+      },
+      "failed_units": {
+        "rc": 0,
+        "out": "UNIT             LOAD   ACTIVE SUB    DESCRIPTION\nopenipmi.service loaded failed failed LSB: OpenIPMI Driver init script\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n1 loaded units listed.",
+        "err": ""
+      },
+      "thermal": {
+        "radeon-pci-0500": {
+          "Adapter": "PCI adapter",
+          "temp1": {
+            "temp1_input": 39.5,
+            "temp1_crit": 120.0,
+            "temp1_crit_hyst": 90.0
+          },
+          "freq1": {
+            "freq1_input": 125000000.0
+          }
+        },
+        "acpitz-acpi-0": {
+          "Adapter": "ACPI interface",
+          "temp1": {
+            "temp1_input": 27.8
+          },
+          "temp2": {
+            "temp2_input": 29.8
+          }
+        },
+        "coretemp-isa-0000": {
+          "Adapter": "ISA adapter",
+          "Package id 0": {
+            "temp1_input": 41.0,
+            "temp1_max": 80.0,
+            "temp1_crit": 100.0,
+            "temp1_crit_alarm": 0.0
+          },
+          "Core 0": {
+            "temp2_input": 36.0,
+            "temp2_max": 80.0,
+            "temp2_crit": 100.0,
+            "temp2_crit_alarm": 0.0
+          },
+          "Core 1": {
+            "temp3_input": 35.0,
+            "temp3_max": 80.0,
+            "temp3_crit": 100.0,
+            "temp3_crit_alarm": 0.0
+          },
+          "Core 2": {
+            "temp4_input": 39.0,
+            "temp4_max": 80.0,
+            "temp4_crit": 100.0,
+            "temp4_crit_alarm": 0.0
+          },
+          "Core 3": {
+            "temp5_input": 38.0,
+            "temp5_max": 80.0,
+            "temp5_crit": 100.0,
+            "temp5_crit_alarm": 0.0
+          }
+        }
+      },
+      "zpool": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "zfs": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "nfs_exports": {
+        "rc": -1,
+        "err": "[Errno 2] No such file or directory: 'exportfs'"
+      },
+      "memory_modules": [
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM3",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM1",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM4",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8A-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM2",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        }
+      ],
+      "system_hardware": [
+        "Manufacturer: Dell Inc.",
+        "Product Name: OptiPlex 7020",
+        "Version: 01",
+        "Manufacturer: Dell Inc.",
+        "Product Name: 0F5C5X",
+        "Version: A00"
+      ],
+      "meminfo": {
+        "MemTotal": "32802880 kB",
+        "MemAvailable": "5019348 kB",
+        "SwapTotal": "8388604 kB",
+        "SwapFree": "8388604 kB"
+      },
+      "storage_config": [
+        {
+          "content": "images,rootdir",
+          "storage": "local-lvm",
+          "thinpool": "data",
+          "type": "lvmthin",
+          "vgname": "pve"
+        },
+        {
+          "content": "images,rootdir",
+          "nodes": "pve-d1",
+          "storage": "d1-ssd-lvm",
+          "thinpool": "d1-ssd-lvm",
+          "type": "lvmthin",
+          "vgname": "d1-ssd-lvm"
+        },
+        {
+          "content": "iso,backup,vztmpl,import",
+          "path": "/var/lib/vz",
+          "storage": "local",
+          "type": "dir"
+        }
+      ],
+      "node_storage": [
+        {
+          "active": 1,
+          "avail": 23798681600,
+          "content": "iso,vztmpl,import,backup",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local",
+          "total": 41489260544,
+          "type": "dir",
+          "used": 15550017536,
+          "used_fraction": 0.374796208274403
+        },
+        {
+          "active": 1,
+          "avail": 57902366720,
+          "content": "rootdir,images",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local-lvm",
+          "total": 57902366720,
+          "type": "lvmthin",
+          "used": 0,
+          "used_fraction": 0
+        },
+        {
+          "active": 1,
+          "avail": 172697592005,
+          "content": "rootdir,images",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "d1-ssd-lvm",
+          "total": 244926382080,
+          "type": "lvmthin",
+          "used": 72228790075,
+          "used_fraction": 0.294899999998399
+        }
+      ],
+      "network": [
+        {
+          "active": 1,
+          "altnames": [
+            "enp0s25",
+            "enx64006a4fc955"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "nic0",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 3,
+          "type": "eth"
+        },
+        {
+          "active": 1,
+          "address": "10.44.0.50",
+          "autostart": 1,
+          "bridge_fd": "0",
+          "bridge_ports": "nic0",
+          "bridge_stp": "off",
+          "cidr": "10.44.0.50/24",
+          "families": [
+            "inet"
+          ],
+          "gateway": "10.44.0.1",
+          "iface": "vmbr0",
+          "method": "static",
+          "method6": "manual",
+          "netmask": "24",
+          "priority": 4,
+          "type": "bridge"
+        }
+      ],
+      "backup_jobs": [],
+      "replication": [],
+      "guests": [
+        {
+          "resource": {
+            "cpu": 0.0146709436348053,
+            "disk": 0,
+            "diskread": 1380059632,
+            "diskwrite": 1366513664,
+            "id": "qemu/301",
+            "maxcpu": 6,
+            "maxdisk": 171798691840,
+            "maxmem": 25769803776,
+            "mem": 25808113664,
+            "memhost": 25808113664,
+            "name": "llm-gpu",
+            "netin": 2659714531,
+            "netout": 176705340,
+            "node": "pve-d1",
+            "status": "running",
+            "template": 0,
+            "type": "qemu",
+            "uptime": 24414,
+            "vmid": 301
+          },
+          "config": {
+            "agent": "1",
+            "balloon": "0",
+            "bios": "ovmf",
+            "boot": "order=ide2;scsi0;net0",
+            "cores": "6",
+            "cpu": "x86-64-v2-AES",
+            "hostpci0": "0000:01:00",
+            "ide2": "none,media=cdrom",
+            "machine": "q35",
+            "memory": "24576",
+            "name": "llm-gpu",
+            "net0": "virtio=BC:24:11:3A:9E:55,bridge=vmbr0,firewall=1",
+            "numa": "0",
+            "onboot": "1",
+            "ostype": "l26",
+            "scsi0": "d1-ssd-lvm:vm-301-disk-1,discard=on,iothread=1,size=160G",
+            "scsihw": "virtio-scsi-single",
+            "sockets": "1"
+          },
+          "config_rc": 0
+        }
+      ],
+      "nic_details": {
+        "nic0": {
+          "link": {
+            "rc": 0,
+            "out": "Speed: 1000Mb/s\nDuplex: Full\nAuto-negotiation: on\nLink detected: yes",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: e1000e\nversion: 7.0.2-7-pve\nfirmware-version: 0.13-4\nexpansion-rom-version: \nbus-info: 0000:00:19.0\nsupports-statistics: yes\nsupports-test: yes\nsupports-eeprom-access: yes\nsupports-register-dump: yes\nsupports-priv-flags: yes",
+            "err": ""
+          }
+        }
+      },
+      "smart": {
+        "/dev/sda": {
+          "smart_status": {
+            "passed": true
+          },
+          "temperature": {
+            "current": 22
+          },
+          "power_on_time": {
+            "hours": 13045
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 99,
+              "worst": 99,
+              "threshold": 10,
+              "raw": {
+                "value": 1,
+                "string": "1"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 97,
+              "worst": 97,
+              "threshold": 0,
+              "raw": {
+                "value": 13045,
+                "string": "13045"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 96,
+              "worst": 96,
+              "threshold": 0,
+              "raw": {
+                "value": 78,
+                "string": "78"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 199,
+              "name": "CRC_Error_Count",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            }
+          ]
+        },
+        "/dev/sdb": {
+          "smart_status": {
+            "passed": true
+          },
+          "temperature": {
+            "current": 23
+          },
+          "power_on_time": {
+            "hours": 3995
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 100,
+              "worst": 100,
+              "threshold": 10,
+              "raw": {
+                "value": 100,
+                "string": "100"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 3995,
+                "string": "3995"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 87,
+              "worst": 87,
+              "threshold": 10,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 199,
+              "name": "UDMA_CRC_Error_Count",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            }
+          ]
+        }
+      },
+      "dns": "search home.arpa\nnameserver 10.44.0.1\n"
+    },
+    "pve-d2": {
+      "node": "pve-d2",
+      "collected_utc": "2026-10-28T03:37:16.127673+00:00",
+      "user": "uid=0(root) gid=0(root) groups=0(root)",
+      "version": {
+        "rc": 0,
+        "out": "pve-manager/9.2.3/d0fde103346cf89a (running kernel: 7.0.2-7-pve)",
+        "err": ""
+      },
+      "uptime": {
+        "rc": 0,
+        "out": "21:37:16 up 33 days, 11:09,  4 users,  load average: 0.01, 0.02, 0.00",
+        "err": ""
+      },
+      "cpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "8"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "4"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "VT-x"
+        }
+      ],
+      "disks": [
+        {
+          "name": "sda",
+          "path": "/dev/sda",
+          "model": "LITEONIT LCS-256L9S-11 2.5 7mm 256GB",
+          "size": 256060514304,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sda1",
+          "path": "/dev/sda1",
+          "model": null,
+          "size": 1031168,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sda2",
+          "path": "/dev/sda2",
+          "model": null,
+          "size": 1073741824,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "vfat",
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sda3",
+          "path": "/dev/sda3",
+          "model": null,
+          "size": 254985707008,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "pve-swap",
+          "path": "/dev/mapper/pve-swap",
+          "model": null,
+          "size": 8589934592,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "swap",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-root",
+          "path": "/dev/mapper/pve-root",
+          "model": null,
+          "size": 74482450432,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [
+            "/"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data_tmeta",
+          "path": "/dev/mapper/pve-data_tmeta",
+          "model": null,
+          "size": 1543503872,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data-tpool",
+          "path": "/dev/mapper/pve-data-tpool",
+          "model": null,
+          "size": 151640866816,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data_tmeta"
+        },
+        {
+          "name": "pve-data",
+          "path": "/dev/mapper/pve-data",
+          "model": null,
+          "size": 151640866816,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data-tpool"
+        },
+        {
+          "name": "pve-vm--100--disk--0",
+          "path": "/dev/mapper/pve-vm--100--disk--0",
+          "model": null,
+          "size": 12884901888,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [],
+          "parent": "pve-data-tpool"
+        },
+        {
+          "name": "pve-vm--101--disk--0",
+          "path": "/dev/mapper/pve-vm--101--disk--0",
+          "model": null,
+          "size": 8589934592,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [],
+          "parent": "pve-data-tpool"
+        },
+        {
+          "name": "pve-data_tdata",
+          "path": "/dev/mapper/pve-data_tdata",
+          "model": null,
+          "size": 151640866816,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        }
+      ],
+      "pci": {
+        "rc": 0,
+        "out": "00:19.0 Ethernet controller [0200]: Intel Corporation Ethernet Connection I217-LM [8086:153a] (rev 04)\n\tDeviceName:  Onboard LAN\n\tSubsystem: Dell Device [1028:05a4]\n\tKernel driver in use: e1000e\n\tKernel modules: e1000e\n01:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340 / Radeon 520 OEM] [1002:6611]\n\tSubsystem: Dell Radeon R5 240 OEM [1028:210b]\n\tKernel driver in use: amdgpu\n\tKernel modules: radeon, amdgpu\n",
+        "err": ""
+      },
+      "pvs": {
+        "report": [
+          {
+            "pv": [
+              {
+                "pv_name": "/dev/sda3",
+                "vg_name": "pve",
+                "pv_size": "254984323072",
+                "pv_free": "17184063488"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "vgs": {
+        "report": [
+          {
+            "vg": [
+              {
+                "vg_name": "pve",
+                "vg_size": "254984323072",
+                "vg_free": "17184063488"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "lvs": {
+        "report": [
+          {
+            "lv": [
+              {
+                "lv_name": "data",
+                "vg_name": "pve",
+                "lv_size": "151640866816",
+                "segtype": "thin-pool",
+                "data_percent": "6.61",
+                "metadata_percent": "1.35",
+                "devices": "data_tdata(0)"
+              },
+              {
+                "lv_name": "[data_tdata]",
+                "vg_name": "pve",
+                "lv_size": "151640866816",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(19806)"
+              },
+              {
+                "lv_name": "[data_tmeta]",
+                "vg_name": "pve",
+                "lv_size": "1543503872",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(55960)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "pve",
+                "lv_size": "1543503872",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(56328)"
+              },
+              {
+                "lv_name": "root",
+                "vg_name": "pve",
+                "lv_size": "74482450432",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(2048)"
+              },
+              {
+                "lv_name": "swap",
+                "vg_name": "pve",
+                "lv_size": "8589934592",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(0)"
+              },
+              {
+                "lv_name": "vm-100-disk-0",
+                "vg_name": "pve",
+                "lv_size": "12884901888",
+                "segtype": "thin",
+                "data_percent": "66.86",
+                "metadata_percent": "",
+                "devices": ""
+              },
+              {
+                "lv_name": "vm-101-disk-0",
+                "vg_name": "pve",
+                "lv_size": "8589934592",
+                "segtype": "thin",
+                "data_percent": "16.36",
+                "metadata_percent": "",
+                "devices": ""
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "mounts": {
+        "filesystems": [
+          {
+            "target": "/",
+            "source": "/dev/mapper/pve-root",
+            "fstype": "ext4",
+            "size": "67.7G",
+            "used": "14.1G",
+            "avail": "50.2G"
+          }
+        ]
+      },
+      "ip_addresses": [
+        {
+          "ifindex": 2,
+          "ifname": "nic0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "fq_codel",
+          "master": "vmbr0",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "64:00:6a:53:70:5f",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "enp0s25",
+            "enx64006a53705f"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 4,
+          "ifname": "vmbr0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "noqueue",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "64:00:6a:53:70:5f",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "addr_info": [
+            {
+              "family": "inet",
+              "local": "10.44.0.51",
+              "prefixlen": 24,
+              "scope": "global",
+              "label": "vmbr0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "fe80::6600:6aff:fe53:705f",
+              "prefixlen": 64,
+              "scope": "link",
+              "protocol": "kernel_ll",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "dst": "default",
+          "gateway": "10.44.0.1",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "dst": "10.44.0.0/24",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "scope": "link",
+          "prefsrc": "10.44.0.51",
+          "flags": []
+        }
+      ],
+      "failed_units": {
+        "rc": 0,
+        "out": "UNIT             LOAD   ACTIVE SUB    DESCRIPTION\nopenipmi.service loaded failed failed LSB: OpenIPMI Driver init script\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n1 loaded units listed.",
+        "err": ""
+      },
+      "thermal": {
+        "amdgpu-pci-0100": {
+          "Adapter": "PCI adapter",
+          "fan1": {},
+          "edge": {
+            "temp1_input": 45.0,
+            "temp1_crit": 120.0,
+            "temp1_crit_hyst": 90.0
+          },
+          "pwm1": {
+            "pwm1": 41.5,
+            "pwm1_enable": 0.0
+          },
+          "sclk": {
+            "freq1_input": 300000000.0
+          },
+          "mclk": {
+            "freq2_input": 1000000000.0
+          }
+        },
+        "acpitz-acpi-0": {
+          "Adapter": "ACPI interface",
+          "temp1": {
+            "temp1_input": 27.8
+          },
+          "temp2": {
+            "temp2_input": 29.8
+          }
+        },
+        "coretemp-isa-0000": {
+          "Adapter": "ISA adapter",
+          "Package id 0": {
+            "temp1_input": 41.0,
+            "temp1_max": 80.0,
+            "temp1_crit": 100.0,
+            "temp1_crit_alarm": 0.0
+          },
+          "Core 0": {
+            "temp2_input": 41.0,
+            "temp2_max": 80.0,
+            "temp2_crit": 100.0,
+            "temp2_crit_alarm": 0.0
+          },
+          "Core 1": {
+            "temp3_input": 37.0,
+            "temp3_max": 80.0,
+            "temp3_crit": 100.0,
+            "temp3_crit_alarm": 0.0
+          },
+          "Core 2": {
+            "temp4_input": 39.0,
+            "temp4_max": 80.0,
+            "temp4_crit": 100.0,
+            "temp4_crit_alarm": 0.0
+          },
+          "Core 3": {
+            "temp5_input": 37.0,
+            "temp5_max": 80.0,
+            "temp5_crit": 100.0,
+            "temp5_crit_alarm": 0.0
+          }
+        }
+      },
+      "zpool": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "zfs": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "nfs_exports": {
+        "rc": -1,
+        "err": "[Errno 2] No such file or directory: 'exportfs'"
+      },
+      "memory_modules": [
+        {
+          "Total Width": "Unknown",
+          "Data Width": "Unknown",
+          "Size": "No Module Installed",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM3",
+          "Bank Locator": "Not Specified",
+          "Type": "Unknown",
+          "Type Detail": "None"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM1",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "Unknown",
+          "Data Width": "Unknown",
+          "Size": "No Module Installed",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM4",
+          "Bank Locator": "Not Specified",
+          "Type": "Unknown",
+          "Type Detail": "None"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM2",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT41GU6BFR8A-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        }
+      ],
+      "system_hardware": [
+        "Manufacturer: Dell Inc.",
+        "Product Name: OptiPlex 7020",
+        "Version: 01",
+        "Manufacturer: Dell Inc.",
+        "Product Name: 02YYK5",
+        "Version: A01"
+      ],
+      "meminfo": {
+        "MemTotal": "16315516 kB",
+        "MemAvailable": "13670168 kB",
+        "SwapTotal": "8388604 kB",
+        "SwapFree": "8388588 kB"
+      },
+      "node_storage": [
+        {
+          "active": 1,
+          "avail": 141617405520,
+          "content": "images,rootdir",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local-lvm",
+          "total": 151640866816,
+          "type": "lvmthin",
+          "used": 10023461296,
+          "used_fraction": 0.0660999999964548
+        },
+        {
+          "active": 0,
+          "avail": 0,
+          "content": "rootdir,images",
+          "enabled": 0,
+          "shared": 0,
+          "storage": "d1-ssd-lvm",
+          "total": 0,
+          "type": "lvmthin",
+          "used": 0
+        },
+        {
+          "active": 1,
+          "avail": 53894467584,
+          "content": "backup,vztmpl,import,iso",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local",
+          "total": 72722055168,
+          "type": "dir",
+          "used": 15086690304,
+          "used_fraction": 0.207456874934946
+        }
+      ],
+      "network": [
+        {
+          "active": 1,
+          "altnames": [
+            "enp0s25",
+            "enx64006a53705f"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "nic0",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 3,
+          "type": "eth"
+        },
+        {
+          "active": 1,
+          "address": "10.44.0.51",
+          "autostart": 1,
+          "bridge_fd": "0",
+          "bridge_ports": "nic0",
+          "bridge_stp": "off",
+          "cidr": "10.44.0.51/24",
+          "families": [
+            "inet"
+          ],
+          "gateway": "10.44.0.1",
+          "iface": "vmbr0",
+          "method": "static",
+          "method6": "manual",
+          "netmask": "24",
+          "priority": 4,
+          "type": "bridge"
+        }
+      ],
+      "guests": [
+        {
+          "resource": {
+            "cpu": 0.000394869850671122,
+            "disk": 6257418240,
+            "diskread": 3885023232,
+            "diskwrite": 127019229184,
+            "id": "lxc/100",
+            "maxcpu": 1,
+            "maxdisk": 12573696000,
+            "maxmem": 1073741824,
+            "mem": 148533248,
+            "memhost": 0,
+            "name": "app-runner",
+            "netin": 11869084264,
+            "netout": 505138541,
+            "node": "pve-d2",
+            "status": "running",
+            "template": 0,
+            "type": "lxc",
+            "uptime": 2891305,
+            "vmid": 100
+          },
+          "config": {
+            "cores": "1",
+            "features": "nesting=1,keyctl=1",
+            "hostname": "app-runner",
+            "memory": "1024",
+            "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:BF:BD:11,ip=dhcp,type=veth",
+            "onboot": "1",
+            "ostype": "ubuntu",
+            "rootfs": "local-lvm:vm-100-disk-0,size=12G",
+            "startup": "order=10,up=30,down=60",
+            "swap": "512",
+            "unprivileged": "1"
+          },
+          "config_rc": 0
+        },
+        {
+          "resource": {
+            "cpu": 0.000839098432676134,
+            "disk": 929415168,
+            "diskread": 1254719488,
+            "diskwrite": 10740211712,
+            "id": "lxc/101",
+            "maxcpu": 2,
+            "maxdisk": 8350298112,
+            "maxmem": 536870912,
+            "mem": 78409728,
+            "memhost": 0,
+            "name": "cf-tunnel",
+            "netin": 639454212,
+            "netout": 205557944,
+            "node": "pve-d2",
+            "status": "running",
+            "template": 0,
+            "type": "lxc",
+            "uptime": 335569,
+            "vmid": 101
+          },
+          "config": {
+            "cores": "2",
+            "features": "nesting=1",
+            "hostname": "cf-tunnel",
+            "memory": "512",
+            "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:A3:57:77,ip=dhcp,ip6=dhcp,type=veth",
+            "ostype": "ubuntu",
+            "rootfs": "local-lvm:vm-101-disk-0,size=8G",
+            "swap": "512",
+            "unprivileged": "1"
+          },
+          "config_rc": 0
+        }
+      ],
+      "nic_details": {
+        "nic0": {
+          "link": {
+            "rc": 0,
+            "out": "Speed: 1000Mb/s\nDuplex: Full\nAuto-negotiation: on\nLink detected: yes",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: e1000e\nversion: 7.0.2-7-pve\nfirmware-version: 0.13-4\nexpansion-rom-version: \nbus-info: 0000:00:19.0\nsupports-statistics: yes\nsupports-test: yes\nsupports-eeprom-access: yes\nsupports-register-dump: yes\nsupports-priv-flags: yes",
+            "err": ""
+          }
+        }
+      },
+      "smart": {
+        "/dev/sda": {
+          "smart_status": {
+            "passed": true
+          },
+          "power_on_time": {
+            "hours": 8805
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 8805,
+                "string": "8805"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 352010,
+                "string": "352010"
+              },
+              "when_failed": ""
+            }
+          ]
+        }
+      },
+      "dns": "search home.arpa\nnameserver 10.44.0.1\n"
+    },
+    "pve-storage": {
+      "node": "pve-storage",
+      "collected_utc": "2026-10-28T03:37:16.149520+00:00",
+      "user": "uid=0(root) gid=0(root) groups=0(root)",
+      "version": {
+        "rc": 0,
+        "out": "pve-manager/9.2.11/f6997e698c7933ea (running kernel: 7.0.14-12-pve)",
+        "err": ""
+      },
+      "uptime": {
+        "rc": 0,
+        "out": "21:37:17 up  5:56,  4 users,  load average: 0.19, 0.24, 0.21",
+        "err": ""
+      },
+      "cpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "4"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "1"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "4"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "VT-x"
+        }
+      ],
+      "disks": [
+        {
+          "name": "sda",
+          "path": "/dev/sda",
+          "model": "ST1000DM003-1ER162",
+          "size": 1000204886016,
+          "type": "disk",
+          "rota": true,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sdb",
+          "path": "/dev/sdb",
+          "model": "WDC WD10EZEX-00WN4A0",
+          "size": 1000204886016,
+          "type": "disk",
+          "rota": true,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sdc",
+          "path": "/dev/sdc",
+          "model": "SAMSUNG SSD PM871 2.5 7mm 128GB",
+          "size": 128035676160,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sdc1",
+          "path": "/dev/sdc1",
+          "model": null,
+          "size": 1031168,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdc"
+        },
+        {
+          "name": "sdc2",
+          "path": "/dev/sdc2",
+          "model": null,
+          "size": 1073741824,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "vfat",
+          "mountpoints": [
+            "/boot/efi"
+          ],
+          "parent": "sdc"
+        },
+        {
+          "name": "sdc3",
+          "path": "/dev/sdc3",
+          "model": null,
+          "size": 126960868864,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": "sdc"
+        },
+        {
+          "name": "pve-swap",
+          "path": "/dev/mapper/pve-swap",
+          "model": null,
+          "size": 8313110528,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "swap",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "parent": "sdc3"
+        },
+        {
+          "name": "pve-root",
+          "path": "/dev/mapper/pve-root",
+          "model": null,
+          "size": 42542825472,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [
+            "/"
+          ],
+          "parent": "sdc3"
+        },
+        {
+          "name": "pve-data_tmeta",
+          "path": "/dev/mapper/pve-data_tmeta",
+          "model": null,
+          "size": 1073741824,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdc3"
+        },
+        {
+          "name": "pve-data",
+          "path": "/dev/mapper/pve-data",
+          "model": null,
+          "size": 58112081920,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data_tmeta"
+        },
+        {
+          "name": "pve-data_tdata",
+          "path": "/dev/mapper/pve-data_tdata",
+          "model": null,
+          "size": 58112081920,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sdc3"
+        },
+        {
+          "name": "sdd",
+          "path": "/dev/sdd",
+          "model": "SanDisk X300 2.5 7MM 128GB",
+          "size": 128035676160,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        }
+      ],
+      "pci": {
+        "rc": 0,
+        "out": "00:19.0 Ethernet controller [0200]: Intel Corporation 82579LM Gigabit Network Connection (Lewisville) [8086:1502] (rev 04)\n\tDeviceName:  Onboard LAN\n\tSubsystem: Dell Device [1028:052c]\n\tKernel driver in use: e1000e\n\tKernel modules: e1000e\n02:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Oland [Radeon HD 8570 / R5 430 OEM / R7 240/340 / Radeon 520 OEM] [1002:6611]\n\tSubsystem: Dell Radeon R5 240 OEM [1028:210b]\n\tKernel driver in use: amdgpu\n\tKernel modules: radeon, amdgpu\n",
+        "err": ""
+      },
+      "pvs": {
+        "report": [
+          {
+            "pv": [
+              {
+                "pv_name": "/dev/sdc3",
+                "vg_name": "pve",
+                "pv_size": "126957387776",
+                "pv_free": "15841886208"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "vgs": {
+        "report": [
+          {
+            "vg": [
+              {
+                "vg_name": "pve",
+                "vg_size": "126957387776",
+                "vg_free": "15841886208"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "lvs": {
+        "report": [
+          {
+            "lv": [
+              {
+                "lv_name": "data",
+                "vg_name": "pve",
+                "lv_size": "58112081920",
+                "segtype": "thin-pool",
+                "data_percent": "0.00",
+                "metadata_percent": "1.59",
+                "devices": "data_tdata(0)"
+              },
+              {
+                "lv_name": "[data_tdata]",
+                "vg_name": "pve",
+                "lv_size": "58112081920",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdc3(12125)"
+              },
+              {
+                "lv_name": "[data_tmeta]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdc3(25980)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdc3(26236)"
+              },
+              {
+                "lv_name": "root",
+                "vg_name": "pve",
+                "lv_size": "42542825472",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdc3(1982)"
+              },
+              {
+                "lv_name": "swap",
+                "vg_name": "pve",
+                "lv_size": "8313110528",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sdc3(0)"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "mounts": {
+        "filesystems": [
+          {
+            "target": "/",
+            "source": "/dev/mapper/pve-root",
+            "fstype": "ext4",
+            "size": "38.7G",
+            "used": "12.1G",
+            "avail": "24.6G",
+            "children": [
+              {
+                "target": "/boot/efi",
+                "source": "/dev/sdc2",
+                "fstype": "vfat",
+                "size": "1022M",
+                "used": "9M",
+                "avail": "1013M"
+              }
+            ]
+          }
+        ]
+      },
+      "ip_addresses": [
+        {
+          "ifindex": 2,
+          "ifname": "nic0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "fq_codel",
+          "master": "vmbr0",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "34:17:eb:bc:35:68",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "enp0s25",
+            "enx3417ebbc3568"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 3,
+          "ifname": "vmbr0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "noqueue",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "34:17:eb:bc:35:68",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "addr_info": [
+            {
+              "family": "inet",
+              "local": "10.44.0.54",
+              "prefixlen": 24,
+              "scope": "global",
+              "label": "vmbr0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "fe80::3617:ebff:febc:3568",
+              "prefixlen": 64,
+              "scope": "link",
+              "protocol": "kernel_ll",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "dst": "default",
+          "gateway": "10.44.0.1",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "dst": "10.44.0.0/24",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "scope": "link",
+          "prefsrc": "10.44.0.54",
+          "flags": []
+        }
+      ],
+      "failed_units": {
+        "rc": 0,
+        "out": "UNIT             LOAD   ACTIVE SUB    DESCRIPTION\nopenipmi.service loaded failed failed LSB: OpenIPMI Driver init script\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n1 loaded units listed.",
+        "err": ""
+      },
+      "thermal": {
+        "amdgpu-pci-0200": {
+          "Adapter": "PCI adapter",
+          "fan1": {},
+          "edge": {
+            "temp1_input": 31.0,
+            "temp1_crit": 120.0,
+            "temp1_crit_hyst": 90.0
+          },
+          "pwm1": {
+            "pwm1": 37.5,
+            "pwm1_enable": 0.0
+          },
+          "sclk": {
+            "freq1_input": 300000000.0
+          },
+          "mclk": {
+            "freq2_input": 300000000.0
+          }
+        },
+        "acpitz-acpi-0": {
+          "Adapter": "ACPI interface",
+          "temp1": {
+            "temp1_input": 27.8
+          },
+          "temp2": {
+            "temp2_input": 29.8
+          }
+        },
+        "coretemp-isa-0000": {
+          "Adapter": "ISA adapter",
+          "Package id 0": {
+            "temp1_input": 39.0,
+            "temp1_max": 85.0,
+            "temp1_crit": 105.0,
+            "temp1_crit_alarm": 0.0
+          },
+          "Core 0": {
+            "temp2_input": 36.0,
+            "temp2_max": 85.0,
+            "temp2_crit": 105.0,
+            "temp2_crit_alarm": 0.0
+          },
+          "Core 1": {
+            "temp3_input": 34.0,
+            "temp3_max": 85.0,
+            "temp3_crit": 105.0,
+            "temp3_crit_alarm": 0.0
+          },
+          "Core 2": {
+            "temp4_input": 34.0,
+            "temp4_max": 85.0,
+            "temp4_crit": 105.0,
+            "temp4_crit_alarm": 0.0
+          },
+          "Core 3": {
+            "temp5_input": 36.0,
+            "temp5_max": 85.0,
+            "temp5_crit": 105.0,
+            "temp5_crit_alarm": 0.0
+          }
+        }
+      },
+      "zpool": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "zfs": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "nfs_exports": {
+        "rc": -1,
+        "err": "[Errno 2] No such file or directory: 'exportfs'"
+      },
+      "memory_modules": [
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM3",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "04CD",
+          "Part Number": "F3-1600C11-8GNT",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "4 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM1",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT451U6AFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM4",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "04CD",
+          "Part Number": "F3-1600C11-8GNT",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "4 GB",
+          "Form Factor": "DIMM",
+          "Locator": "DIMM2",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT451U6AFR8C-PB",
+          "Configured Memory Speed": "1600 MT/s"
+        }
+      ],
+      "system_hardware": [
+        "Manufacturer: Dell Inc.",
+        "Product Name: OptiPlex 7010",
+        "Version: 01",
+        "Manufacturer: Dell Inc.",
+        "Product Name: 0GY6Y8",
+        "Version: A03"
+      ],
+      "meminfo": {
+        "MemTotal": "24594860 kB",
+        "MemAvailable": "22441940 kB",
+        "SwapTotal": "8118268 kB",
+        "SwapFree": "8118268 kB"
+      },
+      "node_storage": [
+        {
+          "active": 0,
+          "avail": 0,
+          "content": "images,rootdir",
+          "enabled": 0,
+          "shared": 0,
+          "storage": "d1-ssd-lvm",
+          "total": 0,
+          "type": "lvmthin",
+          "used": 0
+        },
+        {
+          "active": 1,
+          "avail": 58112081920,
+          "content": "images,rootdir",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local-lvm",
+          "total": 58112081920,
+          "type": "lvmthin",
+          "used": 0,
+          "used_fraction": 0
+        },
+        {
+          "active": 1,
+          "avail": 26371391488,
+          "content": "import,vztmpl,iso,backup",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local",
+          "total": 41556369408,
+          "type": "dir",
+          "used": 13041061888,
+          "used_fraction": 0.313816198907152
+        }
+      ],
+      "network": [
+        {
+          "active": 1,
+          "altnames": [
+            "enp0s25",
+            "enx3417ebbc3568"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "nic0",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 3,
+          "type": "eth"
+        },
+        {
+          "active": 1,
+          "address": "10.44.0.54",
+          "autostart": 1,
+          "bridge_fd": "0",
+          "bridge_ports": "nic0",
+          "bridge_stp": "off",
+          "cidr": "10.44.0.54/24",
+          "families": [
+            "inet"
+          ],
+          "gateway": "10.44.0.1",
+          "iface": "vmbr0",
+          "method": "static",
+          "method6": "manual",
+          "netmask": "24",
+          "priority": 4,
+          "type": "bridge"
+        }
+      ],
+      "guests": [],
+      "nic_details": {
+        "nic0": {
+          "link": {
+            "rc": 0,
+            "out": "Speed: 1000Mb/s\nDuplex: Full\nAuto-negotiation: on\nLink detected: yes",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: e1000e\nversion: 7.0.14-12-pve\nfirmware-version: 0.13-4\nexpansion-rom-version: \nbus-info: 0000:00:19.0\nsupports-statistics: yes\nsupports-test: yes\nsupports-eeprom-access: yes\nsupports-register-dump: yes\nsupports-priv-flags: yes",
+            "err": ""
+          }
+        }
+      },
+      "smart": {
+        "/dev/sda": {
+          "smart_status": {
+            "passed": true
+          },
+          "temperature": {
+            "current": 32
+          },
+          "power_on_time": {
+            "hours": 49555
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 100,
+              "worst": 100,
+              "threshold": 10,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 44,
+              "worst": 44,
+              "threshold": 0,
+              "raw": {
+                "value": 49555,
+                "string": "49555"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 197,
+              "name": "Current_Pending_Sector",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 198,
+              "name": "Offline_Uncorrectable",
+              "value": 100,
+              "worst": 100,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 199,
+              "name": "UDMA_CRC_Error_Count",
+              "value": 200,
+              "worst": 200,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            }
+          ]
+        },
+        "/dev/sdb": {
+          "smart_status": {
+            "passed": true
+          },
+          "temperature": {
+            "current": 38
+          },
+          "power_on_time": {
+            "hours": 9755
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 200,
+              "worst": 200,
+              "threshold": 140,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 87,
+              "worst": 86,
+              "threshold": 0,
+              "raw": {
+                "value": 9755,
+                "string": "9755"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 197,
+              "name": "Current_Pending_Sector",
+              "value": 200,
+              "worst": 200,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 198,
+              "name": "Offline_Uncorrectable",
+              "value": 100,
+              "worst": 253,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 199,
+              "name": "UDMA_CRC_Error_Count",
+              "value": 200,
+              "worst": 200,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            }
+          ]
+        },
+        "/dev/sdc": {
+          "smart_status": {
+            "passed": true
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 100,
+              "worst": 100,
+              "threshold": 10,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 90,
+              "worst": 90,
+              "threshold": 5,
+              "raw": {
+                "value": 199,
+                "string": "199"
+              },
+              "when_failed": ""
+            }
+          ]
+        },
+        "/dev/sdd": {
+          "smart_status": {
+            "passed": true
+          },
+          "power_on_time": {
+            "hours": 6606
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 100,
+              "worst": 100,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              }
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 253,
+              "worst": 100,
+              "raw": {
+                "value": 6606,
+                "string": "6606"
+              }
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 100,
+              "worst": 100,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              }
+            }
+          ]
+        }
+      },
+      "dns": "search home.arpa\nnameserver 10.44.0.1\n"
+    },
+    "pve-6420": {
+      "node": "pve-6420",
+      "collected_utc": "2026-10-28T03:37:16.246465+00:00",
+      "user": "uid=0(root) gid=0(root) groups=0(root)",
+      "version": {
+        "rc": 0,
+        "out": "pve-manager/9.2.11/f6997e698c7933ea (running kernel: 7.0.14-12-pve)",
+        "err": ""
+      },
+      "uptime": {
+        "rc": 0,
+        "out": "21:37:17 up 65 days,  7:58,  4 users,  load average: 0.41, 0.14, 0.11",
+        "err": ""
+      },
+      "cpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "4"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Core(TM) i5-2430M CPU @ 2.40GHz"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "2"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "VT-x"
+        }
+      ],
+      "disks": [
+        {
+          "name": "sda",
+          "path": "/dev/sda",
+          "model": "WDC WD3200BEKT-75PVMT1",
+          "size": 320072933376,
+          "type": "disk",
+          "rota": true,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sda1",
+          "path": "/dev/sda1",
+          "model": null,
+          "size": 1031168,
+          "type": "part",
+          "rota": true,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sda2",
+          "path": "/dev/sda2",
+          "model": null,
+          "size": 1073741824,
+          "type": "part",
+          "rota": true,
+          "tran": null,
+          "fstype": "vfat",
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sda3",
+          "path": "/dev/sda3",
+          "model": null,
+          "size": 318998126080,
+          "type": "part",
+          "rota": true,
+          "tran": null,
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "pve-swap",
+          "path": "/dev/mapper/pve-swap",
+          "model": null,
+          "size": 6085935104,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": "swap",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-root",
+          "path": "/dev/mapper/pve-root",
+          "model": null,
+          "size": 91112865792,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [
+            "/"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data_tmeta",
+          "path": "/dev/mapper/pve-data_tmeta",
+          "model": null,
+          "size": 2042626048,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data-tpool",
+          "path": "/dev/mapper/pve-data-tpool",
+          "model": null,
+          "size": 200529674240,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data_tmeta"
+        },
+        {
+          "name": "pve-data",
+          "path": "/dev/mapper/pve-data",
+          "model": null,
+          "size": 200529674240,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data-tpool"
+        },
+        {
+          "name": "pve-vm--201--disk--0",
+          "path": "/dev/mapper/pve-vm--201--disk--0",
+          "model": null,
+          "size": 42949672960,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": "ext4",
+          "mountpoints": [],
+          "parent": "pve-data-tpool"
+        },
+        {
+          "name": "pve-data_tdata",
+          "path": "/dev/mapper/pve-data_tdata",
+          "model": null,
+          "size": 200529674240,
+          "type": "lvm",
+          "rota": true,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        },
+        {
+          "name": "sr0",
+          "path": "/dev/sr0",
+          "model": "MATSHITA DVD+/-RW UJ8B2",
+          "size": 1073741312,
+          "type": "rom",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        }
+      ],
+      "pci": {
+        "rc": 0,
+        "out": "00:02.0 VGA compatible controller [0300]: Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller [8086:0116] (rev 09)\n\tDeviceName:  Onboard IGD\n\tSubsystem: Dell Device [1028:0493]\n\tKernel driver in use: i915\n\tKernel modules: i915\n00:19.0 Ethernet controller [0200]: Intel Corporation 82579LM Gigabit Network Connection (Lewisville) [8086:1502] (rev 04)\n\tDeviceName:  Onboard LAN\n\tSubsystem: Dell Device [1028:0493]\n\tKernel driver in use: e1000e\n\tKernel modules: e1000e\n01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GF119M [NVS 4200M] [10de:1056] (rev a1)\n\tSubsystem: Dell Device [1028:1493]\n\tKernel driver in use: nouveau\n\tKernel modules: nvidiafb, nouveau\n01:00.1 Audio device [0403]: NVIDIA Corporation GF119 HDMI Audio Controller [10de:0e08] (rev a1)\n\tSubsystem: Dell Device [1028:1493]\n\tKernel driver in use: snd_hda_intel\n\tKernel modules: snd_hda_intel\n03:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM43228 802.11a/b/g/n [14e4:4359]\n\tSubsystem: Dell Wireless 1530 Half-size Mini PCIe Card [1028:0011]\n\tKernel driver in use: bcma-pci-bridge\n\tKernel modules: bcma\n",
+        "err": ""
+      },
+      "pvs": {
+        "report": [
+          {
+            "pv": [
+              {
+                "pv_name": "/dev/sda3",
+                "vg_name": "pve",
+                "pv_size": "318993596416",
+                "pv_free": "17179869184"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "vgs": {
+        "report": [
+          {
+            "vg": [
+              {
+                "vg_name": "pve",
+                "vg_size": "318993596416",
+                "vg_free": "17179869184"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "lvs": {
+        "report": [
+          {
+            "lv": [
+              {
+                "lv_name": "data",
+                "vg_name": "pve",
+                "lv_size": "200529674240",
+                "segtype": "thin-pool",
+                "data_percent": "13.11",
+                "metadata_percent": "1.27",
+                "devices": "data_tdata(0)"
+              },
+              {
+                "lv_name": "[data_tdata]",
+                "vg_name": "pve",
+                "lv_size": "200529674240",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(23174)"
+              },
+              {
+                "lv_name": "[data_tmeta]",
+                "vg_name": "pve",
+                "lv_size": "2042626048",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(70984)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "pve",
+                "lv_size": "2042626048",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(71471)"
+              },
+              {
+                "lv_name": "root",
+                "vg_name": "pve",
+                "lv_size": "91112865792",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(1451)"
+              },
+              {
+                "lv_name": "swap",
+                "vg_name": "pve",
+                "lv_size": "6085935104",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(0)"
+              },
+              {
+                "lv_name": "vm-201-disk-0",
+                "vg_name": "pve",
+                "lv_size": "42949672960",
+                "segtype": "thin",
+                "data_percent": "61.20",
+                "metadata_percent": "",
+                "devices": ""
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "mounts": {
+        "filesystems": [
+          {
+            "target": "/",
+            "source": "/dev/mapper/pve-root",
+            "fstype": "ext4",
+            "size": "83G",
+            "used": "12.7G",
+            "avail": "66G"
+          }
+        ]
+      },
+      "ip_addresses": [
+        {
+          "ifindex": 2,
+          "ifname": "nic0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "fq_codel",
+          "master": "vmbr0",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "d4:be:d9:29:7e:7c",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "enp0s25",
+            "enxd4bed9297e7c"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 3,
+          "ifname": "vmbr0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "noqueue",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "d4:be:d9:29:7e:7c",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "addr_info": [
+            {
+              "family": "inet",
+              "local": "10.44.0.52",
+              "prefixlen": 24,
+              "scope": "global",
+              "label": "vmbr0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "fe80::d6be:d9ff:fe29:7e7c",
+              "prefixlen": 64,
+              "scope": "link",
+              "protocol": "kernel_ll",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "dst": "default",
+          "gateway": "10.44.0.1",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "dst": "10.44.0.0/24",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "scope": "link",
+          "prefsrc": "10.44.0.52",
+          "flags": []
+        }
+      ],
+      "failed_units": {
+        "rc": 0,
+        "out": "UNIT             LOAD   ACTIVE SUB    DESCRIPTION\nopenipmi.service loaded failed failed LSB: OpenIPMI Driver init script\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n1 loaded units listed.",
+        "err": ""
+      },
+      "thermal": {
+        "coretemp-isa-0000": {
+          "Adapter": "ISA adapter",
+          "Package id 0": {
+            "temp1_input": 55.0,
+            "temp1_max": 86.0,
+            "temp1_crit": 100.0,
+            "temp1_crit_alarm": 0.0
+          },
+          "Core 0": {
+            "temp2_input": 54.0,
+            "temp2_max": 86.0,
+            "temp2_crit": 100.0,
+            "temp2_crit_alarm": 0.0
+          },
+          "Core 1": {
+            "temp3_input": 52.0,
+            "temp3_max": 86.0,
+            "temp3_crit": 100.0,
+            "temp3_crit_alarm": 0.0
+          }
+        },
+        "BAT0-acpi-0": {
+          "Adapter": "ACPI interface",
+          "in0": {
+            "in0_input": 12.555
+          },
+          "curr1": {
+            "curr1_input": 0.001
+          }
+        },
+        "nouveau-pci-0100": {
+          "Adapter": "PCI adapter",
+          "GPU core": {
+            "in0_input": 0.85,
+            "in0_min": 0.85,
+            "in0_max": 1.03
+          },
+          "temp1": {
+            "temp1_input": 54.0,
+            "temp1_max": 95.0,
+            "temp1_max_hyst": 3.0,
+            "temp1_crit": 105.0,
+            "temp1_crit_hyst": 5.0,
+            "temp1_emergency": 135.0,
+            "temp1_emergency_hyst": 5.0
+          }
+        },
+        "dell_smm-isa-00de": {
+          "Adapter": "ISA adapter",
+          "Processor Fan": {
+            "fan1_input": 0.0,
+            "fan1_min": 0.0,
+            "fan1_max": 4900.0
+          },
+          "CPU": {
+            "temp1_input": 59.0
+          },
+          "Ambient": {
+            "temp2_input": 35.0
+          },
+          "SODIMM": {
+            "temp3_input": 42.0
+          },
+          "GPU": {
+            "temp4_input": 52.0
+          },
+          "pwm1": {
+            "pwm1": 0.0,
+            "pwm1_enable": 1.0
+          }
+        },
+        "acpitz-acpi-0": {
+          "Adapter": "ACPI interface",
+          "temp1": {
+            "temp1_input": 25.0
+          }
+        }
+      },
+      "zpool": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "zfs": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "nfs_exports": {
+        "rc": -1,
+        "err": "[Errno 2] No such file or directory: 'exportfs'"
+      },
+      "memory_modules": [
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "2 GB",
+          "Form Factor": "SODIMM",
+          "Locator": "ChannelA-DIMM0",
+          "Bank Locator": "BANK 0",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1333 MT/s",
+          "Manufacturer": "Hynix/Hyundai",
+          "Part Number": "HMT325S6CFR8C-H9"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "4 GB",
+          "Form Factor": "SODIMM",
+          "Locator": "ChannelB-DIMM0",
+          "Bank Locator": "BANK 2",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1333 MT/s",
+          "Manufacturer": "Samsung",
+          "Part Number": "M471B5173DB0-YK0"
+        }
+      ],
+      "system_hardware": [
+        "Manufacturer: Dell Inc.",
+        "Product Name: Latitude E6420",
+        "Version: 01",
+        "Manufacturer: Dell Inc.",
+        "Product Name: 038C0K",
+        "Version: A00"
+      ],
+      "meminfo": {
+        "MemTotal": "5944664 kB",
+        "MemAvailable": "3470632 kB",
+        "SwapTotal": "5943292 kB",
+        "SwapFree": "5943280 kB"
+      },
+      "node_storage": [
+        {
+          "active": 1,
+          "avail": 174240233948,
+          "content": "rootdir,images",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local-lvm",
+          "total": 200529674240,
+          "type": "lvmthin",
+          "used": 26289440292,
+          "used_fraction": 0.131099999995691
+        },
+        {
+          "active": 1,
+          "avail": 70894055424,
+          "content": "vztmpl,iso,backup,import",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local",
+          "total": 89087057920,
+          "type": "dir",
+          "used": 13620584448,
+          "used_fraction": 0.152890720223708
+        },
+        {
+          "active": 0,
+          "avail": 0,
+          "content": "rootdir,images",
+          "enabled": 0,
+          "shared": 0,
+          "storage": "d1-ssd-lvm",
+          "total": 0,
+          "type": "lvmthin",
+          "used": 0
+        }
+      ],
+      "network": [
+        {
+          "active": 1,
+          "address": "10.44.0.52",
+          "autostart": 1,
+          "bridge_fd": "0",
+          "bridge_ports": "nic0",
+          "bridge_stp": "off",
+          "cidr": "10.44.0.52/24",
+          "families": [
+            "inet"
+          ],
+          "gateway": "10.44.0.1",
+          "iface": "vmbr0",
+          "method": "static",
+          "method6": "manual",
+          "netmask": "24",
+          "priority": 4,
+          "type": "bridge"
+        },
+        {
+          "active": 1,
+          "altnames": [
+            "enp0s25",
+            "enxd4bed9297e7c"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "nic0",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 3,
+          "type": "eth"
+        }
+      ],
+      "guests": [
+        {
+          "resource": {
+            "cpu": 0.105514138121974,
+            "disk": 12459835392,
+            "diskread": 5649563648,
+            "diskwrite": 13830750208,
+            "id": "lxc/201",
+            "maxcpu": 2,
+            "maxdisk": 41956900864,
+            "maxmem": 4294967296,
+            "mem": 395481088,
+            "memhost": 0,
+            "name": "monitoring",
+            "netin": 7285787266,
+            "netout": 2689344563,
+            "node": "pve-6420",
+            "status": "running",
+            "template": 0,
+            "type": "lxc",
+            "uptime": 339923,
+            "vmid": 201
+          },
+          "config": {
+            "cores": "2",
+            "features": "nesting=1,keyctl=1",
+            "hostname": "monitoring",
+            "memory": "4096",
+            "net0": "name=eth0,bridge=vmbr0,firewall=1,gw=10.44.0.1,hwaddr=BC:24:11:4B:F3:69,ip=10.44.0.80/24,ip6=auto,type=veth",
+            "onboot": "1",
+            "ostype": "ubuntu",
+            "rootfs": "local-lvm:vm-201-disk-0,size=40G",
+            "swap": "512",
+            "unprivileged": "1"
+          },
+          "config_rc": 0
+        }
+      ],
+      "nic_details": {
+        "nic0": {
+          "link": {
+            "rc": 0,
+            "out": "Speed: 1000Mb/s\nDuplex: Full\nAuto-negotiation: on\nLink detected: yes",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: e1000e\nversion: 7.0.14-12-pve\nfirmware-version: 0.13-3\nexpansion-rom-version: \nbus-info: 0000:00:19.0\nsupports-statistics: yes\nsupports-test: yes\nsupports-eeprom-access: yes\nsupports-register-dump: yes\nsupports-priv-flags: yes",
+            "err": ""
+          }
+        }
+      },
+      "smart": {
+        "/dev/sda": {
+          "smart_status": {
+            "passed": true
+          },
+          "temperature": {
+            "current": 36
+          },
+          "power_on_time": {
+            "hours": 12345
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 200,
+              "worst": 200,
+              "threshold": 140,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 9,
+              "name": "Power_On_Hours",
+              "value": 84,
+              "worst": 84,
+              "threshold": 0,
+              "raw": {
+                "value": 12345,
+                "string": "12345"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 197,
+              "name": "Current_Pending_Sector",
+              "value": 200,
+              "worst": 200,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 198,
+              "name": "Offline_Uncorrectable",
+              "value": 100,
+              "worst": 253,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 199,
+              "name": "UDMA_CRC_Error_Count",
+              "value": 200,
+              "worst": 200,
+              "threshold": 0,
+              "raw": {
+                "value": 0,
+                "string": "0"
+              },
+              "when_failed": ""
+            }
+          ]
+        }
+      },
+      "dns": "search home.arpa\nnameserver 10.44.0.1\n"
+    },
+    "pve-7450": {
+      "node": "pve-7450",
+      "collected_utc": "2026-10-28T03:37:16.137042+00:00",
+      "user": "uid=0(root) gid=0(root) groups=0(root)",
+      "version": {
+        "rc": 0,
+        "out": "pve-manager/9.2.11/f6997e698c7933ea (running kernel: 7.0.14-12-pve)",
+        "err": ""
+      },
+      "uptime": {
+        "rc": 0,
+        "out": "21:37:16 up 65 days,  8:08,  3 users,  load average: 0.02, 0.04, 0.05",
+        "err": ""
+      },
+      "cpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "4"
+        },
+        {
+          "field": "Model name:",
+          "data": "Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "2"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "VT-x"
+        }
+      ],
+      "disks": [
+        {
+          "name": "sda",
+          "path": "/dev/sda",
+          "model": "SAMSUNG SSD PM851 mSATA 128GB",
+          "size": 128035676160,
+          "type": "disk",
+          "rota": false,
+          "tran": "sata",
+          "fstype": null,
+          "mountpoints": [],
+          "parent": null
+        },
+        {
+          "name": "sda1",
+          "path": "/dev/sda1",
+          "model": null,
+          "size": 1031168,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "sda2",
+          "path": "/dev/sda2",
+          "model": null,
+          "size": 1073741824,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "vfat",
+          "mountpoints": [
+            "/boot/efi"
+          ],
+          "parent": "sda"
+        },
+        {
+          "name": "sda3",
+          "path": "/dev/sda3",
+          "model": null,
+          "size": 126700487168,
+          "type": "part",
+          "rota": false,
+          "tran": null,
+          "fstype": "LVM2_member",
+          "mountpoints": [],
+          "parent": "sda"
+        },
+        {
+          "name": "pve-swap",
+          "path": "/dev/mapper/pve-swap",
+          "model": null,
+          "size": 8589934592,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "swap",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-root",
+          "path": "/dev/mapper/pve-root",
+          "model": null,
+          "size": 42408607744,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": "xfs",
+          "mountpoints": [
+            "/"
+          ],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data_tmeta",
+          "path": "/dev/mapper/pve-data_tmeta",
+          "model": null,
+          "size": 1073741824,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        },
+        {
+          "name": "pve-data",
+          "path": "/dev/mapper/pve-data",
+          "model": null,
+          "size": 57843646464,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "pve-data_tmeta"
+        },
+        {
+          "name": "pve-data_tdata",
+          "path": "/dev/mapper/pve-data_tdata",
+          "model": null,
+          "size": 57843646464,
+          "type": "lvm",
+          "rota": false,
+          "tran": null,
+          "fstype": null,
+          "mountpoints": [],
+          "parent": "sda3"
+        }
+      ],
+      "pci": {
+        "rc": 0,
+        "out": "00:02.0 VGA compatible controller [0300]: Intel Corporation HD Graphics 5500 [8086:1616] (rev 09)\n\tDeviceName:  Onboard IGD\n\tSubsystem: Dell Device [1028:062e]\n\tKernel driver in use: i915\n\tKernel modules: i915\n00:19.0 Ethernet controller [0200]: Intel Corporation Ethernet Connection (3) I218-LM [8086:15a2] (rev 03)\n\tDeviceName:  Onboard LAN\n\tSubsystem: Dell Device [1028:062e]\n\tKernel driver in use: e1000e\n\tKernel modules: e1000e\n02:00.0 Network controller [0280]: Intel Corporation Wireless 7265 [8086:095a] (rev 59)\n\tSubsystem: Intel Corporation Dual Band Wireless-AC 7265 [Stone Peak 2 AC] [8086:5410]\n\tKernel driver in use: iwlwifi\n\tKernel modules: iwlwifi",
+        "err": ""
+      },
+      "pvs": {
+        "report": [
+          {
+            "pv": [
+              {
+                "pv_name": "/dev/sda3",
+                "vg_name": "pve",
+                "pv_size": "126697340928",
+                "pv_free": "15707668480"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "vgs": {
+        "report": [
+          {
+            "vg": [
+              {
+                "vg_name": "pve",
+                "vg_size": "126697340928",
+                "vg_free": "15707668480"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "lvs": {
+        "report": [
+          {
+            "lv": [
+              {
+                "lv_name": "data",
+                "vg_name": "pve",
+                "lv_size": "57843646464",
+                "segtype": "thin-pool",
+                "data_percent": "0.00",
+                "metadata_percent": "1.59",
+                "devices": "data_tdata(0)"
+              },
+              {
+                "lv_name": "[data_tdata]",
+                "vg_name": "pve",
+                "lv_size": "57843646464",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(12159)"
+              },
+              {
+                "lv_name": "[data_tmeta]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(25950)"
+              },
+              {
+                "lv_name": "[lvol0_pmspare]",
+                "vg_name": "pve",
+                "lv_size": "1073741824",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(26206)"
+              },
+              {
+                "lv_name": "root",
+                "vg_name": "pve",
+                "lv_size": "42408607744",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(2048)"
+              },
+              {
+                "lv_name": "swap",
+                "vg_name": "pve",
+                "lv_size": "8589934592",
+                "segtype": "linear",
+                "data_percent": "",
+                "metadata_percent": "",
+                "devices": "/dev/sda3(0)"
+              }
+            ]
+          }
+        ],
+        "log": []
+      },
+      "mounts": {
+        "filesystems": [
+          {
+            "target": "/",
+            "source": "/dev/mapper/pve-root",
+            "fstype": "xfs",
+            "size": "39.4G",
+            "used": "14G",
+            "avail": "25.4G",
+            "children": [
+              {
+                "target": "/boot/efi",
+                "source": "/dev/sda2",
+                "fstype": "vfat",
+                "size": "1022M",
+                "used": "9M",
+                "avail": "1013M"
+              }
+            ]
+          }
+        ]
+      },
+      "ip_addresses": [
+        {
+          "ifindex": 2,
+          "ifname": "nic0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "fq_codel",
+          "master": "vmbr0",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "20:47:47:bf:f2:e0",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "enp0s25",
+            "enx204747bff2e0"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 3,
+          "ifname": "wlp2s0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "mtu": 1500,
+          "qdisc": "noop",
+          "operstate": "DOWN",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "94:65:9c:3d:82:a9",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "altnames": [
+            "wlx94659c3d82a9"
+          ],
+          "addr_info": []
+        },
+        {
+          "ifindex": 4,
+          "ifname": "vmbr0",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "mtu": 1500,
+          "qdisc": "noqueue",
+          "operstate": "UP",
+          "group": "default",
+          "txqlen": 1000,
+          "link_type": "ether",
+          "address": "20:47:47:bf:f2:e0",
+          "broadcast": "ff:ff:ff:ff:ff:ff",
+          "addr_info": [
+            {
+              "family": "inet",
+              "local": "10.44.0.53",
+              "prefixlen": 24,
+              "scope": "global",
+              "label": "vmbr0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            },
+            {
+              "family": "inet6",
+              "local": "fe80::2247:47ff:febf:f2e0",
+              "prefixlen": 64,
+              "scope": "link",
+              "protocol": "kernel_ll",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "dst": "default",
+          "gateway": "10.44.0.1",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "dst": "10.44.0.0/24",
+          "dev": "vmbr0",
+          "protocol": "kernel",
+          "scope": "link",
+          "prefsrc": "10.44.0.53",
+          "flags": []
+        }
+      ],
+      "failed_units": {
+        "rc": 0,
+        "out": "UNIT             LOAD   ACTIVE SUB    DESCRIPTION\nopenipmi.service loaded failed failed LSB: OpenIPMI Driver init script\n\nLegend: LOAD   \u2192 Reflects whether the unit definition was properly loaded.\n        ACTIVE \u2192 The high-level unit activation state, i.e. generalization of SUB.\n        SUB    \u2192 The low-level unit activation state, values depend on unit type.\n\n1 loaded units listed.",
+        "err": ""
+      },
+      "thermal": {
+        "iwlwifi_1-virtual-0": {
+          "Adapter": "Virtual device",
+          "temp1": {}
+        },
+        "dell_smm-isa-00de": {
+          "Adapter": "ISA adapter",
+          "Processor Fan": {
+            "fan1_input": 0.0,
+            "fan1_min": 0.0,
+            "fan1_max": 4900.0
+          },
+          "CPU": {
+            "temp1_input": 64.0
+          },
+          "Ambient": {
+            "temp2_input": 36.0
+          },
+          "SODIMM": {
+            "temp3_input": 29.0
+          },
+          "Other": {
+            "temp4_input": 32.0
+          },
+          "pwm1": {
+            "pwm1": 0.0,
+            "pwm1_enable": 1.0
+          }
+        },
+        "coretemp-isa-0000": {
+          "Adapter": "ISA adapter",
+          "Package id 0": {
+            "temp1_input": 67.0,
+            "temp1_max": 105.0,
+            "temp1_crit": 105.0,
+            "temp1_crit_alarm": 0.0
+          },
+          "Core 0": {
+            "temp2_input": 67.0,
+            "temp2_max": 105.0,
+            "temp2_crit": 105.0,
+            "temp2_crit_alarm": 0.0
+          },
+          "Core 1": {
+            "temp3_input": 60.0,
+            "temp3_max": 105.0,
+            "temp3_crit": 105.0,
+            "temp3_crit_alarm": 0.0
+          }
+        },
+        "acpitz-acpi-0": {
+          "Adapter": "ACPI interface",
+          "temp1": {
+            "temp1_input": 25.0
+          },
+          "temp2": {
+            "temp2_input": 27.8
+          },
+          "temp3": {
+            "temp3_input": 29.8
+          }
+        }
+      },
+      "zpool": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "zfs": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "nfs_exports": {
+        "rc": -1,
+        "err": "[Errno 2] No such file or directory: 'exportfs'"
+      },
+      "memory_modules": [
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "SODIMM",
+          "Locator": "DIMM A",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Micron",
+          "Part Number": "16KTF1G64HZ-1G6N1",
+          "Configured Memory Speed": "1600 MT/s"
+        },
+        {
+          "Total Width": "64 bits",
+          "Data Width": "64 bits",
+          "Size": "8 GB",
+          "Form Factor": "SODIMM",
+          "Locator": "DIMM B",
+          "Bank Locator": "Not Specified",
+          "Type": "DDR3",
+          "Type Detail": "Synchronous",
+          "Speed": "1600 MT/s",
+          "Manufacturer": "Micron",
+          "Part Number": "16KTF1G64HZ-1G6N1",
+          "Configured Memory Speed": "1600 MT/s"
+        }
+      ],
+      "system_hardware": [
+        "Manufacturer: Dell Inc.",
+        "Product Name: Latitude E7450",
+        "Version: 01",
+        "Manufacturer: Dell Inc.",
+        "Product Name: 06HN6G",
+        "Version: A00"
+      ],
+      "meminfo": {
+        "MemTotal": "16253732 kB",
+        "MemAvailable": "14216508 kB",
+        "SwapTotal": "8388604 kB",
+        "SwapFree": "8388604 kB"
+      },
+      "node_storage": [
+        {
+          "active": 1,
+          "avail": 57843646464,
+          "content": "images,rootdir",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local-lvm",
+          "total": 57843646464,
+          "type": "lvmthin",
+          "used": 0,
+          "used_fraction": 0
+        },
+        {
+          "active": 1,
+          "avail": 27266150400,
+          "content": "iso,backup,vztmpl,import",
+          "enabled": 1,
+          "shared": 0,
+          "storage": "local",
+          "total": 42341498880,
+          "type": "dir",
+          "used": 15075348480,
+          "used_fraction": 0.356041918183507
+        },
+        {
+          "active": 0,
+          "avail": 0,
+          "content": "images,rootdir",
+          "enabled": 0,
+          "shared": 0,
+          "storage": "d1-ssd-lvm",
+          "total": 0,
+          "type": "lvmthin",
+          "used": 0
+        }
+      ],
+      "network": [
+        {
+          "altnames": [
+            "wlx94659c3d82a9"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "wlp2s0",
+          "method": "manual",
+          "method6": "manual",
+          "type": "eth"
+        },
+        {
+          "active": 1,
+          "address": "10.44.0.53",
+          "autostart": 1,
+          "bridge_fd": "0",
+          "bridge_ports": "nic0",
+          "bridge_stp": "off",
+          "cidr": "10.44.0.53/24",
+          "families": [
+            "inet"
+          ],
+          "gateway": "10.44.0.1",
+          "iface": "vmbr0",
+          "method": "static",
+          "method6": "manual",
+          "netmask": "24",
+          "priority": 4,
+          "type": "bridge"
+        },
+        {
+          "active": 1,
+          "altnames": [
+            "enp0s25",
+            "enx204747bff2e0"
+          ],
+          "exists": 1,
+          "families": [
+            "inet"
+          ],
+          "iface": "nic0",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 3,
+          "type": "eth"
+        },
+        {
+          "families": [
+            "inet"
+          ],
+          "iface": "nic1",
+          "method": "manual",
+          "method6": "manual",
+          "priority": 5,
+          "type": "eth"
+        }
+      ],
+      "guests": [],
+      "nic_details": {
+        "nic0": {
+          "link": {
+            "rc": 0,
+            "out": "Speed: 1000Mb/s\nDuplex: Full\nAuto-negotiation: on\nLink detected: yes",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: e1000e\nversion: 7.0.14-12-pve\nfirmware-version: 0.2-3\nexpansion-rom-version: \nbus-info: 0000:00:19.0\nsupports-statistics: yes\nsupports-test: yes\nsupports-eeprom-access: yes\nsupports-register-dump: yes\nsupports-priv-flags: yes",
+            "err": ""
+          }
+        },
+        "wlp2s0": {
+          "link": {
+            "rc": 0,
+            "out": "Link detected: no",
+            "err": ""
+          },
+          "driver": {
+            "rc": 0,
+            "out": "driver: iwlwifi\nversion: 7.0.14-12-pve\nfirmware-version: 29.9ef079ed.0 7265D-29.ucode\nexpansion-rom-version: \nbus-info: 0000:02:00.0\nsupports-statistics: yes\nsupports-test: no\nsupports-eeprom-access: no\nsupports-register-dump: no\nsupports-priv-flags: no",
+            "err": ""
+          }
+        }
+      },
+      "smart": {
+        "/dev/sda": {
+          "smart_status": {
+            "passed": true
+          },
+          "attributes": [
+            {
+              "id": 5,
+              "name": "Reallocated_Sector_Ct",
+              "value": 91,
+              "worst": 91,
+              "threshold": 10,
+              "raw": {
+                "value": 189,
+                "string": "189"
+              },
+              "when_failed": ""
+            },
+            {
+              "id": 177,
+              "name": "Wear_Leveling_Count",
+              "value": 81,
+              "worst": 81,
+              "threshold": 5,
+              "raw": {
+                "value": 223,
+                "string": "223"
+              },
+              "when_failed": ""
+            }
+          ]
+        }
+      },
+      "dns": "search home.arpa\nnameserver 10.44.0.1\n"
+    }
+  },
+  "inspections": {
+    "pve-d1": {
+      "node": "pve-d1",
+      "services": {
+        "rc": 0,
+        "out": "active\nactive\nactive\nactive\nactive\nactive\nactive",
+        "err": ""
+      },
+      "boot": {
+        "rc": 0,
+        "out": "2026-10-27 14:50:03",
+        "err": ""
+      },
+      "timezone": {
+        "rc": 0,
+        "out": "Timezone=America/Edmonton\nNTPSynchronized=yes",
+        "err": ""
+      },
+      "firewall": {
+        "rc": 0,
+        "out": "Status: disabled/running",
+        "err": ""
+      },
+      "mdraid": "Personalities : \nunused devices: <none>\n",
+      "backups": [],
+      "backup_history": [],
+      "ipmi_failure": {
+        "rc": 0,
+        "out": "Result=exit-code\nActiveState=failed\nSubState=failed",
+        "err": ""
+      },
+      "guest_details": {},
+      "kernel_settings": {
+        "/proc/cmdline": "BOOT_IMAGE=/boot/vmlinuz-7.0.2-7-pve root=/dev/mapper/pve-root ro quiet intel_iommu=on iommu=pt",
+        "/etc/modules": "# /etc/modules is obsolete and has been replaced by /etc/modules-load.d/.\n# Please see modules-load.d(5) and modprobe.d(5) for details.\n#\n# Updating this file still works, but it is undocumented and unsupported.\nvfio\nvfio_iommu_type1\nvfio_pci"
+      },
+      "apt_sources": [
+        {
+          "file": "/etc/apt/sources.list",
+          "lines": []
+        },
+        {
+          "file": "/etc/apt/sources.list.d/debian.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://deb.debian.org/debian/",
+            "Suites: trixie trixie-updates",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg",
+            "Types: deb",
+            "URIs: http://security.debian.org/debian-security/",
+            "Suites: trixie-security",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/proxmox.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://download.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-no-subscription",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/pve-enterprise.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/ceph.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/ceph-squid",
+            "Suites: trixie",
+            "Components: enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        }
+      ],
+      "guest_agent_ping": {
+        "rc": 0,
+        "out": "",
+        "err": ""
+      },
+      "guest_agent_network": [
+        {
+          "hardware-address": "bc:24:11:3a:9e:55",
+          "ip-addresses": [
+            {
+              "ip-address": "10.44.0.170",
+              "ip-address-type": "ipv4",
+              "prefix": 24
+            },
+            {
+              "ip-address": "fd94:a40a:af98:5d42:be24:11ff:fe3a:9e55",
+              "ip-address-type": "ipv6",
+              "prefix": 64
+            },
+            {
+              "ip-address": "2604:3d09:1d82:1c00::3ce",
+              "ip-address-type": "ipv6",
+              "prefix": 128
+            },
+            {
+              "ip-address": "2604:3d09:1d82:1c00:be24:11ff:fe3a:9e55",
+              "ip-address-type": "ipv6",
+              "prefix": 64
+            },
+            {
+              "ip-address": "fe80::be24:11ff:fe3a:9e55",
+              "ip-address-type": "ipv6",
+              "prefix": 64
+            }
+          ],
+          "name": "enp6s18"
+        },
+        {
+          "hardware-address": "00:00:00:00:00:00",
+          "ip-addresses": [
+            {
+              "ip-address": "100.78.156.52",
+              "ip-address-type": "ipv4",
+              "prefix": 32
+            },
+            {
+              "ip-address": "fd7a:115c:a1e0::5037:9c35",
+              "ip-address-type": "ipv6",
+              "prefix": 128
+            },
+            {
+              "ip-address": "fe80::49b4:b316:4f7e:5a50",
+              "ip-address-type": "ipv6",
+              "prefix": 64
+            }
+          ],
+          "name": "tailscale0"
+        }
+      ],
+      "guest_agent_os": {
+        "id": "ubuntu",
+        "kernel-release": "6.8.0-142-generic",
+        "kernel-version": "#142-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:24:27 UTC 2026",
+        "machine": "x86_64",
+        "name": "Ubuntu",
+        "pretty-name": "Ubuntu 24.04.4 LTS",
+        "version": "24.04.4 LTS (Noble Numbat)",
+        "version-id": "24.04"
+      },
+      "gpu_vm": {
+        "rc": 0,
+        "out": "{\n   \"exitcode\" : 9,\n   \"exited\" : 1,\n   \"out-data\" : \"NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\\n\\n\"\n}",
+        "err": ""
+      },
+      "efi_config": "efidisk0: d1-ssd-lvm:vm-301-disk-0,efitype=4m,ms-cert=2023k,pre-enrolled-keys=1,size=4M",
+      "vm_details": {
+        "listeners": {
+          "rc": 0,
+          "out": "Netid State  Recv-Q Send-Q                       Local Address:Port  Peer Address:PortProcess                                                \nudp   UNCONN 0      0                               127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=812,fd=16))             \nudp   UNCONN 0      0                            127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=812,fd=14))             \nudp   UNCONN 0      0                      10.44.0.170%enp6s18:68         0.0.0.0:*    users:((\"systemd-network\",pid=623,fd=21))             \nudp   UNCONN 0      0                                  0.0.0.0:41641      0.0.0.0:*    users:((\"tailscaled\",pid=838,fd=20))                  \nudp   UNCONN 0      0      [fe80::be24:11ff:fe3a:9e55]%enp6s18:546           [::]:*    users:((\"systemd-network\",pid=623,fd=23))             \nudp   UNCONN 0      0                                     [::]:41641         [::]:*    users:((\"tailscaled\",pid=838,fd=19))                  \ntcp   LISTEN 0      4096                               0.0.0.0:22         0.0.0.0:*    users:((\"sshd\",pid=1471,fd=3),(\"systemd\",pid=1,fd=93))\ntcp   LISTEN 0      2048                             127.0.0.1:9889       0.0.0.0:*    users:((\"cao-server\",pid=1093,fd=17))                 \ntcp   LISTEN 0      128                              127.0.0.1:41785      0.0.0.0:*    users:((\"code-e646868227\",pid=1830,fd=11))            \ntcp   LISTEN 0      128                              127.0.0.1:58232      0.0.0.0:*    users:((\"sshd\",pid=5101,fd=7))                        \ntcp   LISTEN 0      4096                             127.0.0.1:11434      0.0.0.0:*    users:((\"ollama\",pid=1009,fd=4))                      \ntcp   LISTEN 0      4096                         100.78.156.52:51323      0.0.0.0:*    users:((\"tailscaled\",pid=838,fd=22))                  \ntcp   LISTEN 0      4096                            127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=812,fd=17))             \ntcp   LISTEN 0      4096                         127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=812,fd=15))             \ntcp   LISTEN 0      4096                                  [::]:22            [::]:*    users:((\"sshd\",pid=1471,fd=4),(\"systemd\",pid=1,fd=95))\ntcp   LISTEN 0      4096           [fd7a:115c:a1e0::5037:9c35]:43826         [::]:*    users:((\"tailscaled\",pid=838,fd=23))",
+          "err": ""
+        },
+        "services": {
+          "rc": 0,
+          "out": "cron.service                loaded active running Regular background program processing daemon\ndbus.service                loaded active running D-Bus System Message Bus\nfwupd.service               loaded active running Firmware update daemon\ngetty@tty1.service          loaded active running Getty on tty1\nModemManager.service        loaded active running Modem Manager\nmultipathd.service          loaded active running Device-Mapper Multipath Device Controller\nollama.service              loaded active running Ollama Service\npolkit.service              loaded active running Authorization Manager\nqemu-guest-agent.service    loaded active running QEMU Guest Agent\nrsyslog.service             loaded active running System Logging Service\nsnapd.service               loaded active running Snap Daemon\nssh.service                 loaded active running OpenBSD Secure Shell server\nsystemd-journald.service    loaded active running Journal Service\nsystemd-logind.service      loaded active running User Login Management\nsystemd-networkd.service    loaded active running Network Configuration\nsystemd-resolved.service    loaded active running Network Name Resolution\nsystemd-timesyncd.service   loaded active running Network Time Synchronization\nsystemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files\ntailscaled.service          loaded active running Tailscale node agent\nudisks2.service             loaded active running Disk Manager\nunattended-upgrades.service loaded active running Unattended Upgrades Shutdown\nupower.service              loaded active running Daemon for power management\nuser@1000.service           loaded active running User Manager for UID 1000\nuser@1001.service           loaded active running User Manager for UID 1001",
+          "err": ""
+        },
+        "gpu_pci": {
+          "rc": 0,
+          "out": "06:10.0 VGA compatible controller [0300]: NVIDIA Corporation GP104 [GeForce GTX 1070] [10de:1b81] (rev a1)\n\tSubsystem: ASUSTeK Computer Inc. GP104 [GeForce GTX 1070] [1043:8599]\n\tKernel modules: nvidiafb, nouveau\n06:10.1 Audio device [0403]: NVIDIA Corporation GP104 High Definition Audio Controller [10de:10f0] (rev a1)\n\tSubsystem: ASUSTeK Computer Inc. GP104 High Definition Audio Controller [1043:8599]\n\tKernel driver in use: snd_hda_intel\n\tKernel modules: snd_hda_intel\n",
+          "err": ""
+        },
+        "docker": {
+          "rc": -1,
+          "err": "[Errno 2] No such file or directory: 'docker'"
+        },
+        "tailscale": {
+          "rc": 0,
+          "out": "active",
+          "err": ""
+        },
+        "netplan_files": [
+          "/etc/netplan/50-cloud-init.yaml"
+        ]
+      },
+      "vm_netplan": {
+        "/etc/netplan/50-cloud-init.yaml": {
+          "dhcp4": true
+        }
+      }
+    },
+    "pve-d2": {
+      "node": "pve-d2",
+      "services": {
+        "rc": 0,
+        "out": "active\nactive\nactive\nactive\nactive\nactive\nactive",
+        "err": ""
+      },
+      "boot": {
+        "rc": 0,
+        "out": "2026-09-24 10:27:49",
+        "err": ""
+      },
+      "timezone": {
+        "rc": 0,
+        "out": "Timezone=America/Edmonton\nNTPSynchronized=yes",
+        "err": ""
+      },
+      "firewall": {
+        "rc": 0,
+        "out": "Status: disabled/running",
+        "err": ""
+      },
+      "mdraid": "Personalities : \nunused devices: <none>\n",
+      "backups": [],
+      "backup_history": [],
+      "ipmi_failure": {
+        "rc": 0,
+        "out": "Result=exit-code\nActiveState=failed\nSubState=failed",
+        "err": ""
+      },
+      "guest_details": {
+        "100": {
+          "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+          "addresses": [
+            {
+              "ifindex": 1,
+              "ifname": "lo",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 65536,
+              "qdisc": "noqueue",
+              "operstate": "UNKNOWN",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "loopback",
+              "address": "00:00:00:00:00:00",
+              "broadcast": "00:00:00:00:00:00",
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "127.0.0.1",
+                  "prefixlen": 8,
+                  "scope": "host",
+                  "label": "lo",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                },
+                {
+                  "family": "inet6",
+                  "local": "::1",
+                  "prefixlen": 128,
+                  "scope": "host",
+                  "noprefixroute": true,
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            },
+            {
+              "ifindex": 2,
+              "link_index": 5,
+              "ifname": "eth0",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 1500,
+              "qdisc": "noqueue",
+              "operstate": "UP",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "ether",
+              "address": "bc:24:11:bf:bd:11",
+              "broadcast": "ff:ff:ff:ff:ff:ff",
+              "link_netnsid": 0,
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "10.44.0.220",
+                  "prefixlen": 24,
+                  "metric": 1024,
+                  "broadcast": "10.44.0.255",
+                  "scope": "global",
+                  "dynamic": true,
+                  "label": "eth0",
+                  "valid_life_time": 137664,
+                  "preferred_life_time": 137664
+                },
+                {
+                  "family": "inet6",
+                  "local": "fe80::be24:11ff:febf:bd11",
+                  "prefixlen": 64,
+                  "scope": "link",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "dst": "default",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.220",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "10.44.0.0/24",
+              "dev": "eth0",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "10.44.0.220",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "scope": "link",
+              "prefsrc": "10.44.0.220",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "64.59.128.112",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.220",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "64.59.135.135",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.220",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "172.17.0.0/16",
+              "dev": "docker0",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "172.17.0.1",
+              "flags": [
+                "linkdown"
+              ]
+            },
+            {
+              "dst": "172.18.0.0/16",
+              "dev": "br-19db9c03bf4b",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "172.18.0.1",
+              "flags": []
+            }
+          ],
+          "listeners": {
+            "rc": 0,
+            "out": "Netid State  Recv-Q Send-Q    Local Address:Port Peer Address:PortProcess                                               \nudp   UNCONN 0      0            127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=227,fd=16))            \nudp   UNCONN 0      0         127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=227,fd=14))            \nudp   UNCONN 0      0      10.44.0.220%eth0:68        0.0.0.0:*    users:((\"systemd-network\",pid=107,fd=20))            \ntcp   LISTEN 0      4096            0.0.0.0:22        0.0.0.0:*    users:((\"sshd\",pid=254,fd=3),(\"systemd\",pid=1,fd=53))\ntcp   LISTEN 0      4096         127.0.0.54:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=227,fd=17))            \ntcp   LISTEN 0      4096      127.0.0.53%lo:53        0.0.0.0:*    users:((\"systemd-resolve\",pid=227,fd=15))            \ntcp   LISTEN 0      100           127.0.0.1:25        0.0.0.0:*    users:((\"master\",pid=430,fd=13))                     \ntcp   LISTEN 0      4096            0.0.0.0:4200      0.0.0.0:*    users:((\"docker-proxy\",pid=756,fd=8))                \ntcp   LISTEN 0      4096               [::]:22           [::]:*    users:((\"sshd\",pid=254,fd=4),(\"systemd\",pid=1,fd=56))\ntcp   LISTEN 0      4096               [::]:4200         [::]:*    users:((\"docker-proxy\",pid=760,fd=8))                \ntcp   LISTEN 0      100               [::1]:25           [::]:*    users:((\"master\",pid=430,fd=14))",
+            "err": ""
+          },
+          "running_services": {
+            "rc": 0,
+            "out": "console-getty.service       loaded active running Console Getty\ncontainer-getty@1.service   loaded active running Container Getty on /dev/tty1\ncontainer-getty@2.service   loaded active running Container Getty on /dev/tty2\ncontainerd.service          loaded active running containerd container runtime\ncron.service                loaded active running Regular background program processing daemon\ndbus.service                loaded active running D-Bus System Message Bus\ndocker.service              loaded active running Docker Application Container Engine\nnetworkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd\npostfix@-.service           loaded active running Postfix Mail Transport Agent (instance -)\nrsyslog.service             loaded active running System Logging Service\nssh.service                 loaded active running OpenBSD Secure Shell server\nsystemd-journald.service    loaded active running Journal Service\nsystemd-logind.service      loaded active running User Login Management\nsystemd-networkd.service    loaded active running Network Configuration\nsystemd-resolved.service    loaded active running Network Name Resolution",
+            "err": ""
+          },
+          "containers": [
+            {
+              "Names": "ai-dashboard",
+              "Image": "ai-dashboard-ai-dashboard",
+              "Status": "Up 4 weeks",
+              "Ports": "0.0.0.0:4200->4200/tcp, [::]:4200->4200/tcp",
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/opt/ai-dashboard/data",
+                  "Destination": "/data",
+                  "Mode": "rw",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "compose_files": {
+                "rc": 0,
+                "out": "/opt/ai-dashboard/docker-compose.yml",
+                "err": ""
+              },
+              "compose_directory": {
+                "rc": 0,
+                "out": "/opt/ai-dashboard",
+                "err": ""
+              }
+            }
+          ],
+          "tunnel_ingress": []
+        },
+        "101": {
+          "os": "PRETTY_NAME=\"Ubuntu 24.04 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+          "addresses": [
+            {
+              "ifindex": 1,
+              "ifname": "lo",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 65536,
+              "qdisc": "noqueue",
+              "operstate": "UNKNOWN",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "loopback",
+              "address": "00:00:00:00:00:00",
+              "broadcast": "00:00:00:00:00:00",
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "127.0.0.1",
+                  "prefixlen": 8,
+                  "scope": "host",
+                  "label": "lo",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                },
+                {
+                  "family": "inet6",
+                  "local": "::1",
+                  "prefixlen": 128,
+                  "scope": "host",
+                  "noprefixroute": true,
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            },
+            {
+              "ifindex": 2,
+              "link_index": 10,
+              "ifname": "eth0",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 1500,
+              "qdisc": "noqueue",
+              "operstate": "UP",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "ether",
+              "address": "bc:24:11:a3:57:77",
+              "broadcast": "ff:ff:ff:ff:ff:ff",
+              "link_netnsid": 0,
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "10.44.0.76",
+                  "prefixlen": 24,
+                  "metric": 1024,
+                  "broadcast": "10.44.0.255",
+                  "scope": "global",
+                  "dynamic": true,
+                  "label": "eth0",
+                  "valid_life_time": 159315,
+                  "preferred_life_time": 159315
+                },
+                {
+                  "family": "inet6",
+                  "local": "2604:3d09:1d82:1c00:be24:11ff:fea3:5777",
+                  "prefixlen": 64,
+                  "scope": "global",
+                  "dynamic": true,
+                  "mngtmpaddr": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 299,
+                  "preferred_life_time": 299
+                },
+                {
+                  "family": "inet6",
+                  "local": "fd94:a40a:af98:5d42:be24:11ff:fea3:5777",
+                  "prefixlen": 64,
+                  "scope": "global",
+                  "dynamic": true,
+                  "mngtmpaddr": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 1774,
+                  "preferred_life_time": 1774
+                },
+                {
+                  "family": "inet6",
+                  "local": "2604:3d09:1d82:1c00::474a",
+                  "prefixlen": 128,
+                  "scope": "global",
+                  "dynamic": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 9847,
+                  "preferred_life_time": 9847
+                },
+                {
+                  "family": "inet6",
+                  "local": "fe80::be24:11ff:fea3:5777",
+                  "prefixlen": 64,
+                  "scope": "link",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "dst": "default",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.76",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "10.44.0.0/24",
+              "dev": "eth0",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "10.44.0.76",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "scope": "link",
+              "prefsrc": "10.44.0.76",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "64.59.128.112",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.76",
+              "metric": 1024,
+              "flags": []
+            },
+            {
+              "dst": "64.59.135.135",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "dhcp",
+              "prefsrc": "10.44.0.76",
+              "metric": 1024,
+              "flags": []
+            }
+          ],
+          "listeners": {
+            "rc": 0,
+            "out": "Netid State  Recv-Q Send-Q                    Local Address:Port  Peer Address:PortProcess                                   \nudp   UNCONN 0      0                            127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=150,fd=16))\nudp   UNCONN 0      0                         127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=150,fd=14))\nudp   UNCONN 0      0                       10.44.0.76%eth0:68         0.0.0.0:*    users:((\"systemd-network\",pid=124,fd=23))\nudp   UNCONN 0      0                                     *:43847            *:*    users:((\"cloudflared\",pid=1491,fd=8))    \nudp   UNCONN 0      0                                     *:57384            *:*    users:((\"cloudflared\",pid=1491,fd=6))    \nudp   UNCONN 0      0      [fe80::be24:11ff:fea3:5777]%eth0:546           [::]:*    users:((\"systemd-network\",pid=124,fd=21))\nudp   UNCONN 0      0                                     *:59644            *:*    users:((\"cloudflared\",pid=1491,fd=9))    \nudp   UNCONN 0      0                                     *:43514            *:*    users:((\"cloudflared\",pid=1491,fd=3))    \ntcp   LISTEN 0      4096                      127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=150,fd=15))\ntcp   LISTEN 0      4096                          127.0.0.1:20241      0.0.0.0:*    users:((\"cloudflared\",pid=1491,fd=7))    \ntcp   LISTEN 0      100                           127.0.0.1:25         0.0.0.0:*    users:((\"master\",pid=577,fd=13))         \ntcp   LISTEN 0      4096                         127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=150,fd=17))\ntcp   LISTEN 0      100                               [::1]:25            [::]:*    users:((\"master\",pid=577,fd=14))         \ntcp   LISTEN 0      4096                                  *:22               *:*    users:((\"sshd\",pid=674,fd=3),(\"systemd\",pid=1,fd=54))",
+            "err": ""
+          },
+          "running_services": {
+            "rc": 0,
+            "out": "cloudflared.service         loaded active running Cloudflare Tunnel client\nconsole-getty.service       loaded active running Console Getty\ncontainer-getty@1.service   loaded active running Container Getty on /dev/tty1\ncontainer-getty@2.service   loaded active running Container Getty on /dev/tty2\ncron.service                loaded active running Regular background program processing daemon\ndbus.service                loaded active running D-Bus System Message Bus\nnetworkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd\npostfix@-.service           loaded active running Postfix Mail Transport Agent (instance -)\nrsyslog.service             loaded active running System Logging Service\nssh.service                 loaded active running OpenBSD Secure Shell server\nsystemd-journald.service    loaded active running Journal Service\nsystemd-logind.service      loaded active running User Login Management\nsystemd-networkd.service    loaded active running Network Configuration\nsystemd-resolved.service    loaded active running Network Name Resolution",
+            "err": ""
+          },
+          "containers": [],
+          "docker": {
+            "rc": -1,
+            "err": "[Errno 2] No such file or directory: 'docker'"
+          },
+          "tunnel_ingress": []
+        }
+      },
+      "kernel_settings": {
+        "/proc/cmdline": "BOOT_IMAGE=/boot/vmlinuz-7.0.2-7-pve root=/dev/mapper/pve-root ro quiet",
+        "/etc/modules": "# /etc/modules is obsolete and has been replaced by /etc/modules-load.d/.\n# Please see modules-load.d(5) and modprobe.d(5) for details.\n#\n# Updating this file still works, but it is undocumented and unsupported."
+      },
+      "apt_sources": [
+        {
+          "file": "/etc/apt/sources.list",
+          "lines": []
+        },
+        {
+          "file": "/etc/apt/sources.list.d/tailscale.list",
+          "lines": [
+            "deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/debian trixie main"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/debian.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://deb.debian.org/debian/",
+            "Suites: trixie trixie-updates",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg",
+            "Types: deb",
+            "URIs: http://security.debian.org/debian-security/",
+            "Suites: trixie-security",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/pve-enterprise.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/proxmox.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://download.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-no-subscription",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/ceph.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/ceph-squid",
+            "Suites: trixie",
+            "Components: enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        }
+      ]
+    },
+    "pve-storage": {
+      "node": "pve-storage",
+      "services": {
+        "rc": 0,
+        "out": "active\nactive\nactive\nactive\nactive\nactive\nactive",
+        "err": ""
+      },
+      "boot": {
+        "rc": 0,
+        "out": "2026-10-27 15:40:47",
+        "err": ""
+      },
+      "timezone": {
+        "rc": 0,
+        "out": "Timezone=America/Edmonton\nNTPSynchronized=yes",
+        "err": ""
+      },
+      "firewall": {
+        "rc": 0,
+        "out": "Status: disabled/running",
+        "err": ""
+      },
+      "mdraid": "Personalities : \nunused devices: <none>\n",
+      "backups": [],
+      "backup_history": [],
+      "ipmi_failure": {
+        "rc": 0,
+        "out": "Result=exit-code\nActiveState=failed\nSubState=failed",
+        "err": ""
+      },
+      "guest_details": {},
+      "kernel_settings": {
+        "/proc/cmdline": "BOOT_IMAGE=/boot/vmlinuz-7.0.14-12-pve root=/dev/mapper/pve-root ro quiet",
+        "/etc/modules": "# /etc/modules is obsolete and has been replaced by /etc/modules-load.d/.\n# Please see modules-load.d(5) and modprobe.d(5) for details.\n#\n# Updating this file still works, but it is undocumented and unsupported."
+      },
+      "apt_sources": [
+        {
+          "file": "/etc/apt/sources.list",
+          "lines": []
+        },
+        {
+          "file": "/etc/apt/sources.list.d/pve-enterprise.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/debian.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://deb.debian.org/debian/",
+            "Suites: trixie trixie-updates",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg",
+            "Types: deb",
+            "URIs: http://security.debian.org/debian-security/",
+            "Suites: trixie-security",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/proxmox.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://download.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-no-subscription",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/ceph.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/ceph-squid",
+            "Suites: trixie",
+            "Components: enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        }
+      ],
+      "unassigned_signatures": {
+        "signatures": [
+          {
+            "device": "sda",
+            "offset": "0x200",
+            "type": "gpt",
+            "uuid": null,
+            "label": null
+          },
+          {
+            "device": "sda",
+            "offset": "0xe8e0db5e00",
+            "type": "gpt",
+            "uuid": null,
+            "label": null
+          },
+          {
+            "device": "sda",
+            "offset": "0x1fe",
+            "type": "PMBR",
+            "uuid": null,
+            "label": null
+          }
+        ]
+      }
+    },
+    "pve-6420": {
+      "node": "pve-6420",
+      "services": {
+        "rc": 0,
+        "out": "active\nactive\nactive\nactive\nactive\nactive\nactive",
+        "err": ""
+      },
+      "boot": {
+        "rc": 0,
+        "out": "2026-08-23 13:38:58",
+        "err": ""
+      },
+      "timezone": {
+        "rc": 0,
+        "out": "Timezone=America/Edmonton\nNTPSynchronized=yes",
+        "err": ""
+      },
+      "firewall": {
+        "rc": 0,
+        "out": "Status: disabled/running",
+        "err": ""
+      },
+      "mdraid": "Personalities : \nunused devices: <none>\n",
+      "backups": [],
+      "backup_history": [],
+      "ipmi_failure": {
+        "rc": 0,
+        "out": "Result=exit-code\nActiveState=failed\nSubState=failed",
+        "err": ""
+      },
+      "guest_details": {
+        "201": {
+          "os": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+          "addresses": [
+            {
+              "ifindex": 1,
+              "ifname": "lo",
+              "flags": [
+                "LOOPBACK",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 65536,
+              "qdisc": "noqueue",
+              "operstate": "UNKNOWN",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "loopback",
+              "address": "00:00:00:00:00:00",
+              "broadcast": "00:00:00:00:00:00",
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "127.0.0.1",
+                  "prefixlen": 8,
+                  "scope": "host",
+                  "label": "lo",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                },
+                {
+                  "family": "inet6",
+                  "local": "::1",
+                  "prefixlen": 128,
+                  "scope": "host",
+                  "noprefixroute": true,
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            },
+            {
+              "ifindex": 2,
+              "link_index": 8,
+              "ifname": "eth0",
+              "flags": [
+                "BROADCAST",
+                "MULTICAST",
+                "UP",
+                "LOWER_UP"
+              ],
+              "mtu": 1500,
+              "qdisc": "noqueue",
+              "operstate": "UP",
+              "group": "default",
+              "txqlen": 1000,
+              "link_type": "ether",
+              "address": "bc:24:11:4b:f3:69",
+              "broadcast": "ff:ff:ff:ff:ff:ff",
+              "link_netnsid": 0,
+              "addr_info": [
+                {
+                  "family": "inet",
+                  "local": "10.44.0.80",
+                  "prefixlen": 24,
+                  "broadcast": "10.44.0.255",
+                  "scope": "global",
+                  "label": "eth0",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                },
+                {
+                  "family": "inet6",
+                  "local": "fd94:a40a:af98:5d42:be24:11ff:fe4b:f369",
+                  "prefixlen": 64,
+                  "scope": "global",
+                  "dynamic": true,
+                  "mngtmpaddr": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 1770,
+                  "preferred_life_time": 1770
+                },
+                {
+                  "family": "inet6",
+                  "local": "2604:3d09:1d82:1c00::c9a6",
+                  "prefixlen": 128,
+                  "scope": "global",
+                  "dynamic": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 138154,
+                  "preferred_life_time": 138154
+                },
+                {
+                  "family": "inet6",
+                  "local": "2604:3d09:1d82:1c00:be24:11ff:fe4b:f369",
+                  "prefixlen": 64,
+                  "scope": "global",
+                  "dynamic": true,
+                  "mngtmpaddr": true,
+                  "noprefixroute": true,
+                  "valid_life_time": 300,
+                  "preferred_life_time": 300
+                },
+                {
+                  "family": "inet6",
+                  "local": "fe80::be24:11ff:fe4b:f369",
+                  "prefixlen": 64,
+                  "scope": "link",
+                  "valid_life_time": 4294967295,
+                  "preferred_life_time": 4294967295
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "dst": "default",
+              "gateway": "10.44.0.1",
+              "dev": "eth0",
+              "protocol": "static",
+              "flags": []
+            },
+            {
+              "dst": "10.44.0.0/24",
+              "dev": "eth0",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "10.44.0.80",
+              "flags": []
+            },
+            {
+              "dst": "172.17.0.0/16",
+              "dev": "docker0",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "172.17.0.1",
+              "flags": [
+                "linkdown"
+              ]
+            },
+            {
+              "dst": "172.18.0.0/16",
+              "dev": "br-7fbf3ff2cc47",
+              "protocol": "kernel",
+              "scope": "link",
+              "prefsrc": "172.18.0.1",
+              "flags": []
+            }
+          ],
+          "listeners": {
+            "rc": 0,
+            "out": "Netid State  Recv-Q Send-Q                    Local Address:Port  Peer Address:PortProcess                                               \nudp   UNCONN 0      0                            127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=167,fd=16))            \nudp   UNCONN 0      0                         127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=167,fd=14))            \nudp   UNCONN 0      0      [fe80::be24:11ff:fe4b:f369]%eth0:546           [::]:*    users:((\"systemd-network\",pid=104,fd=21))            \ntcp   LISTEN 0      4096                            0.0.0.0:3000       0.0.0.0:*    users:((\"docker-proxy\",pid=1108,fd=7))               \ntcp   LISTEN 0      4096                            0.0.0.0:9221       0.0.0.0:*    users:((\"docker-proxy\",pid=1051,fd=7))               \ntcp   LISTEN 0      100                           127.0.0.1:25         0.0.0.0:*    users:((\"master\",pid=523,fd=13))                     \ntcp   LISTEN 0      4096                         127.0.0.54:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=167,fd=17))            \ntcp   LISTEN 0      4096                            0.0.0.0:9090       0.0.0.0:*    users:((\"docker-proxy\",pid=1071,fd=7))               \ntcp   LISTEN 0      4096                            0.0.0.0:9093       0.0.0.0:*    users:((\"docker-proxy\",pid=1012,fd=7))               \ntcp   LISTEN 0      4096                            0.0.0.0:22         0.0.0.0:*    users:((\"sshd\",pid=259,fd=3),(\"systemd\",pid=1,fd=51))\ntcp   LISTEN 0      4096                          127.0.0.1:46395      0.0.0.0:*    users:((\"containerd\",pid=288,fd=14))                 \ntcp   LISTEN 0      4096                      127.0.0.53%lo:53         0.0.0.0:*    users:((\"systemd-resolve\",pid=167,fd=15))            \ntcp   LISTEN 0      4096                               [::]:3000          [::]:*    users:((\"docker-proxy\",pid=1114,fd=7))               \ntcp   LISTEN 0      100                               [::1]:25            [::]:*    users:((\"master\",pid=523,fd=14))                     \ntcp   LISTEN 0      4096                               [::]:9221          [::]:*    users:((\"docker-proxy\",pid=1057,fd=7))               \ntcp   LISTEN 0      4096                               [::]:9090          [::]:*    users:((\"docker-proxy\",pid=1077,fd=7))               \ntcp   LISTEN 0      4096                               [::]:9093          [::]:*    users:((\"docker-proxy\",pid=1028,fd=7))               \ntcp   LISTEN 0      4096                               [::]:22            [::]:*    users:((\"sshd\",pid=259,fd=4),(\"systemd\",pid=1,fd=56))",
+            "err": ""
+          },
+          "running_services": {
+            "rc": 0,
+            "out": "console-getty.service       loaded active running Console Getty\ncontainer-getty@1.service   loaded active running Container Getty on /dev/tty1\ncontainer-getty@2.service   loaded active running Container Getty on /dev/tty2\ncontainerd.service          loaded active running containerd container runtime\ncron.service                loaded active running Regular background program processing daemon\ndbus.service                loaded active running D-Bus System Message Bus\ndocker.service              loaded active running Docker Application Container Engine\nnetworkd-dispatcher.service loaded active running Dispatcher daemon for systemd-networkd\npostfix@-.service           loaded active running Postfix Mail Transport Agent (instance -)\nrsyslog.service             loaded active running System Logging Service\nssh.service                 loaded active running OpenBSD Secure Shell server\nsystemd-journald.service    loaded active running Journal Service\nsystemd-logind.service      loaded active running User Login Management\nsystemd-networkd.service    loaded active running Network Configuration\nsystemd-resolved.service    loaded active running Network Name Resolution",
+            "err": ""
+          },
+          "containers": [
+            {
+              "Names": "prometheus",
+              "Image": "prom/prometheus:latest",
+              "Status": "Up 3 days",
+              "Ports": "0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp",
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/prometheus/prometheus.yml",
+                  "Destination": "/etc/prometheus/prometheus.yml",
+                  "Mode": "ro",
+                  "RW": false,
+                  "Propagation": "rprivate"
+                },
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/prometheus/rules",
+                  "Destination": "/etc/prometheus/rules",
+                  "Mode": "ro",
+                  "RW": false,
+                  "Propagation": "rprivate"
+                },
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/data/prometheus",
+                  "Destination": "/prometheus",
+                  "Mode": "rw",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "compose_files": {
+                "rc": 0,
+                "out": "/opt/monitoring/docker-compose.yml",
+                "err": ""
+              },
+              "compose_directory": {
+                "rc": 0,
+                "out": "/opt/monitoring",
+                "err": ""
+              }
+            },
+            {
+              "Names": "grafana",
+              "Image": "grafana/grafana-oss:latest",
+              "Status": "Up 3 days",
+              "Ports": "0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp",
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/grafana/provisioning",
+                  "Destination": "/etc/grafana/provisioning",
+                  "Mode": "rw",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                },
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/data/grafana",
+                  "Destination": "/var/lib/grafana",
+                  "Mode": "rw",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "compose_files": {
+                "rc": 0,
+                "out": "/opt/monitoring/docker-compose.yml",
+                "err": ""
+              },
+              "compose_directory": {
+                "rc": 0,
+                "out": "/opt/monitoring",
+                "err": ""
+              }
+            },
+            {
+              "Names": "pve-exporter",
+              "Image": "prompve/prometheus-pve-exporter:latest",
+              "Status": "Up 3 days",
+              "Ports": "0.0.0.0:9221->9221/tcp, [::]:9221->9221/tcp",
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/pve-exporter/pve.yml",
+                  "Destination": "/etc/prometheus/pve.yml",
+                  "Mode": "ro",
+                  "RW": false,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "compose_files": {
+                "rc": 0,
+                "out": "/opt/monitoring/docker-compose.yml",
+                "err": ""
+              },
+              "compose_directory": {
+                "rc": 0,
+                "out": "/opt/monitoring",
+                "err": ""
+              }
+            },
+            {
+              "Names": "alertmanager",
+              "Image": "prom/alertmanager:latest",
+              "Status": "Up 3 days",
+              "Ports": "0.0.0.0:9093->9093/tcp, [::]:9093->9093/tcp",
+              "mounts": [
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/data/alertmanager",
+                  "Destination": "/alertmanager",
+                  "Mode": "rw",
+                  "RW": true,
+                  "Propagation": "rprivate"
+                },
+                {
+                  "Type": "bind",
+                  "Source": "/opt/monitoring/alertmanager/alertmanager.yml",
+                  "Destination": "/etc/alertmanager/alertmanager.yml",
+                  "Mode": "ro",
+                  "RW": false,
+                  "Propagation": "rprivate"
+                }
+              ],
+              "compose_files": {
+                "rc": 0,
+                "out": "/opt/monitoring/docker-compose.yml",
+                "err": ""
+              },
+              "compose_directory": {
+                "rc": 0,
+                "out": "/opt/monitoring",
+                "err": ""
+              }
+            }
+          ],
+          "tunnel_ingress": []
+        }
+      },
+      "kernel_settings": {
+        "/proc/cmdline": "BOOT_IMAGE=/boot/vmlinuz-7.0.14-12-pve root=/dev/mapper/pve-root ro quiet",
+        "/etc/modules": "# /etc/modules is obsolete and has been replaced by /etc/modules-load.d/.\n# Please see modules-load.d(5) and modprobe.d(5) for details.\n#\n# Updating this file still works, but it is undocumented and unsupported."
+      },
+      "apt_sources": [
+        {
+          "file": "/etc/apt/sources.list",
+          "lines": []
+        },
+        {
+          "file": "/etc/apt/sources.list.d/ceph.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/ceph-squid",
+            "Suites: trixie",
+            "Components: enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/debian.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://deb.debian.org/debian/",
+            "Suites: trixie trixie-updates",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg",
+            "Types: deb",
+            "URIs: http://security.debian.org/debian-security/",
+            "Suites: trixie-security",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/pve-enterprise.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/proxmox.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://download.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-no-subscription",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg"
+          ]
+        }
+      ]
+    },
+    "pve-7450": {
+      "node": "pve-7450",
+      "services": {
+        "rc": 0,
+        "out": "active\nactive\nactive\nactive\nactive\nactive\nactive",
+        "err": ""
+      },
+      "boot": {
+        "rc": 0,
+        "out": "2026-08-23 13:28:38",
+        "err": ""
+      },
+      "timezone": {
+        "rc": 0,
+        "out": "Timezone=America/Edmonton\nNTPSynchronized=yes",
+        "err": ""
+      },
+      "firewall": {
+        "rc": 0,
+        "out": "Status: disabled/running",
+        "err": ""
+      },
+      "mdraid": "Personalities : \nunused devices: <none>\n",
+      "backups": [],
+      "backup_history": [],
+      "ipmi_failure": {
+        "rc": 0,
+        "out": "Result=exit-code\nActiveState=failed\nSubState=failed",
+        "err": ""
+      },
+      "guest_details": {},
+      "kernel_settings": {
+        "/proc/cmdline": "BOOT_IMAGE=/boot/vmlinuz-7.0.14-12-pve root=/dev/mapper/pve-root ro quiet",
+        "/etc/modules": "# /etc/modules is obsolete and has been replaced by /etc/modules-load.d/.\n# Please see modules-load.d(5) and modprobe.d(5) for details.\n#\n# Updating this file still works, but it is undocumented and unsupported."
+      },
+      "apt_sources": [
+        {
+          "file": "/etc/apt/sources.list",
+          "lines": []
+        },
+        {
+          "file": "/etc/apt/sources.list.d/ceph.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/ceph-squid",
+            "Suites: trixie",
+            "Components: enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/debian.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://deb.debian.org/debian/",
+            "Suites: trixie trixie-updates",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg",
+            "Types: deb",
+            "URIs: http://security.debian.org/debian-security/",
+            "Suites: trixie-security",
+            "Components: main contrib non-free-firmware",
+            "Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/pve-enterprise.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: https://enterprise.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-enterprise",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg",
+            "Enabled: false"
+          ]
+        },
+        {
+          "file": "/etc/apt/sources.list.d/proxmox.sources",
+          "lines": [
+            "Types: deb",
+            "URIs: http://download.proxmox.com/debian/pve",
+            "Suites: trixie",
+            "Components: pve-no-subscription",
+            "Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg"
+          ]
+        }
+      ]
+    }
+  },
+  "health": {
+    "observed_utc": "2026-10-28T03:41:40.104103+00:00",
+    "endpoints": {
+      "grafana": 200,
+      "prometheus": 200,
+      "alertmanager": 200,
+      "pve_exporter": 200,
+      "ai_dashboard": 200
+    },
+    "targets": {
+      "up": 11,
+      "total": 11,
+      "node_exporter": 5,
+      "proxmox": 5,
+      "prometheus": 1
+    }
+  }
+}

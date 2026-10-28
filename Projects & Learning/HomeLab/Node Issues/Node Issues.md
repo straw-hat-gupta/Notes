@@ -2,28 +2,31 @@
 
 [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-## Outcome
+## Goal
 
-Diagnose and fix pve-d1 and pve-storage dropping out of the Proxmox cluster while the physical machines remain powered on.
+Find and fix the cause of D1 and storage dropping out of the cluster while their computers remain powered on.
 
-## Observed symptoms — reported 2026-10-27
+## Reported behavior — 2026-10-27
 
-- Both nodes have, while running, become unavailable and appeared offline in the Proxmox web interface.
-- The physical computers downstairs remain on when this happens.
-- Frequency, timestamps, recovery method, and whether both fail together are not known yet.
-- pve-d1 hosts llm-gpu and [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]; impact on the VM during an outage still needs checking.
+- pve-d1 and pve-storage have become unavailable and appeared offline in Proxmox while still powered on.
+- D1 hosts llm-gpu and [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]].
+- Two replacement NICs have been purchased. Their details are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
 
-## Hypothesis and available hardware
+The NICs are a possible cause, not a confirmed diagnosis.
 
-The existing NICs may be involved. This is a hypothesis, not a diagnosis. Two replacement network interface cards have already been purchased; card models, compatibility, and installation state remain unknown.
+## Latest observation
 
-## Investigation direction
+Both hosts were reachable over SSH and present in the quorate cluster on 2026-10-27 at 21:37 MDT. No fix was applied during the inventory. Current readings and faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
-Collect host/kernel, network, and cluster evidence around a dropout and distinguish a network-link failure, host problem, or cluster-membership problem before choosing a fix. Track evidence separately for each node.
+Incident timing, recovery behavior, and root-cause questions are in [[Projects & Learning/HomeLab/Node Issues/Open Questions|Open Questions]].
+
+## Investigation
+
+Correlate host/kernel, network, and cluster evidence around a dropout before choosing a fix. Keep D1 and storage evidence separate so a shared symptom does not become an assumed shared cause.
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] should make remote investigation convenient. [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] supplies hardware context. Findings inform [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] placement.
+[[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware]] · [[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] · [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]]
 
 ## Tasks
 

@@ -18,10 +18,12 @@ For agents editing this area: [[Projects & Learning/HomeLab/AGENTS|HomeLab agent
 | [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]] | Connect domain/subdomains to demos and personal services |
 | [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] | Maintain current hardware, configuration, workloads, and operational status |
 
-## Current workload context
+## Current setup
 
-[[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Node Inventory]] holds the hardware details. The llm-gpu VM runs on pve-d1 with GPU passthrough and hosts [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]. Per the brain dump, pve-d1 is the only GPU node. The future development workspace may reuse llm-gpu or use another VM; no placement decision has been made.
+[[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware]] holds the live node inventory. [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]] records VM 301, LXC 100/101/201, service endpoints, and resource allocations.
 
-## Preserved operational context
+D1 has the GTX 1070 assigned to llm-gpu; the other installed graphics devices are listed in the hardware record. Current health and faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
-Hardware details, conflicting GPU records, and the existing VM address are included in [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Node Inventory]]. Desired dashboard and benchmark features are recorded in [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]]. Earlier remote-access and management-skill goals are included in their respective task folders.
+## Open questions
+
+[[Projects & Learning/HomeLab/Homelab Setup/Open Questions|Setup questions]] covers hardware, storage, networking, configuration, and status. Each related work area keeps its own Open Questions note, linked from its overview.
