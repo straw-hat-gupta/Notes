@@ -14,7 +14,12 @@
 - [x] Confirm no data needing backup/preservation on the two storage HDDs or spare SSD (2026-10-28).
 - [x] Update all five nodes (reported complete 2026-10-28; installed/running-version verification remains pending).
 
-## Next step — diagnosis plan
+## Diagnosis progress
+
+- [x] Complete the historical read-only D1/storage investigation and [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]]; correlate three D1 transmit-stall episodes and retain storage/older-host-stall uncertainties.
+- [x] Verify D1/storage PVE and running-kernel versions after their reported updates; both run the same checked baseline. Other nodes remain outside this verification.
+
+## Remaining diagnosis planning
 
 - [ ] Prepare the diagnosis plan for D1/storage dropouts, the E7450 update-time disconnect, the VM GPU driver failure, OpenIPMI/metric coverage, and SMART interpretation. Include evidence to collect, how to distinguish causes, Career Ops protection, and validation before any proposed repair.
 

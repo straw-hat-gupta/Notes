@@ -22,7 +22,7 @@ Last live baseline: 2026-10-27 (America/Edmonton), before the subsequently repor
 
 ## Membership and versions
 
-These are the versions observed on 2026-10-27, before the updates reported on 2026-10-28. Current package versions, running kernels, and any pending reboot requirements have not been rechecked.
+These are the versions observed on 2026-10-27, before the updates reported on 2026-10-28. D1/storage now have the scoped verification below. Other hosts' versions and reboot requirements were not rechecked in this investigation.
 
 | Node | Node ID | Proxmox VE manager | Running kernel |
 | --- | --- | --- | --- |
@@ -34,9 +34,20 @@ These are the versions observed on 2026-10-27, before the updates reported on 20
 
 Management addresses and bridge configuration are in [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]]. Current observations and faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
+## Scoped version check — 2026-10-28
+
+Read-only verification at approximately 10:42 MDT, limited to D1 and storage:
+
+| Node | PVE manager | Running kernel | Boot time, MDT |
+| --- | --- | --- | --- |
+| pve-d1 | 9.2.24 (`66bc407c6d90a67a`) | `7.0.14-26-pve` | 2026-10-28 09:16:24 |
+| pve-storage | 9.2.24 (`66bc407c6d90a67a`) | `7.0.14-26-pve` | 2026-10-28 09:08:06 |
+
+Both target versions are aligned. This is not verification of complete cluster alignment or a durable dropout fix. Source: [[Projects & Learning/HomeLab/Node Issues/Evidence/2026-10-28/Baseline.json|Baseline]].
+
 ## Host updates and version alignment
 
-I updated all five nodes (confirmed 2026-10-28). Completion of those updates is recorded; package/kernel alignment and reboot state still need live verification. I still want a consistent supported baseline and a repeatable maintenance approach.
+I updated all five nodes (confirmed 2026-10-28). Completion of those updates is recorded; D1/storage now have verified running versions above. Complete cluster alignment and other hosts' reboot state remain unverified. I still want a consistent supported baseline and a repeatable maintenance approach.
 
 During the pve-7450 update through the Proxmox web Updates tab, it disconnected from the cluster. I did not initiate a reboot. Whether it rebooted automatically, lost network access, or lost cluster membership has not been established. The incident record is in [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]], and verification/diagnosis work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 

@@ -10,6 +10,14 @@ I updated all five nodes. During E7450's web-UI update it disconnected from the 
 
 Exact package/running-kernel versions and the cause of the disconnect remain pending.
 
+## D1/storage investigation — 2026-10-28
+
+[[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]] records three corroborated historical D1 e1000e transmit stalls with network isolation, and a separate June D1 pressure/task stall. Storage's August departures were maintenance; its June abrupt log ending and the undated reported fault remain unresolved. The exact D1 component/trigger and a lasting fix are not established.
+
+At approximately **10:42 MDT**, both target nodes were reachable, with working 1 Gb/s full-duplex nic0 links, and present in a quorate component with 4 total votes, 5 expected votes, and quorum threshold 3. The scoped current versions are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration#Scoped version check — 2026-10-28|Cluster Configuration]]. Other nodes' incident records were not reassessed.
+
+Current target `rx_errors`, `tx_errors`, and `tx_timeout_count` counters were zero; they do not reconstruct pre-reboot faults. All six target disks passed SMART overall status. D1's Toshiba boot SSD has one historical ATA error-log entry without an incident calendar correlation; it does not establish a disk cause. Command provenance and values are in [[Projects & Learning/HomeLab/Node Issues/Evidence/2026-10-28/Baseline.json|Baseline]].
+
 ## Hosts and cluster
 
 All five hosts were reachable as root over SSH. The cluster was quorate with 5 of 5 votes and a quorum threshold of 3. Host management services, SSH, and node exporters were active on all nodes.
@@ -46,7 +54,7 @@ Endpoints and service configuration: [[Projects & Learning/HomeLab/Homelab Setup
 | E7450 disconnected during an update | Reported 2026-10-28; no manually initiated reboot. Automatic reboot, link loss, and cluster-only loss are still to distinguish. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
 | VM 301 NVIDIA driver unavailable | `nvidia-smi` exited 9: unable to communicate with the NVIDIA driver. The GTX 1070 is visible at guest PCI `06:10.0`, with no driver-in-use entry for its display function. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T1]] |
 | `openipmi.service` failed on all five hosts | `systemctl --failed` and unit state show `failed`, result `exit-code`. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T2]] |
-| Earlier D1/storage dropouts remain unresolved | Both were reachable in the 2026-10-27 baseline; cause and lasting recovery remain unverified. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
+| Historical D1/storage dropouts | Three D1 transmit-stall episodes corroborated; separate June D1 task stall and storage fault remain unresolved. No fix validated. | [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence\|D1 and Storage Evidence]] |
 
 ## Disk and temperature observations
 

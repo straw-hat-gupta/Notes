@@ -1,0 +1,320 @@
+{
+  "reviewed_utc": "2026-10-28",
+  "scope": "Independent narrow-window verification of representative target-node sequences",
+  "nodes": {
+    "pve-d1": {
+      "node": "pve-d1",
+      "command": [
+        "journalctl",
+        "-b",
+        "6b0b199afd67469a8ac5c65314d756d4",
+        "--since",
+        "2026-09-29 16:20:45 UTC",
+        "--until",
+        "2026-09-29 16:21:35 UTC",
+        "--output",
+        "json",
+        "--no-pager"
+      ],
+      "rc": 0,
+      "error": "",
+      "counts": {
+        "other": 19,
+        "nic-hang": 12
+      },
+      "hang_representatives": [
+        {
+          "utc": "2026-09-29T16:21:12.057644+00:00",
+          "mono_usec": "2303412933066",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "",
+          "message": "e1000e 0000:00:19.0 nic0: Detected Hardware Unit Hang:\n  TDH                  <4d>\n  TDT                  <e1>\n  next_to_use          <e1>\n  next_to_clean        <4c>\nbuffer_info[next_to_clean]:\n  time_stamp           <18946acf1>\n  next_to_watch        <4d>\n  jiffies              <18946b640>\n  next_to_watch.status <0>\nMAC Status             <80083>\nPHY Status             <796d>\nPHY 1000BASE-T Status  <3800>\nPHY Extended Status    <3000>\nPCI Status             <10>"
+        },
+        {
+          "utc": "2026-09-29T16:21:13.977677+00:00",
+          "mono_usec": "2303414853099",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "",
+          "message": "e1000e 0000:00:19.0 nic0: Detected Hardware Unit Hang:\n  TDH                  <4d>\n  TDT                  <e1>\n  next_to_use          <e1>\n  next_to_clean        <4c>\nbuffer_info[next_to_clean]:\n  time_stamp           <18946acf1>\n  next_to_watch        <4d>\n  jiffies              <18946bdc0>\n  next_to_watch.status <0>\nMAC Status             <80083>\nPHY Status             <796d>\nPHY 1000BASE-T Status  <3800>\nPHY Extended Status    <3000>\nPCI Status             <10>"
+        },
+        {
+          "utc": "2026-09-29T16:21:34.009678+00:00",
+          "mono_usec": "2303434885100",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "",
+          "message": "e1000e 0000:00:19.0 nic0: Detected Hardware Unit Hang:\n  TDH                  <4d>\n  TDT                  <e1>\n  next_to_use          <e1>\n  next_to_clean        <4c>\nbuffer_info[next_to_clean]:\n  time_stamp           <18946acf1>\n  next_to_watch        <4d>\n  jiffies              <189470c00>\n  next_to_watch.status <0>\nMAC Status             <80083>\nPHY Status             <796d>\nPHY 1000BASE-T Status  <3800>\nPHY Extended Status    <3000>\nPCI Status             <10>"
+        }
+      ],
+      "other": [
+        {
+          "utc": "2026-09-29T16:21:11.340182+00:00",
+          "mono_usec": "2303412215603",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] link: host: 2 link: 0 is down"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340508+00:00",
+          "mono_usec": "2303412215929",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] link: host: 3 link: 0 is down"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340545+00:00",
+          "mono_usec": "2303412215967",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] link: host: 5 link: 0 is down"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340604+00:00",
+          "mono_usec": "2303412216025",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 2 (passive) best link: 0 (pri: 1)"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340643+00:00",
+          "mono_usec": "2303412216065",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 2 has no active links"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340689+00:00",
+          "mono_usec": "2303412216110",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 3 (passive) best link: 0 (pri: 1)"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340716+00:00",
+          "mono_usec": "2303412216138",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 3 has no active links"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340744+00:00",
+          "mono_usec": "2303412216165",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 5 (passive) best link: 0 (pri: 1)"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.340772+00:00",
+          "mono_usec": "2303412216193",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [KNET  ] host: host: 5 has no active links"
+        },
+        {
+          "utc": "2026-09-29T16:21:11.940198+00:00",
+          "mono_usec": "2303412815620",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [TOTEM ] Token has not been received in 2531 ms"
+        },
+        {
+          "utc": "2026-09-29T16:21:12.784189+00:00",
+          "mono_usec": "2303413659611",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [TOTEM ] A processor failed, forming new configuration: token timed out (3375ms), waiting 4050ms for consensus."
+        },
+        {
+          "utc": "2026-09-29T16:21:16.834674+00:00",
+          "mono_usec": "2303417710095",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync members[1]: 1"
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835001+00:00",
+          "mono_usec": "2303417710423",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync left[3]: 2 3 5"
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835060+00:00",
+          "mono_usec": "2303417710482",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [TOTEM ] A new membership (1.1aa) was formed. Members left: 2 3 5"
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835120+00:00",
+          "mono_usec": "2303417710542",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [TOTEM ] Failed to receive the leave message. failed: 2 3 5"
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835563+00:00",
+          "mono_usec": "2303417710985",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] This node is within the non-primary component and will NOT provide any services."
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835659+00:00",
+          "mono_usec": "2303417711080",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Members[1]: 1"
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835709+00:00",
+          "mono_usec": "2303417711131",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "corosync.service",
+          "message": "  [MAIN  ] Completed service synchronization, ready to provide service."
+        },
+        {
+          "utc": "2026-09-29T16:21:16.835754+00:00",
+          "mono_usec": "2303417711175",
+          "boot_id": "6b0b199afd67469a8ac5c65314d756d4",
+          "unit": "pve-cluster.service",
+          "message": "[status] notice: node lost quorum"
+        }
+      ],
+      "other_total": 19,
+      "other_output_limit": 90
+    },
+    "pve-storage": {
+      "node": "pve-storage",
+      "command": [
+        "journalctl",
+        "-b",
+        "b2d9eaf685db470ea27568e31fe5dac7",
+        "--since",
+        "2026-08-23 19:24:45 UTC",
+        "--until",
+        "2026-08-23 19:26:30 UTC",
+        "--output",
+        "json",
+        "--no-pager",
+        "--grep",
+        "System is rebooting|Node 4 was shut down|Reached target.*[Rr]eboot|Shutting down|Starting corosync|Stopping corosync|exiting normally|Sync members"
+      ],
+      "rc": 0,
+      "error": "",
+      "events": [
+        {
+          "utc": "2026-08-23T19:25:05.463412+00:00",
+          "mono_usec": "5524618435418",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "init.scope",
+          "message": "Stopping corosync.service - Corosync Cluster Engine..."
+        },
+        {
+          "utc": "2026-08-23T19:25:05.483934+00:00",
+          "mono_usec": "5524618455941",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "Shutting down corosync"
+        },
+        {
+          "utc": "2026-08-23T19:25:05.485174+00:00",
+          "mono_usec": "5524618457180",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [CFG   ] Node 4 was shut down by sysadmin"
+        },
+        {
+          "utc": "2026-08-23T19:25:06.300556+00:00",
+          "mono_usec": "5524619272562",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [MAIN  ] Corosync Cluster Engine exiting normally"
+        },
+        {
+          "utc": "2026-08-23T19:25:06.311725+00:00",
+          "mono_usec": "5524619283731",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "init.scope",
+          "message": "Starting corosync.service - Corosync Cluster Engine..."
+        },
+        {
+          "utc": "2026-08-23T19:25:06.671701+00:00",
+          "mono_usec": "5524619643707",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync members[1]: 4"
+        },
+        {
+          "utc": "2026-08-23T19:25:08.825443+00:00",
+          "mono_usec": "5524621797449",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync members[5]: 1 2 3 4 5"
+        },
+        {
+          "utc": "2026-08-23T19:25:55.772036+00:00",
+          "mono_usec": "5524668744042",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync members[4]: 1 2 4 5"
+        },
+        {
+          "utc": "2026-08-23T19:26:00.659283+00:00",
+          "mono_usec": "5524673631290",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [QUORUM] Sync members[5]: 1 2 3 4 5"
+        },
+        {
+          "utc": "2026-08-23T19:26:08.042923+00:00",
+          "mono_usec": "5524681014929",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "systemd-logind.service",
+          "message": "System is rebooting."
+        },
+        {
+          "utc": "2026-08-23T19:26:18.628786+00:00",
+          "mono_usec": "5524691600793",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "init.scope",
+          "message": "Stopping corosync.service - Corosync Cluster Engine..."
+        },
+        {
+          "utc": "2026-08-23T19:26:18.647439+00:00",
+          "mono_usec": "5524691619446",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "Shutting down corosync"
+        },
+        {
+          "utc": "2026-08-23T19:26:18.649292+00:00",
+          "mono_usec": "5524691621298",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [CFG   ] Node 4 was shut down by sysadmin"
+        },
+        {
+          "utc": "2026-08-23T19:26:19.465869+00:00",
+          "mono_usec": "5524692437875",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "corosync.service",
+          "message": "  [MAIN  ] Corosync Cluster Engine exiting normally"
+        },
+        {
+          "utc": "2026-08-23T19:26:20.765438+00:00",
+          "mono_usec": "5524693737444",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "init.scope",
+          "message": "Reached target reboot.target - System Reboot."
+        },
+        {
+          "utc": "2026-08-23T19:26:20.765482+00:00",
+          "mono_usec": "5524693737488",
+          "boot_id": "b2d9eaf685db470ea27568e31fe5dac7",
+          "unit": "init.scope",
+          "message": "Shutting down."
+        }
+      ]
+    }
+  }
+}

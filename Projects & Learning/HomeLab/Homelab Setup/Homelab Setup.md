@@ -26,7 +26,7 @@ Latest inventory: **2026-10-27, 21:37–21:42 MDT**. All five hosts were reachab
 
 Clarifications updated **2026-10-28** from [[Projects & Learning/HomeLab/Homelab Setup/Answers|Answers]]. All five hosts have been updated by my report; exact installed/running versions still need checking. Both replacement NICs remain uninstalled, and the spare storage disks have no data needing backup.
 
-The next step is to plan diagnosis of the issues in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]]. Career Ops is the immediate backup target and is intended to move to a dedicated LXC/container. TrueNAS deployment, foundational configuration/metrics, and future service provisioning/recovery remain pending work in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]] and the linked outcome folders.
+The first historical read-only D1/storage investigation is complete in [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]]. It identifies D1 transmit stalls and leaves the distinct storage/older-host-stall causes open; no repair is validated. Other diagnosis work remains in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]] and the task lists. Career Ops is the immediate backup target and is intended to move to a dedicated LXC/container. TrueNAS deployment, foundational configuration/metrics, and future service provisioning/recovery remain pending work in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]] and the linked outcome folders.
 
 ## Related work
 

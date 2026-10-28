@@ -51,6 +51,10 @@ No VLAN tag is specified on these four guest NICs. DHCP reservations and address
 - `pve-7450`: `wlp2s0` exists, is down, and has no IP address. The manual `nic1` entry is a mistake; I want to remove it after checking dependencies (confirmed 2026-10-28). It remains present in the last collected configuration; dependency checks and the configuration change are pending in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 - All five management bridges have IPv6 link-local addresses. No global IPv6 address was present on those bridges at verification.
 
+## D1/storage scoped check — 2026-10-28
+
+D1 and storage retained the recorded nic0/vmbr0 address/bridge layout at the read-only 10:42 MDT check. Both nic0 links negotiated 1 Gb/s full duplex. The `rx_errors`, `tx_errors`, and `tx_timeout_count` counters were zero after the latest boots; EEE was enabled but inactive. These current settings/counters neither disprove historical stalls nor identify their trigger. [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]] contains the timeline and causal limits.
+
 ## Firewall
 
 `pve-firewall status` reports `Status: disabled/running` on all five hosts. The guest NIC firewall flags above are enabled on 101, 201, and 301, but do not establish an active Proxmox filtering policy. I have not intentionally configured firewall rules or custom Tailscale access settings (confirmed 2026-10-27). Effective router/account defaults and the intended access boundaries remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].

@@ -6,6 +6,12 @@
 
 Find the causes of D1/storage cluster dropouts and the E7450 disconnect during an update, then validate the appropriate fixes.
 
+## D1/storage findings — 2026-10-28
+
+[[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]] contains the completed historical read-only investigation. D1 has three corroborated e1000e transmit-stall/network-isolation episodes, plus a separate older memory-pressure/task-stall event. The physical NIC versus driver/firmware trigger remains unisolated.
+
+Storage's August departures are explained by maintenance. Its June abrupt journal ending and the undated powered-on/unreachable report remain unresolved. No shared NIC cause or durable fix is established. The next steps are to protect Career Ops and resolve the remaining evidence gaps before choosing a controlled repair.
+
 ## Reported behavior — 2026-10-27
 
 - pve-d1 and pve-storage have become unavailable and appeared offline in Proxmox while still powered on.

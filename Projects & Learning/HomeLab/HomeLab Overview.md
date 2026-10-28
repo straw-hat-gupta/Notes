@@ -26,7 +26,7 @@ D1 has the GTX 1070 assigned to llm-gpu; the other installed graphics devices ar
 
 ## Current direction
 
-The next step is a diagnosis plan for the reported host disconnects, GPU driver failure, OpenIPMI failures, and disk-health questions. The issue register is in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
+The first historical D1/storage investigation is documented in [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]]. Three D1 transmit-stall episodes are corroborated; the specific trigger, separate older D1 host stall, and reported storage fault remain open. The broader issue register is in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
 All five nodes have been updated by my report on 2026-10-28; their current versions/running kernels still need verification. Longer-term work remains TrueNAS/shared storage, foundational metric access before choosing a dashboard stack, Career Ops backup and a dedicated LXC/container, and request-based service provisioning/recovery.
 

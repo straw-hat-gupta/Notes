@@ -11,5 +11,6 @@
 | 2026-10-27 | Reconciled my answers with the setup records, open questions, and tasks. | Clarifications confirmed 2026-10-27. Recorded NIC/GPU details, backup/share status, switch topology, and planned TrueNAS, updates, monitoring, and service recovery. |
 | 2026-10-27 | Removed the temporary answers file after incorporating its useful contents. | Retained confirmations, plans, remaining questions, and NIC listing references in the maintained notes. |
 | 2026-10-28 | Reconciled further setup clarifications and recorded a new E7450 incident. | [[Projects & Learning/HomeLab/Homelab Setup/Answers\|Answers]]. Both NICs are uninstalled; spare data disks have no data needing backup; all-node updates reported complete, with version/kernel verification pending. Career Ops backup/migration and future provisioning scope clarified. |
+| 2026-10-28 | Completed the historical read-only D1/storage dropout investigation and scoped version verification. | [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence\|D1 and Storage Evidence]]. Three D1 transmit-stall episodes corroborated; storage maintenance departures explained, other storage/older D1 causes unresolved. No repair or excluded-incident investigation. |
 
 These documentation updates did not change running infrastructure.

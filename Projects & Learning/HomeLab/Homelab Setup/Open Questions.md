@@ -40,3 +40,5 @@ Both replacement NICs are uninstalled. Their possible use on D1/storage depends 
 | T2 | Why is OpenIPMI failed, is usable IPMI hardware present, and is it needed for the hardware readings I want? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|IPMI and metric coverage]] |
 | T3 | What caused the D1/storage dropouts and the E7450 disconnect during its web-UI update? Establish reboot, host, link, and cluster evidence separately. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
 | T4 | What do the SMART baseline/trends mean for disk health, and is any action justified? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Disk and temperature observations\|Disk observations]] |
+
+D1/storage historical findings are now in [[Projects & Learning/HomeLab/Node Issues/D1 and Storage Evidence|D1 and Storage Evidence]]. The D1 transmit-stall mechanism is corroborated; its specific trigger, the separate June D1 stall, and the reported storage fault remain open in [[Projects & Learning/HomeLab/Node Issues/Open Questions|Node Issues — Open Questions]]. No excluded incident was reassessed.
