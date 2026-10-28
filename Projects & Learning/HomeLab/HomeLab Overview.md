@@ -20,8 +20,8 @@ For agents editing this area: [[Projects & Learning/HomeLab/AGENTS|HomeLab agent
 
 ## Current workload context
 
-[[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] holds the hardware details. The llm-gpu VM runs on pve-d1 with GPU passthrough and hosts [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]. Per the brain dump, pve-d1 is the only GPU node. The future development workspace may reuse llm-gpu or use another VM; no placement decision has been made.
+[[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Node Inventory]] holds the hardware details. The llm-gpu VM runs on pve-d1 with GPU passthrough and hosts [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]. Per the brain dump, pve-d1 is the only GPU node. The future development workspace may reuse llm-gpu or use another VM; no placement decision has been made.
 
 ## Preserved operational context
 
-Hardware details, conflicting GPU records, and the existing VM address are included in [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]]. Desired dashboard and benchmark features are recorded in [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]]. Earlier remote-access and management-skill goals are included in their respective task folders.
+Hardware details, conflicting GPU records, and the existing VM address are included in [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Node Inventory]]. Desired dashboard and benchmark features are recorded in [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]]. Earlier remote-access and management-skill goals are included in their respective task folders.

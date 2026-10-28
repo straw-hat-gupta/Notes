@@ -13,7 +13,7 @@ These instructions apply to this directory and all descendants. Follow [[Project
 - Proxmox and other relevant software configuration, VM/container placement, services, and workloads.
 - Current node/service health, known faults, and confirmed resolutions.
 
-Use [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] for the existing node and workload record. Add focused setup notes within Homelab Setup when there is enough confirmed detail to warrant them, and link them from its overview. Keep one authoritative record for each fact and link to it from other notes.
+Use [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Node Inventory]] for the existing node and workload record. Add focused setup notes within Homelab Setup when there is enough confirmed detail to warrant them, and link them from its overview. Keep one authoritative record for each fact and link to it from other notes.
 
 ## Required with every edit
 
