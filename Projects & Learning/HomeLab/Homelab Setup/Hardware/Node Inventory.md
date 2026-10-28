@@ -18,7 +18,7 @@ Total installed RAM: 94 GB. Total CPU capacity: 16 physical cores and 28 hardwar
 
 ## RAM slots
 
-All installed modules report DDR3 and 64-bit total/data widths. Speeds below are SMBIOS module speeds. Configured speed also reports 1600 MT/s on all nodes except pve-6420, where that field is unavailable. [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
+All installed modules report DDR3 and 64-bit total/data widths. Speeds below are SMBIOS module speeds. Configured speed also reports 1600 MT/s on all nodes except pve-6420, where that field is unavailable. I use its SMBIOS-reported module speed of 1333 MT/s in this inventory ([[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27).
 
 ### pve-d1
 
@@ -91,6 +91,8 @@ PCI names and subsystem identifications from `lspci -nnk`:
 | pve-6420 | 01:00.0 | NVIDIA GF119M NVS 4200M | 10de:1056 | Dell 1028:1493 | nouveau |
 | pve-7450 | 00:02.0 | Intel HD Graphics 5500 | 8086:1616 | Dell 1028:062e | i915 |
 
+My D1 card is an ASUS ROG Strix GTX 1070 with 8 GB VRAM. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. Other graphics-device memory capacities remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
+
 The GTX 1070 audio function is `01:00.1`, PCI ID `10de:10f0`, also bound to `vfio-pci`. GPU passthrough settings and guest allocation are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].
 
 ## Network adapters
@@ -105,4 +107,13 @@ The GTX 1070 audio function is `01:00.1`, PCI ID `10de:10f0`, also bound to `vfi
 | pve-7450 | 00:19.0 | Intel Ethernet Connection (3) I218-LM | 8086:15a2 | e1000e |
 | pve-7450 | 02:00.0 | Intel Wireless 7265; Dual Band Wireless-AC 7265 subsystem | 8086:095a | iwlwifi |
 
-Interface names, bridge membership, addresses, and negotiated links are in [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]]. The purchased replacement NICs are tracked in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
+Interface names, bridge membership, addresses, and negotiated links are in [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]]. The purchased replacement NICs are listed below.
+
+## Replacement NICs
+
+Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. These are purchased spares; their installation state is still in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|H1]].
+
+| Model | Controller recorded in my answer | Connection |
+| --- | --- | --- |
+| StarTech ST1000SPEXI | Intel I210 | PCIe x1, one 1 Gb/s RJ45 port |
+| Intel Gigabit CT EXPI9301CTBLK | Intel 82574L | PCIe x1, one 1 Gb/s RJ45 port |

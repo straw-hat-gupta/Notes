@@ -37,9 +37,9 @@ Endpoints and service configuration: [[Projects & Learning/HomeLab/Homelab Setup
 
 | Fault | Evidence | Follow-up |
 | --- | --- | --- |
-| VM 301 NVIDIA driver unavailable | `nvidia-smi` exited 9: unable to communicate with the NVIDIA driver. The GTX 1070 is visible at guest PCI `06:10.0`, with no driver-in-use entry for its display function. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T1]] |
-| `openipmi.service` failed on all five hosts | `systemctl --failed` and unit state show `failed`, result `exit-code`. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T2]] |
-| Earlier D1/storage dropouts remain unresolved | Both are reachable now; this does not confirm the cause or a lasting recovery. | [[Projects & Learning/HomeLab/Node Issues/Open Questions|Node Issues questions]] |
+| VM 301 NVIDIA driver unavailable | `nvidia-smi` exited 9: unable to communicate with the NVIDIA driver. The GTX 1070 is visible at guest PCI `06:10.0`, with no driver-in-use entry for its display function. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T1]] |
+| `openipmi.service` failed on all five hosts | `systemctl --failed` and unit state show `failed`, result `exit-code`. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T2]] |
+| Earlier D1/storage dropouts remain unresolved | Both are reachable now; this does not confirm the cause or a lasting recovery. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
 
 ## Disk and temperature observations
 
@@ -57,8 +57,10 @@ SMART raw fields are vendor-specific; trend and interpretation are tracked in [[
 
 `sensors` could not read one fan field on D2/storage and one wireless temperature field on E7450. Those readings are unavailable, rather than evidence of a failed fan or overheating.
 
+IPMI (Intelligent Platform Management Interface) is a hardware-management interface for monitoring sensors and related platform functions. Whether these systems need OpenIPMI remains to be established; a failed unit alone does not identify the dropout cause. [Linux IPMI documentation](https://docs.kernel.org/driver-api/ipmi.html).
+
 ## Protection and exposure
 
-[[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Backups, replication, and shares|Backup records]] show no configured Proxmox backup jobs or listed local backup archives. Configured storage has no disk redundancy. [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall|Proxmox firewall]] reports disabled/running on all hosts; other access boundaries are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
+[[Projects & Learning/HomeLab/ANSWERS|ANSWERS]] confirms that no backups have been established as of 2026-10-27. [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Backups, replication, and shares|Backup records]] also show no configured Proxmox backup jobs or listed local backup archives. Configured storage has no disk redundancy. [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall|Proxmox firewall]] reports disabled/running on all hosts; other access boundaries are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
 
 Sources: `pvecm status`, `systemctl`, `uptime`, `/proc/meminfo`, `sensors`, `smartctl`, guest runtime inspection, HTTP readiness requests, and Prometheus target status. [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|Evidence snapshot]].

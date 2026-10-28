@@ -19,6 +19,10 @@ Verified 2026-10-27 (America/Edmonton). Sources: Proxmox network configuration, 
 
 Each host has a static address on `vmbr0`. The physical `nic0` interface is a bridge port without its own IP address. `vmbr0` starts automatically; STP is off and forwarding delay is 0.
 
+## Physical connections
+
+All five Proxmox nodes use static IPs and connect by individual Ethernet cables to a TP-Link 8-port switch. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. Exact switch/router models, port mapping, and DHCP reservations remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Networking questions]].
+
 ## Host connections
 
 | Node | Management address | Uplink MAC | Bridge / uplink | Link at verification |
@@ -49,10 +53,10 @@ No VLAN tag is specified on these four guest NICs. DHCP reservations and address
 
 ## Firewall
 
-`pve-firewall status` reports `Status: disabled/running` on all five hosts. The guest NIC firewall flags above are enabled on 101, 201, and 301, but do not establish an active Proxmox filtering policy. Other firewall layers and external access boundaries are tracked in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
+`pve-firewall status` reports `Status: disabled/running` on all five hosts. The guest NIC firewall flags above are enabled on 101, 201, and 301, but do not establish an active Proxmox filtering policy. I have not intentionally configured firewall rules or custom Tailscale access settings ([[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27). Effective router/account defaults and the intended access boundaries remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
 
 ## Access
 
-VM 301 also has a `tailscale0` address of `100.78.156.52/32`.
+Tailscale is installed on pve-d2 and llm-gpu ([[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27). VM 301 has an observed `tailscale0` address of `100.78.156.52/32`. Pve-d2 Tailscale runtime details were not included in the live snapshot.
 
 My saved SSH aliases use `root` on port 22 for all five nodes, with key authentication. Proxmox administration uses each node's management address on HTTPS port 8006. Detailed access permissions and service endpoints are linked from [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].

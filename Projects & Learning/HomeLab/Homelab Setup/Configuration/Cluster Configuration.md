@@ -32,6 +32,10 @@ Verified 2026-10-27 (America/Edmonton). Sources: `pveversion`, `pvecm status`, `
 
 Management addresses and bridge configuration are in [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]]. Current observations and faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
+## Planned version alignment
+
+I want all five nodes updated to an aligned Proxmox/kernel baseline. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. The installed versions above are unchanged. The target release and maintenance sequence still need choosing; the rollout belongs in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
+
 ## Package repositories
 
 These source settings are present on all five nodes:

@@ -12,9 +12,14 @@ Grafana, Prometheus, Alertmanager, and the Proxmox exporter run in LXC 201 on pv
 
 Configuration and data locations: [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]]. Latest readings: [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
+## Reconfiguration direction
+
+I want a dashboard with per-node load and statistics, plus homelab-wide totals for RAM, CPU/core capacity, and storage usage. Reconfiguring the existing stack or changing it are both open options; a replacement has not been chosen. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27.
+
 ## Desired features
 
 - CPU and RAM load for every node, plus D1 GPU utilization.
+- Homelab-wide RAM, CPU/core capacity, and storage usage totals alongside the per-node view.
 - CPU/GPU and other available sensor temperatures.
 - Simple network/CPU benchmarks from a button.
 - Optional scheduled benchmarks with saved results and history, including network-speed trends.

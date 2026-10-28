@@ -10,17 +10,21 @@ Latest inventory: **2026-10-27, 21:37–21:42 MDT**. All five hosts were reachab
 
 | Record | Contents |
 | --- | --- |
-| [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory|Hardware]] | Systems, CPUs, RAM slots, disks, GPUs, and NICs |
-| [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration|Storage]] | Boot layout, LVM pools, filesystems, capacity, guest disks, and backups |
-| [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Networking]] | Addresses, bridges, interfaces, routing, DNS, and firewall state |
-| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration|Cluster configuration]] | Proxmox versions, membership, quorum, repositories, and passthrough |
-| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and services]] | VMs, containers, resource allocations, service endpoints, and data locations |
-| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Access|Access]] | Saved SSH connections, administrative permissions, and guest access |
-| [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]] | Dated health observations and active faults |
-| [[Projects & Learning/HomeLab/Homelab Setup/Open Questions|Open questions]] | Missing details, conflicting records, and decisions to make |
-| [[Projects & Learning/HomeLab/Homelab Setup/Change Log|Change log]] | Setup changes and inventory updates |
+| [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory\|Hardware]] | Systems, CPUs, RAM slots, disks, GPUs, and NICs |
+| [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration\|Storage]] | Boot layout, LVM pools, filesystems, capacity, guest disks, and backups |
+| [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration\|Networking]] | Addresses, bridges, interfaces, routing, DNS, and firewall state |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration\|Cluster configuration]] | Proxmox versions, membership, quorum, repositories, and passthrough |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services\|Workloads and services]] | VMs, containers, resource allocations, service endpoints, and data locations |
+| [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Access\|Access]] | Saved SSH connections, administrative permissions, and guest access |
+| [[Projects & Learning/HomeLab/Homelab Setup/Status\|Status]] | Dated health observations and active faults |
+| [[Projects & Learning/HomeLab/Homelab Setup/Open Questions\|Open questions]] | Missing details, conflicting records, and decisions to make |
+| [[Projects & Learning/HomeLab/Homelab Setup/Change Log\|Change log]] | Setup changes and inventory updates |
 
 [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|2026-10-27 evidence snapshot]] contains the filtered command results behind this inventory. Credentials and secret-bearing configuration contents are excluded.
+
+## Decisions and next work
+
+[[Projects & Learning/HomeLab/ANSWERS|ANSWERS]] records my 2026-10-27 clarifications. Current facts are incorporated into the setup records; TrueNAS, version alignment, monitoring reconfiguration, and service failover remain planned work in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]] and the linked outcome folders.
 
 ## Related work
 

@@ -64,7 +64,7 @@ Guest purpose, CPU/RAM allocations, and service configuration are in [[Projects 
 
 On `pve-storage`, `/dev/sda` and `/dev/sdb` are the two 1 TB HDDs; `/dev/sdd` is the additional 128 GB SSD. They have no listed filesystem, LVM PV, or mounted path and are not part of the configured Proxmox stores. A read-only signature scan found GPT and protective MBR signatures on `/dev/sda`; none were reported on `/dev/sdb` or `/dev/sdd`. These results do not establish that existing data can be discarded. The boot disk is `/dev/sdc`.
 
-The intended data layout and any data to preserve on these devices are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
+The intended layout is recorded under [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup|Planned TrueNAS setup]]. Any existing data to preserve still needs confirmation in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
 
 ## Backups, replication, and shares
 
@@ -75,8 +75,27 @@ The intended data layout and any data to preserve on these devices are in [[Proj
 | Backup-capable storage | `local` on each node allows backup content under `/var/lib/vz` |
 | Local Proxmox backup content | No backup entries returned from `local` on any of the five nodes |
 | Available Proxmox backup task history | No `vzdump` tasks returned from any of the five node task queries (limit 20) |
-| Manual backups, retention, offsite copies, and restore tests | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Not yet confirmed]] |
-| Host-level NFS/SMB exports and external storage clients | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Not yet confirmed]] |
+| Overall backup coverage | No backups have been established ([[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]], 2026-10-27) |
+| Retention, offsite copies, and restore testing | Not established; [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage\|backup design remains open]] |
+| Host-level shares / external storage clients | None in use ([[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]], 2026-10-27) |
+
+## Planned TrueNAS setup
+
+I want TrueNAS on pve-storage, with the two 1 TB HDDs in a ZFS stripe for combined capacity. This is a plan; TrueNAS and the pool are not installed. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27.
+
+| Item | Planned use / decision |
+| --- | --- |
+| Two 1 TB HDDs | ZFS stripe, no mirror; approximately 2 TB decimal raw capacity before filesystem overhead |
+| Shared storage | Backups, Linux ISOs, and data shared by other nodes |
+| Network drive | Desired if practical; protocol and client access remain to choose |
+| Extra 128 GB SSD | Proposed dedicated TrueNAS boot device; not yet selected or configured |
+| Deployment | VM versus bare-metal installation remains undecided |
+
+The spare SSD is a sensible boot-device candidate because TrueNAS separates boot from data storage and specifies an SSD boot device of at least 20 GB. If I retain Proxmox, its current boot SSD must remain separate from the TrueNAS installation. Virtualized TrueNAS also needs a deliberate physical-disk/controller access plan; its hardware guide cautions against virtual data disks for critical storage. This is a proposal pending the deployment decision. [TrueNAS hardware guide](https://www.truenas.com/docs/scale/gettingstarted/tnhardwareguide/).
+
+A stripe has no disk redundancy: losing either data disk can lose the pool. Backups stored only on that pool cannot protect the pool's own data, so backup design must include an independent copy. [TrueNAS pool layouts](https://www.truenas.com/docs/scale/storage/pools/poolcreationwizardscreen/).
+
+Deployment, data preservation, SSD assignment, and backup destinations are centralized in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
 
 ## Sources
 

@@ -2,6 +2,8 @@
 
 [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-- [ ] Review existing monitoring coverage against the desired per-node load and temperature dashboard.
+- [ ] Review the current stack and decide whether to reconfigure it or replace parts of it.
+- [ ] Define and build the per-node and homelab-wide dashboard for CPU/load, RAM, core capacity, and storage usage, retaining temperature/GPU coverage where available.
+- [ ] Record dashboard configuration, metric retention, and alert routes for the chosen setup.
 - [ ] Define the useful manual benchmarks and how their results should be saved and displayed.
 - [ ] Decide whether scheduled benchmarks are worthwhile and define their scope before configuring them.
