@@ -19,5 +19,5 @@ C3: need to figure this out when the time comes. but all the pieces need to be i
 T1: gotta figure this out
 T2: idk is it needed? i want to track different stats/readings from my hardware will i need this for it? 
 T3: You will be diagnosing this
-T$
+T4: this is for you to figure out and report to me. 
 
