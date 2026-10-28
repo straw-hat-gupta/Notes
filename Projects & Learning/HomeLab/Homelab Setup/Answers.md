@@ -12,4 +12,6 @@ N2: yes and yes
 N3: idk, need to learn what is best here 
 N4: i dont really know what is supposed to be what here
 
-C1: i updated all the nodes. 
+C1: i updated all the nodes. suggest something you think is the best for this. 
+C2: all of career-ops
+C3: need to figure 
