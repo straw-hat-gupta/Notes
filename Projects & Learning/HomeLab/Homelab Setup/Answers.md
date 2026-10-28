@@ -14,4 +14,5 @@ N4: i dont really know what is supposed to be what here
 
 C1: i updated all the nodes. suggest something you think is the best for this. 
 C2: all of career-ops
-C3: need to figure 
+C3: need to figure this out when the time comes. but all the pieces need to be in place so that way when i come around to it i can build it with any stack but 
+
