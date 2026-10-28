@@ -12,7 +12,7 @@ N2: yes and yes
 N3: idk, need to learn what is best here 
 N4: i dont really know what is supposed to be what here
 
-C1: i updated all the nodes. suggest something you think is the best for this. Another thing i noticed and needs to be diagnosed. when i updated pve-7450 through the updates tab in the proxmox web app 
+C1: i updated all the nodes. suggest something you think is the best for this. Another thing i noticed and needs to be diagnosed. when i updated pve-7450 through the updates tab in the proxmox web app during the update it just disconnected from the cluster. I never rebooted myself it just disconnected from the cluster.
 C2: all of career-ops
 C3: need to figure this out when the time comes. but all the pieces need to be in place so that way when i come around to it i can build it with any stack but the basic config of the homelab is done. 
 
