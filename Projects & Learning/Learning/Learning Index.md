@@ -1,12 +1,10 @@
-# Learning Index
+# Learning
 
-Back to [[Projects & Learning/Start Here|Start Here]] · [[Projects & Learning/Big Tasks|Big tasks]]
+[[Projects & Learning/Start Here|Start Here]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
-## Learning goals
-Awaiting the brain dump. No specific subjects or deadlines have been assigned yet.
+| Topic | What to learn | Apply it to |
+| --- | --- | --- |
+| [[Projects & Learning/Learning/Cloudflare/Cloudflare|Cloudflare]] | Domains, DNS, subdomains, HTTPS, routing, and remote access | [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]] and [[Projects & Learning/Projects/Portfolio/Portfolio|Portfolio]] |
+| [[Projects & Learning/Learning/Agents and MCP/Agents and MCP|Agents and MCP]] | Client support, tools, skills, authentication, and shared servers | [[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] and [[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]] |
 
-As goals emerge, give each substantial topic its own note with the desired outcome, practical exercises, and links to projects where it will be used.
-
-## Connections
-- [[Projects & Learning/Projects/Project Index|Projects]] — places to apply learning.
-- [[Projects & Learning/HomeLab/HomeLab Overview|Homelab]] — infrastructure and experimentation.
+Learn through the concrete projects. Topic folders contain notes and their own Tasks checklist; implementation actions remain with the relevant project or homelab task. Add more subjects as they emerge in future brain dumps.

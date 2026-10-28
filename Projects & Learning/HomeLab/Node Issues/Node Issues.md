@@ -1,28 +1,30 @@
 # Node Issues
 
-Back to [[Projects & Learning/HomeLab/HomeLab Overview|Homelab]] · tracked in [[Projects & Learning/Big Tasks|Big tasks]].
+[[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
 ## Outcome
-Understand and resolve the issues reported on pve-d1 and pve-storage.
 
-## Known
-Both nodes have been having issues. Symptoms, duration, impact, and cause have not yet been described.
+Diagnose and fix pve-d1 and pve-storage dropping out of the Proxmox cluster while the physical machines remain powered on.
 
-## pve-d1
-- Symptoms: to capture.
-- Timing and impact: to capture.
-- Evidence and previous attempts: to capture.
-- Relevant workload: llm-gpu with GPU passthrough and [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]].
+## Observed symptoms — reported 2026-10-27
 
-## pve-storage
-- Symptoms: to capture.
-- Timing and impact: to capture.
-- Evidence and previous attempts: to capture.
+- Both nodes have, while running, become unavailable and appeared offline in the Proxmox web interface.
+- The physical computers downstairs remain on when this happens.
+- Frequency, timestamps, recovery method, and whether both fail together are not known yet.
+- pve-d1 hosts llm-gpu and [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]; impact on the VM during an outage still needs checking.
 
-## Next steps
-- [ ] Capture the issues from the next brain dump.
-- [ ] Break each issue into its own note if it needs a separate investigation.
+## Hypothesis and available hardware
 
-Related: [[Projects & Learning/HomeLab/Node Inventory|Node inventory]] · [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote development]].
+The existing NICs may be involved. This is a hypothesis, not a diagnosis. Two replacement network interface cards have already been purchased; card models, compatibility, and installation state remain unknown.
 
-No diagnosis or infrastructure changes are part of this skeleton.
+## Investigation direction
+
+Collect host/kernel, network, and cluster evidence around a dropout and distinguish a network-link failure, host problem, or cluster-membership problem before choosing a fix. Track evidence separately for each node.
+
+## Connections
+
+[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] should make remote investigation convenient. [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] supplies hardware context. Findings inform [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] placement.
+
+## Tasks
+
+![[Projects & Learning/HomeLab/Node Issues/Tasks]]

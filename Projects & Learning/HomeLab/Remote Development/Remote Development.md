@@ -1,25 +1,28 @@
 # Remote Development
 
-Back to [[Projects & Learning/HomeLab/HomeLab Overview|Homelab]] · tracked in [[Projects & Learning/Big Tasks|Big tasks]].
+[[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
 ## Outcome
-Have a dedicated development VM in the homelab so programming work runs remotely instead of on the Mac, and agents can keep running there.
 
-## Known requirements
-- A VM dedicated to development.
-- Use the remote environment for development work.
-- Agents should be able to continue running remotely.
+Move development off the Mac into a homelab VM so repositories, tools, and long-running agents can stay there. Keep the Mac as a way to connect to the workspace.
 
-## Decisions still open
-- Host node, operating system, and CPU/RAM/disk allocation.
-- How to connect from the Mac and how agent sessions persist.
-- Which repositories and tools to move first.
+## Requirements captured
 
-## Breakdown
-Detailed steps to add after requirements are clarified.
-- [ ] Capture the desired development workflow and tools.
-- [ ] Choose VM placement using [[Projects & Learning/HomeLab/Node Inventory|Node inventory]] and the findings in [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node issues]].
+- A dedicated place for all development work, with access from the Mac and eventually other devices.
+- Agents and development processes can continue running remotely.
+- Centralize [[Projects & Learning/Projects/Client Management/Client Management|Client Management]] first, including its notes, code, and environment.
+- GPU access is desired for the wider development/agent workflow, although the client application does not need it.
+- llm-gpu is a candidate, or a separate VM could be created. No VM/host choice or GPU-sharing arrangement has been decided.
+- Existing llm-gpu on pve-d1 already has GPU access and runs [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]].
+
+## Decisions to make
+
+VM placement, resources, OS, repository locations, remote access, editor workflow, and persistent agent sessions. Clarify what was meant by “Reverb Node” before treating it as a hostname or product.
 
 ## Connections
-- [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]] already runs in the homelab; no migration decision has been made.
-- Existing source: [[HomeLab/Dev build on homelab]].
+
+[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] informs host reliability; [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] informs capacity. Sources: [[HomeLab/Dev build on homelab]] and [[TODO]].
+
+## Tasks
+
+![[Projects & Learning/HomeLab/Remote Development/Tasks]]
