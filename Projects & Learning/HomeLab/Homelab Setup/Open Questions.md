@@ -39,9 +39,9 @@ Open as of 2026-10-27. Confirmed facts and plans are in the linked records; acti
 
 ## Status
 
-| ID | Question | Relevant record |
-| --- | --- | --- |
-| T1 | Why does nvidia-smi fail in llm-gpu, and what repair is needed? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|GPU fault]] |
-| T2 | Why is openipmi.service failed, do these machines have usable IPMI hardware, and is the service needed? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|IPMI fault and context]] |
-| T3 | What caused the D1/storage dropouts, including any BIOS/firmware, host, link, or cluster evidence? | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
-| T4 | Are the SMART values stable, and do their vendor-specific meanings indicate any actionable disk problem? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Disk and temperature observations\|Disk observations]] |
+| ID  | Question                                                                                                 | Relevant record                                                                                           |
+| --- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| T1  | Why does nvidia-smi fail in llm-gpu, and what repair is needed?                                          | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|GPU fault]]                             |
+| T2  | Why is openipmi.service failed, do these machines have usable IPMI hardware, and is the service needed?  | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|IPMI fault and context]]                |
+| T3  | What caused the D1/storage dropouts, including any BIOS/firmware, host, link, or cluster evidence?       | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]]                         |
+| T4  | Are the SMART values stable, and do their vendor-specific meanings indicate any actionable disk problem? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Disk and temperature observations\|Disk observations]] |
