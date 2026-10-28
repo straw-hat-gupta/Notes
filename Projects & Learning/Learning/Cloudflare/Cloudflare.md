@@ -12,7 +12,7 @@ Understand how the purchased domain, DNS, subdomains, HTTPS, and the chosen conn
 
 ## Notes
 
-Domain recorded from the brain dump as `SmirthG.dev`; spelling and current setup are still unverified. Learning goals below are proposed practical steps, not a claim about which Cloudflare products are already configured.
+Domain recorded from the brain dump as `smarthg.dev`; spelling and current setup are still unverified. Learning goals below are proposed practical steps, not a claim about which Cloudflare products are already configured.
 
 ## Tasks
 
