@@ -17,5 +17,7 @@ C2: all of career-ops
 C3: need to figure this out when the time comes. but all the pieces need to be in place so that way when i come around to it i can build it with any stack but the basic config of the homelab is done. 
 
 T1: gotta figure this out
-T2: 
+T2: idk is it needed? i want to track different stats/readings from my hardware will i need this for it? 
+T3: You will be diagnosing this
+T$
 
