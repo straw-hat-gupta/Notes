@@ -9,7 +9,7 @@
 - [x] Record the installed storage layout and network hardware.
 - [x] Identify the purchased replacement NIC models and record D1's ASUS ROG Strix GTX 1070 with 8 GB VRAM.
 - [x] Confirm backup/share status: no backups established and no existing external storage shares/clients.
-- [x] Record the TrueNAS storage plan and the host-version alignment decision from [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]].
+- [x] Record the TrueNAS storage plan and the host-version alignment decision (confirmed 2026-10-27).
 
 ## Storage and protection
 

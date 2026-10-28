@@ -24,7 +24,7 @@ Latest inventory: **2026-10-27, 21:37–21:42 MDT**. All five hosts were reachab
 
 ## Decisions and next work
 
-[[Projects & Learning/HomeLab/ANSWERS|ANSWERS]] records my 2026-10-27 clarifications. Current facts are incorporated into the setup records; TrueNAS, version alignment, monitoring reconfiguration, and service failover remain planned work in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]] and the linked outcome folders.
+Current facts are in the setup records. TrueNAS, version alignment, monitoring reconfiguration, and service failover remain planned work in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]] and the linked outcome folders.
 
 ## Related work
 

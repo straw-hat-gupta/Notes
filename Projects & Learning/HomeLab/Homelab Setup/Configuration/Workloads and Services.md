@@ -28,16 +28,16 @@ LXC 100 and 201 have `nesting=1,keyctl=1`; LXC 101 has `nesting=1`. VM 301's mac
 | Alertmanager | LXC 201 | `http://10.44.0.80:9093` | Docker `alertmanager`, image `prom/alertmanager:latest` |
 | Proxmox exporter | LXC 201 | `http://10.44.0.80:9221` | Docker `pve-exporter`, image `prompve/prometheus-pve-exporter:latest` |
 | Node exporter | All five Proxmox hosts | `http://NODE_IP:9100/metrics` | `prometheus-node-exporter.service`, active |
-| Tailscale | VM 301; also installed on pve-d2 per ANSWERS | `tailscale0`; [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Access\|network record]] | VM 301: `tailscaled.service` active; D2 runtime not collected |
+| Tailscale | VM 301; also installed on pve-d2 (confirmed 2026-10-27) | `tailscale0`; [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Access\|network record]] | VM 301: `tailscaled.service` active; D2 runtime not collected |
 | CAO server | VM 301 | `127.0.0.1:9889` | Process `cao-server` listening; application purpose/configuration still [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration\|to reconcile with Career Ops]] |
 | Ollama | VM 301 | `127.0.0.1:11434` | Existing `ollama.service`, active; no model inventory or serving test |
-| Career Ops | VM 301, confirmed in [[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]] | Accessed through llm-gpu; process/configuration details still [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration\|to document]] | [[Projects & Learning/Projects/Career Ops/Career Ops\|Career Ops project notes]] |
+| Career Ops | VM 301 (confirmed 2026-10-27) | Accessed through llm-gpu; process/configuration details still [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration\|to document]] | [[Projects & Learning/Projects/Career Ops/Career Ops\|Career Ops project notes]] |
 
 Monitoring Compose file: `/opt/monitoring/docker-compose.yml`. Grafana depends on Prometheus; Prometheus scrapes five host exporters, five Proxmox targets, and itself. All 11 targets were up during the check. Service health and current faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
 ## Planned service reconfiguration
 
-Career Ops needs reconfiguration. I want it packaged in Docker or an equivalent portable setup, remotely accessible, and automatically recovered on another node if its host fails. I want the same hosting approach available to other services, tools, and projects. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27.
+Career Ops needs reconfiguration. I want it packaged in Docker or an equivalent portable setup, remotely accessible, and automatically recovered on another node if its host fails. I want the same hosting approach available to other services, tools, and projects. Confirmed 2026-10-27.
 
 The deployment/failover requirements are maintained in [[Projects & Learning/HomeLab/Project Hosting/Project Hosting#Service portability and recovery|Project Hosting]]. The current llm-gpu placement and GPU passthrough are unchanged.
 

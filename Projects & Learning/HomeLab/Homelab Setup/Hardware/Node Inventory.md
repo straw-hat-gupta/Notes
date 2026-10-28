@@ -18,7 +18,7 @@ Total installed RAM: 94 GB. Total CPU capacity: 16 physical cores and 28 hardwar
 
 ## RAM slots
 
-All installed modules report DDR3 and 64-bit total/data widths. Speeds below are SMBIOS module speeds. Configured speed also reports 1600 MT/s on all nodes except pve-6420, where that field is unavailable. I use its SMBIOS-reported module speed of 1333 MT/s in this inventory ([[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27).
+All installed modules report DDR3 and 64-bit total/data widths. Speeds below are SMBIOS module speeds. Configured speed also reports 1600 MT/s on all nodes except pve-6420, where that field is unavailable. I use its SMBIOS-reported module speed of 1333 MT/s in this inventory (confirmed 2026-10-27).
 
 ### pve-d1
 
@@ -91,7 +91,7 @@ PCI names and subsystem identifications from `lspci -nnk`:
 | pve-6420 | 01:00.0 | NVIDIA GF119M NVS 4200M | 10de:1056 | Dell 1028:1493 | nouveau |
 | pve-7450 | 00:02.0 | Intel HD Graphics 5500 | 8086:1616 | Dell 1028:062e | i915 |
 
-My D1 card is an ASUS ROG Strix GTX 1070 with 8 GB VRAM. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. Other graphics-device memory capacities remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
+My D1 card is an ASUS ROG Strix GTX 1070 with 8 GB VRAM. Confirmed 2026-10-27. Other graphics-device memory capacities remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
 
 The GTX 1070 audio function is `01:00.1`, PCI ID `10de:10f0`, also bound to `vfio-pci`. GPU passthrough settings and guest allocation are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].
 
@@ -111,9 +111,11 @@ Interface names, bridge membership, addresses, and negotiated links are in [[Pro
 
 ## Replacement NICs
 
-Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. These are purchased spares; their installation state is still in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|H1]].
+Confirmed 2026-10-27. These are purchased spares; their installation state is still in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|H1]].
 
 | Model | Controller recorded in my answer | Connection |
 | --- | --- | --- |
-| StarTech ST1000SPEXI | Intel I210 | PCIe x1, one 1 Gb/s RJ45 port |
-| Intel Gigabit CT EXPI9301CTBLK | Intel 82574L | PCIe x1, one 1 Gb/s RJ45 port |
+| [StarTech ST1000SPEXI](https://retail.era.ca/collections/networking-components/products/startech-com-st1000spexi-1-port-gigabit-ethernet-pcie-network-adapter-card) | Intel I210 | PCIe x1, one 1 Gb/s RJ45 port |
+| [Intel Gigabit CT EXPI9301CTBLK](https://retail.era.ca/collections/networking-components/products/intel-gigabit-ct-desktop-adapter-expi9301ctblk-pcie-x1-nic) | Intel 82574L | PCIe x1, one 1 Gb/s RJ45 port |
+
+Saved listing details, recorded 2026-10-27: both used and described as tested, listed at $17.50 each.

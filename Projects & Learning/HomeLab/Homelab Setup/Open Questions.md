@@ -2,7 +2,7 @@
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]]
 
-Remaining questions after my 2026-10-27 [[Projects & Learning/HomeLab/ANSWERS|answers]]. Confirmed facts and plans are in the linked records; actionable work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
+Open as of 2026-10-27. Confirmed facts and plans are in the linked records; actionable work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 
 ## Hardware
 

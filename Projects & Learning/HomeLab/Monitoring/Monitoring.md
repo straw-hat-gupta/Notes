@@ -14,7 +14,7 @@ Configuration and data locations: [[Projects & Learning/HomeLab/Homelab Setup/Co
 
 ## Reconfiguration direction
 
-I want a dashboard with per-node load and statistics, plus homelab-wide totals for RAM, CPU/core capacity, and storage usage. Reconfiguring the existing stack or changing it are both open options; a replacement has not been chosen. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27.
+I want a dashboard with per-node load and statistics, plus homelab-wide totals for RAM, CPU/core capacity, and storage usage. Reconfiguring the existing stack or changing it are both open options; a replacement has not been chosen. Confirmed 2026-10-27.
 
 ## Desired features
 
