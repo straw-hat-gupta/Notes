@@ -6,6 +6,7 @@ Your organized home for things to build, learn, and configure. Use this chat for
 
 | Note | Use it for |
 | --- | --- |
+| [[Projects & Learning/AGENTS|Agent Guide]] | Instructions for agents editing or maintaining this system |
 | [[Projects & Learning/Big Tasks|Big Tasks]] | All big outcomes with their live subtask checklists |
 | [[Projects & Learning/Projects/Project Index|Projects]] | Individual applications and projects |
 | [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab]] | Hardware, repairs, configuration, and shared services |
