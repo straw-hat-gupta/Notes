@@ -18,15 +18,11 @@ Why do you want to join Bell and which position, what was a diﬃcult project, a
 
 conﬂict with team members and how did you manage it?
 
-1. What excites you about the opportunity to launch your career at a technology company like
-
-Bell?
-
-2. What speciﬁcally drew you to our intern/graduate program, and why should we choose you
-
-for the role within the program?
-
-3. Describe a recent accomplishment that you are proud of. What did you achieve and what
-
-steps did you take that allowed you to reach this accomplishment? 
+- What excites you about the opportunity to launch your career at Bell?
+    
+- What specifically drew you to our intern/graduate program, and why should we choose you for the role within the program?
+    
+- When have you used AI to solve a problem? What happened?
+    
+- Describe a recent accomplishment that you are proud of. What did you achieve and what steps did you take that allowed you to reach this accomplishment?
 
