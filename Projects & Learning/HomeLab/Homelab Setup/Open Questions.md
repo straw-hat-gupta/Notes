@@ -6,11 +6,11 @@ Open as of 2026-10-27. Confirmed answers belong in the linked setup record; inve
 
 ## Hardware
 
-| ID | Question | Relevant record |
-| --- | --- | --- |
-| H1 | What are the models of the two purchased replacement NICs, and are either installed? The hosts currently use their onboard Intel wired NICs. | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Network adapters|Network adapters]] |
-| H2 | What is pve-6420's actual configured RAM speed? SMBIOS lists 1333 MT/s module speed without a configured-speed field. | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#RAM slots|RAM slots]] |
-| H3 | What VRAM capacities should be recorded for the graphics devices? Current PCI identification does not establish VRAM, and the VM's NVIDIA driver query fails. | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Graphics devices|Graphics devices]] |
+| ID  | Question                                                                                                                                                      | Relevant record                                                                      |                    |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------ |
+| H1  | What are the models of the two purchased replacement NICs, and are either installed? The hosts currently use their onboard Intel wired NICs.                  | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Network adapters | Network adapters]] |
+| H2  | What is pve-6420's actual configured RAM speed? SMBIOS lists 1333 MT/s module speed without a configured-speed field.                                         | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#RAM slots        | RAM slots]]        |
+| H3  | What VRAM capacities should be recorded for the graphics devices? Current PCI identification does not establish VRAM, and the VM's NVIDIA driver query fails. | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Graphics devices | Graphics devices]] |
 
 ## Storage
 
