@@ -61,6 +61,6 @@ IPMI (Intelligent Platform Management Interface) is a hardware-management interf
 
 ## Protection and exposure
 
-[[Projects & Learning/HomeLab/ANSWERS|ANSWERS]] confirms that no backups have been established as of 2026-10-27. [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Backups, replication, and shares|Backup records]] also show no configured Proxmox backup jobs or listed local backup archives. Configured storage has no disk redundancy. [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall|Proxmox firewall]] reports disabled/running on all hosts; other access boundaries are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
+No backups have been established as of 2026-10-27. [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Backups, replication, and shares|Backup records]] also show no configured Proxmox backup jobs or listed local backup archives. Configured storage has no disk redundancy. [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall|Proxmox firewall]] reports disabled/running on all hosts; other access boundaries are in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Open Questions]].
 
 Sources: `pvecm status`, `systemctl`, `uptime`, `/proc/meminfo`, `sensors`, `smartctl`, guest runtime inspection, HTTP readiness requests, and Prometheus target status. [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|Evidence snapshot]].

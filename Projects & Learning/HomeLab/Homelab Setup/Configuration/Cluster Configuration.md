@@ -34,7 +34,7 @@ Management addresses and bridge configuration are in [[Projects & Learning/HomeL
 
 ## Planned version alignment
 
-I want all five nodes updated to an aligned Proxmox/kernel baseline. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27. The installed versions above are unchanged. The target release and maintenance sequence still need choosing; the rollout belongs in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
+I want all five nodes updated to an aligned Proxmox/kernel baseline. Confirmed 2026-10-27. The installed versions above are unchanged. The target release and maintenance sequence still need choosing; the rollout belongs in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 
 ## Package repositories
 

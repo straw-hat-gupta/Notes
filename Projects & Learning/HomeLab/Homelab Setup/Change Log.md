@@ -8,6 +8,7 @@
 | 2026-10-27 | Removed the obsolete inventory folder. | Inventory and tasks retained under Homelab Setup. |
 | 2026-10-27 | Collected the live baseline from all five nodes and inspected the four running guests. | [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json\|SSH/Proxmox evidence]]. Corrected E6420 CPU, D1 SSD capacity, and GPU identification; recorded configuration and service status. |
 | 2026-10-27 | Reorganized the notes into personal records with linked Open Questions files. | Updated HomeLab writing/maintenance instructions. |
-| 2026-10-27 | Reconciled my answers with the setup records, open questions, and tasks. | [[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]]. Recorded NIC/GPU details, backup/share status, switch topology, and planned TrueNAS, updates, monitoring, and service recovery. |
+| 2026-10-27 | Reconciled my answers with the setup records, open questions, and tasks. | Clarifications confirmed 2026-10-27. Recorded NIC/GPU details, backup/share status, switch topology, and planned TrueNAS, updates, monitoring, and service recovery. |
+| 2026-10-27 | Removed the temporary answers file after incorporating its useful contents. | Retained confirmations, plans, remaining questions, and NIC listing references in the maintained notes. |
 
 No running infrastructure settings changed during these inventory updates.

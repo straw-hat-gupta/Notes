@@ -26,7 +26,7 @@ D1 has the GTX 1070 assigned to llm-gpu; the other installed graphics devices ar
 
 ## Current direction
 
-My 2026-10-27 answers are in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]]. I want TrueNAS/shared storage on pve-storage, aligned host versions, a clearer cluster dashboard, and portable services that recover on another node after a host failure. The setup records distinguish these plans from the installed configuration.
+I want TrueNAS/shared storage on pve-storage, aligned host versions, a clearer cluster dashboard, and portable services that recover on another node after a host failure. The setup records distinguish these plans from the installed configuration.
 
 ## Open questions
 

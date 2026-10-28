@@ -75,13 +75,13 @@ The intended layout is recorded under [[Projects & Learning/HomeLab/Homelab Setu
 | Backup-capable storage | `local` on each node allows backup content under `/var/lib/vz` |
 | Local Proxmox backup content | No backup entries returned from `local` on any of the five nodes |
 | Available Proxmox backup task history | No `vzdump` tasks returned from any of the five node task queries (limit 20) |
-| Overall backup coverage | No backups have been established ([[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]], 2026-10-27) |
+| Overall backup coverage | No backups have been established (confirmed 2026-10-27) |
 | Retention, offsite copies, and restore testing | Not established; [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage\|backup design remains open]] |
-| Host-level shares / external storage clients | None in use ([[Projects & Learning/HomeLab/ANSWERS\|ANSWERS]], 2026-10-27) |
+| Host-level shares / external storage clients | None in use (confirmed 2026-10-27) |
 
 ## Planned TrueNAS setup
 
-I want TrueNAS on pve-storage, with the two 1 TB HDDs in a ZFS stripe for combined capacity. This is a plan; TrueNAS and the pool are not installed. Confirmed in [[Projects & Learning/HomeLab/ANSWERS|ANSWERS]], 2026-10-27.
+I want TrueNAS on pve-storage, with the two 1 TB HDDs in a ZFS stripe for combined capacity. This is a plan; TrueNAS and the pool are not installed. Confirmed 2026-10-27.
 
 | Item | Planned use / decision |
 | --- | --- |
