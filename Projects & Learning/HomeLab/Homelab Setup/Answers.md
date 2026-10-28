@@ -12,3 +12,4 @@ N2: yes and yes
 N3: idk, need to learn what is best here 
 N4: i dont really know what is supposed to be what here
 
+C1: i updated all the nodes. 
