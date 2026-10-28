@@ -8,7 +8,7 @@ Build a portfolio website that presents the resume and projects in one place, wi
 
 ## Desired hosting
 
-Host the site on the homelab and reach it through the domain managed with Cloudflare. The domain was spoken as `SmirthG.dev`; exact spelling must be confirmed before configuration or publication.
+Host the site on the homelab and reach it through the domain managed with Cloudflare. The domain is `smarthg.dev`
 
 ## Content to include
 

@@ -8,7 +8,7 @@ Use the homelab and a Cloudflare-managed domain to host projects, demos, and per
 
 ## Requirements captured
 
-- Domain reported as `SmirthG.dev`; confirm the exact registered spelling first.
+- Domain reported as `smarthg.dev`; confirm the exact registered spelling first.
 - Cloudflare is already involved, but current DNS and other configuration have not been inspected.
 - The portfolio should run on the homelab and be reachable through the domain.
 - Selected demos should be accessible to other people; personal services should be accessible remotely with the intended access restrictions.
