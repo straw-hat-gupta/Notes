@@ -20,4 +20,4 @@ No new work requested for this project in the detailed brain dump. Add a Tasks n
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] records its host. [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] may affect it. [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] is related infrastructure; no workload migration is decided.
+[[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] records its host. [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] may affect it. [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] is related infrastructure; no workload migration is decided.

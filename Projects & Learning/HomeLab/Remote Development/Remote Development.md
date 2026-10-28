@@ -21,7 +21,7 @@ VM placement, resources, OS, repository locations, remote access, editor workflo
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] informs host reliability; [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] informs capacity. Earlier requirements carried forward: an always-on programming environment, a clean laptop, and convenient access from any device. A Cloudflare tunnel was floated as one option, not selected.
+[[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] informs host reliability; [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] informs capacity. Earlier requirements carried forward: an always-on programming environment, a clean laptop, and convenient access from any device. A Cloudflare tunnel was floated as one option, not selected.
 
 ## Tasks
 

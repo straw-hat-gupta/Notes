@@ -26,9 +26,9 @@ Each outcome links to its own folder. Its checklist is displayed directly from t
 
 ![[Projects & Learning/HomeLab/Project Hosting/Tasks]]
 
-### [[Projects & Learning/HomeLab/Hardware Inventory/Hardware Inventory|Document hardware and workloads]]
+### [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Document the homelab setup and current state]]
 
-![[Projects & Learning/HomeLab/Hardware Inventory/Tasks]]
+![[Projects & Learning/HomeLab/Homelab Setup/Tasks]]
 
 ### [[Projects & Learning/HomeLab/Monitoring/Monitoring|Review cluster monitoring and benchmark ideas]]
 

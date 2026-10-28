@@ -4,6 +4,8 @@
 
 Five Proxmox nodes: pve-d1, pve-d2, pve-6420, pve-7450, and pve-storage.
 
+For agents editing this area: [[Projects & Learning/HomeLab/AGENTS|HomeLab agent instructions]].
+
 ## Work areas
 
 | Folder | Outcome |
@@ -14,12 +16,12 @@ Five Proxmox nodes: pve-d1, pve-d2, pve-6420, pve-7450, and pve-storage.
 | [[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] | Reach homelab tools through an agent in the ChatGPT desktop app |
 | [[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]] | Share cluster-hosted tools across multiple agents |
 | [[Projects & Learning/HomeLab/Project Hosting/Project Hosting|Project Hosting]] | Connect domain/subdomains to demos and personal services |
-| [[Projects & Learning/HomeLab/Hardware Inventory/Hardware Inventory|Hardware Inventory]] | Maintain the five-node hardware and workload record |
+| [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] | Maintain current hardware, configuration, workloads, and operational status |
 
 ## Current workload context
 
-[[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] holds the hardware details. The llm-gpu VM runs on pve-d1 with GPU passthrough and hosts [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]. Per the brain dump, pve-d1 is the only GPU node. The future development workspace may reuse llm-gpu or use another VM; no placement decision has been made.
+[[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] holds the hardware details. The llm-gpu VM runs on pve-d1 with GPU passthrough and hosts [[Projects & Learning/Projects/Career Ops/Career Ops|Career Ops]]. Per the brain dump, pve-d1 is the only GPU node. The future development workspace may reuse llm-gpu or use another VM; no placement decision has been made.
 
 ## Preserved operational context
 
-Hardware details, conflicting GPU records, and the existing VM address are included in [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]]. Desired dashboard and benchmark features are recorded in [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]]. Earlier remote-access and management-skill goals are included in their respective task folders.
+Hardware details, conflicting GPU records, and the existing VM address are included in [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]]. Desired dashboard and benchmark features are recorded in [[Projects & Learning/HomeLab/Monitoring/Monitoring|Monitoring]]. Earlier remote-access and management-skill goals are included in their respective task folders.

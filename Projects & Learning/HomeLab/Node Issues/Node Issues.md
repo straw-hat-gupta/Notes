@@ -23,7 +23,7 @@ Collect host/kernel, network, and cluster evidence around a dropout and distingu
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] should make remote investigation convenient. [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] supplies hardware context. Findings inform [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] placement.
+[[Projects & Learning/HomeLab/Agent Access/Agent Access|Agent Access]] should make remote investigation convenient. [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] supplies hardware context. Findings inform [[Projects & Learning/HomeLab/Remote Development/Remote Development|Remote Development]] placement.
 
 ## Tasks
 

@@ -26,9 +26,9 @@ Saved PCI output identifies the graphics device as NVIDIA GP104 GeForce GTX 1070
 
 ## Inventory tasks
 
-[[Projects & Learning/HomeLab/Hardware Inventory/Hardware Inventory|Hardware Inventory]] owns the verification and workload-documentation checklist.
+[[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] owns the verification and workload-documentation checklist.
 
-![[Projects & Learning/HomeLab/Hardware Inventory/Tasks]]
+![[Projects & Learning/HomeLab/Homelab Setup/Tasks]]
 
 ## Connections
 - [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node issues]]

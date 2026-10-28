@@ -15,7 +15,7 @@ Preserve the desired cluster monitoring and benchmark features in one place. The
 
 ## Connections
 
-[[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] identifies the machines and GPU. [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] needs evidence around dropouts. Monitoring changes and benchmarks are separate from merely organizing these notes.
+[[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] identifies the machines and GPU. [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]] needs evidence around dropouts. Monitoring changes and benchmarks are separate from merely organizing these notes.
 
 ## Tasks
 

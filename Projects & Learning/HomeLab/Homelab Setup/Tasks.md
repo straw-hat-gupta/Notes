@@ -1,6 +1,6 @@
-# Hardware Inventory — Tasks
+# Homelab Setup — Tasks
 
-[[Projects & Learning/HomeLab/Hardware Inventory/Hardware Inventory|Hardware Inventory]] · [[Projects & Learning/Big Tasks|Big Tasks]]
+[[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] · [[Projects & Learning/Big Tasks|Big Tasks]]
 
 - [ ] Verify hardware against all five live nodes, including pve-d1 GPU and SSD details.
 - [ ] Record current VM/container placement and each workload's purpose.

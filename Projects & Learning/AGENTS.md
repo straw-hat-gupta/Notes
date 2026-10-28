@@ -10,7 +10,7 @@ The user cares about human readability and finding things quickly. Extend the ex
 
 ## Start here
 
-Before editing, read [[Projects & Learning/Start Here|Start Here]], scan [[Projects & Learning/Big Tasks|Big Tasks]], then read the relevant area index and affected overview/Tasks notes. Follow their links when more context is needed; avoid loading every long reference document for a small update.
+Before editing, read [[Projects & Learning/Start Here|Start Here]], scan [[Projects & Learning/Big Tasks|Big Tasks]], then read the relevant area index and affected overview/Tasks notes. Follow their links when more context is needed; avoid loading every long reference document for a small update. For HomeLab work, also follow [[Projects & Learning/HomeLab/AGENTS|the HomeLab agent instructions]].
 
 | Location | Role |
 | --- | --- |
@@ -21,7 +21,7 @@ Before editing, read [[Projects & Learning/Start Here|Start Here]], scan [[Proje
 | [[Projects & Learning/HomeLab/HomeLab Overview|HomeLab/HomeLab Overview]] | Hardware, repairs, configuration, access, and shared infrastructure |
 | [[Projects & Learning/Learning/Learning Index|Learning/Learning Index]] | Learning topics tied to practical goals |
 
-An active outcome normally has its own folder under Projects, HomeLab, or Learning. That folder contains an overview, Tasks.md, and supporting notes only where useful. Existing shared references such as [[Projects & Learning/HomeLab/Node Inventory|Node Inventory]] can remain in their current locations. A context-only project can exist without a Tasks.md until an active outcome is requested.
+An active outcome normally has its own folder under Projects, HomeLab, or Learning. That folder contains an overview, Tasks.md, and supporting notes only where useful. Existing shared references such as [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]] can remain in their current locations. A context-only project can exist without a Tasks.md until an active outcome is requested.
 
 ## Big outcomes and small tasks
 
@@ -80,7 +80,7 @@ Use links for actual relationships: shared infrastructure, dependencies, applica
 - Preserve open questions such as exact domain spelling or VM placement until clarified; do not turn a transcription guess into a confirmed setting.
 - Never add passwords, tokens, private keys, or other secrets to these notes.
 
-A homelab agent should keep hardware facts in Node Inventory and affected outcomes in their HomeLab folders. Record diagnostic evidence, conclusions, and remaining uncertainty there. A checkbox describing infrastructure work is not permission to execute it: follow the user's authorized scope and obtain explicit approval before live infrastructure changes. A request to organize notes authorizes note changes, not changes to running services.
+A homelab agent should keep current hardware, configuration, workload, and health facts in [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]], including [[Projects & Learning/HomeLab/Homelab Setup/Node Inventory|Node Inventory]]. Follow the HomeLab agent instructions to review these records with every HomeLab edit and update them when confirmed facts change. Keep supporting diagnostics and history in the relevant outcome folders and link to that evidence from the setup records. A checkbox describing infrastructure work is not permission to execute it: follow the user's authorized scope and obtain explicit approval before live infrastructure changes. A request to organize notes authorizes note changes, not changes to running services.
 
 ## Before saving
 
