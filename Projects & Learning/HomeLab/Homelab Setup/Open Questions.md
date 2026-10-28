@@ -2,46 +2,41 @@
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]]
 
-Open as of 2026-10-27. Confirmed facts and plans are in the linked records; actionable work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
+Updated 2026-10-28. Confirmed answers are in the maintained records. Remaining investigation and design questions are listed here; work is tracked in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 
 ## Hardware
 
-| ID | Question | Relevant record |
-| --- | --- | --- |
-| H1 | Have either of the purchased StarTech ST1000SPEXI / Intel EXPI9301CTBLK cards been installed, and on which host? | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Replacement NICs\|Replacement NICs]] |
-| H3 | What are the memory capacities of the other discrete graphics cards? D1's ASUS ROG Strix GTX 1070 is confirmed as 8 GB. | [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Graphics devices\|Graphics devices]] |
+Both replacement NICs are uninstalled. Their possible use on D1/storage depends on diagnosis; see [[Projects & Learning/HomeLab/Homelab Setup/Hardware/Node Inventory#Replacement NICs|Replacement NICs]]. Other display-card VRAM details are deferred unless needed. There are no hardware-identification questions blocking the diagnosis plan.
 
 ## Storage
 
 | ID | Question | Relevant record |
 | --- | --- | --- |
-| S1 | What data needs backup, on what schedule, with what retention and independent/offsite destination? No backups are established. | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Backups, replication, and shares\|Backups]] |
-| S2 | Is there any existing data to preserve on the two HDDs or spare SSD before building the planned pool? | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Storage-node data disks\|Data disks]] |
-| S4 | Should TrueNAS run as a VM or bare metal, and can the spare 128 GB SSD be dedicated to its boot device? If virtualized, how will it access the physical data disks/controller? | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup\|TrueNAS plan]] |
-| S5 | Which datasets, share protocols, clients, and permissions are needed for backups, Linux ISOs, shared data, and a network drive? | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup\|Shared-storage plan]] |
+| S1 | Where are the complete Career Ops installation, configuration, and persistent data, and how should they be backed up/restored? Schedule, retention, and independent/offsite destination still need choosing. | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Immediate backup scope\|Career Ops backup scope]] |
+| S4 | What are the tradeoffs of TrueNAS VM versus bare metal on this hardware, including physical-disk access and the spare SSD's boot role? | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup\|TrueNAS plan]] |
+| S5 | Which datasets, shares/protocols, clients, and permissions fit the intended backup, ISO, shared-data, and network-drive use? Explain the choices before selecting them. | [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup\|Shared-storage plan]] |
 
 ## Networking
 
 | ID | Question | Relevant record |
 | --- | --- | --- |
-| N1 | What are the exact router/switch models, port assignments, DHCP scope, and guest reservations? The five Proxmox hosts are static and each uses an Ethernet cable to the TP-Link 8-port switch. | [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration\|Networking]] |
-| N2 | Is pve-7450's unused nic1 entry accidental, and can it be removed after checking dependencies? | [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Other interfaces\|Other interfaces]] |
-| N3 | Which effective default firewall/Tailscale rules apply, and which remote-access boundaries should be configured? Tailscale is installed on D2 and llm-gpu; no custom rules have been set up. | [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall\|Firewall and access]] |
-| N4 | Cloudflare record/route inventory and public/private access choices. | [[Projects & Learning/HomeLab/Project Hosting/Open Questions\|Project Hosting questions]] |
+| N1 | How can equipment labels, router settings, and host configuration establish the exact router/switch models, port map, DHCP scope, and guest reservations? | [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration\|Networking]] |
+| N3 | Which default firewall/Tailscale rules currently apply, and which access boundaries suit the intended remote services? | [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration#Firewall\|Firewall and access]] |
+| N4 | What do the existing Cloudflare records/routes do, and what public/private service mapping is needed? | [[Projects & Learning/HomeLab/Project Hosting/Open Questions\|Project Hosting questions]] |
 
 ## Configuration
 
 | ID | Question | Relevant record |
 | --- | --- | --- |
-| C1 | Which supported Proxmox/kernel baseline and maintenance sequence should be used to align all five nodes? Alignment is the intended outcome; updates are not done. | [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration#Planned version alignment\|Version alignment]] |
-| C2 | What Career Ops process, configuration, and persistent data need moving from llm-gpu? Its current access is through that machine; portable hosting and recovery are planned. | [[Projects & Learning/HomeLab/Project Hosting/Open Questions\|Service-hosting questions]] |
-| C3 | Monitoring stack choice, dashboard panels, retention, and alerting. | [[Projects & Learning/HomeLab/Monitoring/Open Questions\|Monitoring questions]] |
+| C1 | What package versions and running kernels are present after the reported all-node updates? Are reboots or further alignment needed, and what maintenance approach fits the cluster? | [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Cluster Configuration#Host updates and version alignment\|Update status]] |
+| C2 | What exact Career Ops files, dependencies, and restore steps are needed for the entire service's move to a dedicated LXC/container? | [[Projects & Learning/HomeLab/Project Hosting/Open Questions\|Service-hosting questions]] |
+| C3 | Which foundational configuration and metric-access requirements should be ready before later stack/dashboard selection? | [[Projects & Learning/HomeLab/Monitoring/Open Questions\|Monitoring questions]] |
 
 ## Status
 
-| ID  | Question                                                                                                 | Relevant record                                                                                           |
-| --- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| T1  | Why does nvidia-smi fail in llm-gpu, and what repair is needed?                                          | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|GPU fault]]                             |
-| T2  | Why is openipmi.service failed, do these machines have usable IPMI hardware, and is the service needed?  | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|IPMI fault and context]]                |
-| T3  | What caused the D1/storage dropouts, including any BIOS/firmware, host, link, or cluster evidence?       | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]]                         |
-| T4  | Are the SMART values stable, and do their vendor-specific meanings indicate any actionable disk problem? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Disk and temperature observations\|Disk observations]] |
+| ID | Question | Relevant record |
+| --- | --- | --- |
+| T1 | Why does nvidia-smi fail in llm-gpu, and what repair is needed? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|GPU fault]] |
+| T2 | Why is OpenIPMI failed, is usable IPMI hardware present, and is it needed for the hardware readings I want? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Active faults\|IPMI and metric coverage]] |
+| T3 | What caused the D1/storage dropouts and the E7450 disconnect during its web-UI update? Establish reboot, host, link, and cluster evidence separately. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
+| T4 | What do the SMART baseline/trends mean for disk health, and is any action justified? | [[Projects & Learning/HomeLab/Homelab Setup/Status#Disk and temperature observations\|Disk observations]] |

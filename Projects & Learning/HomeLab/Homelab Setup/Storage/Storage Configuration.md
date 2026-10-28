@@ -62,9 +62,9 @@ Guest purpose, CPU/RAM allocations, and service configuration are in [[Projects 
 
 ## Storage-node data disks
 
-On `pve-storage`, `/dev/sda` and `/dev/sdb` are the two 1 TB HDDs; `/dev/sdd` is the additional 128 GB SSD. They have no listed filesystem, LVM PV, or mounted path and are not part of the configured Proxmox stores. A read-only signature scan found GPT and protective MBR signatures on `/dev/sda`; none were reported on `/dev/sdb` or `/dev/sdd`. These results do not establish that existing data can be discarded. The boot disk is `/dev/sdc`.
+On `pve-storage`, `/dev/sda` and `/dev/sdb` are the two 1 TB HDDs; `/dev/sdd` is the additional 128 GB SSD. They have no listed filesystem, LVM PV, or mounted path and are not part of the configured Proxmox stores. A read-only signature scan found GPT and protective MBR signatures on `/dev/sda`; none were reported on `/dev/sdb` or `/dev/sdd`. No data needing backup or preservation is reported on these two HDDs or the extra SSD (confirmed 2026-10-28). The boot disk is `/dev/sdc`. Pool creation and installation remain pending configuration work.
 
-The intended layout is recorded under [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup|Planned TrueNAS setup]]. Any existing data to preserve still needs confirmation in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
+The intended layout is recorded under [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Planned TrueNAS setup|Planned TrueNAS setup]]. Deployment, SSD allocation, and share choices remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
 
 ## Backups, replication, and shares
 
@@ -78,6 +78,12 @@ The intended layout is recorded under [[Projects & Learning/HomeLab/Homelab Setu
 | Overall backup coverage | No backups have been established (confirmed 2026-10-27) |
 | Retention, offsite copies, and restore testing | Not established; [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage\|backup design remains open]] |
 | Host-level shares / external storage clients | None in use (confirmed 2026-10-27) |
+
+## Immediate backup scope
+
+Career Ops on llm-gpu is the current backup priority. I want the complete Career Ops installation, configuration, and persistent state protected before its planned move to a dedicated LXC/container. Exact paths, application-consistent backup steps, schedule, retention, destination, and restore procedure still need to be inventoried and chosen. Confirmed 2026-10-28.
+
+Backup coverage is not established by choosing this scope. The pending work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]], with destination/design questions in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
 
 ## Planned TrueNAS setup
 
@@ -95,7 +101,7 @@ The spare SSD is a sensible boot-device candidate because TrueNAS separates boot
 
 A stripe has no disk redundancy: losing either data disk can lose the pool. Backups stored only on that pool cannot protect the pool's own data, so backup design must include an independent copy. [TrueNAS pool layouts](https://www.truenas.com/docs/scale/storage/pools/poolcreationwizardscreen/).
 
-Deployment, data preservation, SSD assignment, and backup destinations are centralized in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]].
+I need the TrueNAS VM/bare-metal tradeoffs explained for this hardware before choosing a deployment. Dataset, share-protocol, and permission recommendations should follow the intended clients and uses. These decisions, SSD assignment, and backup destinations are centralized in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|Storage questions]] (confirmed 2026-10-28).
 
 ## Sources
 

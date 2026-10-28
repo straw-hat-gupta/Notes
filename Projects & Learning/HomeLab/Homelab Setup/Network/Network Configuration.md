@@ -48,7 +48,7 @@ No VLAN tag is specified on these four guest NICs. DHCP reservations and address
 
 ## Other interfaces
 
-- `pve-7450`: `wlp2s0` exists, is down, and has no IP address. A manual `nic1` configuration entry has no corresponding live interface; see [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|networking questions]].
+- `pve-7450`: `wlp2s0` exists, is down, and has no IP address. The manual `nic1` entry is a mistake; I want to remove it after checking dependencies (confirmed 2026-10-28). It remains present in the last collected configuration; dependency checks and the configuration change are pending in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 - All five management bridges have IPv6 link-local addresses. No global IPv6 address was present on those bridges at verification.
 
 ## Firewall

@@ -16,6 +16,10 @@ Configuration and data locations: [[Projects & Learning/HomeLab/Homelab Setup/Co
 
 I want a dashboard with per-node load and statistics, plus homelab-wide totals for RAM, CPU/core capacity, and storage usage. Reconfiguring the existing stack or changing it are both open options; a replacement has not been chosen. Confirmed 2026-10-27.
 
+## Foundation before stack selection
+
+I want the basic homelab configuration and access to hardware/node readings in place so a dashboard can later use any suitable stack. Stack and detailed dashboard choices can wait. OpenIPMI necessity should be assessed against the readings actually needed and the hardware available (confirmed 2026-10-28).
+
 ## Desired features
 
 - CPU and RAM load for every node, plus D1 GPU utilization.

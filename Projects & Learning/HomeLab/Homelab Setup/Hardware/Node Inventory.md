@@ -91,7 +91,7 @@ PCI names and subsystem identifications from `lspci -nnk`:
 | pve-6420 | 01:00.0 | NVIDIA GF119M NVS 4200M | 10de:1056 | Dell 1028:1493 | nouveau |
 | pve-7450 | 00:02.0 | Intel HD Graphics 5500 | 8086:1616 | Dell 1028:062e | i915 |
 
-My D1 card is an ASUS ROG Strix GTX 1070 with 8 GB VRAM. Confirmed 2026-10-27. Other graphics-device memory capacities remain in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|Hardware questions]].
+My D1 card is an ASUS ROG Strix GTX 1070 with 8 GB VRAM. Confirmed 2026-10-27. Recording other display-card VRAM is deferred unless a workload needs it (confirmed 2026-10-28).
 
 The GTX 1070 audio function is `01:00.1`, PCI ID `10de:10f0`, also bound to `vfio-pci`. GPU passthrough settings and guest allocation are in [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].
 
@@ -111,7 +111,7 @@ Interface names, bridge membership, addresses, and negotiated links are in [[Pro
 
 ## Replacement NICs
 
-Confirmed 2026-10-27. These are purchased spares; their installation state is still in [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|H1]].
+Both cards are purchased and **not installed** (confirmed 2026-10-28). They are intended for pve-d1 and pve-storage only if diagnosis confirms a NIC problem. The card-to-host assignment is not selected.
 
 | Model | Controller recorded in my answer | Connection |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] · [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration|Open questions]]
 
-Verified 2026-10-27 (America/Edmonton). Sources: `pveversion`, `pvecm status`, `ha-manager status`, APT source files, `lspci -nnk`, `/proc/cmdline`, `/etc/modules`, guest-agent queries, and VM configuration. [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|Configuration snapshot]]
+Last live baseline: 2026-10-27 (America/Edmonton), before the subsequently reported updates. Sources: `pveversion`, `pvecm status`, `ha-manager status`, APT source files, `lspci -nnk`, `/proc/cmdline`, `/etc/modules`, guest-agent queries, and VM configuration. [[Projects & Learning/HomeLab/Homelab Setup/Evidence/2026-10-27.json|Configuration snapshot]]
 
 ## Cluster
 
@@ -22,6 +22,8 @@ Verified 2026-10-27 (America/Edmonton). Sources: `pveversion`, `pvecm status`, `
 
 ## Membership and versions
 
+These are the versions observed on 2026-10-27, before the updates reported on 2026-10-28. Current package versions, running kernels, and any pending reboot requirements have not been rechecked.
+
 | Node | Node ID | Proxmox VE manager | Running kernel |
 | --- | --- | --- | --- |
 | pve-d1 | `0x00000001` | 9.2.3 (`d0fde103346cf89a`) | `7.0.2-7-pve` |
@@ -32,9 +34,11 @@ Verified 2026-10-27 (America/Edmonton). Sources: `pveversion`, `pvecm status`, `
 
 Management addresses and bridge configuration are in [[Projects & Learning/HomeLab/Homelab Setup/Network/Network Configuration|Network Configuration]]. Current observations and faults are in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
 
-## Planned version alignment
+## Host updates and version alignment
 
-I want all five nodes updated to an aligned Proxmox/kernel baseline. Confirmed 2026-10-27. The installed versions above are unchanged. The target release and maintenance sequence still need choosing; the rollout belongs in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
+I updated all five nodes (confirmed 2026-10-28). Completion of those updates is recorded; package/kernel alignment and reboot state still need live verification. I still want a consistent supported baseline and a repeatable maintenance approach.
+
+During the pve-7450 update through the Proxmox web Updates tab, it disconnected from the cluster. I did not initiate a reboot. Whether it rebooted automatically, lost network access, or lost cluster membership has not been established. The incident record is in [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]], and verification/diagnosis work is in [[Projects & Learning/HomeLab/Homelab Setup/Tasks|Tasks]].
 
 ## Package repositories
 

@@ -37,7 +37,9 @@ Monitoring Compose file: `/opt/monitoring/docker-compose.yml`. Grafana depends o
 
 ## Planned service reconfiguration
 
-Career Ops needs reconfiguration. I want it packaged in Docker or an equivalent portable setup, remotely accessible, and automatically recovered on another node if its host fails. I want the same hosting approach available to other services, tools, and projects. Confirmed 2026-10-27.
+I want the entire Career Ops service moved out of llm-gpu into a dedicated LXC/container. Its installation, configuration, persistent data, and dependencies all need to be inventoried, backed up, and included in the move. Docker inside an LXC is an option, not a selected architecture. Remote access and recovery on another node remain requirements. Confirmed 2026-10-28.
+
+For later services, I want to give an MCP/plugin workflow a service request and have it provision the appropriate LXC/container, optionally with Docker inside it. That workflow is recorded in [[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]].
 
 The deployment/failover requirements are maintained in [[Projects & Learning/HomeLab/Project Hosting/Project Hosting#Service portability and recovery|Project Hosting]]. The current llm-gpu placement and GPU passthrough are unchanged.
 

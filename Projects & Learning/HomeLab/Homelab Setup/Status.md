@@ -2,7 +2,13 @@
 
 [[Projects & Learning/HomeLab/Homelab Setup/Homelab Setup|Homelab Setup]] · [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|Status questions]]
 
-Observed **2026-10-27, 21:37–21:42 MDT**. This is a point-in-time snapshot.
+Live baseline: **2026-10-27, 21:37–21:42 MDT**. Later reports below are dated separately; the baseline does not establish health after the updates.
+
+## Reported changes — 2026-10-28
+
+I updated all five nodes. During E7450's web-UI update it disconnected from the cluster without a reboot initiated by me. Its boot/reachability/recovery state is unverified. The incident is recorded in [[Projects & Learning/HomeLab/Node Issues/Node Issues|Node Issues]].
+
+Exact package/running-kernel versions and the cause of the disconnect remain pending.
 
 ## Hosts and cluster
 
@@ -37,9 +43,10 @@ Endpoints and service configuration: [[Projects & Learning/HomeLab/Homelab Setup
 
 | Fault | Evidence | Follow-up |
 | --- | --- | --- |
+| E7450 disconnected during an update | Reported 2026-10-28; no manually initiated reboot. Automatic reboot, link loss, and cluster-only loss are still to distinguish. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
 | VM 301 NVIDIA driver unavailable | `nvidia-smi` exited 9: unable to communicate with the NVIDIA driver. The GTX 1070 is visible at guest PCI `06:10.0`, with no driver-in-use entry for its display function. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T1]] |
 | `openipmi.service` failed on all five hosts | `systemctl --failed` and unit state show `failed`, result `exit-code`. | [[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status\|T2]] |
-| Earlier D1/storage dropouts remain unresolved | Both are reachable now; this does not confirm the cause or a lasting recovery. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
+| Earlier D1/storage dropouts remain unresolved | Both were reachable in the 2026-10-27 baseline; cause and lasting recovery remain unverified. | [[Projects & Learning/HomeLab/Node Issues/Open Questions\|Node Issues questions]] |
 
 ## Disk and temperature observations
 
@@ -57,7 +64,7 @@ SMART raw fields are vendor-specific; trend and interpretation are tracked in [[
 
 `sensors` could not read one fan field on D2/storage and one wireless temperature field on E7450. Those readings are unavailable, rather than evidence of a failed fan or overheating.
 
-IPMI (Intelligent Platform Management Interface) is a hardware-management interface for monitoring sensors and related platform functions. Whether these systems need OpenIPMI remains to be established; a failed unit alone does not identify the dropout cause. [Linux IPMI documentation](https://docs.kernel.org/driver-api/ipmi.html).
+IPMI (Intelligent Platform Management Interface) is a hardware-management interface for monitoring sensors and related platform functions. Whether these systems need OpenIPMI for the desired readings remains to be established. CPU temperatures and SMART readings were already collected while the unit was failed; diagnosis should identify available hardware and any missing metric coverage. A failed unit alone does not identify the dropout cause. [Linux IPMI documentation](https://docs.kernel.org/driver-api/ipmi.html).
 
 ## Protection and exposure
 

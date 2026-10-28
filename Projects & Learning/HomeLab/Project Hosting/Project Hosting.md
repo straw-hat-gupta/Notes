@@ -22,7 +22,9 @@ My Cloudflare setup is still minimal (confirmed 2026-10-27); the running tunnel 
 
 ## Service portability and recovery
 
-I want Career Ops reconfigured from its current llm-gpu setup into Docker or an equivalent portable deployment, reachable remotely. If the hosting node goes down, the service should recover on another node. This should be the general pattern for services, tools, and projects hosted on the cluster. Confirmed 2026-10-27.
+I want the complete Career Ops service moved from llm-gpu to a dedicated LXC/container, with its configuration and data preserved. It should be reachable remotely and recover on another node if its host goes down. This should be the general pattern for services, tools, and projects hosted on the cluster. Confirmed 2026-10-28.
+
+The immediate prerequisite is [[Projects & Learning/HomeLab/Homelab Setup/Storage/Storage Configuration#Immediate backup scope|Career Ops backup coverage]]. The future request-to-container provisioning workflow is maintained in [[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers|Shared MCP Servers]].
 
 Container packaging alone does not provide failover. Proxmox HA can recover guests after a node failure, but it restarts them elsewhere rather than moving the failed host's live process state. Recovery needs reachable data, available capacity, compatible networking, and working quorum/fencing. The current GPU passthrough ties llm-gpu to D1's hardware, so a portable application host needs its GPU dependency decided separately. [Proxmox HA guide](https://github.com/proxmox/pve-docs/blob/master/ha-manager.adoc).
 

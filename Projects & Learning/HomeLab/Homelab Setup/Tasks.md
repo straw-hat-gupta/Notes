@@ -10,22 +10,28 @@
 - [x] Identify the purchased replacement NIC models and record D1's ASUS ROG Strix GTX 1070 with 8 GB VRAM.
 - [x] Confirm backup/share status: no backups established and no existing external storage shares/clients.
 - [x] Record the TrueNAS storage plan and the host-version alignment decision (confirmed 2026-10-27).
+- [x] Confirm that neither replacement NIC is installed; reserve them for D1/storage only if NIC faults are established (2026-10-28).
+- [x] Confirm no data needing backup/preservation on the two storage HDDs or spare SSD (2026-10-28).
+- [x] Update all five nodes (reported complete 2026-10-28; installed/running-version verification remains pending).
+
+## Next step — diagnosis plan
+
+- [ ] Prepare the diagnosis plan for D1/storage dropouts, the E7450 update-time disconnect, the VM GPU driver failure, OpenIPMI/metric coverage, and SMART interpretation. Include evidence to collect, how to distinguish causes, Career Ops protection, and validation before any proposed repair.
 
 ## Storage and protection
 
-- [ ] Confirm existing data to preserve before changing the storage-node disks ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S2]]).
-- [ ] Choose TrueNAS VM versus bare-metal deployment, physical-disk access, and the spare SSD's role ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S4]]).
+- [ ] Inventory and back up all Career Ops installation/configuration/state on llm-gpu; define the destination, schedule, retention, independent/offsite copy, and restore test ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S1]]).
+- [ ] Compare TrueNAS VM and bare-metal tradeoffs for this hardware, explain the options, and choose disk access and the spare SSD's role ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S4]]).
 - [ ] Prepare the TrueNAS/striped-pool/share configuration and rollback plan for review before installation.
-- [ ] Define backup sources, schedule, retention, and an independent/offsite copy; set up the agreed backups and test a restore ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S1]]).
-- [ ] Define datasets and share access for backups, Linux ISOs, shared data, and the proposed network drive ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S5]]).
+- [ ] Explain datasets/share protocols and propose the simplest client/permission setup for backups, Linux ISOs, shared data, and the network drive ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Storage|S5]]).
 
 ## Hosts and faults
 
-- [ ] Confirm where the replacement NICs are installed, if anywhere ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Hardware|H1]]).
-- [ ] Prepare a staged Proxmox/kernel alignment plan with backup/rollback and validation before updating nodes ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration|C1]]).
+- [ ] Verify installed Proxmox/package versions, running kernels, reboot requirements, and cluster membership after the reported updates; recommend a consistent maintenance approach ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Configuration|C1]]).
 - [ ] Diagnose llm-gpu's NVIDIA driver failure and prepare the smallest repair ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T1]]).
-- [ ] Diagnose OpenIPMI failures and determine whether the service is needed ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T2]]).
-- [ ] Review SMART meanings and trends and decide whether any disk action is needed ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T4]]).
-- [ ] Check the unused nic1 entry on pve-7450 before proposing cleanup ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|N2]]).
+- [ ] Diagnose OpenIPMI failures and establish whether IPMI hardware/functions are needed for the desired readings ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T2]]).
+- [ ] Interpret SMART values and trends and report any justified disk action ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Status|T4]]).
+- [ ] Check dependencies and remove the confirmed accidental nic1 entry on pve-7450 as a separate configuration change.
+- [ ] Discover the missing router/switch/port/DHCP details and explain the access-policy options ([[Projects & Learning/HomeLab/Homelab Setup/Open Questions#Networking|Networking]]).
 
-Dropout investigation: [[Projects & Learning/HomeLab/Node Issues/Tasks|Node Issues — Tasks]]. Dashboard work: [[Projects & Learning/HomeLab/Monitoring/Tasks|Monitoring — Tasks]]. Portable hosting and failover: [[Projects & Learning/HomeLab/Project Hosting/Tasks|Project Hosting — Tasks]].
+Dropout investigation: [[Projects & Learning/HomeLab/Node Issues/Tasks|Node Issues — Tasks]]. Metrics foundation and later dashboard work: [[Projects & Learning/HomeLab/Monitoring/Tasks|Monitoring — Tasks]]. Career Ops migration/failover: [[Projects & Learning/HomeLab/Project Hosting/Tasks|Project Hosting — Tasks]]. Future service provisioning: [[Projects & Learning/HomeLab/Shared MCP Servers/Tasks|Shared MCP Servers — Tasks]].

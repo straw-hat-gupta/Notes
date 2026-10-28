@@ -11,7 +11,7 @@ For agents editing this area: [[Projects & Learning/HomeLab/AGENTS|HomeLab agent
 | Folder | Outcome |
 | --- | --- |
 | [[Projects & Learning/HomeLab/Monitoring/Monitoring\|Monitoring]] | Review load/temperature coverage and useful benchmark/history features |
-| [[Projects & Learning/HomeLab/Node Issues/Node Issues\|Node Issues]] | Diagnose pve-d1 and pve-storage appearing offline while still powered on |
+| [[Projects & Learning/HomeLab/Node Issues/Node Issues\|Node Issues]] | Diagnose D1/storage dropouts and the E7450 disconnect during an update |
 | [[Projects & Learning/HomeLab/Remote Development/Remote Development\|Remote Development]] | Keep development and long-running agents on a homelab VM |
 | [[Projects & Learning/HomeLab/Agent Access/Agent Access\|Agent Access]] | Reach homelab tools through an agent in the ChatGPT desktop app |
 | [[Projects & Learning/HomeLab/Shared MCP Servers/Shared MCP Servers\|Shared MCP Servers]] | Share cluster-hosted tools across multiple agents |
@@ -26,7 +26,9 @@ D1 has the GTX 1070 assigned to llm-gpu; the other installed graphics devices ar
 
 ## Current direction
 
-I want TrueNAS/shared storage on pve-storage, aligned host versions, a clearer cluster dashboard, and portable services that recover on another node after a host failure. The setup records distinguish these plans from the installed configuration.
+The next step is a diagnosis plan for the reported host disconnects, GPU driver failure, OpenIPMI failures, and disk-health questions. The issue register is in [[Projects & Learning/HomeLab/Homelab Setup/Status|Status]].
+
+All five nodes have been updated by my report on 2026-10-28; their current versions/running kernels still need verification. Longer-term work remains TrueNAS/shared storage, foundational metric access before choosing a dashboard stack, Career Ops backup and a dedicated LXC/container, and request-based service provisioning/recovery.
 
 ## Open questions
 
