@@ -50,71 +50,95 @@ tell me about yourself:
 	- checking what works for users
 	- thats why data engineering and ml engineering appleas to me
 
-## 1. Why Bell?
+I’ve written the first seven with a **STAR-C ending**: the story leads to a result, then the final sentence connects it to Bell. For the motivation and introduction questions, the story is lighter, but the Bell connection is still explicit.
 
-- Chance to build AI tools that people actually use, at a scale where reliability matters.
-- Bell AI Fabric interests me because Canadian AI infrastructure can help more organizations adopt AI while staying compliant.
-- I’ve worked on AI tools myself.
-    - Getting an agent to produce a useful answer is only part of the challenge.
-    - Its tool calls, permissions, and multi-step execution also need to be observable and dependable.
-- That experience made me interested in the engineering behind AI applications at Bell’s scale.
-- building, testing, and scaling AI applications while learning from experienced engineers.
+Bell’s posting confirms the 24-month rotation and work on production AI and data systems. Bell describes AI Fabric as Canadian-hosted infrastructure for organizations with data residency needs. [jobs.bce.ca](https://jobs.bce.ca/bell/job/Verdun-2027-Graduate-Program%2C-Technology-Services-Emerging-AI-and-Data-Solutions-QC/1431592500/?utm_source=chatgpt.com)
 
+## 1. What excites you about starting your career at Bell?
 
-## 2. Why this graduate program, and why should Bell choose you?
+**Best angle:** AI tools people use, supported by Canadian AI infrastructure.
 
-- I’m especially interested in ML engineering and data engineering.
-    - Good AI applications depend on both the model and the data systems around it.
-- The rotation would let me explore both areas through projects used inside a large organization.
-    - I’d also learn from engineers who have experience operating these systems at scale.
-- I can contribute from the start.
-    - At Lux Bio, I built Python pipelines that turned equipment readings and images into useful data.
-    - In my agent platform, I built multi-step workflows across about 60 tools.
-- **Connection:** I bring experience breaking down difficult systems and learning new technology quickly, while the program gives me room to grow across both disciplines.
+What excites me about Bell is the chance to build AI tools that people actually use, at a scale where reliability really matters. I’m also interested in Bell AI Fabric. Having more AI infrastructure in Canada gives organizations a way to work with sensitive data while meeting their data residency needs, and I think that’s important for wider AI adoption here.
 
-## 3. What skills and experience would you bring?
+I’ve seen a smaller version of the product challenge in an agent platform I built. Getting an agent to produce a useful answer was only one part of it. I also had to make its tool calls, permissions, and multi-step execution dependable. That made me interested in the engineering behind AI applications that can run in production.
 
-- **Breaking down complex problems:** In my agent platform, I separated planning from execution so each part could be tested and inspected.
-- **Learning quickly:** My first Lux Bio project required OCR and image processing, which I had never used before.
-    - I learned them and built a Raspberry Pi camera pipeline to read data from an equipment screen.
-- **Understanding the user:** For the wealth management platform, I interviewed and shadowed future users before deciding what to build.
-    - That revealed their need to keep notes with each client.
-- **Connection:** I can work through the technical details while keeping sight of the business problem Bell’s data or AI system needs to solve.
+Bell’s graduate role brings those interests together. I’d be excited to help build, test, and scale AI applications while learning how they work within a large organization.
 
-## 4. Tell us about a time you used AI to solve a problem.
+**Recall:** Bell AI tools → Canadian infrastructure → agent platform lesson → production AI at Bell.  
+**Backup angle:** Bell Cyber’s use of AI to support threat investigators, if you want an example of an application Bell has put into production. [explore.business.bell.ca](https://explore.business.bell.ca/news-and-events/bell-cyber-and-cohere-deploy-sovereign-ai-for-canadian-cybersecurity-operations?utm_source=chatgpt.com)
 
-- **Problem:** I wanted an agent to carry out multi-step requests consistently across tools like email and calendars.
-    - For example, summarize emails, send the summary, and create a calendar event if needed.
-- **My approach:** I built a planner agent that divided the request into tool actions and steps needing reasoning.
-    - A separate, non-AI executor went through the plan and called the appropriate MCP tools.
-- **How I checked it:** I compared complete results against existing evaluations and tested both backend behaviour and end-to-end task flows.
-- **Result:** The platform supports about 60 tools and can carry out these multi-step workflows. I would avoid claiming a measured reliability improvement unless I have a number to support it.
-- **Connection:** Bell’s production AI work needs the same attention to execution, testing, and what happens when a step fails.
+## 2. What drew you to this graduate program, and why should Bell choose you?
 
-## 5. Describe a recent accomplishment you are proud of.
+**Best angle:** Explore ML engineering and data engineering while contributing experience in systems that move data and execute AI workflows.
 
-- **Project:** I built a platform to move a wealth management client’s workflows out of spreadsheets.
-- **Hardest part:** Figuring out what needed to be built.
-    - I interviewed and shadowed future users to see how they actually managed clients.
-- **What I discovered:** They kept notes in the spreadsheets alongside structured client information.
-    - I added a way to attach notes to individual clients so that context would carry over.
-- **Result:** I delivered six workflows covering onboarding, investments, transfers, and client management, with validation, duplicate prevention, and audit history.
-- **Connection:** I’m proud that the work started with listening. I’d take that approach when turning a Bell team’s needs into a data or AI product.
+I’m drawn to this program because I’m especially interested in machine learning engineering and data engineering, and I want to understand how they fit together in production. A model or agent needs dependable data and a system around it to be useful. The rotation would let me work in both areas, learn from experienced people, and contribute to projects with real users.
+
+I’d bring experience building those supporting systems. At Lux Bio, I built Python pipelines that turned equipment readings and images into usable data. More recently, I built an agent platform with about 60 tools and a separate execution pipeline for multi-step tasks. Across both projects, I had to break a large problem into parts, learn unfamiliar technology quickly, and test how the parts worked together.
+
+I think that combination would let me contribute early at Bell while growing into the kind of engineer who can take an AI application from an idea into dependable use.
+
+**Recall:** ML engineering plus data engineering → why rotation → Lux data pipelines and agent platform → contribute and grow.  
+**Backup example:** Your Python ingestion and ETL work at TAK Softwares, if they ask you to focus more heavily on data engineering.
+
+## 3. What skills and experience would you bring to the role?
+
+**Best angle:** Breaking down systems, learning quickly, and translating a real need into working software.
+
+The first skill I’d bring is breaking a complicated problem into parts I can build and test. In my AI agent project, I separated planning from execution. The planner could identify which steps needed reasoning and which were straightforward tool calls, while a separate executor carried out the plan. That made it easier to inspect failures and test the system.
+
+I also learn new technology quickly when a problem calls for it. At Lux Bio, I had never worked with OCR or image processing. I learned enough to build a Raspberry Pi camera pipeline that read measurements from an equipment screen and made that data available to our software.
+
+Finally, I’m comfortable working out what users actually need. For a wealth management client, I interviewed and shadowed future users before building their workflows. Those experiences fit Bell’s need for someone who can work across data, AI, and the business problem behind them.
+
+**Recall:** Break down problems → planner and executor → learn OCR quickly → understand users and connect to Bell.  
+**Backup example:** Your TAK Softwares ingestion pipelines and work with a small engineering team.
+
+## 4. Tell us about a time you used AI to solve a problem. What happened?
+
+**Best story:** Your agent platform. This lets you explain your own engineering judgment as well as the AI component.
+
+I built an agent platform to solve a problem I kept running into with AI tools: they could propose a multi-step task, but carrying it out consistently across different services was harder. One example is a request to summarize emails, send the summary, and add a calendar event if the emails call for one.
+
+I built a planner agent that breaks the request into steps. It identifies straightforward actions, such as reading email through a tool, and steps that need reasoning, such as deciding what belongs in the summary. I then built a separate, non-AI executor to run the planned tool calls through MCP servers. Keeping that execution path explicit made it easier for me to inspect what happened and handle failures.
+
+I checked complete results against existing evaluations and tested both the backend and full task flows. The platform now supports about 60 tools. That experience is directly relevant to Bell’s goal of building and testing production generative AI applications: the quality of the answer matters, and so does whether the whole task runs correctly.
+
+**Recall:** Inconsistent multi-step tasks → planner plus non-AI executor → evaluations and tests → production AI at Bell.  
+**Backup example:** The Lux Bio image processing and OCR pipeline. Be clear that you applied OCR technology; you did not train a new model.
+
+## 5. Describe a recent accomplishment you are proud of. What did you do to achieve it?
+
+**Best story:** The wealth management platform, with the discovery work as the central challenge.
+
+I’m proud of a platform I’ve been building for a wealth management client this year. They wanted to move several client and event workflows out of spreadsheets, but the hardest part at first was working out what the software needed to preserve from their day-to-day process.
+
+I interviewed the people who would use it and shadowed how they worked. I noticed that their spreadsheets held notes about individual clients alongside the structured information. Those notes were part of how they remembered context and followed up, so I added a way to keep notes with each client in the new platform. I also worked through the data model, validation, duplicate prevention, and audit history needed for financial records.
+
+I delivered six workflows covering areas such as onboarding, investments, transfers, and client management. I’m proud of the way I got there: I took time to understand the work before deciding what to build. That’s the same approach I’d take when translating a Bell team’s business need into a data or AI system.
+
+**Recall:** Spreadsheet replacement → interviews and shadowing → discovered client notes → six workflows and Bell connection.  
+**Backup example:** Your agent platform, particularly building and testing the execution pipeline.
 
 ## 6. Tell us about a time you showed initiative.
 
-- **Original request:** My manager asked me to automate a small pump so it would run on a timer.
-- **What I noticed:** Manual setup across different devices was slowing down the deployment of new production protocols.
-- **What I did:** I expanded the work into a system that coordinated the equipment.
-    - I built Python services and an interface for setting up protocols, calibrating devices, controlling equipment, and viewing live measurements.
-- **Result:** Protocol deployment became three times faster, and weekly production yield doubled.
-- **Connection:** At Bell, I’d pay attention to the wider workflow around an assigned task and act on a bottleneck that could make the whole system better.
+**Best story:** The Lux Bio pump timer that grew into production automation.
+
+At Lux Bio, my manager initially asked me to automate a small pump so it would run on a timer. As I learned how production worked, I saw that the pump was one of many manual steps slowing down each new protocol. People also had to set up and calibrate different devices.
+
+I started with the requested automation, then built out a system that could coordinate the equipment and give operators a dedicated interface. They could manage device settings, calibrate equipment, set up protocols, and see live measurements from one place. I built the Python services behind it and the React interface, then supported the system as it was used in production.
+
+The finished system helped triple the speed of deploying protocols, and weekly production yield doubled. What I took from that experience is to pay attention to the work around an assigned task. At Bell, I’d bring that same habit to finding the bottleneck in a data or AI workflow and following an improvement through to a usable result.
+
+**Recall:** Pump timer request → spotted wider manual bottleneck → built coordinated system and interface → production result and Bell connection.  
+**Backup example:** Adding safeguards and monitoring after a Lux Bio production incident, if you want an initiative story centred on reliability.
 
 ## 7. Tell us about yourself.
 
-- I graduated from UBC in May 2026 with a combined major in Computer Science and Physics.
-- I like breaking down complicated problems and building software people can use.
-- At Lux Bio, I built automation and data collection software for lab production.
-    - That involved Python services, a React interface, and image processing.
-- More recently, I built workflows for a wealth management client and an AI agent platform that plans and carries out tasks across multiple tools.
-- **Connection:** Those experiences led me toward data engineering and ML engineering, which is why Bell’s graduate rotation appeals to me.
+**Best angle:** A short path from your degree to data systems and AI engineering.
+
+I’m Smarth Gupta. I graduated from UBC in May with a combined major in Computer Science and Physics. I enjoy taking a complicated problem, breaking it down, and building something people can use.
+
+At Lux Bio, I built software that automated lab equipment and collected production data. That work combined Python services, a React interface, and image processing. More recently, I’ve built a platform for a wealth management client, where I started by interviewing users to understand their workflows. I’ve also been building an AI agent platform that plans and carries out tasks across tools like email and calendars.
+
+Those projects have made me especially interested in the engineering that supports AI: getting useful data into a system, making the application reliable, and checking that it works for its users. That’s why Bell’s rotation across data engineering and machine learning engineering appeals to me.
+
