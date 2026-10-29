@@ -32,4 +32,8 @@ tell me about yourself:
 - past schooling
 - complex problems break them and work on tools/products that people use
 - lux bio - full stack lab automation platform, first dev to lead
-- wealth management 
+- wealth management - working with clients gather reqs
+- agentic plat form 
+- past exp made me more interested in bells roation program. 
+	- useful data in to a system
+	- 
