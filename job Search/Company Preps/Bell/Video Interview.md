@@ -108,29 +108,17 @@ I checked complete results against existing evaluations and tested both the back
 
 ## 5. Describe a recent accomplishment you are proud of. What did you do to achieve it?
 
-**Best story:** The wealth management platform, with the discovery work as the central challenge.
-
 I’m proud of a platform I’ve been building for a wealth management client this year. They wanted to move several client and event workflows out of spreadsheets, but the hardest part at first was working out what the software needed to preserve from their day-to-day process.
 
 I interviewed the people who would use it and shadowed how they worked. I noticed that their spreadsheets held notes about individual clients alongside the structured information. Those notes were part of how they remembered context and followed up, so I added a way to keep notes with each client in the new platform. I also worked through the data model, validation, duplicate prevention, and audit history needed for financial records.
 
 I delivered six workflows covering areas such as onboarding, investments, transfers, and client management. I’m proud of the way I got there: I took time to understand the work before deciding what to build. That’s the same approach I’d take when translating a Bell team’s business need into a data or AI system.
-
-**Recall:** Spreadsheet replacement → interviews and shadowing → discovered client notes → six workflows and Bell connection.  
-**Backup example:** Your agent platform, particularly building and testing the execution pipeline.
-
 ## 6. Tell us about a time you showed initiative.
-
-**Best story:** The Lux Bio pump timer that grew into production automation.
-
 At Lux Bio, my manager initially asked me to automate a small pump so it would run on a timer. As I learned how production worked, I saw that the pump was one of many manual steps slowing down each new protocol. People also had to set up and calibrate different devices.
 
 I started with the requested automation, then built out a system that could coordinate the equipment and give operators a dedicated interface. They could manage device settings, calibrate equipment, set up protocols, and see live measurements from one place. I built the Python services behind it and the React interface, then supported the system as it was used in production.
 
 The finished system helped triple the speed of deploying protocols, and weekly production yield doubled. What I took from that experience is to pay attention to the work around an assigned task. At Bell, I’d bring that same habit to finding the bottleneck in a data or AI workflow and following an improvement through to a usable result.
-
-**Recall:** Pump timer request → spotted wider manual bottleneck → built coordinated system and interface → production result and Bell connection.  
-**Backup example:** Adding safeguards and monitoring after a Lux Bio production incident, if you want an initiative story centred on reliability.
 
 ## 7. Tell us about yourself.
 
