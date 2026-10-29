@@ -30,4 +30,5 @@ conﬂict with team members and how did you manage it?
 
 tell me about yourself:
 - past schooling
-- complex problems 
+- complex problems break them and work on tools/products that people use
+- lux bio - full stack 
