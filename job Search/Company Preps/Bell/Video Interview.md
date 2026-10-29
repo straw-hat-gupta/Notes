@@ -31,7 +31,8 @@ Why bell:
 - Bell AI fabric ai infra canada = allows more canadian companies to take advantage of AI while staying compliant
 - Ive worked on building AI tools myself as well. 
 	- getting an agent to produce useful answers is only part of the challenge
-	- you also have to make sure its tool calls, permissions, and
+	- you also have to make sure its tool calls, permissions, and multistep exectutions observable and dependable
+	- makes me very interested in t
 
 tell me about yourself:
 - past schooling
