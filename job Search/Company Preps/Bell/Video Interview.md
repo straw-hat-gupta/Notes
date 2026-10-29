@@ -29,4 +29,5 @@ conﬂict with team members and how did you manage it?
 
 
 tell me about yourself:
-- 
+- past schooling
+- complex problems 
