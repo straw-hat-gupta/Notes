@@ -26,3 +26,7 @@ conﬂict with team members and how did you manage it?
     
 - Describe a recent accomplishment that you are proud of. What did you achieve and what steps did you take that allowed you to reach this accomplishment?
 
+
+
+tell me about yourself:
+- 
