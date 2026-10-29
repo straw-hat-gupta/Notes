@@ -53,7 +53,7 @@ tell me about yourself:
 ## 1. Why Bell?
 
 - Chance to build AI tools that people actually use, at a scale where reliability matters.
-- Bell AI Fabric interests me because Canadian AI infrastructure can help more organizations use AI while meeting data residency requirements.
+- Bell AI Fabric interests me because Canadian AI infrastructure can help more organizations adopt AI while staying compliant.
 - I’ve worked on AI tools myself.
     - Getting an agent to produce a useful answer is only part of the challenge.
     - Its tool calls, permissions, and multi-step execution also need to be observable and dependable.
