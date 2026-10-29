@@ -50,12 +50,6 @@ tell me about yourself:
 	- checking what works for users
 	- thats why data engineering and ml engineering appleas to me
 
-I’ve written the first seven with a **STAR-C ending**: the story leads to a result, then the final sentence connects it to Bell. For the motivation and introduction questions, the story is lighter, but the Bell connection is still explicit.
-
-Bell’s posting confirms the 24-month rotation and work on production AI and data systems. Bell describes AI Fabric as Canadian-hosted infrastructure for organizations with data residency needs. [jobs.bce.ca](https://jobs.bce.ca/bell/job/Verdun-2027-Graduate-Program%2C-Technology-Services-Emerging-AI-and-Data-Solutions-QC/1431592500/?utm_source=chatgpt.com)
-
-These are written to sound natural aloud and fit within Bell’s 90-second answer limit. Each ends by connecting your experience to the role.
-
 ## 1. What excites you about starting your career at Bell?
 
 What excites me about Bell is the chance to build AI tools that people actually use, at a scale where reliability matters. Bell AI Fabric also caught my attention. I think Canadian AI infrastructure is important because it gives more organizations a way to use AI while keeping sensitive data in Canada.
