@@ -34,7 +34,9 @@ Why bell:
 	- you also have to make sure its tool calls, permissions, and multistep exectutions observable and dependable
 	- makes me very interested in the engineering behind ai applications that run at the scale bell operates at
 - bells graduate role brings all that together
-	- im excited to help build, test, and scale AI application 
+	- im excited to help build, test, and scale AI applications at bell 
+	- while learning from more experienced engs at an organization as impactful as bell
+	
 
 tell me about yourself:
 - past schooling
