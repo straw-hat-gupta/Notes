@@ -36,4 +36,6 @@ tell me about yourself:
 - agentic plat form 
 - past exp made me more interested in bells roation program. 
 	- useful data in to a system
-	- 
+	- making application reliable
+	- checking what works for users
+	- thats why data engineering and ml engineering appleas to me
