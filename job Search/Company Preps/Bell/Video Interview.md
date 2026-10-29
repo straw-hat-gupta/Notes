@@ -32,7 +32,9 @@ Why bell:
 - Ive worked on building AI tools myself as well. 
 	- getting an agent to produce useful answers is only part of the challenge
 	- you also have to make sure its tool calls, permissions, and multistep exectutions observable and dependable
-	- makes me very interested in t
+	- makes me very interested in the engineering behind ai applications that run at the scale bell operates at
+- bells graduate role brings all that together
+	- im excited to help build, test, and scale AI application 
 
 tell me about yourself:
 - past schooling
