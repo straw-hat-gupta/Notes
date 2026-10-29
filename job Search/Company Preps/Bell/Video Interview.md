@@ -31,4 +31,5 @@ conﬂict with team members and how did you manage it?
 tell me about yourself:
 - past schooling
 - complex problems break them and work on tools/products that people use
-- lux bio - full stack 
+- lux bio - full stack lab automation platform, first dev to lead
+- wealth management 
