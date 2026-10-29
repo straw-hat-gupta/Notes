@@ -26,7 +26,8 @@ conﬂict with team members and how did you manage it?
     
 - Describe a recent accomplishment that you are proud of. What did you achieve and what steps did you take that allowed you to reach this accomplishment?
 
-
+Why bell:
+- chance to build ai tools that people actually use a
 
 tell me about yourself:
 - past schooling
