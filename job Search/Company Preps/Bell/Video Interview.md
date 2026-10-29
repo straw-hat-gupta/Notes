@@ -58,6 +58,7 @@ tell me about yourself:
     - Getting an agent to produce a useful answer is only part of the challenge.
     - Its tool calls, permissions, and multi-step execution also need to be observable and dependable.
 - That experience made me interested in the engineering behind AI applications at Bell’s scale.
+-  while learning from more experienced engs at an organization as impactful as bell
 - **Connection:** This graduate role brings those interests together: building, testing, and scaling AI applications while learning from experienced engineers.
 
 ## 2. Why this graduate program, and why should Bell choose you?
