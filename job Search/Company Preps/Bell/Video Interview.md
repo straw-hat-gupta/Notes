@@ -28,7 +28,8 @@ conﬂict with team members and how did you manage it?
 
 Why bell:
 - chance to build ai tools that people actually use at a scale where reliability really matter
-- Bell AI fabric ai infra canada = allows more canadian companies to 
+- Bell AI fabric ai infra canada = allows more canadian companies to take advantage of AI while staying compliant
+- Ive worked on building AI tools 
 
 tell me about yourself:
 - past schooling
