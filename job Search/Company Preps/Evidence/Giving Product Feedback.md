@@ -12,5 +12,7 @@ What customer do they not have:
 - what do they currently use instead? what dashboard frameworks do they use? 
 - what other tools do they have that need to supported? opentelemetry? grafana?
 - have they heard about it? Is it an aesthetic thing? Marketing? 
-User Painpoints:
-- 
+User pain points:
+- what are user struggling with 
+- has evidence addressed them where they are asked the question
+- is that user pain point addressed 
