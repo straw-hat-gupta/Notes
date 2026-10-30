@@ -9,4 +9,6 @@ Wh
 - who are they? Homelab hobbyists, 
 - The Why: what are their use cases that are not covered? 
 - what do they currently use instead? what dashboard frameworks do they use? 
-- what other tools do they have that 
+- what other tools do they have that need to supported? opentelemetry? grafana?
+- 
+- 
