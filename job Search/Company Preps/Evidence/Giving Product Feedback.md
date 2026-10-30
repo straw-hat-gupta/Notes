@@ -15,4 +15,4 @@ What customer do they not have:
 User pain points:
 - what are user struggling with 
 - has evidence addressed them where they are asked the question
-- is that user pain point addressed 
+- is that user pain point addressed in the docs? is the functionality added? if not why not? 
