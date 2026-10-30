@@ -7,5 +7,4 @@ the button for $Docs$ seems out of place since it takes you to a separate page b
 support button in the top right on the schedules page doesn't do anything
 
 
-What people online have said:
-- "At the end, evidence is hard to use behind corporate proxy, and I have a few dashboard but nothing great. And it looks clean but not that elegant."[ post ](https://www.reddit.com/r/BusinessIntelligence/s/mAscaQNJjz)
+
