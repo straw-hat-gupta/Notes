@@ -5,7 +5,8 @@ Why product feedback is important:
 Put yourself in the shoes of their current customer:
 - figure out who their top 3 customers are
 - what are their top 5 use cases 
-Who are the potential clients they don't currently have:
-- Homelab hobbyists? dashboards, generated reports, 
+Wh
+- who are they? Homelab hobbyists, 
+- what are their use cases that are not covered?
 - 
 - 
