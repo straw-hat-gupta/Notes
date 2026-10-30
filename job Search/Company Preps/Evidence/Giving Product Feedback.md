@@ -5,7 +5,6 @@ Why product feedback is important:
 Put yourself in the shoes of their current customer:
 - figure out who their top 3 customers are
 - what are their top 5 use cases 
-- go through those use cases
 - 
 What customer do they not have:
 - who are they? Homelab hobbyists, 
@@ -13,4 +12,5 @@ What customer do they not have:
 - what do they currently use instead? what dashboard frameworks do they use? 
 - what other tools do they have that need to supported? opentelemetry? grafana?
 - have they heard about it? Is it an aesthetic thing? Marketing? 
+User Painpoints:
 - 
