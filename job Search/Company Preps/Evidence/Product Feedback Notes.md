@@ -5,4 +5,6 @@ the button for $Docs$ seems out of place since it takes you to a separate page b
 - follow up question does it give tool tip for functions and commands that refernce the docs?
 
 support button in the top right on the schedules page doesn't do anything
-	
+
+
+What people online hace
