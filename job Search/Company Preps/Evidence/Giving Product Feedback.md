@@ -7,6 +7,6 @@ Put yourself in the shoes of their current customer:
 - what are their top 5 use cases 
 Wh
 - who are they? Homelab hobbyists, 
-- what are their use cases that are not covered?
-- 
-- 
+- The Why: what are their use cases that are not covered? 
+- what do they currently use instead? what dashboard frameworks do they use? 
+- what other tools do they have that 
