@@ -10,7 +10,8 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Project:** Home Lab Analytics.
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics.
-- **Data source:** Existing homelab data stored in a Neon database, as reported by Sam. Connection to Evidence not yet confirmed.
+- **Data source:** Existing homelab data stored in a Neon database. Sam subsequently reported adding a direct connector using the NeonDB owner account; no separate database user was created. Connection testing and successful queries have not been reported.
+- **Current progress:** The agent began building after Sam asked where to add a synced connector. That question and the dashboard outcome remain unresolved.
 - **Still unspecified:** Particular metrics, desired refresh interval/meaning of "live," and completion criteria.
 
 ## Chronological notes
@@ -45,9 +46,154 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 
 **Interpretation / follow-up:** The next useful evidence is the AI's response and Sam's experience following it. "Live" creates an expectation to examine later: whether the resulting dashboard updates as needed and whether its refresh behavior is clear. No refresh capability or limitation has been demonstrated yet.
 
+### HLA-01 — Leaving the project separates setup from the agent; entered details are lost
+
+Date: 2026-10-31. Entries HLA-01 through HLA-08 come from this dictated update. Related points are grouped; HLA-07 was reported immediately after the agent response in HLA-05.
+
+**Sam's words:**
+> So the agent told me that, like, I should go to this other page, the Connectors page, and connect my Neon database since it's not connected yet before it can make me a dashboard, and gave me some instructions. But I had to go out of the project I just created to get there, like the page it told me to go to. But now the agent isn't there with me. So, like, if I wanted to talk to the agent back that I forgot something, I would have to go all the way back into my project and then go here. So that one's a bit, like, frustrating there.
+>
+> So I did have to go out of the connection page to, like, look at the agent again. But then when I came back, all the information that I did have was wiped. Now I'm, like, wondering if the agent could just do these things for me and ask me for it.
+
+**Observed sequence:** Agent directs Sam to database setup → Sam leaves the project → agent is unavailable there → Sam returns to consult it → on returning to connection setup, previously entered information is gone. Exact fields and whether a save action was available are not recorded.
+
+**Impact:** Reported frustration, backtracking, and loss of entered setup information. No database data loss was reported.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated experience]]. Related to the earlier expectation of integrated help in [[Product Feedback Notes]].
+
+**Interpretation / candidate improvements:** Guidance is separated from the task it supports. Consider keeping the agent accessible during setup or preserving the connection draft across navigation. Sam also proposes guided setup through the agent. These are candidate solutions, not confirmed missing capabilities.
+
+### HLA-02 — A connector link exists, but clicking it does not navigate
+
+**Sam's words, in sequence:**
+> And maybe, like, in the agent, it should just give me, like a clickable button to get me to this page directly instead of me having to find this, so I don't go to the wrong page by accident.
+>
+> So the agent actually did give me a clickable link as a response to the prompt with the connections page, but the connections page doesn't even work. Like when I click it, it doesn't actually take me to anything. It just stays on the page I'm on.
+
+**Observation:** The later statement corrects the initial impression that no direct navigation was offered. A link was present; Sam reports no navigation when clicking it. The target URL and failure cause are not recorded. This does not establish that the entire Connectors page is broken.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated experience]]. Related to [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]]: reliable navigation would reduce page-finding effort, while access to help and preservation of entered details are separate concerns.
+
+**Interpretation:** The useful recommendation is to make the existing action work, rather than conclude that a navigation feature must be added. Reproduction remains unconfirmed.
+
+### HLA-03 — Team invitation is discoverable; role meanings require investigation
+
+**Sam's words:**
+> It prompted me to, like, there's just, like, an invite team member thing that just showed up on the screen where I can, like, select what project to go into when I came out of the connections. When I clicked that, it took me to the team member, like, team setting. It opened, uh, yeah, and here I can, like, add team members, and there's various roles. I can do viewer, org viewer, developer, and admin. I'll probably need to look at some docs to understand what each of these roles are.
+
+**Observation:** Sam found an invitation entry point and reached team settings. Reported role labels: viewer, org viewer, developer, admin. No invitation was reported sent. Role scope, permissions, and any explanatory text have not been verified.
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: collaboration and permissions]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]].
+
+**Interpretation / follow-up:** Positive discovery of a collaboration workflow, with uncertainty about role selection. Investigate whether the interface explains role differences—especially viewer versus org viewer—and the project/organization scope before inviting someone. Do not infer permission granularity from labels alone.
+
+### HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty
+
+**Sam's words:**
+> It told me if I want, like, a live fuel, I need to pick the shortest interval the connector allows. But I only... I'll have to go back to the screen to really know, like, probably how to do that, set a schedule. It didn't really tell me how to set a schedule.
+>
+> Still trying to figure out how to make a sync schedule. In the doc, it says I need to go to the sources page, but I can't easily find that.
+
+**Prompt to the agent:**
+> how do i set a sync schedeule
+
+**Observation:** The initial guidance referred to choosing the shortest allowed interval without making the scheduling steps clear to Sam. Documentation referred to a Sources page Sam could not easily locate.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability and documentation]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: fit for the desired live dashboard]].
+
+**Interpretation / follow-up:** The difficulty spans agent instructions, documentation terminology, and navigation. Possible edition/version or connector differences are unconfirmed. Record the actual refresh requirement before judging suitability; no minimum sync interval has been established.
+
+### HLA-05 — Agent changes its recommendation; connector choice remains unclear
+
+**Agent response supplied by Sam:**
+
+The following is a transcript of the other agent's output, with formatting normalized. It is evidence of guidance Sam received, not independently verified technical advice.
+
+> I need to correct my earlier answer. **You probably don't need a sync schedule.** For a live homelab dashboard, use the **direct Postgres connector** instead. The docs say it works with Neon.
+>
+> **Direct connector (recommended)**
+>
+> - Evidence queries your Neon database each time the dashboard loads or a filter changes, so there's no sync delay and no schedule to set.
+> - Go to **Connectors** in the sidebar and choose **Postgres** in the **Warehouse** card.
+> - Fill in host, port (5432), database, user and password.
+>   - Enter the hostname only, not a `postgres://` URL.
+>   - Leave SSL mode on the default, **Verify full**. Neon's certificates work with it.
+> - Click **Test Connection**, then **Save**.
+> - If your tables aren't in `public`, set **Schema**, or write `schema.table` in your queries.
+> - Use Neon's direct endpoint, not the pooled one, if you run into schema or timeout oddities.
+> - Create a read-only role for Evidence:
+>
+> ```sql
+> CREATE ROLE evidence LOGIN PASSWORD '<strong-password>';
+> GRANT CONNECT ON DATABASE <your_db> TO evidence;
+> GRANT USAGE ON SCHEMA public TO evidence;
+> GRANT SELECT ON ALL TABLES IN SCHEMA public TO evidence;
+> ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO evidence;
+> ```
+>
+> **Synced connector (only if you want a copy of the data)**
+>
+> - Add a **PostgreSQL** connector from **Connectors → New Connector**.
+> - The steps are: fill in the connection details, select the schemas and tables to sync, then **configure your sync schedule**. That last step is where the schedule is set.
+> - The docs don't say which intervals are offered, so I can't tell you the minimum. Data would only be as fresh as the last sync.
+>
+> If you want live data, use the direct connector. Neon's free tier may suspend the compute when it's idle, so the first load after a quiet period can be slow.
+>
+> Once it's saved, tell me and I'll look at your tables and build the dashboard.
+
+**Sam's reaction and subsequent setup:**
+> I didn't really understand from the output which option is better for me. I think I'm gonna go the synced connector route and see how that goes. I already added the first option. I didn't use, like, I didn't create, like, a new user or whatever on the Neon side. I just used, like, the NeonDB owner user to create that connector.
+
+**Observation:** The agent explicitly corrected its earlier scheduling advice and recommended direct access. Despite that recommendation, Sam remained unsure which option best fit the goal and wanted to try the synced route. Sam had already added the direct connector using the existing NeonDB owner account instead of creating the suggested read-only role.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: decision support and onboarding]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: workflow fit]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: value of integrated AI guidance]].
+
+**Interpretation / follow-up:** A recommendation was present but did not resolve Sam's decision. Investigate whether the agent should first clarify acceptable data delay and expected refresh behavior, then explain the tradeoff in those terms. Querying on load/filter changes, as claimed by the agent, does not itself establish that an already-open dashboard updates automatically. Actual behavior remains untested. The account choice is setup context; its effective permissions have not been assessed, and no database changes were performed by this note-taking session.
+
+### HLA-06 — Documentation describes navigation Sam cannot find
+
+**Sam's words:**
+> I don't see a connection connectors page. Even in the docs, it tells me that to bow into open the connectors page, go to connectors in the sidebar in the warehouse card at the top, select Snowflake. But, like, there's no really connectors in the sidebar.
+
+**Observation:** Sam reports that the documented Connectors sidebar entry and Warehouse-card path do not match the navigation they can locate. Documentation described selecting Snowflake while the task involves Neon/Postgres. The exact documentation page, interface version, and reason for the mismatch are not yet recorded.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: documentation and navigation]]. Related to [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]] and [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]].
+
+**Interpretation:** Multiple routes to setup—agent instructions, a clickable link, and documentation—have not reliably guided Sam to the intended place. This supports investigating consistency across help and interface terminology; it does not establish that a connector capability is absent.
+
+### HLA-07 — No copy button noticed beneath the agent response
+
+**Sam's words:**
+> There's no copy button at the bottom.
+
+**Observation:** Sam did not find a copy button beneath the response. The response included connection instructions and SQL. What Sam wanted to copy, and whether copying is available elsewhere, were not specified.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]].
+
+**Interpretation / follow-up:** A potential interaction improvement for transferring instructions or code. No blocked task or broader absence of copy functionality has been established. This was reported immediately after the agent response; grouped separately here for clarity.
+
+### HLA-08 — Asking about the synced connector is followed by a dashboard build
+
+**Prompt to the agent:**
+> i added the direct connector and cannot find hwo to do the synced connector
+
+**Sam's words:**
+> It just started building the dashboard now.
+
+**Observation:** Sam asked how to find/add the synced connector after adding the direct connector. Sam reports that the agent then began building the dashboard. No answer resolving the connector question was reported.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: intent handling and user control]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated AI workflow]].
+
+**Interpretation / follow-up:** Possible mismatch between the immediate question and the agent's next action. The earlier agent response had offered to build once a connector was saved, which may be relevant, but its actual reasoning is unknown. Record whether the build eventually addresses the question, which connector it uses, and whether the resulting dashboard meets Sam's needs. Build success and dashboard quality are not yet known.
+
 ## Emerging patterns
 
-The first recorded workflow uses the AI sidebar immediately after project creation. No recurring patterns or usability conclusions yet; the first response is pending.
+- **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
+- **Instructions and navigation are not lining up for Sam.** [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]], [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]], and [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]] provide related observations; a shared cause is not established.
+- **The assistant has not yet resolved key decisions.** Connector selection remained unclear after the corrected recommendation ([[#HLA-05 — Agent changes its recommendation; connector choice remains unclear|HLA-05]]), and the next reported action was a build following an unresolved connector question ([[#HLA-08 — Asking about the synced connector is followed by a dashboard build|HLA-08]]).
+- **Collaboration has a concrete entry point to evaluate.** Team settings exposed four reported roles, but Sam does not yet understand their scope ([[#HLA-03 — Team invitation is discoverable; role meanings require investigation|HLA-03]]).
+
+Candidate priorities for investigation: loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
 
 ## How subsequent notes will be captured
 

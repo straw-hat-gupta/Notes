@@ -115,4 +115,4 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 3. A focused comparison showing where alternatives make the same workflows easier.
 4. A short, prioritized set of improvements, weighted toward usability and collaboration.
 
-Current status: review questions organized; Home Lab Analytics walkthrough beginning. Product capabilities, customer use cases, and competitor growth have not been verified as part of this note-taking session.
+Current status: Home Lab Analytics walkthrough in progress. Sam reports adding a direct Neon connector; the agent began building while the synced-connector question remained unresolved. The review log records setup friction, lost entered details, navigation/documentation uncertainty, and role-selection questions. Agent technical claims, customer use cases, and competitor growth have not been independently verified as part of this note-taking session.
