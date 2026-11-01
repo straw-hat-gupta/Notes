@@ -11,7 +11,7 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
 - **Data source:** Existing homelab data stored in a Neon database. Sam reported adding a direct connector using the NeonDB owner account; no separate database user was created. The Studio agent reports successful inspection/querying, but this note-taking session has not independently verified the connection or data.
-- **Current progress:** After the Studio build and diagnostic-repair experience, Sam is preparing a comparison using Claude connected through the Evidence Studio MCP. The earlier stated intention was to try Codex; the latest specified comparison is Claude. A minimal prompt is saved in [[Claude Dashboard Comparison Prompt]] for a separate `Home Lab_Claude.md` page. Connection, prompt submission, Claude output, and rendered results have not yet been reported.
+- **Current progress:** Sam reports publishing and is investigating GitHub version control, sharing, and maintenance by less technical collaborators. The specific published page/branch, GitHub connection, invitations, and sync behavior have not been tested here. The Claude/MCP comparison remains planned in [[Claude Dashboard Comparison Prompt]]; connection and Claude output have not been reported.
 - **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
 - **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
 
@@ -517,12 +517,106 @@ Date: 2026-10-31.
 
 **Interpretation / comparison limits:** This tests Claude through MCP versus the native Studio agent while retaining Evidence as the platform. It does not compare Evidence with a standalone AI-built app, and differences may reflect tooling, context, permissions, or model behavior. The prompt consolidates goals from several original turns, and data coverage/cadence may have changed; it is not an identical replay. Record setup effort, available tools, exact model if known, discovery quality, interventions, diagnostics, validation, and the useful result. The prepared prompt does not prove MCP supports any particular action; Claude must determine what its connected tools can do.
 
+### HLA-21 — After publishing, Sam asks how to own the repo and share maintenance
+
+Date: 2026-10-31.
+
+**Sam's prompt to the Studio agent:**
+> so i published where can i now version control everything and see in my github and share with other people so they can also maintain stuff?
+
+**Studio agent response supplied by Sam:**
+
+The same exchange was pasted twice in this update; it is captured once here, not counted as two separate interactions. Formatting normalized. This transcript records the guidance received; only the specific documentation findings in HLA-23 below were checked independently.
+
+> Your project is stored as a Git repository. Right now it's in Evidence's managed repo, which you can only edit from Studio. To see it in GitHub and share it, link the project to your own GitHub repo.
+>
+> **Link the project to GitHub**
+>
+> 1. Go to [Organization Settings](https://evidence.studio/settings/organization) and connect your GitHub account. You can allow all repositories or only specific ones.
+> 2. Create an empty repo on GitHub first. The repo must already exist, because Studio can't create one.
+> 3. Open the project, click the cog icon next to the project name in the sidebar, then open project settings.
+> 4. Under **Version Control**, check **Connect to GitHub repository** and choose:
+>    - the repo
+>    - the published branch, usually `main`
+>    - the project root: the default is `pages`, or leave it blank to store files at the repo root
+> 5. Click **Save**. Nothing is synced yet at this point.
+> 6. Go back to the editor and click **Publish**. That pushes the current project to GitHub.
+>
+> **What ends up in the repo**
+>
+> - Pages, including `pages/homelab` with its SQL queries
+> - Partials and SQL files
+> - `theme.yaml` and `evidence.config.yaml`
+> - Page settings, such as `auto_refresh`, which live in the page's frontmatter
+> - `access.yaml`, if you use page-level access, and `translations.yaml`
+>
+> **What stays outside Git**
+>
+> - The docs list logo, organization theme, decimal separators and the custom AI prompt as organization-wide settings edited in Studio.
+> - Data connections aren't on the version-controlled list. I'd assume your Neon credentials stay in Studio and don't go to GitHub, but I haven't confirmed that. Check the repo after the first publish before making it public.
+>
+> **Letting others maintain it**
+>
+> - Give people access to the GitHub repo, and add them to your Evidence organization so they can use Studio.
+> - Others can edit in Studio or locally with the [CLI](https://www.evidence.studio/homelab-analytics/main/pages/homelab/edit?linkPreviewPath=cli), and the two stay in sync through Git.
+> - **Main only:** every Publish pushes straight to `main` and goes live. This suits one person.
+> - **Feature branches (better for a team):** developers use **Commit** on a branch. Publish merges into the published branch with a squash commit, or you can open a pull request on GitHub and review it there.
+> - Studio edits are shared before they're committed. If two people open the same file, they see each other's uncommitted changes.
+>
+> If you use a team workflow, I'd suggest feature branches and PRs, since this is the dashboard you rely on for your homelab's health.
+
+**Observation:** Sam reports reaching publication and now wants external version history and shared maintenance. This moves the walkthrough into the share/review/maintain stages of the review plan. No GitHub repository, connector migration, invitation, or teammate edit is reported completed. The agent's credential-handling assumption remains unverified, and the supplied CLI link's behavior was not tested.
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: sharing, review, maintenance, and permissions]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: maintainable reporting]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: managed development workflow]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: onboarding and discoverability]].
+
+**Interpretation:** Getting to a published report has not made the ownership/collaboration model self-explanatory. The response mixes organization membership, GitHub permissions, draft sharing, commits, and deployment. These are distinct tasks; explanations should start from what the collaborator needs to do. This is a usability question, not evidence that Git integration is absent or broken.
+
+### HLA-22 — Sam wants voice-to-text input in the Studio agent
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> also it would be nice to have voice to text feature in the agent.
+
+**Type:** Feature request / input preference.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: ease of expressing requests]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated agent experience]].
+
+**Interpretation:** Sam would value dictating requests directly into the agent. Record this as a requested interaction rather than assume all forms of dictation are unavailable. Native Studio support, browser/OS dictation behavior, and the impact on task completion were not investigated.
+
+### HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> Would people who are not super tech savvy and can, like, are not super technical, be able to do all this stuff? What kind of collaboration is even... is this letting? Like, okay, so you would need to give people access to my repo, the GitHub repo, add them to Evidence organization so they can use Studio. How does the syncing work between the repo and Studio?
+
+**Type:** Open usability/product-positioning question; request for clarification.
+
+**Documentation check, 2026-10-31:**
+
+- GitHub is optional: projects have an Evidence-managed repo by default. Studio drafts are shared before commit. Linking an external repo requires a first Publish to populate it; later changes flow through Git. [Version Control](https://docs.evidence.dev/features/version-control)
+- A push/PR merge into the published branch triggers publishing. Roles distinguish report readers (Viewer/Org Viewer) from editors (Developer) and organization administrators (Admin). [Publishing](https://docs.evidence.dev/publishing)
+- Developer/Admin/Org Viewer can view all pages regardless of page grants; page-level access is a reader-permission model, not demonstrated page-scoped editing. [Page Level Access Control](https://docs.evidence.dev/features/page-level-access-control)
+- Studio provides agent-generated edits in a diff that users can accept/reject. This documents assistance for editing, not proof a novice can confidently maintain the result. [Editing](https://docs.evidence.dev/editing)
+- GitHub PR previews let reviewers inspect a proposed report before merge. [Deploy Previews](https://evidence.dev/blog/deploy-previews)
+
+These are current documentation claims, not an end-to-end test of Sam's project. In particular, whether every Studio-only editor on a GitHub-connected project needs an individual GitHub invitation was not explicitly established by the checked docs. Do not treat the other agent's instruction to invite everyone to both systems as a universal prerequisite; collaboration in a managed-repo project does not require moving to GitHub.
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: collaborator journeys and permission scope]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: technical burden]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: value of abstracting development operations]].
+
+**Interpretation:** The collaboration model supports report consumption, shared authoring, and software-style review/release workflows. The unanswered product question is how much of that machinery a nontechnical maintainer must understand. The agent could distinguish a reader invitation, Studio editing, and direct GitHub/local maintenance before explaining setup.
+
+**Proposed follow-up test, not yet run:** Invite an authorized test participant with little Git experience. Ask them to change one label and add one metric using the Studio agent, explain the proposed change, request review, and identify when it becomes live. Record GitHub/account requirements, role clarity, help visits, terminology confusion, and whether they can finish without author intervention. Test simultaneous Studio drafts and conflicting external changes separately; timing and conflict behavior are not specified well enough by the checked docs to promise automatic conflict-free synchronization.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
 - **Instructions and navigation are not lining up for Sam.** [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]], [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]], and [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]] provide related observations; a shared cause is not established.
 - **Connector guidance became concrete after the build.** Selection remained unclear after the corrected recommendation ([[#HLA-05 — Agent changes its recommendation; connector choice remains unclear|HLA-05]]), followed by a build while the immediate question was unresolved ([[#HLA-08 — Asking about the synced connector is followed by a dashboard build|HLA-08]]). The completion response subsequently explains direct access and claims automatic refresh ([[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]). Sam accepted the page; understanding of the tradeoff and actual refresh behavior remain unconfirmed.
 - **Collaboration has a concrete entry point to evaluate.** Team settings exposed four reported roles, but Sam does not yet understand their scope ([[#HLA-03 — Team invitation is discoverable; role meanings require investigation|HLA-03]]).
+- **Publishing exposes a new collaboration-onboarding gap.** Sam wants GitHub ownership and shared maintenance ([[#HLA-21 — After publishing, Sam asks how to own the repo and share maintenance|HLA-21]]) but questions whether a less technical teammate can navigate the workflow ([[#HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?|HLA-23]]). Separate readers, Studio authors, and GitHub contributors when evaluating ease of collaboration.
+- **Voice input is a requested improvement.** Sam would like voice-to-text in the agent ([[#HLA-22 — Sam wants voice-to-text input in the Studio agent|HLA-22]]); availability and impact are not yet tested.
 - **Suggestions based on the user's data provide visible value.** Sam explicitly liked the initial suggestions ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]), then asked for more and reports adding sources based on the recommendations ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). This supports perceived usefulness across successive steps; accuracy, realized dashboard benefit, and advantage over alternatives remain to be tested.
 - **Guidance extends from chart selection to data coverage.** The agent identified telemetry it said was missing for the stated primary-health-dashboard goal; Sam reports acting on that guidance ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). Distinguish limits in the collected data from limits in the product's charting or monitoring capabilities.
 - **Generated changes have an explicit acceptance step.** Sam reports accepting the staged page ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]). Inspect preview, revision, and teammate-review behavior separately before drawing broader collaboration conclusions.
