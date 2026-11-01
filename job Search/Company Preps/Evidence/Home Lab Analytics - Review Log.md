@@ -3,6 +3,8 @@
 Started: 2026-10-31  
 Review framework: [[Product Review Plan]]
 
+Refined analysis: [[Product Review Findings]] — key findings, provisional answers, and follow-up investigations across use cases. This log retains the raw chronology.
+
 ## Walkthrough context
 
 Build the Home Lab Analytics dashboard using Evidence and capture the experience as it happens. This is an exploratory personal use case; its relevance to major customer workflows is not yet established.

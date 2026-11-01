@@ -9,21 +9,17 @@ Source: Sam's dictated brainstorm and the organized review plan in this chat.
 
 Focus primarily on usability, using collaboration as the main lens. Features matter when they help or prevent someone from completing a real task. Keep observed behavior, user expectations, hypotheses, and recommendations distinguishable.
 
-Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
+**Working synthesis:** [[Product Review Findings]] — the collective intermediate document: key positives, pain points, source evidence, provisional answers, and next investigations. Refine this into the final feedback later.
 
-Next review stage (2026-11-01): how completed reports are consumed in meetings, distributed as recurring updates or snapshots, and embedded in another product. Track discoverability and practical value after creation; these workflows have not yet been tested (HLA-41).
+**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-41. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
-AI workflow summary: [[How I Use AI]] — brief first-person account of how AI supports the review, kept current as the process develops.
-
-Latest hands-on findings (2026-10-31): Sam reports successful invitation/signup and live co-editing with a second account, appreciates Claude's render/check-before-handoff workflow, and values asking ongoing questions about connected reports. New concerns are an inaccessible recent chat in the same account, GitHub installation recognition requiring a repository-selection workaround, and a Publish dialog explicitly warning of overwriting remote changes. The screenshot is preserved in the log (HLA-35–HLA-40). Mixed Studio/code-editor maintenance is now a priority collaboration test; no overwrite outcome has been verified.
-
-External-agent comparison: [[Claude Dashboard Comparison Prompt]] — minimal user goals for an independent Claude/MCP build on `Home Lab_Claude.md`; setup and results tracked in the walkthrough log. Run completed 2026-10-31 (Claude Opus 5.5 in Claude Code): page built and render-checked, but not saved to Studio because the MCP is read-only — see [[Home Lab Analytics - Review Log#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]] onward.
-
-Customer research: [[Customer Use Case Research]] — public adoption evidence, edition caveats, three proposed customer-grounded walkthroughs, and questions to validate with Evidence. These are not a verified ranking of the largest customers.
+Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
 ## Review questions
 
 ### Q1 — Why choose Evidence?
+
+**Partially answered:** Data-grounded suggestions and reporting/validation tools showed value; unique advantage and long-term reuse remain unproven. [[Product Review Findings#Q1 — Evidence's value|Current answer and limits]].
 
 What value does Evidence provide over Hex, Grafana, or a dashboard built with an AI coding tool such as Claude?
 
@@ -37,6 +33,8 @@ Refinement: an AI-built dashboard can also live in a maintained repository. Test
 
 ### Q2 — Why choose Studio over open source?
 
+**Partially answered:** Integrated authoring, preview, acceptance, and co-editing helped; a direct Core comparison remains open. [[Product Review Findings#Q2 — Studio's additional value|Current answer and limits]].
+
 What additional value does Evidence Studio provide compared with using the open-source framework?
 
 - What work does Studio remove, and for whom: author, reviewer, administrator, or reader?
@@ -45,6 +43,8 @@ What additional value does Evidence Studio provide compared with using the open-
 - When would an open-source user have a clear reason to adopt Studio?
 
 ### Q3 — How well does collaboration work?
+
+**Partially answered:** Invitation and live editing worked; permissions, review, mixed Git workflows, and recovery need testing. [[Product Review Findings#Q3 — Collaboration|Current answer and limits]].
 
 Follow a report through **create → share → review → revise → publish → maintain**.
 
@@ -56,6 +56,8 @@ Follow a report through **create → share → review → revise → publish →
 - Before publishing, can I tell who will see the change?
 
 ### Q4 — How usable is the workflow?
+
+**Answered for the Home Lab walkthrough:** Specific strengths and friction are synthesized; causes and broader prevalence remain provisional. [[Product Review Findings#Q4 — Usability|Current answer]] · [[Product Review Findings#Pain points and candidate improvements|Findings and evidence]].
 
 Where do I feel frustrated, lose confidence, need help, or fail to complete the task?
 
@@ -69,6 +71,8 @@ A documentation visit is a signal to investigate, not automatically a defect. A 
 
 ### Q5 — Which customer use cases matter most?
 
+**Open pending customer validation and walkthroughs:** Research identifies candidates, not the highest-value workloads or largest customers. [[Product Review Findings#Q5 — Priority customer use cases|Current answer and next evidence]].
+
 Identify three high-value, recurring workflows among major Evidence customers and try them myself.
 
 For each, establish:
@@ -80,6 +84,8 @@ For each, establish:
 Use customer conversations or available customer evidence. Do not assume these use cases are known yet. Home Lab Analytics is my exploratory walkthrough; whether it represents a major customer workflow remains unconfirmed.
 
 ### Q6 — Where do alternatives provide more value?
+
+**Partially answered for Claude/MCP only:** Render checking helped, but manual handoff added work. Hex/Grafana, standalone AI builds, and Hex growth remain open. [[Product Review Findings#Q6 — Alternatives and Hex growth|Current answer and limits]].
 
 Compare Evidence with Hex, Grafana, and an AI-built dashboard using the same task, data, and completion criteria where feasible.
 
@@ -110,6 +116,7 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 - Link related observations and record later resolutions without erasing the initial experience.
 - Leave severity, cause, reproducibility, and customer relevance unconfirmed unless the evidence supports them.
 - Update synthesis as patterns emerge, keeping the chronological record intact.
+- Maintain [[Product Review Findings]] as the collective intermediate analysis across use cases. Keep findings concise, link raw evidence, distinguish Sam's reports from agent observations, revise confidence/resolutions as investigations progress, and keep the six answer-status links current. Do not duplicate the chronology there.
 - Keep [[How I Use AI]] updated when AI's role changes or a new use emerges. Keep it brief and specific; distinguish work performed from planned research/tests rather than copying the detailed log into it.
 
 ## Existing notes to connect
@@ -126,4 +133,4 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 3. A focused comparison showing where alternatives make the same workflows easier.
 4. A short, prioritized set of improvements, weighted toward usability and collaboration.
 
-Current status: Sam reports publishing and is now investigating GitHub version control, syncing, and maintenance by less technical collaborators. The review log includes a current documentation check separating managed-repo Studio collaboration, external GitHub workflows, and reader/editor roles; actual sync, invitations, and collaborator usability remain untested. Sam also requests voice-to-text in the Studio agent. Earlier findings about data-based suggestions, progressive preview, diagnostics, and task interruption remain recorded. Claude/MCP comparison setup is prepared, but no connection or run result has been reported. Customer research is in [[Customer Use Case Research]]. Technical claims and final dashboard behavior remain independently unverified. **Update 2026-10-31:** the Claude/MCP run has now happened. Claude connected through MCP and built an independent `Home Lab_Claude.md` (status banner, node grids, pipeline, temperatures, services, storage/network), checked each section with the MCP render tool, and saved it locally at `/Users/samgupta/evidence/claude-build/Home Lab_Claude.md`. It still has to be pasted into Studio, previewed, and published, because the MCP has no tool to save pages. Findings, by cause, are in the review log, HLA-24–HLA-34: under-documented direct Postgres and refresh limits (HLA-26, HLA-27); no minute time grain on line charts (HLA-30); a missing temperature shown as a green 0 °C (HLA-31); empty table-listing tools through MCP (HLA-25, likely the same as HLA-09); render-checking before handover as a positive (HLA-28). One-second refresh (`auto_refresh: 1000`) is still unverified in preview and on the published page.
+Current status (2026-11-01): Initial synthesis of HLA-01–HLA-41 is complete in [[Product Review Findings]]. Prioritize reproducing the remote-overwrite scenario, misleading missing-temperature display, and context/repair failures; then extend to customer-grounded workflows and report consumption. These are investigation priorities, not confirmed customer-wide defect rankings. Final feedback has not yet been prepared or sent.
