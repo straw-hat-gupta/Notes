@@ -11,6 +11,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
 
+Customer research: [[Customer Use Case Research]] — public adoption evidence, edition caveats, three proposed customer-grounded walkthroughs, and questions to validate with Evidence. These are not a verified ranking of the largest customers.
+
 ## Review questions
 
 ### Q1 — Why choose Evidence?
