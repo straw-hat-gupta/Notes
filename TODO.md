@@ -15,7 +15,6 @@ personal
 - construction app
 - portfolio website so people can see demos
 - configure the homelab
-- get 2 nics
 - CLEAN LAPTOP all dev shit should be on homelab
 - make AIVA a real project
 - make a post in SKOOL.ai
