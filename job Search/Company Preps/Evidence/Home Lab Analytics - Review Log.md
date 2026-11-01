@@ -14,6 +14,7 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Current progress:** Sam reports an error-free Claude-generated page after its render/check workflow and manual code handoff, successful invitation/signup of a second test account, and live edits visible in both Studio sessions. Sam also reports an inaccessible prior chat and a GitHub-installation recognition problem worked around by changing repository selection. Studio now presents a remote-overwrite warning during Publish, documented by a screenshot. The exact conflicting files, branch state, and publish outcome have not been inspected.
 - **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
 - **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
+- **Current review focus (2026-11-01):** Sam has the reports and is asking how they become useful in company meetings, recurring decisions, or an embedded product. No meeting, scheduled delivery, PDF export, or embed has yet been tested in this walkthrough.
 - **Claude/MCP run (2026-10-31):** Claude connected through the Studio MCP and built an independent page. The MCP is read-only, so the page exists as a local file (`/Users/samgupta/evidence/claude-build/Home Lab_Claude.md`) for Sam to paste into Studio; it has not been saved, previewed, or published in Studio. See [[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]–[[#HLA-34 — MCP setup in Claude Code was smooth; workspace context is empty|HLA-34]].
 
 ## Chronological notes
@@ -961,6 +962,36 @@ The dialog is titled **Publish Changes**, includes an optional message field, sh
 
 **Limits:** No remote repository, branch history, conflicting diff, overwrite, rollback, or recovery was inspected or performed. The warning indicates risk; it does not prove work has already been lost or that Git commit history would be permanently deleted.
 
+### HLA-41 — After building reports, Sam asks how to use them in meetings or embed them in a product
+
+Date: 2026-11-01.
+
+**Sam's words:**
+> So I have the reports now, right? And now I'm wondering, like, what does a company do after they've made the reports? Like, how do they usually integrate showing these reports in, like, meetings or something? Like, it's a static site, but then how do I use that static site is, like, my next question. Or, like, how do I embed it into another product?
+
+**Type:** Post-creation workflow question; adoption/distribution discovery; embedding inquiry.
+
+**Observation:** Sam has reached a finished-report stage but wants to understand the next practical step: how a company distributes, discusses, acts on, or embeds the report. Sam describes it as a static site; this is their mental model, not a verified limitation of the current deployment. No attempted meeting/export/embed workflow or failure is reported.
+
+**Documentation-informed clarification, checked 2026-11-01:**
+- A published report can continue querying its database; current Core explicitly supports live queries. Hosting a report as a webpage does not make its data a frozen snapshot. Sam's actual refresh behavior is still unverified. [Evidence Core, 2026-08-26](https://evidence.dev/blog/evidence-core)
+- Evidence's business-review guide describes distributing a report, adding context, discussing performance, assigning actions, and reviewing follow-through. Use it as a workflow example, not evidence that every customer follows this process or that its 2023 syntax is current. [Business reviews, 2023-05-17](https://evidence.dev/blog/business-reviews)
+- Studio documents PDF delivery by email or Slack, recurring or on-demand, after publication. These delivery schedules are distinct from database sync and page-refresh schedules. [Scheduled Reports](https://docs.evidence.dev/features/scheduled-reports)
+- Published pages offer PDF download with layout options. A saved PDF is useful as a dated meeting artifact; the web report remains the place for interactive exploration. [Designing Reports for PDF](https://docs.evidence.dev/guides/designing-reports-for-pdf)
+- Studio embedding uses a backend-authenticated Embed API request followed by an iframe loading the returned user-specific URL. API keys stay server-side; configure data/access filtering where required. [Embedded Analytics](https://docs.evidence.dev/features/embedded-analytics)
+- Current pricing places embedding/whitelabelling in Enterprise. Sam's subscription, trial entitlements, and exact connector/access-rule compatibility were not checked. [Pricing](https://evidence.dev/pricing)
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: report value after creation]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: distribution and embedding services]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: consumption, discussion, decisions, and handoff]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: discovering what to do next]]; [[Product Review Plan#Q5 — Which customer use cases matter most?|Q5: real operating workflows]]. Customer evidence and provisional tests remain in [[Customer Use Case Research]].
+
+**Interpretation:** Report generation is only one part of the value chain. Evaluate whether Studio helps an author move from a usable page to a repeatable audience/decision workflow. Sam's question suggests a possible onboarding opportunity, not proof that export, distribution, or embedding is missing or difficult to use.
+
+**Proposed usage examples, not observed company behavior:**
+- Weekly review: share a fixed-period report beforehand, open it during the meeting to explore exceptions, and record decisions with owners and deadlines in the team's chosen tracker. Preserve a dated snapshot if participants need the exact figures reviewed.
+- Day-to-day homelab use: keep the live status page available for current conditions; create a separate weekly review of incidents, load/capacity changes, and data quality where the collected history supports those questions.
+- Product analytics: place a published report within an authenticated app page, with the application controlling which report and data the signed-in user may see.
+
+**Next tests to consider:** Run a short review with a test participant using the published page; export a dated PDF and check filter/date context; try a one-off delivery to an authorized destination; if the account supports it, evaluate an authenticated embed in a separate test app. These are proposed tests only. No delivery, purchase, embedding implementation, or production change was performed.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
@@ -971,6 +1002,7 @@ The dialog is titled **Publish Changes**, includes an optional message field, sh
 - **Persistent context has both value and a reported failure.** Sam likes asking further questions as a connected report evolves ([[#HLA-35 — A connected report can support questions as its data evolves|HLA-35]]), but a recent chat becomes inaccessible after reopening the same account ([[#HLA-38 — Reopening the same main account leaves a recent chat inaccessible|HLA-38]]). Report persistence and conversation retrieval should be evaluated separately.
 - **GitHub onboarding has a concrete workaround.** An existing all-repository installation was recognized only after switching to selected repositories in Sam's attempt ([[#HLA-39 — Existing GitHub installation is not recognized until repository selection changes|HLA-39]]). The cause is unconfirmed.
 - **Publishing exposes a new collaboration-onboarding gap.** Sam wants GitHub ownership and shared maintenance ([[#HLA-21 — After publishing, Sam asks how to own the repo and share maintenance|HLA-21]]) but questions whether a less technical teammate can navigate the workflow ([[#HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?|HLA-23]]). Separate readers, Studio authors, and GitHub contributors when evaluating ease of collaboration.
+- **The next adoption question is what happens after report creation.** Sam now asks how companies use reports in meetings and embed them in products ([[#HLA-41 — After building reports, Sam asks how to use them in meetings or embed them in a product|HLA-41]]). Test distribution, reader experience, discussion, and decisions alongside authoring; no failure of these features has been established.
 - **Voice input is a requested improvement.** Sam would like voice-to-text in the agent ([[#HLA-22 — Sam wants voice-to-text input in the Studio agent|HLA-22]]); availability and impact are not yet tested.
 - **Suggestions based on the user's data provide visible value.** Sam explicitly liked the initial suggestions ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]), then asked for more and reports adding sources based on the recommendations ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). This supports perceived usefulness across successive steps; accuracy, realized dashboard benefit, and advantage over alternatives remain to be tested.
 - **Guidance extends from chart selection to data coverage.** The agent identified telemetry it said was missing for the stated primary-health-dashboard goal; Sam reports acting on that guidance ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). Distinguish limits in the collected data from limits in the product's charting or monitoring capabilities.

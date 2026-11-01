@@ -11,6 +11,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
 
+Next review stage (2026-11-01): how completed reports are consumed in meetings, distributed as recurring updates or snapshots, and embedded in another product. Track discoverability and practical value after creation; these workflows have not yet been tested (HLA-41).
+
 AI workflow summary: [[How I Use AI]] — brief first-person account of how AI supports the review, kept current as the process develops.
 
 Latest hands-on findings (2026-10-31): Sam reports successful invitation/signup and live co-editing with a second account, appreciates Claude's render/check-before-handoff workflow, and values asking ongoing questions about connected reports. New concerns are an inaccessible recent chat in the same account, GitHub installation recognition requiring a repository-selection workaround, and a Publish dialog explicitly warning of overwriting remote changes. The screenshot is preserved in the log (HLA-35–HLA-40). Mixed Studio/code-editor maintenance is now a priority collaboration test; no overwrite outcome has been verified.
