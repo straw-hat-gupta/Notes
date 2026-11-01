@@ -11,6 +11,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
 
+AI workflow summary: [[How I Use AI]] — brief first-person account of how AI supports the review, kept current as the process develops.
+
 Latest hands-on findings (2026-10-31): Sam reports successful invitation/signup and live co-editing with a second account, appreciates Claude's render/check-before-handoff workflow, and values asking ongoing questions about connected reports. New concerns are an inaccessible recent chat in the same account, GitHub installation recognition requiring a repository-selection workaround, and a Publish dialog explicitly warning of overwriting remote changes. The screenshot is preserved in the log (HLA-35–HLA-40). Mixed Studio/code-editor maintenance is now a priority collaboration test; no overwrite outcome has been verified.
 
 External-agent comparison: [[Claude Dashboard Comparison Prompt]] — minimal user goals for an independent Claude/MCP build on `Home Lab_Claude.md`; setup and results tracked in the walkthrough log. Run completed 2026-10-31 (Claude Opus 5.5 in Claude Code): page built and render-checked, but not saved to Studio because the MCP is read-only — see [[Home Lab Analytics - Review Log#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]] onward.
@@ -106,6 +108,7 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 - Link related observations and record later resolutions without erasing the initial experience.
 - Leave severity, cause, reproducibility, and customer relevance unconfirmed unless the evidence supports them.
 - Update synthesis as patterns emerge, keeping the chronological record intact.
+- Keep [[How I Use AI]] updated when AI's role changes or a new use emerges. Keep it brief and specific; distinguish work performed from planned research/tests rather than copying the detailed log into it.
 
 ## Existing notes to connect
 
