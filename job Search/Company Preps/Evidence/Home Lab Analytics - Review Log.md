@@ -11,7 +11,7 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
 - **Data source:** Existing homelab data stored in a Neon database. Sam reported adding a direct connector using the NeonDB owner account; no separate database user was created. The Studio agent reports successful inspection/querying, but this note-taking session has not independently verified the connection or data.
-- **Current progress:** Sam reports publishing and is investigating GitHub version control, sharing, and maintenance by less technical collaborators. The specific published page/branch, GitHub connection, invitations, and sync behavior have not been tested here. The Claude/MCP comparison remains planned in [[Claude Dashboard Comparison Prompt]]; connection and Claude output have not been reported.
+- **Current progress:** Sam reports an error-free Claude-generated page after its render/check workflow and manual code handoff, successful invitation/signup of a second test account, and live edits visible in both Studio sessions. Sam also reports an inaccessible prior chat and a GitHub-installation recognition problem worked around by changing repository selection. Studio now presents a remote-overwrite warning during Publish, documented by a screenshot. The exact conflicting files, branch state, and publish outcome have not been inspected.
 - **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
 - **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
 - **Claude/MCP run (2026-10-31):** Claude connected through the Studio MCP and built an independent page. The MCP is read-only, so the page exists as a local file (`/Users/samgupta/evidence/claude-build/Home Lab_Claude.md`) for Sam to paste into Studio; it has not been saved, previewed, or published in Studio. See [[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]–[[#HLA-34 — MCP setup in Claude Code was smooth; workspace context is empty|HLA-34]].
@@ -847,12 +847,129 @@ Date: 2026-10-31. Claude/MCP. Task: connect.
 
 **Interpretation / candidate improvement:** Filling `agent/context/` with thresholds and node roles would make both agents' output more consistent. That tests the "shared conventions" hypothesis in Q1 directly.
 
+### HLA-35 — A connected report can support questions as its data evolves
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> I like that I can ask about this report, and since it's connected to my Data Studio, if there's enough data there, it should be able to answer my questions. So having a certain report or dashboard, again that's connected to a database that's, like, updating or whatever, will allow you to, once you make a report, ask about it as it evolves over time, which is really cool.
+
+**Type:** Positive perceived value; expectation about ongoing analysis.
+
+**Observation:** Sam values continuing to ask questions about a report backed by changing data, rather than treating it as a one-time generated artifact. The wording is partly an expectation, conditional on sufficient data being available; it does not establish the correctness of particular answers or historical comparisons.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: reusable, evolving analytical context]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: an agent connected to reporting/data]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: comparison with an isolated generated dashboard]]. Reinforces the useful data-based suggestions in [[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]] and [[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]].
+
+**Interpretation / follow-up:** Candidate value is continuity: the report and data give a starting point for later questions. Test a new question after data changes and check the answer against known inputs. Reusing report context, retaining chat history, and having historical measurements are separate capabilities; none guarantees the others.
+
+### HLA-36 — Sam reports no errors in the Claude page and values validation before handoff
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> There were also no errors from the Claude page that was created, which Claude was able to do on its own, but, like, gave me code to paste in, but it was able to render and check everything before giving it to me, so that was nice.
+
+**Type:** Positive comparison outcome; manual transfer still required.
+
+**Observation:** Sam reports no errors from the Claude-created page and explicitly appreciates that Claude rendered/checked it before supplying code to paste. This corroborates the perceived benefit of the workflow recorded by Claude in [[#HLA-28 — `visualize` gives Claude a real render-and-fix loop with precise validation errors|HLA-28]], with the manual handoff already recorded in [[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]. Sam's report does not independently validate every displayed value, semantic choice, or refresh behavior.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: validation and confidence]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: native agent versus external workflow]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: comparison outcome]]. Contrast for evaluation with the native agent requesting acceptance while diagnostics were visible in [[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]].
+
+**Interpretation:** Positive evidence for checking rendered output before handover. This result does not by itself establish which model is stronger: tool usage, instructions, accumulated context, and different input data can affect the comparison.
+
+### HLA-37 — A new teammate can sign up from an invitation; Studio edits appear live in both sessions
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> I made another account with Evidence to see how the team thing works, and yeah, it just let me invite them to the team. The person didn't already need to be connected with Evidence, which was dope. So they just, like, made them an account through the link. I had to make an account for it. And yeah, it's, like, live editor. Like, I can see changes they make and they can see changes I make live, which is cool. I still have to connect GitHub.
+
+**Type:** Positive invitation/onboarding and co-editing test.
+
+**Observation:** Sam used a second test account. An invitation allowed signup without an existing Evidence account, and changes were visible live in both Studio sessions. Sam explicitly liked both aspects. At that stage GitHub was not yet connected. The invited account's role and exact file/branch were not specified. This is a two-session test by Sam, not an independent novice participant completing maintenance tasks.
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: invite and co-author]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: onboarding]]. Provides hands-on positive evidence after the invitation/role discovery in [[#HLA-03 — Team invitation is discoverable; role meanings require investigation|HLA-03]] and the questions in [[#HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?|HLA-23]].
+
+**Interpretation:** Concrete collaboration value is now observed: a new participant can enter the workspace and see shared edits without first configuring GitHub. It does not establish conflict handling, fine-grained editing permissions, independent review, or safe synchronization with external Git commits.
+
+### HLA-38 — Reopening the same main account leaves a recent chat inaccessible
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> My chat history was not saved on the same account. So, like, the main account that I was using, the admin or whatever, I had closed it and then reopened it, and my history in the chat was not saved, and it can't find. Like, it shows up the title of that chat in recent, but I can't see. It can't find it. It just says chat not found, and it can't find it. So I lost all that.
+
+**Type:** Reported persistence/retrieval failure; potentially lost work context.
+
+**Observed sequence:** Sam closed and reopened the main account's session. A prior conversation title still appears in Recent, but opening it returns "chat not found." Sam reports losing access to that history. This concerns the same account, rather than expecting another team member's chat to appear.
+
+**Impact:** Previous discussion/instructions cannot be retrieved through that entry. Permanent deletion, recovery options, storage cause, session/project scope, and reproducibility have not been established; record inaccessible history rather than proven backend deletion.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: continuity, reliability, recovery]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated analytical context]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: maintaining work over time]]. Relevant to the value expectation in [[#HLA-35 — A connected report can support questions as its data evolves|HLA-35]].
+
+**Interpretation / follow-up:** A visible recent item that fails to reopen creates an inconsistent recovery experience. Capture the conversation identifier, session/project, exact failure, and recovery outcome if later supplied, without exposing sensitive chat content. The report itself may remain intact even when its conversation is inaccessible; no report loss was reported.
+
+### HLA-39 — Existing GitHub installation is not recognized until repository selection changes
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> So I'm trying to connect GitHub connection, and basically I had it connected before I made this project to my GitHub, and I had selected all repositories. But it didn't recognize that I had the connection already with the GitHub. It was making me do, like, kept going to the same page and on the GitHub page that it took me to when I clicked connect to GitHub. It kept, like, just saying it's already installed and connected. You just need to, like, configure it if you want, but I don't want to configure. I had all repos. So, um, but then I changed it and I configured it to only select repos and selected the repo that I made specifically for this. And then it picked it up on the Studio side, and I was able to select it.
+
+**Type:** Connection/discovery friction; workaround reported successful.
+
+**Observed sequence:** Earlier GitHub installation with all-repository access → Studio does not recognize the connection → repeated Connect flow reaches GitHub's already-installed/configure page → Sam changes access to selected repositories and chooses the intended repo → Studio recognizes it and allows selection.
+
+**Impact and resolution:** Repeated navigation and unnecessary-seeming reconfiguration before the repository becomes selectable. This establishes the observed workaround, not the root cause. Both all-repository and selected-repository access are documented options; do not describe selected-only access as a general requirement. [Version Control, checked 2026-10-31](https://docs.evidence.dev/features/version-control)
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: shared maintenance setup]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: integration-state clarity and recovery]]. Follows [[#HLA-21 — After publishing, Sam asks how to own the repo and share maintenance|HLA-21]].
+
+**Interpretation / follow-up:** Possible connection-state/discovery issue spanning Studio and GitHub; whether the reconfiguration refreshed permissions, installation state, or another condition is unknown. A useful product improvement to investigate is recognizing an existing installation and providing an explicit recheck/reconnect path rather than looping to an already-installed page.
+
+### HLA-40 — Publish dialog warns that remote changes will be overwritten
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> when i publish thorugh studio i get this message which i didnt before. this makes me think if there could be issues with this if some people prefered editing in a code editor and pushed their code up but someone less technical did it through studio what scenarior would this cause issues
+
+**Screenshot evidence:**
+
+![[studio-remote-overwrite-warning-2026-10-31.png]]
+
+The attached screenshot was inspected and preserved in `Attachments/studio-remote-overwrite-warning-2026-10-31.png` within this Evidence notes folder.
+
+**Visible text:**
+> The remote repository has changes that will be overwritten by your commit. Do you wish to proceed and overwrite those remote changes with your current changes?
+
+The dialog is titled **Publish Changes**, includes an optional message field, shows **Overwrite remote changes** checked, and provides **Cancel** and **Force Publish** controls. The screenshot does not establish whether the checkbox was checked by default, who changed it, whether Force Publish was clicked, or whether a publish completed. No affected-file/commit comparison is shown within the captured dialog.
+
+**Type:** Direct UI evidence of an overwrite confirmation; potential lost-work risk; mixed-workflow usability concern.
+
+**Documentation corroboration:** The version-control docs describe a Studio branch Publish path that squashes into the published branch and can replace changes there; they also offer GitHub PR review/merge. This supports taking the dialog literally, but does not establish the precise Git operation or branch/file scope for this occurrence. [Version Control, checked 2026-10-31](https://docs.evidence.dev/features/version-control)
+
+**Possible scenarios to test — proposed examples, not established causes of this warning:**
+1. A code-editor user pushes a newer report fix while another person has older Studio work open. The Studio user force-publishes and the newer fix disappears from the resulting report.
+2. A PR is merged into the published branch while Studio work was based on an older version. A later Studio overwrite can reintroduce the older content, potentially including older configuration or access rules if those files are within the affected change scope.
+3. During the first GitHub link, the repo already contains a README, starter files, or another initial commit. Divergence may produce a warning even without a teammate editing. The actual repo contents here are unknown.
+
+**Connections:** [[Product Review Plan#Q3 — How well does collaboration work?|Q3: mixed authoring, review, safe publication]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: nontechnical decision-making and conflict recovery]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: maintainable shared repo]]. Builds on the still-open sync questions in [[#HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?|HLA-23]] and distinguishes the successful Studio co-editing in [[#HLA-37 — A new teammate can sign up from an invitation; Studio edits appear live in both sessions|HLA-37]] from external Git synchronization.
+
+**Interpretation / candidate product feedback:** This is now a concrete example of the review question: can someone safely maintain a report without understanding Git divergence? The screenshot asks for a potentially destructive decision without showing the changes at risk in that dialog. Investigate whether the product offers a comparison, preserves both versions, guides reconciliation, and makes reviewed publication the understandable path. Those capabilities have not been tested; do not assert they are absent elsewhere.
+
+**Practical workflow to evaluate:** Preserve the Studio draft and compare remote changes before any overwrite. Use development branches and reviewed PR merges into the published branch; test the actual Studio path against branch protections rather than assume it is protected. Publishing docs describe validation checks and preview links on PRs, and publication when changes reach the published branch. [Publishing, checked 2026-10-31](https://docs.evidence.dev/publishing)
+
+**Limits:** No remote repository, branch history, conflicting diff, overwrite, rollback, or recovery was inspected or performed. The warning indicates risk; it does not prove work has already been lost or that Git commit history would be permanently deleted.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
 - **Instructions and navigation are not lining up for Sam.** [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]], [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]], and [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]] provide related observations; a shared cause is not established.
 - **Connector guidance became concrete after the build.** Selection remained unclear after the corrected recommendation ([[#HLA-05 — Agent changes its recommendation; connector choice remains unclear|HLA-05]]), followed by a build while the immediate question was unresolved ([[#HLA-08 — Asking about the synced connector is followed by a dashboard build|HLA-08]]). The completion response subsequently explains direct access and claims automatic refresh ([[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]). Sam accepted the page; understanding of the tradeoff and actual refresh behavior remain unconfirmed.
 - **Collaboration has a concrete entry point to evaluate.** Team settings exposed four reported roles, but Sam does not yet understand their scope ([[#HLA-03 — Team invitation is discoverable; role meanings require investigation|HLA-03]]).
+- **Invitation and live co-editing are now positive hands-on findings.** Signup from an invitation and edits visible in both Studio sessions worked in Sam's two-account test ([[#HLA-37 — A new teammate can sign up from an invitation; Studio edits appear live in both sessions|HLA-37]]). Mixed Studio/GitHub reconciliation remains separate and now has an overwrite warning to investigate ([[#HLA-40 — Publish dialog warns that remote changes will be overwritten|HLA-40]]).
+- **Persistent context has both value and a reported failure.** Sam likes asking further questions as a connected report evolves ([[#HLA-35 — A connected report can support questions as its data evolves|HLA-35]]), but a recent chat becomes inaccessible after reopening the same account ([[#HLA-38 — Reopening the same main account leaves a recent chat inaccessible|HLA-38]]). Report persistence and conversation retrieval should be evaluated separately.
+- **GitHub onboarding has a concrete workaround.** An existing all-repository installation was recognized only after switching to selected repositories in Sam's attempt ([[#HLA-39 — Existing GitHub installation is not recognized until repository selection changes|HLA-39]]). The cause is unconfirmed.
 - **Publishing exposes a new collaboration-onboarding gap.** Sam wants GitHub ownership and shared maintenance ([[#HLA-21 — After publishing, Sam asks how to own the repo and share maintenance|HLA-21]]) but questions whether a less technical teammate can navigate the workflow ([[#HLA-23 — Can a less technical collaborator maintain this without learning the whole Git workflow?|HLA-23]]). Separate readers, Studio authors, and GitHub contributors when evaluating ease of collaboration.
 - **Voice input is a requested improvement.** Sam would like voice-to-text in the agent ([[#HLA-22 — Sam wants voice-to-text input in the Studio agent|HLA-22]]); availability and impact are not yet tested.
 - **Suggestions based on the user's data provide visible value.** Sam explicitly liked the initial suggestions ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]), then asked for more and reports adding sources based on the recommendations ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). This supports perceived usefulness across successive steps; accuracy, realized dashboard benefit, and advantage over alternatives remain to be tested.
@@ -870,7 +987,7 @@ Date: 2026-10-31. Claude/MCP. Task: connect.
 - **Validation catches syntax but not misleading output.** A NULL temperature rendered as a healthy green 0 °C with no warning ([[#HLA-31 — `heat_grid` shows a missing temperature as a green "0 °C"|HLA-31]]). This parallels the native agent's unchecked renders ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]): "no errors" is not "correct."
 - **Keep cause buckets separate.** MCP/client limits ([[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]], [[#HLA-29 — Render output is too large for the client, and long pages are cut off at 3200 px|HLA-29]]), Claude's own error ([[#HLA-32 — Claude's own mistake: `horizontal_bar_chart` x/y swapped|HLA-32]]), and homelab data facts ([[#HLA-33 — What the data says about "update every second" (homelab telemetry, not Evidence)|HLA-33]]) are not Evidence product defects.
 
-Candidate priorities for investigation: task interruption during diagnostic handoff; visible diagnostics at requested acceptance and post-repair validation; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
+Candidate priorities for investigation: safe reconciliation of Studio and external Git changes; inaccessible recent chats; task interruption during diagnostic handoff; visible diagnostics at requested acceptance and post-repair validation; loss of entered setup details; integration discovery/navigation consistency. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
 
 ## How subsequent notes will be captured
 

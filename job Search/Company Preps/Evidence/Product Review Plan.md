@@ -11,6 +11,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
 
+Latest hands-on findings (2026-10-31): Sam reports successful invitation/signup and live co-editing with a second account, appreciates Claude's render/check-before-handoff workflow, and values asking ongoing questions about connected reports. New concerns are an inaccessible recent chat in the same account, GitHub installation recognition requiring a repository-selection workaround, and a Publish dialog explicitly warning of overwriting remote changes. The screenshot is preserved in the log (HLA-35–HLA-40). Mixed Studio/code-editor maintenance is now a priority collaboration test; no overwrite outcome has been verified.
+
 External-agent comparison: [[Claude Dashboard Comparison Prompt]] — minimal user goals for an independent Claude/MCP build on `Home Lab_Claude.md`; setup and results tracked in the walkthrough log. Run completed 2026-10-31 (Claude Opus 5.5 in Claude Code): page built and render-checked, but not saved to Studio because the MCP is read-only — see [[Home Lab Analytics - Review Log#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]] onward.
 
 Customer research: [[Customer Use Case Research]] — public adoption evidence, edition caveats, three proposed customer-grounded walkthroughs, and questions to validate with Evidence. These are not a verified ranking of the largest customers.
