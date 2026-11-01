@@ -11,7 +11,7 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
 - **Data source:** Existing homelab data stored in a Neon database. Sam subsequently reported adding a direct connector using the NeonDB owner account; no separate database user was created. Connection testing and successful queries have not been reported.
-- **Current progress:** The agent reports building `pages/homelab` with the direct connector and one-minute auto-refresh. Sam accepted the staged page, requested data-based component recommendations, liked the response, and reports adding the suggested data sources. Which sources are being added and whether they are ingesting into Neon are not yet confirmed. Rendered results, query correctness, and refresh behavior have not been independently checked.
+- **Current progress:** Sam accepted the initial `pages/homelab` page, liked the data-based recommendations, and reports adding sources. Sam then requested suggested components described as "one, two, three" and authorized a Data Age fix. Sam liked components appearing progressively in preview, but reports five visible errors while the agent asks for acceptance. Acceptance of this latest revision and resolution of its errors have not been reported. Source ingestion, query correctness, and actual refresh behavior remain unverified.
 - **Still unspecified:** Particular metrics, desired refresh interval/meaning of "live," and completion criteria.
 
 ## Chronological notes
@@ -307,6 +307,42 @@ The following is the other agent's output, with formatting normalized. Data coun
 
 **Interpretation / follow-up:** The response connects a broad goal to concrete components and explains where the input data limits coverage. Keep a source-data gap separate from an Evidence feature gap. Sam's willingness to add sources is a stronger signal of perceived usefulness than agreement alone; whether it improves the finished dashboard remains to be observed. Follow up on which telemetry arrives, whether the agent discovers it and updates its suggestions, and whether the primary dashboard becomes useful at a glance. The agent's specific claims about reboot history, sample coverage, thresholds, and health conditions remain unverified.
 
+### HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> So I asked it to build the added components that it was suggesting before, one, two, three, and it said there's some weird thing happening with the Data Age component. So I said it just wants me to fix that. I was like sure. And it was really cool seeing all the things show up in the preview as it's writing it, which was pretty dope.
+
+**Type:** Positive usability observation; implementation request; reported authorization of a fix.
+
+**Observation:** Sam requested previously suggested components, referring to them as "one, two, three." The exact submitted prompt and mapping to the earlier numbered suggestions are not supplied, so the selected components are not inferred. The agent flagged a Data Age issue and Sam agreed to a fix; successful resolution has not been confirmed. Sam explicitly enjoyed watching components appear in preview while the agent wrote them.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability and progress visibility]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated authoring experience]]. Follows the suggestions and positive reaction in [[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]].
+
+**Interpretation:** Progressive preview gives Sam visible feedback during generation and is a positively received part of the experience. It is a concrete benefit to assess when comparing authoring workflows, rather than evidence that the generated components are correct. This observation does not establish simultaneous teammate collaboration.
+
+### HLA-13 — Agent asks for acceptance while five errors remain visible
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> And I also see that there's like five errors of some sort on this page, and for some reason, it's not picking them up. I guess it's just telling me to accept, but at the top I can see that there's like five errors on this page. It's something to do with, like, the type being string instead of number or date for the max function or something.
+
+**Type:** Reported validation/agent-awareness friction; exact diagnosis pending.
+
+**Observation:** Sam sees an error indicator at the top of the page showing approximately five errors while the agent asks them to accept its changes. Sam's recollection concerns a string being supplied where a number or date is expected for a `max` function. This is an approximate description, not a captured error message. No screenshot, exact diagnostics, generated source, or agent completion response has been supplied.
+
+**Impact:** Sam has to notice a discrepancy between the visible error state and the agent's apparent readiness for acceptance. The errors' effect on individual components and the rest of the dashboard is not yet known. Five diagnostics do not necessarily mean five independent defects.
+
+**Connections:**
+- [[Product Review Plan#Q4 — How usable is the workflow?|Q4: error handling, feedback, and recovery]] — Does the agent see and respond to the same errors the user sees? Does its completion message accurately describe unresolved problems?
+- [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: value of integrated AI and validation]] — A candidate expectation of an integrated editor is that its agent can use available validation feedback before declaring a change ready.
+- [[Product Review Plan#Q3 — How well does collaboration work?|Q3: review and publication confidence]] — The acceptance step from [[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]] now has a concrete question: how clearly are unresolved errors communicated at the point of review? This remains a single-user observation, not proof about publishing gates or teammate approvals.
+- [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: comparison]] — Compare how much manual checking is required to discover and resolve generated-code errors in an equivalent AI coding workflow.
+
+**Interpretation / follow-up:** Possible gap between editor diagnostics and the agent's completion/repair loop. The evidence does not establish whether the agent lacks diagnostic access, overlooks feedback, or is affected by another issue. The agent did acknowledge a Data Age issue in [[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]], so avoid describing this as total lack of error awareness. It is not yet known whether the remaining errors share that cause or whether its attempted fix succeeded. Preserve exact messages and the later repair outcome when supplied. Candidate improvement: check available diagnostics and clearly surface any unresolved errors before requesting acceptance; whether acceptance should be blocked depends on error impact.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
@@ -316,8 +352,9 @@ The following is the other agent's output, with formatting normalized. Data coun
 - **Suggestions based on the user's data provide visible value.** Sam explicitly liked the initial suggestions ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]), then asked for more and reports adding sources based on the recommendations ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). This supports perceived usefulness across successive steps; accuracy, realized dashboard benefit, and advantage over alternatives remain to be tested.
 - **Guidance extends from chart selection to data coverage.** The agent identified telemetry it said was missing for the stated primary-health-dashboard goal; Sam reports acting on that guidance ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). Distinguish limits in the collected data from limits in the product's charting or monitoring capabilities.
 - **Generated changes have an explicit acceptance step.** Sam reports accepting the staged page ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]). Inspect preview, revision, and teammate-review behavior separately before drawing broader collaboration conclusions.
+- **Progressive preview is enjoyable, but readiness needs separate validation.** Sam likes seeing components appear as they are written ([[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]]), while visible errors remain at the point of requested acceptance ([[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]]). The positive preview experience and validation concern should both be preserved in the review.
 
-Candidate priorities for investigation: loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
+Candidate priorities for investigation: visible errors at requested acceptance; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
 
 ## How subsequent notes will be captured
 
