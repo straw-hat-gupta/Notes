@@ -11,6 +11,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Current hands-on walkthrough: [[Home Lab Analytics - Review Log]].
 
+External-agent comparison: [[Claude Dashboard Comparison Prompt]] — minimal user goals for an independent Claude/MCP build on `Home Lab_Claude.md`; setup and results tracked in the walkthrough log.
+
 Customer research: [[Customer Use Case Research]] — public adoption evidence, edition caveats, three proposed customer-grounded walkthroughs, and questions to validate with Evidence. These are not a verified ranking of the largest customers.
 
 ## Review questions

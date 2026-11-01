@@ -10,8 +10,8 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Project:** Home Lab Analytics.
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
-- **Data source:** Existing homelab data stored in a Neon database. Sam subsequently reported adding a direct connector using the NeonDB owner account; no separate database user was created. Connection testing and successful queries have not been reported.
-- **Current progress:** Sam likes the progressive preview and the editor's diagnostic-to-chat shortcut. Sending a diagnostic interrupted an in-progress temperature-component request, which Sam reports was not completed at that point. Later agent output reports temperature-format edits, no errors, and six remaining warnings, but explicitly says the rendered temperature section was not inspected. Sam plans to try connecting their own Codex. Acceptance of these later revisions, rendered correctness, ingestion, and refresh behavior remain unverified.
+- **Data source:** Existing homelab data stored in a Neon database. Sam reported adding a direct connector using the NeonDB owner account; no separate database user was created. The Studio agent reports successful inspection/querying, but this note-taking session has not independently verified the connection or data.
+- **Current progress:** After the Studio build and diagnostic-repair experience, Sam is preparing a comparison using Claude connected through the Evidence Studio MCP. The earlier stated intention was to try Codex; the latest specified comparison is Claude. A minimal prompt is saved in [[Claude Dashboard Comparison Prompt]] for a separate `Home Lab_Claude.md` page. Connection, prompt submission, Claude output, and rendered results have not yet been reported.
 - **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
 - **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
 
@@ -461,7 +461,62 @@ These are the other agent's claims; no source or rendered view was inspected her
 
 **Interpretation / follow-up:** Calling every diagnostic an error may obscure severity and encourage unnecessary repair work; preserve the actual diagnostic category in the generated prompt if available. The agent's explanation helps distinguish warnings from errors, but its claims about valid formats and expected warnings remain unverified. Zero reported errors and an uninspected render are separate facts; neither confirms visual correctness. These six temperature-format warnings must not be silently treated as the same messages as the earlier five `max`-related diagnostics. Record the render and final task outcome when supplied.
 
-## Emerging patterns
+### HLA-19 — Studio agent explains what came from user instructions versus database discovery
+
+Date: 2026-10-31.
+
+**Studio agent retrospective supplied by Sam:**
+
+Transcript with formatting normalized. This is the agent's account of its inputs and actions; it is not an independently audited conversation or query history.
+
+> You gave me very little direct information. Most of what I built came from querying your Neon database, and the rest came from my own assumptions. Here is the split.
+>
+> **What you told me**
+>
+> 1. You wanted a live dashboard of homelab analytics, with the data stored in a Neon database.
+> 2. Your connection is a direct Postgres connector. You added it yourself, and I never saw the credentials.
+> 3. This would be your primary dashboard for homelab status, health and load. That led me to build the status banner, node grids and pipeline section.
+> 4. You wanted it to update every second. You said you'd changed the collector to send to Neon more often.
+> 5. You said you'd added new data, which turned out to be temperature, network, storage and service tables.
+> 6. When I offered fixes and suggestions, you asked me to:
+>    - fix the intro text and rebuild the Data Age tile
+>    - build suggestions 1–3 (status banner, node health grids, pipeline health section)
+> 7. You asked for temperature components "of whatever info is there".
+> 8. You pasted three error messages, and I fixed each one.
+>
+> **What I found by querying Neon (you didn't tell me any of this)**
+>
+> - The data is in a `telemetry` schema with these tables:
+>   - Node data: `nodes`, `latest_nodes`, `node_samples`, `node_current`
+>   - Pipeline data: `collector_cycles`, `pipeline_status`
+>   - Temperature data: `latest_temperatures`, `temperature_samples`
+> - There are 5 nodes (Node A–E).
+> - There are 8 temperature sensors: CPU package on all five nodes, ambient on Node C and Node D, and a GPU on Node A that reports `unsupported`.
+> - Live node data updates every few seconds. Samples and collector cycles get one row a minute, and temperature readings arrive about every 12 seconds.
+
+**Observation:** The retrospective distinguishes a small set of user goals from discovered data structure and agent assumptions. It also supplies additional reported history, including increased collector frequency, expanded data, three pasted error messages, and its interpretation of the selected components.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: value of data-aware generation]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated data context]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: establishing a comparison baseline]].
+
+**Interpretation / limits:** Use the user-goal portion to seed the external-agent trial, while requiring fresh discovery of schema and readings. The statement that all three errors were fixed is the agent's claim, not rendered verification. Its statement about not seeing credentials has not been audited. The retrospective labels suggestions 1–3 as status banner, node grids, and pipeline health; this adds context to [[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]], but is not the same numbering as the earlier list in [[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]. Preserve both records rather than silently rewriting the earlier list.
+
+### HLA-20 — Sam prepares a Claude/MCP build with minimal context on a separate page
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> The above is the information that I guess I gave the agent in Bill. But now I want to try it with Claude. So basically I'm going to connect the MCP for Evidence Studio to Claude, go through that, and kind of try to give it the similar information as above, right? So like I need you to first note down, like, my actions, what I'm doing and stuff here in my notes, but also give me, like, a prompt to give to Claude, giving it the minimal information that I gave their agent, and tell it to create a new page under Pages, but call it, like, Home Lab underscore Claude instead of Home Lab.md.
+
+**Type:** Comparison setup and intended action; prompt prepared.
+
+**Recorded plan:** Connect Claude to the Evidence Studio MCP, supply minimal user-provided context, and build a separate page named `Home Lab_Claude.md` under Pages. Preserve the existing dashboard for comparison. This is the latest specified external-agent trial, following the earlier Codex intention in [[#HLA-17 — Sam distinguishes framework skill from Studio workflow knowledge|HLA-17]]. No completed connection or Claude run has been reported.
+
+**Artifact:** [[Claude Dashboard Comparison Prompt]]. It includes the Neon/direct-connector setup, primary status/health/load goal, one-second refresh request, increased collection frequency, recently added data, and requested component categories. It omits discovered tables, node/sensor details, observed cadences, previous errors, and fixes. It asks Claude to inspect the data independently and avoid reading/copying the original dashboard.
+
+**Connections:** [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: native agent's added value]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: setup and authoring experience]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: alternative agent workflow]].
+
+**Interpretation / comparison limits:** This tests Claude through MCP versus the native Studio agent while retaining Evidence as the platform. It does not compare Evidence with a standalone AI-built app, and differences may reflect tooling, context, permissions, or model behavior. The prompt consolidates goals from several original turns, and data coverage/cadence may have changed; it is not an identical replay. Record setup effort, available tools, exact model if known, discovery quality, interventions, diagnostics, validation, and the useful result. The prepared prompt does not prove MCP supports any particular action; Claude must determine what its connected tools can do.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
@@ -474,6 +529,7 @@ These are the other agent's claims; no source or rendered view was inspected her
 - **Progressive preview is enjoyable, but readiness needs separate validation.** Sam likes seeing components appear as they are written ([[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]]), while visible errors remain at the point of requested acceptance ([[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]]). The positive preview experience and validation concern should both be preserved in the review.
 - **The diagnostic shortcut saves effort but can disrupt task continuity.** Sam likes the prepared repair prompt ([[#HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt|HLA-15]]), yet reports it interrupting an active component request ([[#HLA-16 — Sending a diagnostic interrupts an existing component request|HLA-16]]). Warnings also receive the error wording ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]).
 - **Framework skill and Studio integration are separate evaluation dimensions.** Sam explicitly distinguishes the two and plans to try an external Codex connection ([[#HLA-17 — Sam distinguishes framework skill from Studio workflow knowledge|HLA-17]]). The perceived cause is not yet established.
+- **The external-agent comparison is now concrete.** Sam's latest plan is Claude through the Studio MCP with minimal goals and a separate page ([[#HLA-20 — Sam prepares a Claude/MCP build with minimal context on a separate page|HLA-20]]). The Studio agent's discovery retrospective supplies a baseline ([[#HLA-19 — Studio agent explains what came from user instructions versus database discovery|HLA-19]]); no comparison result exists yet.
 - **Preview and completion messages leave verification questions.** Preview refresh relative to publishing remains uncertain ([[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]]); a later repair response explicitly says the rendered section was not checked ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]).
 
 Candidate priorities for investigation: task interruption during diagnostic handoff; visible diagnostics at requested acceptance and post-repair validation; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
