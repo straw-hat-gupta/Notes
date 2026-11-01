@@ -2,7 +2,7 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
-This is the collective findings document for this review. Current coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-41); questions remain in [[Product Review Plan]].
+This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-41); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.
 
@@ -11,6 +11,8 @@ This is the collective findings document for this review. Current coverage is th
 Evidence helped turn a broad request and connected data into an evolving dashboard. The most visible value was useful component suggestions, immediate preview, guided repairs, and shared editing. The strongest friction appeared around keeping context, validating output, and moving between setup, authoring, and publication.
 
 **Working thesis:** The framework and authoring tools showed value; the experience of safely completing and maintaining the work was less consistent. This is supported within one personal use case, not a conclusion about the whole customer base.
+
+**Hex research update:** Compare complete workflows, not AI/MCP checkboxes. Hex documents in-product reviews and external-agent authoring; Evidence documents its open-source Core and own-repo workflow. Hex's new code-backed 4.0 is private beta, so “only Evidence is code-based” is not a defensible distinction. These are research-backed comparison questions, not observed Hex usability wins. Details, release caveats, sources, and growth hypotheses are in [[Hex vs Evidence - Product and Growth Research]].
 
 ## What worked well
 
@@ -91,11 +93,13 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 
 ### Q1 — Evidence's value
 
-**Partially answered.** P01/P04 support value in a structured reporting framework, reusable artifacts, and tools that help agents inspect data and produce useful output. Sam also sees potential for ongoing questions about a report. A repo alone is not a differentiator, and long-term reuse, shared metric definitions, and superiority over a standalone AI-built app have not been demonstrated.
+**Partially answered.** P01/P04 support value in a structured reporting framework, reusable artifacts, and tools that help agents inspect data and produce useful output. [[Hex vs Evidence - Product and Growth Research]] adds a documented comparison of repository/deployment control versus a broader analytical workspace, with substantial overlap. A repo alone is not a differentiator—especially with Hex 4.0's code-backed direction. Long-term reuse and comparative task outcomes remain untested.
 
 ### Q2 — Studio's additional value
 
 **Partially answered.** P02/P03 and F08 support integrated authoring, preview, accepting changes, and shared editing as concrete benefits. Claude's manual handoff makes the native authoring advantage visible; F03–F06 show integration gaps. No direct self-hosted/open-source comparison or willingness-to-pay test has been run. Do not assign every framework capability exclusively to Studio.
+
+The research document now distinguishes current Core/Studio capabilities and published pricing; documented differences do not replace that missing hands-on comparison.
 
 ### Q3 — Collaboration
 
@@ -111,7 +115,7 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 
 ### Q6 — Alternatives and Hex growth
 
-**Partially answered for Claude/MCP only.** Claude's render/check process was appreciated, while native Studio avoided the manual code handoff. Both builds used Evidence, with different tools, context, timing, and data coverage. This does not establish that Claude is a stronger model or that generic AI coding replaces Evidence. Hex/Grafana comparisons and explanations of Hex's growth remain open.
+**Research comparison available; hands-on validation open.** [[Hex vs Evidence - Product and Growth Research]] compares product workflows, review/Git/MCP differences, pricing, and release boundaries, and separates Hex's published growth milestones from plausible contributors. It supports prioritizing external-agent completion and nontechnical review tests. It does not establish causal revenue drivers or empirical Hex superiority. The earlier Claude comparison still used Evidence on both paths. Grafana and standalone AI-built app comparisons remain open.
 
 ## What to investigate next
 
@@ -139,6 +143,7 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 | Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-41 |
 | Customer-grounded business workflows | Proposed; not yet walked through | [[Customer Use Case Research]] |
 | Meeting/distribution/embed journey | Question framed; not yet tested | HLA-41 |
-| Core/Hex/Grafana comparisons | Open | Q2/Q6 |
+| Hex vs Evidence product/growth research | Initial primary-source research complete; no comparative product runs | [[Hex vs Evidence - Product and Growth Research]] |
+| Core/Hex/Grafana hands-on comparisons | Open; distinguish Hex classic from 4.0 beta | Q2/Q6 |
 
 Keep this document thematic and short: add new evidence/use-case attribution to an existing finding when it changes confidence or scope; add a new finding only for a distinct important pattern. Keep raw observations in their case logs, mark resolutions, and update the six answers. Final feedback will be selected and refined from here after validation.

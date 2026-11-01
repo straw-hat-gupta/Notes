@@ -13,13 +13,13 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 **Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-41. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
-Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
+Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
 ## Review questions
 
 ### Q1 — Why choose Evidence?
 
-**Partially answered:** Data-grounded suggestions and reporting/validation tools showed value; unique advantage and long-term reuse remain unproven. [[Product Review Findings#Q1 — Evidence's value|Current answer and limits]].
+**Partially answered:** Data-grounded suggestions and reporting tools showed value. [[Hex vs Evidence - Product and Growth Research#Product comparison|Research comparison]] now distinguishes workflows and deployment/repo options; unique advantage and long-term reuse remain unproven. [[Product Review Findings#Q1 — Evidence's value|Current answer and limits]].
 
 What value does Evidence provide over Hex, Grafana, or a dashboard built with an AI coding tool such as Claude?
 
@@ -85,7 +85,7 @@ Use customer conversations or available customer evidence. Do not assume these u
 
 ### Q6 — Where do alternatives provide more value?
 
-**Partially answered for Claude/MCP only:** Render checking helped, but manual handoff added work. Hex/Grafana, standalone AI builds, and Hex growth remain open. [[Product Review Findings#Q6 — Alternatives and Hex growth|Current answer and limits]].
+**Desk research completed; empirical comparison open:** [[Hex vs Evidence - Product and Growth Research]] covers product value, classic/4.0 release differences, pricing, and documented growth milestones. Growth explanations remain hypotheses; no Hex hands-on test, Grafana comparison, or standalone AI build comparison is complete. [[Product Review Findings#Q6 — Alternatives and Hex growth|Current answer and limits]].
 
 Compare Evidence with Hex, Grafana, and an AI-built dashboard using the same task, data, and completion criteria where feasible.
 
@@ -133,4 +133,4 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 3. A focused comparison showing where alternatives make the same workflows easier.
 4. A short, prioritized set of improvements, weighted toward usability and collaboration.
 
-Current status (2026-11-01): Initial synthesis of HLA-01–HLA-41 is complete in [[Product Review Findings]]. Prioritize reproducing the remote-overwrite scenario, misleading missing-temperature display, and context/repair failures; then extend to customer-grounded workflows and report consumption. These are investigation priorities, not confirmed customer-wide defect rankings. Final feedback has not yet been prepared or sent.
+Current status (2026-11-01): Initial hands-on synthesis and primary-source Hex/Evidence product/growth research are complete and linked in [[Product Review Findings]]. Next work is empirical: validate the high-impact homelab findings, compare external-agent completion and review workflows, and extend to customer-grounded use cases. Record classic versus 4.0 beta in any Hex test. Final feedback has not yet been prepared or sent.

@@ -40,7 +40,7 @@ The Hex column describes the documented classic product unless explicitly marked
 
 **Hex — inference from the documented workflows:** A data team investigating why activation fell can move between SQL exploration, Python analysis, an interactive app for Product, and subsequent self-service questions in a common workspace. Its potential advantage is reducing handoffs across analytical and business roles. The key comparison is the whole question-to-decision process, not chart count. [Hex 101](https://learn.hex.tech/tutorials/quickstart/hex-basics)
 
-**Evidence — inference from the documented architecture:** A team already treating reporting as software can keep reports and conventions in its development workflow, use an open-source deployment route, and add Studio's hosted authoring and distribution when useful. This may be valuable when ownership, versionable reporting conventions, and deployment flexibility matter. It is not proof that maintenance is easier; the homelab findings expose gaps to test. [Evidence Core](https://evidence.dev/blog/evidence-core), [Evidence Version Control](https://docs.evidence.dev/features/version-control)
+**Evidence — inference from the documented architecture:** A team already treating reporting as software can keep reports and conventions in its development workflow, use an open-source deployment route, and choose Studio when managed authoring and platform services are useful. This may be valuable when ownership, versionable reporting conventions, and deployment flexibility matter. It is not proof that maintenance is easier; the homelab findings expose gaps to test. [Evidence self-hosting and platform tradeoffs](https://docs.evidence.dev/self-host), [Evidence Version Control](https://docs.evidence.dev/features/version-control)
 
 **Competitive implication:** “Code is easier for agents to work with” is increasingly a category thesis, not an exclusive Evidence differentiator. Hex 4.0 targets that premise too. Evidence's case needs to rest on the practical experience of building, inspecting, sharing, maintaining, and deploying trusted reporting—not only the fact that files exist in a repo. This is analysis, not a measured competitive win.
 
@@ -55,7 +55,7 @@ The Hex column describes the documented classic product unless explicitly marked
 | Evidence Studio Team | $2,500/month, unlimited users, 20K AI credits |
 | Enterprise use | Both list custom Enterprise offerings; Hex embedding is an add-on there, while Evidence lists embedding/whitelabelling under Enterprise |
 
-Sources: [Hex pricing](https://hex.tech/pricing/), [Evidence pricing](https://evidence.dev/pricing), [Evidence Core](https://evidence.dev/blog/evidence-core).
+Sources: [Hex pricing](https://hex.tech/pricing/), [Evidence pricing](https://evidence.dev/pricing), [Evidence self-hosting costs](https://docs.evidence.dev/self-host).
 
 **Interpretation:** Hex has a lower listed hosted entry point for a small author team; Evidence's flat hosted model has different economics as the audience grows. Core also provides a free-software entry route. Do not infer that Evidence lacks product-led adoption or that one is cheaper at every team size. Model the actual author/explorer/viewer mix, AI credits, compute, warehouse costs, and required Enterprise features. These prices are not a like-for-like total-cost comparison or historical evidence of what drove earlier growth.
 

@@ -4,7 +4,7 @@ Last updated: 2026-11-01.
 
 - **Plan the review:** Turn my initial brainstorm into questions about Evidence's value, usability, collaboration, and alternatives, then organize a practical review plan.
 - **Capture and enrich spoken notes:** Dictate observations to Codex, which saves them in Obsidian, connects them to review questions and earlier findings, and adds explanations or follow-up ideas separately from what I observed.
-- **Research:** Use subagents to find sourced customer/use-case evidence. Use AI to frame comparisons with Hex, Grafana, and AI-built dashboards; the broader competitor comparison remains ongoing.
+- **Research:** Use AI for sourced customer/use-case research and the Hex/Evidence product and growth comparison; use subagents for parallel customer research. Keep documented claims, growth hypotheses, and hands-on findings separate.
 - **Design tests:** Turn customer workflows into reproducible scenarios and success criteria. Prepare minimal-context prompts for comparing the Studio agent with Claude through MCP.
 - **Build and debug:** Use the Studio agent and Claude to inspect Neon data, suggest components, generate dashboards, investigate errors, and check rendered output. Compare their capabilities and the manual work each requires.
 - **Understand workflows and technical issues:** Ask AI to consult documentation and explain publishing conflicts, meeting/report distribution, and product embedding, distinguishing possible causes and suggested workflows from verified results.
