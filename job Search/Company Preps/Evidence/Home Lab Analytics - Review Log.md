@@ -11,8 +11,9 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
 - **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
 - **Data source:** Existing homelab data stored in a Neon database. Sam subsequently reported adding a direct connector using the NeonDB owner account; no separate database user was created. Connection testing and successful queries have not been reported.
-- **Current progress:** Sam accepted the initial `pages/homelab` page, liked the data-based recommendations, and reports adding sources. Sam then requested suggested components described as "one, two, three" and authorized a Data Age fix. Sam liked components appearing progressively in preview, but reports five visible errors while the agent asks for acceptance. Acceptance of this latest revision and resolution of its errors have not been reported. Source ingestion, query correctness, and actual refresh behavior remain unverified.
-- **Still unspecified:** Particular metrics, desired refresh interval/meaning of "live," and completion criteria.
+- **Current progress:** Sam likes the progressive preview and the editor's diagnostic-to-chat shortcut. Sending a diagnostic interrupted an in-progress temperature-component request, which Sam reports was not completed at that point. Later agent output reports temperature-format edits, no errors, and six remaining warnings, but explicitly says the rendered temperature section was not inspected. Sam plans to try connecting their own Codex. Acceptance of these later revisions, rendered correctness, ingestion, and refresh behavior remain unverified.
+- **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
+- **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
 
 ## Chronological notes
 
@@ -343,6 +344,124 @@ Date: 2026-10-31.
 
 **Interpretation / follow-up:** Possible gap between editor diagnostics and the agent's completion/repair loop. The evidence does not establish whether the agent lacks diagnostic access, overlooks feedback, or is affected by another issue. The agent did acknowledge a Data Age issue in [[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]], so avoid describing this as total lack of error awareness. It is not yet known whether the remaining errors share that cause or whether its attempted fix succeeded. Preserve exact messages and the later repair outcome when supplied. Candidate improvement: check available diagnostics and clearly surface any unresolved errors before requesting acceptance; whether acceptance should be blocked depends on error impact.
 
+**Later update:** Sam found an editor action that sends a diagnostic into the agent chat ([[#HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt|HLA-15]]). This establishes a manual handoff, not automatic agent access to all diagnostics. Later temperature-format output distinguishes warnings from errors ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]); it does not identify or independently verify resolution of the original `max`-related messages.
+
+### HLA-14 — Preview versus published refresh behavior remains unclear
+
+Date: 2026-10-31.
+
+**Sam's question to the agent:**
+> is the preview page also refreshed every second? or does that only happen after beign published?
+
+**Agent response supplied by Sam:**
+
+Transcript with formatting normalized; claims about documentation, configuration, and refresh behavior are not independently verified.
+
+> The docs don't say. They describe `auto_refresh` as how often the page re-runs its queries, and they don't say whether that applies in the editor preview or only on a published page. I don't want to guess, but here's a quick way to find out.
+>
+> **Test it in the preview**
+>
+> 1. Watch the **Data Age (sec)** tile for about 10 seconds. If the page is refreshing, it should drop back toward 0–2 s every time a new reading arrives. If it only climbs, the preview isn't refreshing.
+> 2. Also watch the Node A memory and CPU values, which change slightly as new readings arrive.
+> 3. The CPU and memory charts and the pipeline charts only move about once a minute, so don't use them for this test.
+>
+> If the preview doesn't refresh, reload it manually to see current data. Then check the published page the same way.
+>
+> **Two things to know**
+>
+> - The preview may be intentionally slower or paused while you edit. I can't tell you which from the docs.
+> - The reverse isn't a concern. A published page will use the `auto_refresh: 1000` setting in the frontmatter, and nothing else is needed to turn it on.
+>
+> Tell me what you see, and if the preview doesn't tick but you want to confirm the published behavior, I'll help you work out what to look for. The project-wide default also lives in `evidence.config.yaml` under `layout.auto_refresh`, but the page's own setting takes precedence.
+
+**Observation:** Sam wants to know whether the editor preview behaves like the published dashboard at a one-second interval. The agent says the documentation does not establish preview behavior, proposes an observational test, and makes a more definite claim about publishing. Sam has not supplied the test outcome. The cited docs themselves were not supplied or checked in this note-taking session.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: preview clarity and documentation]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: authoring/publishing integration]]. Follows the refresh uncertainty in [[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]].
+
+**Interpretation / follow-up:** A preview is less useful for assessing a live dashboard when its behavior relative to publishing is unclear. The proposed Data Age test is not conclusive by itself: a query can rerun while the source's newest measurement remains unchanged. Distinguish query refresh, arrival of fresh telemetry, and visible updates. The agent's preview-pausing explanation is speculation; its published-refresh assurance is unverified. No product limitation or documentation omission has been independently established.
+
+### HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> When I hover over the error in the editor side, it gives you an option to send that error message into the chat where it will debug it and give you a reasoning behind it, which I really like because it makes it so much faster. And it doesn't just give it the error. It says, like a custom prompt: I'm seeing the following component error, line blah blah, please propose an edit as concisely as possible. And it's a pretty good prompt. I like that it just kind of does that for you.
+
+**Type:** Positive usability observation; concrete error-recovery feature discovery.
+
+**Observation:** Hovering over an editor diagnostic exposes an action to send its message and line reference to chat inside a prepared repair prompt. Sam explicitly likes the speed and the prompt being written for them, including the concise-edit instruction. This is more than a copy/paste convenience: it structures the next interaction.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: recovery and reduced effort]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: editor/agent integration]]. Refines [[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]]: a manual route into debugging exists, while automatic diagnostic awareness remains unknown.
+
+**Interpretation:** This is a concrete positively received integration benefit to compare with an external coding-agent workflow. Preserve the positive finding separately from the interruption side effect in [[#HLA-16 — Sending a diagnostic interrupts an existing component request|HLA-16]].
+
+### HLA-16 — Sending a diagnostic interrupts an existing component request
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> Maybe there'd be a value in, like, adding it to a different agent that's just handling the errors instead of the one you're kind of talking to, so it doesn't interrupt. But, like, I don't know if that's, like, a big thing, but... I had a prompt going asking it to add components for temperature, but then I saw the error and I clicked the button where it let the error go into the chat. It actually interrupted my existing prompt, so it never actually did that.
+
+**Observation:** During a temperature-component request, Sam clicked the diagnostic-to-chat action. Sam reports that this interrupted the active request and that it was not completed at that point. The original prompt, exact execution state, and whether the UI offered a warning, queue, or resumption action have not been supplied.
+
+**Impact:** A convenient recovery action displaced work Sam already wanted done. Subsequent output discusses temperature-format edits, but does not establish that the original component request automatically resumed or was fully completed.
+
+**Sam's proposed solution:** A separate agent for errors, offered tentatively rather than as a firm requirement.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: task continuity and user control]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integration quality]]. Related to [[#HLA-08 — Asking about the synced connector is followed by a dashboard build|HLA-08]]: the immediate interaction and intended task sequence can diverge, though a shared cause is not established.
+
+**Interpretation / candidate improvements:** The underlying need is to handle a diagnostic without silently losing the active task. Queueing the repair, making interruption explicit, or offering reliable resumption are possible smaller solutions to evaluate alongside a separate agent. Do not assume multiple agents are necessary or supported.
+
+### HLA-17 — Sam distinguishes framework skill from Studio workflow knowledge
+
+Date: 2026-10-31.
+
+**Sam's words, including their correction:**
+> My thoughts on the AI agent that's in the Studio are, like, it's good. It's very good at Evidence. But I don't know how good it is at... No, let me scratch that. The agent is really good at using the Evidence framework. I don't know how good it is at Studio. I don't know if this is because the docs aren't updated, or it's not pulling in the docs for some reason. And I think the integration of the agent is a bit clunky, just because of the fix error thing. I think it to me feels like a less powerful model that's been fine-tuned really well at Evidence. So now I am gonna see if I can connect my own Codex to it and if that works.
+
+**Type:** Overall user impression; hypotheses about cause; intended comparison.
+
+**Observation:** Sam positively rates the agent's ability to use the Evidence framework while questioning its Studio navigation/workflow knowledge and integration. Sam plans to try their own Codex connection. No connection attempt or result has yet been reported.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: framework value]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: added Studio value]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: end-to-end experience]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: comparison with an external agent]].
+
+**Interpretation:** This is an emerging distinction supported by Sam's experiences: capability at generating framework content and quality of the surrounding application workflow should be evaluated separately. Outdated docs, failed retrieval, model strength, and fine-tuning are Sam's possible explanations, not established implementation facts. An external-agent comparison could help test what Studio contributes around the model; a preference alone would not identify the underlying cause.
+
+### HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render
+
+Date: 2026-10-31.
+
+**Sam's words:**
+> it sends warning and errors into the chat with the same default prompt
+
+**Generated prompt and diagnostic supplied by Sam:**
+
+Formatting normalized; the leading HTML space artifact is omitted.
+
+> am seeing the following component error (line 250). Please propose an edit as concisely as possible:
+>
+> num0'°C' is not in the list of built-in formats. Consider checking the built-in list before using a custom format. Note that custom formats must follow Excel-style format codes.
+
+**Supplied repair explanation:**
+> The custom format has to be an Excel-style code, so `num0'°C'` becomes `0'°C'` and `num1'°C'` becomes `0.0'°C'`.
+
+**Subsequent agent output supplied by Sam:**
+
+These are the other agent's claims; no source or rendered view was inspected here.
+
+> The page has no errors now. The editor still shows the "not in the list of built-in formats" notice on six lines. It's a warning, not an error, and it's expected.
+>
+> I changed `num0'°C'` to `0'°C'` and `num1'°C'` to `0.0'°C'`. Those are Excel-style codes with the degree sign as literal text. There's no built-in format for °C, so a custom code is the only way to show the unit. The warning is just a reminder to prefer built-ins when one exists.
+>
+> If you'd rather have no warnings, I can drop the `°C` suffix from the values and put the unit in each title, for example "Hottest CPU (°C)". I haven't looked at the rendered temperature section since this change.
+
+**Observation:** Sam reports that warnings and errors share the same generated prompt, which calls the diagnostic a component error. The supplied message concerns a temperature format at line 250. The agent reports a change, zero errors, and six remaining warnings, and explicitly says it has not inspected the rendered temperature section. Sam has not independently confirmed those counts or the rendered result.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: diagnostic clarity and repair validation]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: agent/editor integration]]. Builds on the useful shortcut in [[#HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt|HLA-15]] and the readiness question in [[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]].
+
+**Interpretation / follow-up:** Calling every diagnostic an error may obscure severity and encourage unnecessary repair work; preserve the actual diagnostic category in the generated prompt if available. The agent's explanation helps distinguish warnings from errors, but its claims about valid formats and expected warnings remain unverified. Zero reported errors and an uninspected render are separate facts; neither confirms visual correctness. These six temperature-format warnings must not be silently treated as the same messages as the earlier five `max`-related diagnostics. Record the render and final task outcome when supplied.
+
+## Emerging patterns
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
@@ -353,8 +472,11 @@ Date: 2026-10-31.
 - **Guidance extends from chart selection to data coverage.** The agent identified telemetry it said was missing for the stated primary-health-dashboard goal; Sam reports acting on that guidance ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). Distinguish limits in the collected data from limits in the product's charting or monitoring capabilities.
 - **Generated changes have an explicit acceptance step.** Sam reports accepting the staged page ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]). Inspect preview, revision, and teammate-review behavior separately before drawing broader collaboration conclusions.
 - **Progressive preview is enjoyable, but readiness needs separate validation.** Sam likes seeing components appear as they are written ([[#HLA-12 — Components appear progressively in preview; Sam likes seeing the build happen|HLA-12]]), while visible errors remain at the point of requested acceptance ([[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]]). The positive preview experience and validation concern should both be preserved in the review.
+- **The diagnostic shortcut saves effort but can disrupt task continuity.** Sam likes the prepared repair prompt ([[#HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt|HLA-15]]), yet reports it interrupting an active component request ([[#HLA-16 — Sending a diagnostic interrupts an existing component request|HLA-16]]). Warnings also receive the error wording ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]).
+- **Framework skill and Studio integration are separate evaluation dimensions.** Sam explicitly distinguishes the two and plans to try an external Codex connection ([[#HLA-17 — Sam distinguishes framework skill from Studio workflow knowledge|HLA-17]]). The perceived cause is not yet established.
+- **Preview and completion messages leave verification questions.** Preview refresh relative to publishing remains uncertain ([[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]]); a later repair response explicitly says the rendered section was not checked ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]).
 
-Candidate priorities for investigation: visible errors at requested acceptance; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
+Candidate priorities for investigation: task interruption during diagnostic handoff; visible diagnostics at requested acceptance and post-repair validation; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
 
 ## How subsequent notes will be captured
 
