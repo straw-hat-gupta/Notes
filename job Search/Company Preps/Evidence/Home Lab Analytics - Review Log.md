@@ -9,9 +9,9 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 
 - **Project:** Home Lab Analytics.
 - **Interface:** Evidence project with an AI sidebar, as reported by Sam; exact edition/version not yet recorded.
-- **Goal:** A live dashboard showing various homelab analytics.
+- **Goal:** A live dashboard showing various homelab analytics; Sam later clarified this will be the primary dashboard for homelab status, health, and loads.
 - **Data source:** Existing homelab data stored in a Neon database. Sam subsequently reported adding a direct connector using the NeonDB owner account; no separate database user was created. Connection testing and successful queries have not been reported.
-- **Current progress:** The agent reports building `pages/homelab` with the direct connector and one-minute auto-refresh. Sam accepted the staged page and plans to ask for more dashboard options based on the incoming data. Rendered results, query correctness, and refresh behavior have not been independently checked.
+- **Current progress:** The agent reports building `pages/homelab` with the direct connector and one-minute auto-refresh. Sam accepted the staged page, requested data-based component recommendations, liked the response, and reports adding the suggested data sources. Which sources are being added and whether they are ingesting into Neon are not yet confirmed. Rendered results, query correctness, and refresh behavior have not been independently checked.
 - **Still unspecified:** Particular metrics, desired refresh interval/meaning of "live," and completion criteria.
 
 ## Chronological notes
@@ -249,13 +249,72 @@ Date: 2026-10-31.
 
 **Interpretation / follow-up:** A useful positive finding: the agent helps Sam discover possibilities rather than requiring every metric and interaction to be specified upfront. The Accept step also provides an explicit decision before saving the generated page; Sam reported using it, but did not separately praise it or describe previewing a diff. Record whether subsequent suggestions remain relevant, explain their purpose, and translate into useful changes.
 
+### HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry
+
+Date: 2026-10-31.
+
+**Sam's prompt:**
+> based on the data coming in what kind of components would you suggest we add. this will be my priimary dashboard for seeing the status of my homelab its health loads.
+
+**Agent response supplied by Sam:**
+
+The following is the other agent's output, with formatting normalized. Data counts, interpretations, proposed thresholds, and technical claims are recorded as supplied, not independently verified or adopted as requirements.
+
+> Here are my suggestions, based on what your collector records.
+>
+> **What the data covers**
+>
+> - **Nodes:** 5 expected nodes with a role each (GPU compute, general compute, monitoring parent, lightweight compute, storage host).
+> - **Per-node readings:** CPU %, memory total/available/used, `boot_time`, uptime, and `scrape_success`. There are about 2,400 samples per node over the last 16 hours.
+> - **Health fields:** `quality_status`, `freshness_status` and the age of each reading.
+> - **Pipeline health:** `collector_cycles` has 980 cycles. Six of them are `degraded`, and the history includes up to 45 missed deadlines and up to 15 pending cycles.
+> - **Not collected:** disk, network, temperature, containers and services. A dashboard built on this data can show whether your nodes are alive and loaded. It can't show whether your storage host is filling up.
+>
+> **Suggested components, in priority order**
+>
+> 1. **Status banner / KPI row.** This answers "is everything OK?" at a glance. Replace Avg CPU with "Nodes OK", "Nodes stale or degraded", "Pipeline state" and "Last data received". Colour them with the positive and negative theme colours.
+> 2. **Node status cards or table with health flags.** One row per node, showing role, `freshness_status`, `quality_status`, current CPU, memory % and uptime. Flag any node over 85% memory or 90% CPU, or whose data is stale. This is the most useful section for a primary dashboard.
+> 3. **Recent reboots and uptime.** Show `boot_time` per node. The data shows five distinct boot times, so something rebooted. Node B has been up since September 24, while the others rebooted around October 28. A "last reboot" column or a small timeline would make that easy to spot.
+> 4. **Heatmap of CPU by node and hour.** This shows load patterns (nightly jobs, GPU runs) better than five overlapping lines. A 24-hour or 7-day heatmap, one row per node, works well.
+> 5. **Memory pressure chart with `memory_available_gib`.** Available memory is more useful than used % for spotting trouble. Add a chart of available GiB per node, with a threshold line.
+> 6. **Pipeline health section.** This covers collector cycle state over time, cycle duration, missed deadlines, pending queue size and `error_summary`. A dashboard is only trustworthy if its collector is. The 6 degraded cycles and the 45 missed deadlines are worth watching.
+> 7. **Controls.** A node dropdown to focus on one host, a time-range selector (1h / 6h / 24h / 7d), and a toggle to compare the `live` and `budget` collection profiles.
+>
+> **Recommended layout**
+>
+> - **Row 1:** health banner and KPIs.
+> - **Row 2:** the node status table.
+> - **Row 3:** CPU heatmap next to the memory-available chart.
+> - **Row 4:** reboot and uptime panel next to the pipeline health panel.
+> - **Bottom:** the existing 24-hour CPU and memory trends, filtered by the controls.
+>
+> **Gaps worth fixing at the source** If this is your primary health dashboard, the biggest improvement is collecting more data. Disk usage (especially on the storage host), network throughput, temperatures (especially on the GPU node), and service or container up/down status would all be worth adding. Tell me when those land in Neon and I'll chart them.
+>
+> **What would you like me to build first?** I'd suggest items 1, 2 and 7, since they turn the page into an actual health view. I'd then add the pipeline health section.
+
+**Sam's reaction and action:**
+> i like this and am adding the sources it told me to
+
+**Type:** Positive usability/value observation; clarified use case; reported source additions in progress.
+
+**Observation:** Sam asked for component options for a primary health/status/load dashboard. The response organized its suggestions around the available data, gave priorities and a layout, and identified additional telemetry it said was needed. Sam explicitly liked the response and reports acting on the source recommendations. The specific sources selected, ingestion completion, and any requested component implementation have not been reported.
+
+**Connections:**
+- [[Product Review Plan#Q1 — Why choose Evidence?|Q1: Evidence's value]] — Reinforces [[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]: helping decide what to build from the available data is valuable to Sam. The guidance now also influences what data to collect.
+- [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated authoring]] and [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]] — Prioritization, explanations, layout, and an explicit choice of next steps were positively received. This is evidence about perceived usefulness, not proof that every recommendation is accurate or implemented.
+- [[Product Review Plan#Q5 — Which customer use cases matter most?|Q5: use-case definition]] — The personal walkthrough now has a clearer purpose: a primary view of homelab health, status, and load. Its relevance to major Evidence customer workflows is still unconfirmed.
+- [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: comparison]] — Compare the effort required for another tool or AI workflow to inspect the same data, explain its limits, and propose a useful prioritized dashboard.
+
+**Interpretation / follow-up:** The response connects a broad goal to concrete components and explains where the input data limits coverage. Keep a source-data gap separate from an Evidence feature gap. Sam's willingness to add sources is a stronger signal of perceived usefulness than agreement alone; whether it improves the finished dashboard remains to be observed. Follow up on which telemetry arrives, whether the agent discovers it and updates its suggestions, and whether the primary dashboard becomes useful at a glance. The agent's specific claims about reboot history, sample coverage, thresholds, and health conditions remain unverified.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
 - **Instructions and navigation are not lining up for Sam.** [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]], [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]], and [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]] provide related observations; a shared cause is not established.
 - **Connector guidance became concrete after the build.** Selection remained unclear after the corrected recommendation ([[#HLA-05 — Agent changes its recommendation; connector choice remains unclear|HLA-05]]), followed by a build while the immediate question was unresolved ([[#HLA-08 — Asking about the synced connector is followed by a dashboard build|HLA-08]]). The completion response subsequently explains direct access and claims automatic refresh ([[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]). Sam accepted the page; understanding of the tradeoff and actual refresh behavior remain unconfirmed.
 - **Collaboration has a concrete entry point to evaluate.** Team settings exposed four reported roles, but Sam does not yet understand their scope ([[#HLA-03 — Team invitation is discoverable; role meanings require investigation|HLA-03]]).
-- **Suggestions based on the user's data provide visible value.** Sam explicitly likes the agent proposing relevant additions and intends to ask for more options ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]). This is positive evidence for guided iteration; its advantage over alternatives remains a hypothesis.
+- **Suggestions based on the user's data provide visible value.** Sam explicitly liked the initial suggestions ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]), then asked for more and reports adding sources based on the recommendations ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). This supports perceived usefulness across successive steps; accuracy, realized dashboard benefit, and advantage over alternatives remain to be tested.
+- **Guidance extends from chart selection to data coverage.** The agent identified telemetry it said was missing for the stated primary-health-dashboard goal; Sam reports acting on that guidance ([[#HLA-11 — Recommendations connect the primary-dashboard goal to components and missing telemetry|HLA-11]]). Distinguish limits in the collected data from limits in the product's charting or monitoring capabilities.
 - **Generated changes have an explicit acceptance step.** Sam reports accepting the staged page ([[#HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page|HLA-10]]). Inspect preview, revision, and teammate-review behavior separately before drawing broader collaboration conclusions.
 
 Candidate priorities for investigation: loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
