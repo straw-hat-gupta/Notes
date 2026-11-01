@@ -23,4 +23,16 @@ So I want to give you some more ideas on from my vision of what this will look l
   figure these things out every single time that things need to be done. You know, everything is
   observable. If something goes wrong in the home lab, it can be tracked down and figured out what went
   wrong, whether there's something wrong in like a script or like the agent was wrong. It's extendable.
-  So like if let's say I wanted to add a widget there on my one of my screens, the agent doesn't have to
+  So like if let's say I wanted to add a widget there on my one of my screens, the agent doesn't have to like create the HTML and the CSS all for that widget all over again every time I want a new widget. It
+  just takes the existing template and wires up the back end of it however it needs to be to achieve my
+  goal. If I want like a status thing to show somewhere in the corner, it doesn't have to like figure out
+  what things it needs to call, where it's going to get the information. There's already a source for
+  where it would exactly need to go to get certain information. It knows what already exists, so it can
+  reuse existing things. It builds widgets and scripts and extensions to the harness in a way that that's
+  reusable, and like if there's something on the next widget that can just be reused from the one
+  before, it can do that because it builds things in a way that's reusable and doesn't produce like slop
+  and just bloat in the system. I want this harness to replace Proxmox web UI for me. And kind of be like
+  a AI slash custom UI layer on top of the Proxmox API, and maybe I need to create like an MCP for
+  stuff. But the harness itself should be like built for Proxmox and like Cloudflare use and any other
+  things that are in this like home lab ecosystem and like common technologies and practices should be
+  built around that as its main focus.
