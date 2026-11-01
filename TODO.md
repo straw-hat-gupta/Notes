@@ -17,7 +17,7 @@ personal
 - configure the homelab
 - CLEAN LAPTOP all dev shit should be on homelab
 - make AIVA a real project
-- make a post in SKOOL.ai
+
 
 
 
