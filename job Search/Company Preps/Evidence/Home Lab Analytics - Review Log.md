@@ -14,6 +14,7 @@ Build the Home Lab Analytics dashboard using Evidence and capture the experience
 - **Current progress:** Sam reports publishing and is investigating GitHub version control, sharing, and maintenance by less technical collaborators. The specific published page/branch, GitHub connection, invitations, and sync behavior have not been tested here. The Claude/MCP comparison remains planned in [[Claude Dashboard Comparison Prompt]]; connection and Claude output have not been reported.
 - **Refresh expectation:** Sam asked whether preview also refreshes every second or only after publishing. The latest supplied agent output refers to `auto_refresh: 1000`; earlier output referred to `60000`. The actual project configuration and preview/published behavior have not been inspected.
 - **Still unspecified:** Final metric scope, acceptable source-data delay, and full completion criteria.
+- **Claude/MCP run (2026-10-31):** Claude connected through the Studio MCP and built an independent page. The MCP is read-only, so the page exists as a local file (`/Users/samgupta/evidence/claude-build/Home Lab_Claude.md`) for Sam to paste into Studio; it has not been saved, previewed, or published in Studio. See [[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]–[[#HLA-34 — MCP setup in Claude Code was smooth; workspace context is empty|HLA-34]].
 
 ## Chronological notes
 
@@ -231,6 +232,8 @@ The following is the other agent's output, with formatting normalized. Its techn
 
 **Interpretation / follow-up:** The response now gives a concrete account of the chosen setup and claims automatic refresh, addressing part of the earlier uncertainty. Sam has not explicitly confirmed understanding the connector tradeoff. Refreshing the dashboard and receiving fresh source measurements are distinct: the reported 14-minute data age is a reason to evaluate end-to-end freshness, not proof of a dashboard-refresh failure. The reported meaningless totals and schema-access workaround are leads to inspect, not independently observed defects. The suspected collector/ingestion cause is the agent's hypothesis; no homelab diagnosis has been performed here.
 
+**Later update (Claude/MCP, 2026-10-31):** Through MCP, `list_tables`/`get_metadata` also returned no tables while SQL on `information_schema` found the `telemetry` schema ([[#HLA-25 — `list_tables` and `get_metadata` return nothing, but SQL sees 26 telemetry objects|HLA-25]]). Live querying of the direct connector was confirmed with `now()` ([[#HLA-26 — The direct Postgres connection is live, but the docs describe Postgres only as a synced source|HLA-26]]).
+
 ### HLA-10 — Data-based suggestions are welcome; Sam accepts the staged page
 
 Date: 2026-10-31.
@@ -380,6 +383,8 @@ Transcript with formatting normalized; claims about documentation, configuration
 
 **Interpretation / follow-up:** A preview is less useful for assessing a live dashboard when its behavior relative to publishing is unclear. The proposed Data Age test is not conclusive by itself: a query can rerun while the source's newest measurement remains unchanged. Distinguish query refresh, arrival of fresh telemetry, and visible updates. The agent's preview-pausing explanation is speculation; its published-refresh assurance is unverified. No product limitation or documentation omission has been independently established.
 
+**Later update (Claude/MCP, 2026-10-31):** Claude read `features/page-settings`: `auto_refresh` is in milliseconds with no stated minimum, while `big_value.refresh_interval` is in seconds with a 30-second minimum ([[#HLA-27 — The 1-second refresh setting is findable only by reading docs directly, and the documented limits conflict|HLA-27]]). Preview vs published behavior remains untested.
+
 ### HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt
 
 Date: 2026-10-31.
@@ -517,6 +522,8 @@ Date: 2026-10-31.
 
 **Interpretation / comparison limits:** This tests Claude through MCP versus the native Studio agent while retaining Evidence as the platform. It does not compare Evidence with a standalone AI-built app, and differences may reflect tooling, context, permissions, or model behavior. The prompt consolidates goals from several original turns, and data coverage/cadence may have changed; it is not an identical replay. Record setup effort, available tools, exact model if known, discovery quality, interventions, diagnostics, validation, and the useful result. The prepared prompt does not prove MCP supports any particular action; Claude must determine what its connected tools can do.
 
+**Later update:** The run happened; see [[#2026-10-31 — Claude/MCP comparison run begins|session note]] and HLA-24 onward. Claude could not create the page through MCP ([[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]).
+
 ### HLA-21 — After publishing, Sam asks how to own the repo and share maintenance
 
 Date: 2026-10-31.
@@ -609,6 +616,237 @@ These are current documentation claims, not an end-to-end test of Sam's project.
 
 **Proposed follow-up test, not yet run:** Invite an authorized test participant with little Git experience. Ask them to change one label and add one metric using the Studio agent, explain the proposed change, request review, and identify when it becomes live. Record GitHub/account requirements, role clarity, help visits, terminology confusion, and whether they can finish without author intervention. Test simultaneous Studio drafts and conflicting external changes separately; timing and conflict behavior are not specified well enough by the checked docs to promise automatic conflict-free synchronization.
 
+### 2026-10-31 — Claude/MCP comparison run begins
+
+**Source:** Session context recorded by Claude (Claude Opus 5.5, model ID `claude-opus-5-5`, running in Claude Code). Timestamps in the data are UTC (2026-11-01 ~01:28 UTC); local date 2026-10-31.
+
+**Sam's words, in sequence:**
+> do you have access to evidence studio mcp
+
+> lets authenticate
+
+Sam then pasted the product-feedback logging add-on and the build prompt from [[Claude Dashboard Comparison Prompt]] verbatim. No other goals, schema, or prior findings were supplied.
+
+**Independence protocol actually followed:** Before the build, Claude read [[Product Review Plan]], [[Claude Dashboard Comparison Prompt]], and only this log's headings, field labels, and highest HLA number. Claude listed page names (`home`, `homelab`) but did not call `get_page_summary`/`get_page_content` on them. Earlier entries were read only after the page source was final; links back to them below were added afterwards.
+
+**Type:** Session context; not a usability finding.
+
+**Connections:** Executes the plan in [[#HLA-20 — Sam prepares a Claude/MCP build with minimal context on a separate page|HLA-20]].
+
+### HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`
+
+Date: 2026-10-31. Claude/MCP. Task: create the requested new page.
+
+**Source:** Claude's observation. Sam has not commented.
+
+**Category:** MCP limitation (documented). Not evidence that Studio lacks page creation.
+
+**Attempted / expected:** The prompt asks Claude to "use the Evidence Studio MCP to create a new page under Pages named Home Lab_Claude.md."
+
+**Observed:** After authentication the server exposed 16 tools: `whoami`, `list_organizations`, `list_projects`, `get_context`, `list_project_pages`, `search_published_content`, `get_page_summary`, `get_page_content`, `list_project_files`, `get_project_file`, `list_tables`, `get_metadata`, `run_query`, `search_docs`, `read_doc`, `visualize`. None writes, stages, or publishes a page. The Studio MCP guide (`read_doc mcp/studio`) matches this: "query data and read published reports."
+
+**Impact:** The core "create the page" step cannot be completed through MCP. Sam must paste the page into Studio manually, which also means Studio's own diagnostics and Accept step happen outside Claude's loop.
+
+**Workaround / resolution:** Claude built and validated the page with `run_query` + `visualize`, then wrote the full Markdoc to `/Users/samgupta/evidence/claude-build/Home Lab_Claude.md` for Sam to paste. Unresolved until Sam pastes, previews, and publishes it.
+
+**Connections:** [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: Studio's added value]] (authoring stays inside Studio); [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: alternative agent workflow]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: create → publish]].
+
+**Interpretation / candidate improvement:** Positive: the docs state the read-only scope clearly, so this wasn't a surprise once checked. For the comparison this is the largest structural difference from the native agent: the Studio agent can stage edits for Accept, while an external agent can only hand over text. A "propose page/diff for review" MCP tool that lands in Studio's existing Accept flow would keep the human approval step while removing copy-paste. Whether Evidence intends MCP to author is unknown.
+
+### HLA-25 — `list_tables` and `get_metadata` return nothing, but SQL sees 26 telemetry objects
+
+Date: 2026-10-31. Claude/MCP. Task: discover the connected data.
+
+**Source:** Claude's observation.
+
+**Category:** Unknown cause: MCP catalog behavior, or how the direct Postgres connector registers schemas.
+
+**Attempted / expected:** `get_context` reported dialect `Postgres`. Claude expected `list_tables` / `get_metadata` to list the Neon tables.
+
+**Observed / tool responses:**
+- `list_tables` → `{"success": true, "tables": [], "count": 0}`
+- `get_metadata` (no args) → `{"success": true, "tables": {}}`; with `["telemetry.latest_nodes", "latest_nodes"]` → same empty result.
+- `run_query` against `information_schema.tables` → 26 objects in schema `telemetry` (base tables and views such as `latest_nodes`, `pipeline_status`, `temperature_history`).
+
+**Impact:** Discovery tools designed for this step were useless. About two extra calls; an agent that trusted `list_tables` could conclude there is no data.
+
+**Workaround / resolution:** Query `information_schema.tables` / `.columns` directly. Fully worked.
+
+**Connections:** Likely the same symptom the Studio agent reported in [[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]] ("page components couldn't see the `telemetry` tables directly"), now seen through a second interface, though a shared cause is not established. [[Product Review Plan#Q4 — How usable is the workflow?|Q4: discoverability]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2]].
+
+**Interpretation / candidate improvement:** Fact: catalog tools and SQL disagree. Hypothesis: catalog tools cover the managed warehouse or models only, not schemas reachable through a direct connector. If so, the tool description ("List the warehouse tables and models available in this workspace") should say so, or the catalog should list direct-connector schemas.
+
+### HLA-26 — The direct Postgres connection is live, but the docs describe Postgres only as a synced source
+
+Date: 2026-10-31. Claude/MCP. Task: decide what "update every second" can mean.
+
+**Source:** Claude's observation, using Sam's statement that a direct Postgres connector was added.
+
+**Category:** Documentation mismatch or gap (Evidence docs). Behavior itself looked correct.
+
+**Observed (facts):**
+- `run_query` returned `now()` equal to the database's current time, and `node_current` rows were 0.2 s old. Queries hit Neon live.
+- `read_doc evidence-warehouse`: the **Direct Connectors** section lists Snowflake, Fabric, ClickHouse, BigQuery. PostgreSQL appears only under **Databases** ("Evidence extracts the data... define a schedule for sync"; scheduled refresh intervals "5 mins, 15 mins, 1 hour, 1 day, 1 week").
+- `read_doc data-sources/postgres`: steps are "Select the schemas and tables you want to sync" and "Configure your sync schedule", with a link to Fivetran docs. Nothing about direct/live mode.
+
+**Impact:** From the docs alone, a 1-second dashboard on Postgres looks impossible (5-minute minimum sync). Only querying revealed it is live. Minutes of investigation for Claude; for a human this is the connector confusion in earlier entries.
+
+**Workaround / resolution:** Empirical check with `now()` and row ages. Resolved for this build; the docs mismatch remains.
+
+**Connections:** [[#HLA-05 — Agent changes its recommendation; connector choice remains unclear|HLA-05]], [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]], [[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]. [[Product Review Plan#Q4 — How usable is the workflow?|Q4: documentation sufficiency]].
+
+**Interpretation / candidate improvement:** Possibly the docs lag a newer feature. Add Postgres (and Neon) to the Direct Connectors list with the freshness trade-off, and link it from the Postgres page.
+
+### HLA-27 — The 1-second refresh setting is findable only by reading docs directly, and the documented limits conflict
+
+Date: 2026-10-31. Claude/MCP. Task: implement "update every second".
+
+**Source:** Claude's observation.
+
+**Category:** Documentation discoverability + inconsistency (Evidence docs). Actual behavior is unverified.
+
+**Observed:**
+- `search_docs "auto refresh interval live data cache"` and `"direct query connector refresh page data freshness"` returned Fivetran connector pages, MCP, and CLI pages — not Page Settings.
+- `read_doc features/page-settings` documents `auto_refresh | number (ms) | Override how often the page re-runs its queries. 0 disables it.` No minimum is stated.
+- `read_doc components/big_value` documents `refresh_interval`: "Time in seconds between automatic data refreshes (minimum 30). Overrides the page-level auto-refresh setting for this component."
+
+**Impact:** Claude set `auto_refresh: 1000` but cannot confirm Studio honors 1 s. Different units (ms vs s) and a 30 s component minimum suggest a page-level floor may exist but is undocumented.
+
+**Workaround / resolution:** Used `auto_refresh: 1000` and recorded the uncertainty in the page comment. Unresolved: needs Sam to observe preview vs published behavior.
+
+**Connections:** Directly extends [[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]]; the Studio agent's earlier `60000` → `1000` history is in [[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]. [[Product Review Plan#Q4 — How usable is the workflow?|Q4]].
+
+**Interpretation / candidate improvement:** Use one unit, document any page-level minimum, and make "refresh"/"live" searchable to Page Settings. A visible "last refreshed" indicator on published pages would let users confirm behavior without inference.
+
+### HLA-28 — `visualize` gives Claude a real render-and-fix loop with precise validation errors
+
+Date: 2026-10-31. Claude/MCP. Task: validate components before handing over the page.
+
+**Source:** Claude's observation.
+
+**Category:** Positive experience (MCP + Evidence validation).
+
+**Observed:** `visualize` rendered full Markdoc, including inline SQL, `if`/`else_if`/`else`, `heat_grid`, tables, and charts, to light/dark PNGs. Invalid input rendered nothing and returned actionable errors, for example:
+> Nothing was rendered. Fix these and call again: err: date_grain: Invalid date grain. Must be one of: day, week, month, quarter, year, hour, ... (line 27) — read_doc("components/line_chart") for its syntax
+
+> err: x: "volume" must resolve to a numeric value. Found type: string. (line 199) — read_doc("components/horizontal_bar_chart") for its syntax.
+
+Each error included the line, allowed values, and the exact doc to read; both were fixed in one retry.
+
+**Impact:** Claude could look at every section before handing over. It found visual problems no validator flags ([[#HLA-31 — `heat_grid` shows a missing temperature as a green "0 °C"|HLA-31]]).
+
+**Connections:** Contrasts with [[#HLA-13 — Agent asks for acceptance while five errors remain visible|HLA-13]] and [[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]], where the native agent asked for acceptance or reported a fix without checking the render. Complements [[#HLA-15 — Diagnostic-to-chat action supplies a useful ready-made prompt|HLA-15]]. [[Product Review Plan#Q1 — Why choose Evidence?|Q1]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6]].
+
+**Interpretation / candidate improvement:** The same renderer and error format could close the native agent's validation gap if the Studio agent used it before requesting Accept. Error messages written for agents (doc path included) are a strength worth keeping.
+
+### HLA-29 — Render output is too large for the client, and long pages are cut off at 3200 px
+
+Date: 2026-10-31. Claude/MCP. Task: view renders.
+
+**Source:** Claude's observation.
+
+**Category:** MCP / client limitation (Claude Code's tool-output size limit interacting with base64 images). Not a Studio dashboard issue.
+
+**Observed:** Every successful `visualize` call exceeded the client's tool-result limit (270 K–980 K characters, e.g. "result (981,303 characters) exceeds maximum allowed tokens"), because it returns both `pngLight` and `pngDark` as base64 JSON. The full-page render came back exactly 2100×3200 px and stopped mid-page, omitting Services and Storage/Network.
+
+**Impact:** Claude had to decode PNGs with `jq | base64 -d` and re-render the bottom sections separately. About five extra steps; an agent without shell access could not see the render at all.
+
+**Workaround / resolution:** Decoding script plus split renders. Resolved for this build.
+
+**Connections:** [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: MCP workflow cost]].
+
+**Interpretation / candidate improvement:** Hypothesis: a light-only option, a returned URL, or a smaller default size would fit typical MCP clients. The 3200 px cap should be stated in the tool response (e.g. "truncated at 3200 px") so a cut-off page isn't mistaken for a complete one.
+
+### HLA-30 — Line charts reject `date_grain="minute"` on a seconds-level dashboard
+
+Date: 2026-10-31. Claude/MCP. Task: CPU/temperature/pipeline trend charts.
+
+**Source:** Claude's observation.
+
+**Category:** Evidence capability gap or doc inconsistency (component level).
+
+**Observed:** `line_chart ... date_grain="minute"` failed validation (allowed: day, week, month, quarter, year, hour, ...). `big_value`'s `sparkline.date_grain` docs list `minute` as allowed.
+
+**Impact:** One failed render. Operational dashboards with minute (or second) data can't use the built-in grain control.
+
+**Workaround / resolution:** Removed `date_grain` and plotted the views' pre-bucketed minute timestamps directly. Charts rendered correctly.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4]]; [[Product Review Plan#Q6 — Where do alternatives provide more value?|Q6: Grafana comparison]] (sub-minute monitoring is Grafana's home turf).
+
+**Interpretation / candidate improvement:** Accept `minute` consistently across components. For a "live" homelab use case, sub-hour grains are core rather than an edge case.
+
+### HLA-31 — `heat_grid` shows a missing temperature as a green "0 °C"
+
+Date: 2026-10-31. Claude/MCP. Task: temperature grid.
+
+**Source:** Claude's observation from the rendered image.
+
+**Category:** Evidence display behavior (misleading NULL handling) + minor label truncation.
+
+**Observed:** The Node A passthrough-GPU sensor has `celsius = NULL` and `quality_status = 'unsupported'`. `heat_grid value="max(celsius)"` rendered it as **0 °C in the green "good" zone**. Long labels were clipped (e.g. "ode-a · Passthrough GP").
+
+**Impact:** A reader would conclude the GPU is cool and healthy when there is no reading. On a primary health dashboard, that is a false-reassurance risk.
+
+**Workaround / resolution:** Filtered `celsius is not null` in the grid query, added an info callout plus a table listing unsupported sensors, and shortened labels to "A CPU", "C Ambient", etc. Verified in a later render.
+
+**Connections:** The same sensor was described as `unsupported` in [[#HLA-19 — Studio agent explains what came from user instructions versus database discovery|HLA-19]]; whether the native dashboard shows it as 0 was not checked. [[Product Review Plan#Q4 — How usable is the workflow?|Q4]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: trust in standardized components]].
+
+**Interpretation / candidate improvement:** Render NULL as an explicit "no data" (grey) cell, consistent with how tables show "–" for NULL in the same page.
+
+### HLA-32 — Claude's own mistake: `horizontal_bar_chart` x/y swapped
+
+Date: 2026-10-31. Claude/MCP. Task: storage chart.
+
+**Source:** Claude's observation of its own error.
+
+**Category:** Claude mistake (minor). Possible contributing ambiguity in the `visualize` tool hint.
+
+**Observed:** Claude passed `x="volume" y="max(used_pct)"`. In `horizontal_bar_chart`, `x` is the numeric value. The tool description's hint ("swap_xy is not a valid attribute; swap the x and y definitions, or use horizontal_bar_chart") can be read either way.
+
+**Impact / resolution:** One failed render; the error message (quoted in [[#HLA-28 — `visualize` gives Claude a real render-and-fix loop with precise validation errors|HLA-28]]) made the fix immediate.
+
+**Interpretation:** Not an Evidence defect. Recorded so it isn't counted as one.
+
+### HLA-33 — What the data says about "update every second" (homelab telemetry, not Evidence)
+
+Date: 2026-10-31. Claude/MCP. Task: decide what to show and explain limits.
+
+**Source:** Claude's observations from `run_query`. These describe Sam's collector/views, not Evidence.
+
+**Category:** Data/environment facts and assumptions.
+
+**Observed cadence (2026-11-01 ~01:28 UTC):** `node_current` ~1 s old; `temperature_current`, `storage_current`, `network_current` ~15–17 s; `service_current` ~33 s; `collector_cycles` and all `*_history` / `*_samples` one row per minute (temperature samples were 203 s old).
+
+**Other data facts:**
+- Upload lag per collector cycle showed a ~15-minute sawtooth peaking near 900 s until shortly after 00:00 local, then ~0 s. Consistent with Sam's report of increasing upload frequency; the change time itself is not confirmed.
+- `pipeline_status.missed_deadlines` = 50 on every cycle in the last 30 minutes; its meaning is unknown.
+- Node B's CPU temperature was 21 s old against `expected_source_seconds = 15` but still labelled `freshness_status = 'ok'`.
+- Most systemd/Proxmox services report `health_status = 'unknown'` while `running` and `check_success` are true.
+
+**Impact / implications for the page:** A 1 s refresh only produces new values for node CPU/memory. With a direct connector, each open viewer re-queries Neon every second (13 queries per load on this page). That may keep Neon compute awake and cost more; not measured.
+
+**Assumptions written into the page:** Thresholds (CPU 60/85 %, memory 75/90 %, temperature 65/80/90 °C, storage 85/95 %, node data stale > 10 s, collector diagnostic stale > 180 s) are Claude's defaults, not Sam's. The status banner treats `running` + `check_success` as healthy and ignores `health_status = 'unknown'`.
+
+**Connections:** Cadences broadly match the Studio agent's account in [[#HLA-19 — Studio agent explains what came from user instructions versus database discovery|HLA-19]]. [[Product Review Plan#Q5 — Which customer use cases matter most?|Q5: is "live ops" an Evidence use case?]]
+
+**Interpretation:** Keep "refresh frequency" and "data freshness" separate in the review, as in [[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]]. Evidence can only be as live as the slowest source table.
+
+### HLA-34 — MCP setup in Claude Code was smooth; workspace context is empty
+
+Date: 2026-10-31. Claude/MCP. Task: connect.
+
+**Source:** Claude's observation; Sam completed the browser step.
+
+**Category:** Positive setup experience; minor note on empty context.
+
+**Observed:** `authenticate` returned an OAuth URL. Sam signed in and pasted the localhost callback URL, but the full tool set had already appeared on its own, so `complete_authentication` was unnecessary. `whoami` confirmed admin in org Smarth_Gupta. `get_context` returned only the default template ("Describe your business, your metrics, and how the Evidence Agent should behave...") and `skills: []`.
+
+**Impact:** Under two minutes from question to working tools. No conventions or metric definitions were available to guide the build.
+
+**Connections:** [[Product Review Plan#Q4 — How usable is the workflow?|Q4: setup]]; [[Product Review Plan#Q1 — Why choose Evidence?|Q1: shared conventions]]: the context mechanism exists (`agent/context/`), but this project hasn't used it yet.
+
+**Interpretation / candidate improvement:** Filling `agent/context/` with thresholds and node roles would make both agents' output more consistent. That tests the "shared conventions" hypothesis in Q1 directly.
+
 ## Emerging patterns
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
@@ -625,6 +863,12 @@ These are current documentation claims, not an end-to-end test of Sam's project.
 - **Framework skill and Studio integration are separate evaluation dimensions.** Sam explicitly distinguishes the two and plans to try an external Codex connection ([[#HLA-17 — Sam distinguishes framework skill from Studio workflow knowledge|HLA-17]]). The perceived cause is not yet established.
 - **The external-agent comparison is now concrete.** Sam's latest plan is Claude through the Studio MCP with minimal goals and a separate page ([[#HLA-20 — Sam prepares a Claude/MCP build with minimal context on a separate page|HLA-20]]). The Studio agent's discovery retrospective supplies a baseline ([[#HLA-19 — Studio agent explains what came from user instructions versus database discovery|HLA-19]]); no comparison result exists yet.
 - **Preview and completion messages leave verification questions.** Preview refresh relative to publishing remains uncertain ([[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]]); a later repair response explicitly says the rendered section was not checked ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]).
+
+- **Claude/MCP comparison result (added 2026-10-31, after the independent build).** Claude reached a fully rendered, validated page (status banner, node grids, pipeline, temperatures, services, storage/network) but could not save it, because the MCP is read-only ([[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]]). The native agent's advantage is in-product authoring and the Accept step. The MCP path's advantage was checking each render before handover ([[#HLA-28 — `visualize` gives Claude a real render-and-fix loop with precise validation errors|HLA-28]]). This updates the external-agent bullet above; it does not replace it.
+- **Two interfaces hit the same discovery gap.** The Studio agent's "couldn't see the `telemetry` tables" ([[#HLA-09 — Agent reports a completed dashboard and explains the direct-connector choice|HLA-09]]) and MCP's empty `list_tables` ([[#HLA-25 — `list_tables` and `get_metadata` return nothing, but SQL sees 26 telemetry objects|HLA-25]]) look like the same direct-connector catalog behavior. Shared cause unconfirmed.
+- **"Live" is under-documented end to end.** Direct Postgres isn't documented as direct ([[#HLA-26 — The direct Postgres connection is live, but the docs describe Postgres only as a synced source|HLA-26]]); refresh units and minimums conflict and aren't searchable ([[#HLA-27 — The 1-second refresh setting is findable only by reading docs directly, and the documented limits conflict|HLA-27]]); line charts lack a minute grain ([[#HLA-30 — Line charts reject `date_grain="minute"` on a seconds-level dashboard|HLA-30]]). Together with [[#HLA-14 — Preview versus published refresh behavior remains unclear|HLA-14]], this is the most consistent theme across both agents for this use case.
+- **Validation catches syntax but not misleading output.** A NULL temperature rendered as a healthy green 0 °C with no warning ([[#HLA-31 — `heat_grid` shows a missing temperature as a green "0 °C"|HLA-31]]). This parallels the native agent's unchecked renders ([[#HLA-18 — Warnings use the error prompt; agent reports a format fix without checking the render|HLA-18]]): "no errors" is not "correct."
+- **Keep cause buckets separate.** MCP/client limits ([[#HLA-24 — Studio MCP is read-only: Claude cannot create `Home Lab_Claude.md`|HLA-24]], [[#HLA-29 — Render output is too large for the client, and long pages are cut off at 3200 px|HLA-29]]), Claude's own error ([[#HLA-32 — Claude's own mistake: `horizontal_bar_chart` x/y swapped|HLA-32]]), and homelab data facts ([[#HLA-33 — What the data says about "update every second" (homelab telemetry, not Evidence)|HLA-33]]) are not Evidence product defects.
 
 Candidate priorities for investigation: task interruption during diagnostic handoff; visible diagnostics at requested acceptance and post-repair validation; loss of entered setup details; inaccessible help while configuring; navigation/help consistency; agent handling of clarification questions. These are provisional priorities within this walkthrough, not validated customer-wide severity ratings.
 
