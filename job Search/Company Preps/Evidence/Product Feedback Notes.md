@@ -10,6 +10,7 @@ support button in the top right on the schedules page doesn't do anything
 - [[Product Review Findings]] — collective intermediate synthesis of positives, pain points, evidence, and open investigations; refine into final feedback later.
 - [[Product Review Plan]] — review questions, hypotheses, customer-use-case plan, and how observations connect to the review.
 - [[Home Lab Analytics - Review Log]] — chronological dictated notes, with Sam's observations separate from interpretation.
+- [[Product Feedback Planning]] — plan for the final feedback notes to Evidence: overall verdict, stages, analysis, and gaps to fill.
 
 
 
