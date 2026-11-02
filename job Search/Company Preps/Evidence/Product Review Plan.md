@@ -7,11 +7,13 @@ Source: Sam's dictated brainstorm and the organized review plan in this chat.
 
 **What makes Evidence a better way for a team to build, maintain, and share dashboards and reports—and how clearly does that value come through when using it?**
 
+**Central question, clarified 2026-11-01:** What value does **Evidence provide over Hex**, for which team and recurring use case, and what evidence would make that team choose it? Use competitor research to answer this, rather than letting the review become primarily an explanation of Hex's strengths. Keep Grafana and AI-built alternatives as supporting comparisons.
+
 Focus primarily on usability, using collaboration as the main lens. Features matter when they help or prevent someone from completing a real task. Keep observed behavior, user expectations, hypotheses, and recommendations distinguishable.
 
 **Working synthesis:** [[Product Review Findings]] — the collective intermediate document: key positives, pain points, source evidence, provisional answers, and next investigations. Refine this into the final feedback later.
 
-**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-41. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
+**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-45. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
 Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
@@ -22,6 +24,8 @@ Supporting material: [[Customer Use Case Research]] (provisional scenarios, not 
 **Partially answered:** Data-grounded suggestions and reporting tools showed value. [[Hex vs Evidence - Product and Growth Research#Product comparison|Research comparison]] now distinguishes workflows and deployment/repo options; unique advantage and long-term reuse remain unproven. [[Product Review Findings#Q1 — Evidence's value|Current answer and limits]].
 
 What value does Evidence provide over Hex, Grafana, or a dashboard built with an AI coding tool such as Claude?
+
+For the primary Hex comparison, test candidate advantages in deployment/runtime ownership, maintaining reusable reports and definitions, and fitting a team's existing development/review workflow. For each, identify the buyer constraint, show the task/outcome, and check Hex's equivalent before calling it a differentiator. AI assistance and code-backed projects alone do not establish an advantage.
 
 Starting hypotheses from the brainstorm, not established product advantages:
 - A standardized framework and reusable components reduce the work of building dashboards.
@@ -53,6 +57,7 @@ Follow a report through **create → share → review → revise → publish →
 - How do teammates give feedback, coordinate changes, and recover from mistakes?
 - Who can view, edit, publish, and manage access?
 - How granular are permissions and roles across workspaces, individual reports, and underlying data?
+- Sam prefers connections scoped to individual projects. Establish the current Studio behavior, then test how project scope, optional sharing/reuse, and user permissions would support the intended collaboration boundary; the exact sharing interaction is not yet specified.
 - Before publishing, can I tell who will see the change?
 
 ### Q4 — How usable is the workflow?
@@ -66,6 +71,7 @@ Where do I feel frustrated, lose confidence, need help, or fail to complete the 
 - When I need documentation, is it easy to find, relevant, and sufficient?
 - Is an obstacle caused by discoverability, unclear behavior, a missing capability, or something still unknown?
 - Which features or interactions make the workflow especially smooth?
+- Would a more agent-centric entry point let a less technical participant complete setup, building, validation, and delivery with fewer handoffs? Sam's proposed broader audience is a hypothesis, not measured demand or a demonstrated reason to choose Evidence over Hex.
 
 A documentation visit is a signal to investigate, not automatically a defect. A missing feature can cause a usability problem; the categories can overlap.
 

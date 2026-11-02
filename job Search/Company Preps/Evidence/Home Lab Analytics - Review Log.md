@@ -1049,6 +1049,21 @@ Date: 2026-11-01. Synthesis of the experience; no new failure or reproduction.
 
 **Connections:** [[Product Review Findings]] central usability request; F03 (repair interrupts work), F04 (readiness), F05 (setup continuity), F08 (external-agent handoff), and F09 (understanding the complete journey). Supports [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated Studio value]] and [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]]. Stronger integration may mean contextual guidance, reliable navigation, preserved state, or appropriate actions; Sam has not requested unrestricted autonomous administration.
 
+### HLA-45 — Project-scoped connections and a clearer Evidence-over-Hex value proposition are priorities
+
+Date: 2026-11-01. Preference and review-priority clarification; no new product test.
+
+**Sam's words:**
+> I would want the scope of the connections to be per project instead of being able to select that. That would be very helpful, I believe. And making connections per project would be good, unless even having a more agent-centric user experience would benefit them, I think, because it could sell to a larger audience. I want to find what value Hex provides over— sorry, I want to find what value Evidence provides over Hex. And yeah, like, that's the central question I want to answer.
+
+**Preference:** Connections should be scoped per project. Sam has not specified the exact default, sharing controls, or reuse model; do not turn this into a detailed configuration requirement or claim that today's Studio definitely lacks project scoping.
+
+**Hypothesis:** A more agent-centric experience could make Evidence useful to a broader audience. This follows HLA-44's request for better integration across Studio workflows, but neither audience demand nor commercial impact is established. It also does not alone distinguish Evidence from Hex's agent workflows.
+
+**Review priority:** Sam corrects the direction explicitly: the central question is **what value Evidence provides over Hex**. Compare specific teams and recurring workflows, rather than accumulating Hex features or assuming Evidence must replicate them. Connect candidate advantages to buyer needs, actual outcomes, and equivalent Hex capabilities.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: primary value question]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: project/data boundaries]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: agent-centric participation]]; [[Product Review Findings#Q1 — Evidence's value|intermediate answer and limits]]. Existing candidate advantages and release boundaries remain in [[Hex vs Evidence - Product and Growth Research]].
+
 ## Emerging patterns
 
 - **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.

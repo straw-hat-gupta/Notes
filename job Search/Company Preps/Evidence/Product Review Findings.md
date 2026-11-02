@@ -2,7 +2,7 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
-This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-44); questions remain in [[Product Review Plan]].
+This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-45); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.
 
@@ -125,6 +125,8 @@ Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|docume
 
 ### Q1 — Evidence's value
 
+**Primary question for the remaining review:** What would make a specific team choose Evidence over Hex? Sam explicitly prioritizes this question in HLA-45. Candidate answers must connect a buyer constraint to a demonstrated outcome; more AI features or code files alone are insufficient. Prioritize testing ownership/deployment flexibility, report/definition reuse, and fit with an existing engineering workflow. These remain hypotheses, not established competitive wins.
+
 **Partially answered.** P01/P04 support value in a structured reporting framework, reusable artifacts, and tools that help agents inspect data and produce useful output. [[Hex vs Evidence - Product and Growth Research]] adds a documented comparison of repository/deployment control versus a broader analytical workspace, with substantial overlap. A repo alone is not a differentiator—especially with Hex 4.0's code-backed direction. Long-term reuse and comparative task outcomes remain untested. Sam's continued difficulty explaining why choose Evidence is itself a positioning/discoverability finding (F09); clearer customer selection stories are needed alongside feature comparisons.
 
 ### Q2 — Studio's additional value
@@ -138,6 +140,8 @@ The research document now distinguishes current Core/Studio capabilities and pub
 **Partially answered.** Invitation/signup and shared editing worked (P03). Understanding roles required explanation, and external Git publication raised an overwrite decision (F01/F05). Permission isolation, reviewer handoff, conflict recovery, and a novice completing maintenance remain untested. Live co-editing is positive evidence, not proof of the entire review/publish/maintain workflow. HLA-43 adds an explicit test of published reader/agent access and project-versus-connection scoping; page visibility must be distinguished from underlying data access.
 
 **Connection-scope research:** Hex explicitly documents shared and project-only connections and separate query-authoring/result permissions. Evidence's per-project hosted connection scoping remains unverified; the pasted agent's assumption that every project can query the organization connection is not established. See [[Hex vs Evidence - Product and Growth Research#Connections, projects, and data access|connection comparison and permission test]]. This is a documentation distinction, not a tested security ranking.
+
+**Sam's preference:** Scope connections per project (HLA-45). Exact sharing/reuse behavior is unspecified; this is a proposed product direction, not confirmation of a missing control. A more agent-centric Studio experience might broaden participation, but that audience hypothesis needs an independent less technical participant and a complete workflow test.
 
 ### Q4 — Usability
 
@@ -174,7 +178,7 @@ The research document now distinguishes current Core/Studio capabilities and pub
 
 | Investigation | State | Evidence |
 |---|---|---|
-| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-44 |
+| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-45 |
 | Customer-grounded business workflows | Proposed; not yet walked through | [[Customer Use Case Research]] |
 | Meeting/distribution/embed journey | Question framed; not yet tested | HLA-41 |
 | Hex vs Evidence product/growth research | Initial primary-source research complete; no comparative product runs | [[Hex vs Evidence - Product and Growth Research]] |
