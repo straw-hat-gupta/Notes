@@ -1081,6 +1081,21 @@ Date: 2026-11-01. Comparative impression and desired workflow; no new test artif
 
 **Connections / test:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: differentiated workflow value]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: data boundaries]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: focused investigation and inspectability]]. Use the same selected-data question in each product, inspect the actual source queries and generated logic, then save/revise the result. No new permission or code-portability test occurred. Synthesis is in [[Product Review Findings]].
 
+### HLA-47 — Code-oriented maintenance with one conversation across chat and IDE views
+
+Date: 2026-11-01. Candidate value proposition and interaction proposal; no new product test.
+
+**Sam's words:**
+> So one value for Evidence over Hex is that, like, you're much closer to the code with Evidence, where that is, like, the focus. And you can use the workflows you already use to maintain code bases, to maintain reports and dashboards with Evidence. I think they would benefit from, like a more agent-centric, because even developers nowadays code with agents. And being able to see it, like Hex has, where you can just see the things that it's making, and it's the chat is the main interface. But I think there should be, like a main chat interface, and then you can also switch to, like IDE mode or something where, like it's on the side, but it's the same chat on the side, and then you can see all the files and stuff it's for, like you would a normal IDE. Then you can also switch chat mode and see, like, well, all the things it's making and organize it however you want, but with the framework of Evidence built in and connectivity with all the workflows in Studio, like connecting warehouses or other connections or with teams. You should be able to do that through the agent, because that's how people work now.
+
+**Candidate value proposition:** Source code is central to Evidence's experience, and teams can apply familiar codebase development/review/maintenance practices to reports. This is Sam's proposed answer to the central Evidence-over-Hex question, not a measured comparative advantage; Hex's code/external-authoring capabilities remain part of the comparison.
+
+**Proposed experience:** One continuing conversation, with a main chat view for generating, inspecting, and organizing outputs and an IDE view for exploring/editing files with that same chat in a sidebar. Preserve conversation/task context between views. Keep Evidence's framework built into the work and connect the agent to surrounding Studio actions, explicitly including warehouse/connection setup and team workflows. Do not reduce the proposal to adding another separate chat surface.
+
+**Rationale / qualification:** Sam believes developers' use of coding agents makes this valuable even for a technical audience. This refines the earlier technical/nontechnical audience hypothesis: code-oriented users may want an agent-centered interface too. It does not establish market-wide behavior, demand, or that Hex already supports all proposed Studio-style administration. No implementation, connection change, or invitation is authorized by this feedback.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: codebase-workflow value]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated authoring and platform actions]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: context continuity and inspecting output]]. Extends HLA-44's integration request and HLA-46's conversational investigation preference. The concise proposal and links to P01/P02 and F03–F05/F08 are in [[Product Review Findings#Current assessment]].
+
 ## Emerging patterns
 
 - **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.

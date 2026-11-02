@@ -13,7 +13,7 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 **Working synthesis:** [[Product Review Findings]] — the collective intermediate document: key positives, pain points, source evidence, provisional answers, and next investigations. Refine this into the final feedback later.
 
-**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-46. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
+**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-47. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
 Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
@@ -45,6 +45,7 @@ What additional value does Evidence Studio provide compared with using the open-
 - Which parts of the workflow become easier, and is that benefit discoverable?
 - Does Studio meaningfully improve collaboration?
 - When would an open-source user have a clear reason to adopt Studio?
+- Evaluate Sam's proposed shared chat/IDE experience: the same conversation and task context across both views, inspectable/organizable outputs, direct file access, and agent-assisted connection/team workflows. See [[Product Review Findings#Current assessment|interaction proposal and rationale]]. This is a design proposal to validate, not an implementation request or established feature absence.
 
 ### Q3 — How well does collaboration work?
 
