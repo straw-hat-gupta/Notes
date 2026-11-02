@@ -1,0 +1,96 @@
+# Evidence Studio: notes from building with it
+
+%% Skeleton. This is the one note the Evidence team reads first. Keep every section brief and link out for evidence and deeper reasoning. Voice: what I did, what I saw, what I wished for, and why I think it matters to Evidence's users. No competitor mentions. %%
+
+**Time spent:** about 1 to 2 hours building and exploring the product, and 3 to 4 hours on market research and analysis.
+
+**What I built:** _To write: one or two sentences. A live homelab health dashboard on my Neon database with the Studio agent, the same page built with Claude over MCP, a second account to test teamwork, and GitHub publishing. Dates: 29 to 31 October 2026._
+
+**Other notes in this folder:**
+
+- [Walkthrough Details](Walkthrough%20Details.md): the fuller account of each stage, with screenshots
+- [Analysis and Customer Reasoning](Analysis%20and%20Customer%20Reasoning.md): why I think each point matters to Evidence's customers
+- [External Research and Sources](External%20Research%20and%20Sources.md): every outside source I used, cited exactly
+- [How I Used AI](How%20I%20Used%20AI.md): how AI helped with building, note-taking, research, and writing
+
+## Summary
+
+%% Draft from the planning doc's overall verdict. Positive about writing reports as code with the agent and staying close to the code and queries. Then briefly: the agent felt like a side helper rather than part of Studio's workflows, and I wanted a more agent-centric view. %%
+
+_To write: 4 to 6 sentences._
+
+## Part 1: what I did
+
+%% One short block per stage: what I did, then my comments tagged Good, Stuck, Surprised, or Wished. Each stage ends with a link to its section in Walkthrough Details. %%
+
+### 1. Creating the project
+
+_To write._ · [Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
+
+### 2. Connecting my database
+
+_To write._ · [Details](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
+
+### 3. Building the report with the agent
+
+_To write._ · [Details](Walkthrough%20Details.md#3.%20Building%20the%20report%20with%20the%20agent)
+
+### 4. Fixing errors
+
+_To write._ · [Details](Walkthrough%20Details.md#4.%20Fixing%20errors)
+
+### 5. Previewing and live data
+
+_To write._ · [Details](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
+
+### 6. Building the same page with Claude over MCP
+
+_To write._ · [Details](Walkthrough%20Details.md#6.%20Building%20the%20same%20page%20with%20Claude%20over%20MCP)
+
+### 7. Inviting a teammate
+
+_To write._ · [Details](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
+
+### 8. Connecting GitHub and publishing
+
+_To write._ · [Details](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
+
+### 9. Coming back later
+
+_To write._ · [Details](Walkthrough%20Details.md#9.%20Coming%20back%20later)
+
+### General navigation
+
+_To write._ · [Details](Walkthrough%20Details.md#General%20navigation)
+
+## Part 2: what I think it means
+
+%% One short paragraph per theme: the point, the customer reason in one line, and a link to the full reasoning. %%
+
+### The agent is great in the file and loosely connected to Studio
+
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%201%20The%20agent%20is%20great%20in%20the%20file%20and%20loosely%20connected%20to%20Studio)
+
+### "Done" didn't tell me what had been checked
+
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%202%20Done%20didn't%20tell%20me%20what%20had%20been%20checked)
+
+### Mixing Studio and Git editing
+
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%203%20Mixing%20Studio%20and%20Git%20editing)
+
+### Which data a project and its agent can reach
+
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%204%20Which%20data%20a%20project%20and%20its%20agent%20can%20reach)
+
+### Seeing what the agent did
+
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%205%20Seeing%20what%20the%20agent%20did)
+
+### Smaller wishes
+
+_To write: a short list._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
+
+## Limits of these notes
+
+_To write: one evaluator, one personal use case, observations not reproduced unless stated, no access to Studio's internals._
