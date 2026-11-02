@@ -75,7 +75,6 @@ I created Home Lab Analytics and asked the agent to build a live dashboard from 
 
 ### General navigation
 
-- **Surprised:** Docs opened a separate site; I expected it to stay in Studio like the other buttons next to it.
 - **Stuck:** The Support button on Schedules did nothing when I clicked it.
 
 [More detail](Walkthrough%20Details.md#General%20navigation)
