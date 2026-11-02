@@ -1,6 +1,6 @@
 # Evidence product feedback: planning
 
-Saved 2026-11-02 from the Claude Doc [Evidence product feedback: planning](https://claude.ai/artifact/BifMambPCuPMv7jv4HnANQ). The Claude Doc is the live version; this is a copy. Sources: [[Home Lab Analytics - Review Log]], [[Product Feedback Notes]], [[Product Review Findings]], [[Evidence Studio - Product Review]], [[Target Market and Customer Needs]], and the [customer research doc](https://claude.ai/artifact/BvGsmju9j1JyMsrqXMmg7W).
+Saved 2026-11-02 (updated with Sam's edits, rev 328) from the Claude Doc [Evidence product feedback: planning](https://claude.ai/artifact/BifMambPCuPMv7jv4HnANQ). The Claude Doc is the live version; this is a copy. Sources: [[Home Lab Analytics - Review Log]], [[Product Feedback Notes]], [[Product Review Findings]], [[Evidence Studio - Product Review]], [[Target Market and Customer Needs]], and the [customer research doc](https://claude.ai/artifact/BvGsmju9j1JyMsrqXMmg7W).
 
 ## How the notes should read
 
@@ -43,7 +43,7 @@ Keep each stage to a few short lines in the final notes. The tags are **Good**, 
 
 ### 2. Connecting my database
 
-- **Stuck:** The agent sent me to the Connectors page, which was outside my project, so the agent wasn't there with me. When I went back to ask it something and then returned, the details I had entered were gone. *(HLA-01)*
+- **Stuck:** The agent sent me to the Connectors page, which was outside my project, so the agent wasn't there with me. I was partway through the add-connection form on the warehouse page. When I went back to ask the agent something and then returned, what I had entered was gone. *(HLA-01)*
 - **Stuck:** The agent gave me a link to the connections page, but clicking it didn't go anywhere. *(HLA-02)*
 - **Stuck:** I couldn't work out how to set a sync schedule. The docs pointed to a Sources page and a Connectors item in the sidebar that I couldn't find. *(HLA-04, HLA-06)*
 - **Surprised:** The agent changed its recommendation from a synced connector to a direct one, and I still couldn't tell which was better for me. I connected using the Neon owner user without creating a read-only role. *(HLA-05)*
@@ -62,8 +62,8 @@ Keep each stage to a few short lines in the final notes. The tags are **Good**, 
 ### 4. Fixing errors
 
 - **Good:** Hovering over an error lets me send it to chat with a ready-made, concise prompt, and that saved me time. *(HLA-15)*
-- **Stuck:** The agent asked me to accept changes while I could see about five errors at the top of the page, something about a string type in a max function. *(HLA-13)*
-- **Stuck:** Sending an error to chat interrupted the temperature components I had already asked for, and that request never finished. *(HLA-16)*
+- **Stuck:** The agent asked me to accept changes while I could see about five errors at the top of the page, something about a string type in a max function. I accepted anyway. *(HLA-13)*
+- **Stuck:** Sending an error to chat interrupted the temperature components I had already asked for, and it didn't finish. I had to prompt the agent again before it built them. *(HLA-16)*
 - **Surprised:** Warnings went to chat with the same "component error" prompt as errors. *(HLA-18)*
 - **Wished:** maybe a separate agent for errors, so a fix doesn't interrupt the conversation I'm in. I'm not sure it's a big deal. *(HLA-16)*
 
@@ -76,7 +76,7 @@ Keep each stage to a few short lines in the final notes. The tags are **Good**, 
 
 - **Good:** Setup was smooth. Claude used Evidence's render tool to check and fix its page before handing it over, and the page had no errors. *(HLA-34, HLA-36)*
 - **Stuck:** Claude couldn't save the page, so it gave me code to paste into Studio. *(HLA-36; tool details agent-logged in HLA-24)*
-- **Agent-logged, not checked by me:** table listing returned nothing while SQL saw the tables, render output was too large for the client, and a missing GPU temperature showed as a green "0 °C". *(HLA-25, HLA-29, HLA-31)*
+- **Agent-logged, not checked by me:** table listing returned nothing while SQL saw the tables, and render output was too large for the client. *(HLA-25, HLA-29)*
 
 ### 7. Inviting a teammate
 
@@ -87,18 +87,18 @@ Keep each stage to a few short lines in the final notes. The tags are **Good**, 
 ### 8. Connecting GitHub and publishing
 
 - **Stuck:** Studio didn't recognize my existing GitHub installation until I switched from all repositories to selected repositories. *(HLA-39)*
-- **Surprised:** A new warning on Publish said remote changes would be overwritten, without showing which ones. It made me wonder what happens when one person edits in a code editor and another in Studio. *(HLA-40, screenshot)*
+- **Surprised:** A new warning on Publish said remote changes would be overwritten, without showing which ones. It made me wonder what happens when one person edits in a code editor and another in Studio. Force Publish wasn't checked by default, and I went ahead with it. *(HLA-40, screenshot)*
 
 ### 9. Coming back later, and after publishing
 
 - **Stuck:** After I closed and reopened my main account, a recent chat still showed its title but said "chat not found". I lost that conversation. *(HLA-38)*
-- **Question I had:** what does a company do with the reports next? How would they show them in meetings, embed them in a product, or let readers use the agent outside of preview? *(HLA-41, HLA-43)*
+- **Question I had:** does every project get every connection, or do I choose which connections a project gets? *(HLA-41, HLA-43)*
 - **Wished:** connections scoped per project. *(HLA-45)*
 - **Wished:** a way to point the agent at only the data I want to analyze, instead of telling it in the prompt to ignore the rest. *(HLA-46)*
 
 ### General navigation (29 Oct notes)
 
-- **Surprised:** The Docs button opened a separate site, while the other buttons next to it stayed in Studio, so I expected in-app docs. I also wondered whether Studio shows tooltips that link functions to the docs.
+- **Surprised:** The Docs button opened a separate site, while the other buttons next to it stayed in Studio, so I expected in-app docs. Studio does show tooltips that link functions to the docs.
 - **Stuck:** The support button on the Schedules page did nothing when I clicked it.
 
 ## Part 2: analysis
@@ -121,7 +121,7 @@ The Part 2 themes come back to three things those customers need: reports they *
 
 **Added 2 Nov (HLA-48), checked against Evidence's docs:**
 
-- **What I like:** the `agent/` directory. Context files are always loaded, skills load on demand, and both are version-controlled per project and ship through Git. Teams that are good with AI can shape the agent that maintains their reports. *(Exists: [Evidence Agent docs](https://docs.evidence.dev/features/evidence-agent))*
+- **What I like:** the `agent/` directory. Context files are always loaded, skills load on demand, and both are version-controlled per project and ship through Git. Teams that are good with AI can shape the agent that maintains their reports. I noticed it in the project structure but didn't edit it during the walkthrough. *(Exists: [Evidence Agent docs](https://docs.evidence.dev/features/evidence-agent))*
 - **Why that matters:** people used to working with agents can treat an Evidence project like any other repo. They bring their own agent through the CLI, keep instructions in files, and review changes in PRs with preview links. *(Exists: [CLI docs](https://docs.evidence.dev/cli))* An agent-centric Studio view would sit on top of that, not replace it.
 - **What I'd add to the case for an agent-centric view:** it may lower the first hill of learning a new framework, even a simple one. It could also show less technical users what a maintained repo looks like, so they and technical teammates share expectations and collaborate more easily. *(Both are hypotheses. The second connects to my question in stage 7 about less technical maintainers.)*
 - **What isn't there yet, as far as the docs show:** the agent acting on Studio's own workflows and settings, such as connections and team members. The agent docs cover answers, insights, and page edits.
@@ -131,7 +131,7 @@ The Part 2 themes come back to three things those customers need: reports they *
 - **What I saw:** I was asked to accept with errors visible, warnings were sent as errors, and an interrupted request never finished. With Claude over MCP, Evidence's render tool let it check its own page before handing it over. *(Stages 4 and 6)*
 - **Why I think it works this way (guess):** The native agent seems to report completion based on its edit, without reading the editor's diagnostics or the render first. The MCP path shows the checking tools already exist.
 - **Why it matters to customers:** Readers act on these numbers in KPI reviews, account health checks, and release reports. As agents make more of the changes, the person approving them needs to know what was checked. This connects to the review bottleneck Sean described, and I'd mention that in one sentence at most.
-- **What I'd change:** before asking me to accept, show what changed, what was checked, and what's still open. Keep warnings and errors distinct.
+- **What I'd change:** before asking me to accept, show what changed, what was checked, and what's still open. Keep warnings and errors distinct. The agent already shows a diff whenever it makes changes; what I was missing was what had been checked.
 
 ### Theme 3: mixing Studio and Git editing
 
@@ -140,10 +140,10 @@ The Part 2 themes come back to three things those customers need: reports they *
 - **Why it matters to customers:** Evidence's pitch is that analysts and engineers can maintain the same reports. That's exactly the team that would see this dialog, and the less technical person is the one least able to judge it.
 - **What I'd change:** show which changes are at risk at the point of decision. I didn't lose any work, and I'd say that.
 
-### Theme 4: what happens after the report is built
+### Theme 4: which data a project and its agent can reach
 
-- **What I saw:** After building, I didn't know how readers would use the report, where they'd use the agent, or which data a project could reach. *(Stage 9)*
-- **Why it matters to customers:** If most users are readers, the reader journey is most of the product. Self-service and embedded analytics are both reader-facing.
+- **What I saw:** After building, I wasn't sure which data a project, and the agent in it, could reach. *(Stage 9)* Readers use the agent in the report itself, through the chat tab in the side menu.
+- **Why it matters to customers:** A data team serving several groups needs to know which data each project and its agent can reach before sharing it.
 - **What I found myself wanting:** connections scoped per project, and a visible way to choose which data an investigation uses. Justification: a data team serving several groups wants each report to reach only the data it's meant to. I'd frame this as a question, because central connections also save admin work.
 
 ### Theme 5: seeing what the agent did
@@ -161,7 +161,7 @@ The Part 2 themes come back to three things those customers need: reports they *
 | Copy button under agent responses (HLA-07) | Maintainers paste SQL, explanations, and answers into tickets, PRs, and docs |
 | Voice-to-text in the agent (HLA-22) | Describing a report out loud may be faster than typing it (my own reason, not backed by research) |
 | Links in agent answers that navigate (HLA-02) | Setup steps are only useful if I can get to the page |
-| In-app docs, or tooltips that link to docs (29 Oct notes) | Keeps a new maintainer in Studio while learning components |
+| In-app docs instead of a separate site (29 Oct notes; tooltips already link to docs) | Keeps a new maintainer in Studio while learning components |
 | Support button on Schedules that responds (29 Oct notes) | Schedules are one way reports reach readers, so help there matters (inferred) |
 
 ## Sources and evidence labels
@@ -182,14 +182,14 @@ Nothing new was tested in the product for this plan.
 
 These are missing from the logs. Claude hasn't guessed at any of them.
 
-- [ ] **Other sessions:** did I use Studio after 31 Oct? If so, what happened that should go in Part 1?
-- [ ] **Stage 2:** which fields were wiped, and was there a save button I hadn't pressed?
-- [ ] **Stage 4:** did I accept with the errors showing? Did the temperature components ever get built?
-- [ ] **Stage 5:** did I ever find out whether preview refreshes live?
-- [ ] **Stage 8:** was Force Publish checked by default, and did I go through with it?
-- [ ] **Stage 9:** did the lost chat ever come back?
-- [ ] **Agent-logged items:** reproduce the green "0 °C" missing value myself, or drop it.
-- [ ] **My judgment:** my log says the agent felt like a smaller model tuned well for Evidence (HLA-17). That's a guess about their internals, so leave it out unless I want to raise it as a question.
-- [ ] **My judgment:** mention Sean's review-bottleneck point in Theme 2, or keep it for the interview?
-- [ ] **Reader view:** one short pass as a reader of the published report would make Theme 4 firsthand.
-- [ ] **Theme 1 (2 Nov):** did I edit `agent/context/instructions.md` or add a skill during the walkthrough? If yes, it moves into Part 1 as a firsthand Good. If not, frame it as something I noticed in the project structure.
+- [x] **Other sessions:** did I use Studio after 31 Oct? If so, what happened that should go in Part 1? No.
+- [x] **Stage 2:** which fields were wiped, and was there a save button I hadn't pressed? I was partly done filling in the add-connection form on the warehouse page.
+- [x] **Stage 4:** did I accept with the errors showing? Did the temperature components ever get built? I accepted with the errors showing. They did get built, but I had to prompt it again.
+- [x] **Stage 5:** did I ever find out whether preview refreshes live? No.
+- [x] **Stage 8:** was Force Publish checked by default, and did I go through with it? It was not checked, and I went through with it.
+- [x] **Stage 9:** did the lost chat ever come back? No.
+- [x] **Agent-logged items:** reproduce the green "0 °C" missing value myself, or drop it. Drop it.
+- [x] **My judgment:** my log says the agent felt like a smaller model tuned well for Evidence (HLA-17). That's a guess about their internals, so leave it out unless I want to raise it as a question. Leave it out.
+- [ ] **My judgment:** mention Sean's review-bottleneck point in Theme 2, or keep it for the interview? My note: the agent does show the diff whenever it makes changes. (Still to decide on the Sean point.)
+- [x] **Reader view:** one short pass as a reader of the published report would make Theme 4 firsthand. Keep this out; the notes focus on my perspective as a user making reports.
+- [x] **Theme 1 (2 Nov):** did I edit `agent/context/instructions.md` or add a skill during the walkthrough? If yes, it moves into Part 1 as a firsthand Good. If not, frame it as something I noticed in the project structure. I did not.
