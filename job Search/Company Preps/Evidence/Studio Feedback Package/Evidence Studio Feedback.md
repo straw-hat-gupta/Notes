@@ -30,7 +30,10 @@ _To write._ · [Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
 
 ### 2. Connecting my database
 
-_To write._ · [Details](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
+- **Stuck:** Connecting Neon took me outside the project, away from the agent. Going back for help meant re-entering some details; I wondered whether the agent could handle setup with me.
+- **Stuck:** I also struggled to choose between direct and synced connections and find the pages the docs described.
+
+[Details](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
 
 ### 3. Building the report with the agent
 
@@ -38,7 +41,10 @@ _To write._ · [Details](Walkthrough%20Details.md#3.%20Building%20the%20report%2
 
 ### 4. Fixing errors
 
-_To write._ · [Details](Walkthrough%20Details.md#4.%20Fixing%20errors)
+- **Good:** Sending a diagnostic to chat included a useful ready-made prompt.
+- **Stuck:** Using it interrupted my temperature request; I had to ask again. I also accepted changes with about five errors showing, without knowing what had been checked.
+
+[Details](Walkthrough%20Details.md#4.%20Fixing%20errors)
 
 ### 5. Previewing and live data
 
@@ -54,7 +60,9 @@ _To write._ · [Details](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
 
 ### 8. Connecting GitHub and publishing
 
-_To write._ · [Details](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
+**Stuck:** Studio kept sending me back to GitHub even though its app was already installed with access to all repositories. Switching to selected repositories and choosing my new repo made it appear in Studio.
+
+[Details](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
 
 ### 9. Coming back later
 

@@ -15,7 +15,13 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The summary's focus is agreed; its wording remains editable. Only the main note's Summary has a working draft. All other skeleton sections remain untouched. Next: choose which moments lead the connection, error-repair, and publishing stages. Keep every walkthrough stage, but use the details note for secondary events. Then draft the walkthrough in a separate pass before moving to analysis.
+The summary's focus is agreed; its wording remains editable. Working drafts now exist for Summary and walkthrough stages 2, 4, and 8 only. Other sections remain placeholders. Next: settle the overwrite warning's placement and select emphasis for the building and collaboration stages, then continue the walkthrough before analysis.
+
+## Walkthrough choices — latest round
+
+- **Connecting data:** keep losing access to the agent as the lead. Re-entering form details is a small aside, not a major standalone finding; connect it to wondering whether the agent could handle setup with Sam. Also retain direct-versus-synced choice and difficulty finding documented navigation.
+- **Fixing errors:** retain the helpful prepared repair prompt, the interrupted temperature request requiring another prompt, and accepting changes without clarity on what had been checked.
+- **GitHub:** focus on recognition of the existing installation and the repository-selection workaround. Placement of the overwrite warning is still to be decided; choosing a lead did not authorize dropping it from the whole package.
 
 The saved [[Product Feedback Planning]] copy also contains later clarifications that supersede older uncertainty: Sam accepted with diagnostics visible; the temperature work required another prompt; Force Publish was not checked by default and was used; the chat did not return. Do not ask these questions again or silently revert to the older report's limits. Sam chose to drop the Claude-only missing-temperature example and to keep a new reader test out of this package.
 
