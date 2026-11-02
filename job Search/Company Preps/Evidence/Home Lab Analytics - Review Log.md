@@ -1036,6 +1036,19 @@ Date: 2026-11-01. Follow-up question; no new UI or permission test.
 
 **Connections:** [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: hosted reader/agent experience]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: content versus data access]]; [[Product Review Findings#F09 — The reason to choose Evidence remains difficult to articulate|F09: explain the complete journey]].
 
+**HLA-43 follow-up — supplied agent answer and Hex comparison (2026-11-01):** Sam pasted an agent answer describing the connection as organization-owned, saying `list_connections` returned nothing, and suggesting an assumption that all projects could query it. Those are supplied claims, not tool results inspected in this note-taking session. Sam asks: “how does this way of doing things with data and connections and projects compare with hex?” An empty connection listing does not establish access scope, and failure to find a project restriction is not proof of unrestricted access. Research establishes explicit Hex workspace/project connection scopes and separate author/result permissions; the comparison and test proposal are in [[Hex vs Evidence - Product and Growth Research#Connections, projects, and data access]]. No new UI or security test occurred.
+
+### HLA-44 — Sam explicitly wants stronger agent integration with Studio workflows
+
+Date: 2026-11-01. Synthesis of the experience; no new failure or reproduction.
+
+**Sam's words:**
+> I do wish that Evidence was able to better interface with the rest of Studio functionalities and workflows.
+
+**Interpretation:** In the surrounding discussion, this concerns how the Evidence agent connects to Studio beyond writing report code. Preserve the distinction between useful report-building assistance and continuity across setup, navigation, repair, validation, and publication. This explicitly states the broader preference behind earlier observations; it is not an independent reproduction of those problems.
+
+**Connections:** [[Product Review Findings]] central usability request; F03 (repair interrupts work), F04 (readiness), F05 (setup continuity), F08 (external-agent handoff), and F09 (understanding the complete journey). Supports [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated Studio value]] and [[Product Review Plan#Q4 — How usable is the workflow?|Q4: usability]]. Stronger integration may mean contextual guidance, reliable navigation, preserved state, or appropriate actions; Sam has not requested unrestricted autonomous administration.
+
 ## Emerging patterns
 
 - **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.
