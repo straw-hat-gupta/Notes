@@ -2,6 +2,8 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
+**Edited report:** [[Evidence Studio - Product Review]] now provides the concise shareable argument, with [[Evidence Studio - Review Evidence|evidence and research notes]]. This document remains the collective working synthesis for future investigations; it should not be forwarded as the final report. No new live-product reproduction was performed during the report-writing pass.
+
 This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-47); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.

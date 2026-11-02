@@ -13,6 +13,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 **Working synthesis:** [[Product Review Findings]] — the collective intermediate document: key positives, pain points, source evidence, provisional answers, and next investigations. Refine this into the final feedback later.
 
+**Shareable report prepared 2026-11-01:** [[Evidence Studio - Product Review]] — the edited product-feedback report, with [[Evidence Studio - Review Evidence|supporting evidence and research qualifications]]. It has been checked against the raw log and challenged by separate evidence, competitive, and product-thinking reviews. It has not been sent externally. Future tests should strengthen or revise it rather than be represented as already completed.
+
 **Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-47. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
 Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
@@ -141,4 +143,4 @@ As I dictate observations in this chat, save them in [[Home Lab Analytics - Revi
 3. A focused comparison showing where alternatives make the same workflows easier.
 4. A short, prioritized set of improvements, weighted toward usability and collaboration.
 
-Current status (2026-11-01): Initial hands-on synthesis and primary-source Hex/Evidence product/growth research are complete and linked in [[Product Review Findings]]. Next work is empirical: validate the high-impact homelab findings, compare external-agent completion and review workflows, and extend to customer-grounded use cases. Record classic versus 4.0 beta in any Hex test. Final feedback has not yet been prepared or sent.
+Current status (2026-11-01): [[Evidence Studio - Product Review]] and [[Evidence Studio - Review Evidence]] are prepared for sharing and linked to the intermediate findings. The report incorporates focused Grafana checks, current primary-source research, and independent analytical audits; none is a new product trial. Next empirical work is to reproduce consequential homelab findings, compare external-agent completion/review, and test recurring customer-grounded reporting. Record classic versus 4.0 beta in any Hex test. Feedback has not been sent externally. Process lessons for a future skill are in [[Product Review - Research and Writing Retrospective]].

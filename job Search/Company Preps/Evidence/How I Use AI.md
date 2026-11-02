@@ -8,7 +8,7 @@ Last updated: 2026-11-01.
 - **Design tests:** Turn customer workflows into reproducible scenarios and success criteria. Prepare minimal-context prompts for comparing the Studio agent with Claude through MCP.
 - **Build and debug:** Use the Studio agent and Claude to inspect Neon data, suggest components, generate dashboards, investigate errors, and check rendered output. Compare their capabilities and the manual work each requires.
 - **Understand workflows and technical issues:** Ask AI to consult documentation and explain publishing conflicts, meeting/report distribution, and product embedding, distinguishing possible causes and suggested workflows from verified results.
-- **Develop product feedback:** Consolidate raw observations into [[Product Review Findings]], connect patterns to the review questions, and track supporting evidence, uncertainty, candidate improvements, and next investigations before finalizing feedback.
+- **Develop and challenge product feedback:** Consolidate raw observations into [[Product Review Findings]], then draft [[Evidence Studio - Product Review]] with a supporting evidence note. Use separate agents to audit provenance, competitive claims, and product priorities; correct overstatements before delivery. Keep [[Product Review - Research and Writing Retrospective|process lessons]] for a future skill.
 
 **My role:** Set the goals, test the actual experience, supply observations, review changes, and judge whether the output is useful. Proposed tests and AI explanations are not automatically verified results.
 

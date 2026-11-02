@@ -35,6 +35,9 @@ A candid, useful review for Evidence that demonstrates product judgment: a clear
 
 ## Method principles worth retaining for a later skill
 
+**Final draft-review corrections:** The evidence reviewer caught “I pasted the output,” which the log did not establish; the final wording describes code supplied for a manual handoff. It also changed “reconcile product state” to “interpret product state” because no Git reconciliation was demonstrated. The product reviewer removed a contrast that could imply Hex requires maintaining every report as a bespoke app, added a concrete hypothetical release-linked reporting job, and made reader delivery a behavioral success check. The competitive reviewer requested a separate Hex MCP citation and an explicit limit on applying classic Git-export behavior to 4.0. Final companion reviews found no remaining material evidence or product-scope issues. This is analytical review, not empirical validation.
+
+
 - Keep a claim ledger with source type, exact observation, permissible inference, and missing verification.
 - Separate user, artifact, agent, documentation, and hypothesis evidence; agents reading the same log do not multiply the sample size.
 - Look for contrary facts before recommending a missing feature. Ask whether existing capabilities are undiscoverable, disconnected, or actually absent.
