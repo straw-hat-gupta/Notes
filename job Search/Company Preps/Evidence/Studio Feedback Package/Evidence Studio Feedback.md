@@ -26,7 +26,9 @@ Writing the report as code with the agent was the best part of Studio for me. I 
 
 ### 1. Creating the project
 
-_To write._ · [Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
+I created Home Lab Analytics and asked the agent to build a live dashboard from my Neon data, starting with a broad request rather than a detailed specification.
+
+[Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
 
 ### 2. Connecting my database
 
@@ -50,11 +52,16 @@ _To write._ · [Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
 
 ### 5. Previewing and live data
 
-_To write._ · [Details](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
+**Stuck:** I couldn't tell whether my one-second refresh setting applied in preview or only after publishing. I didn't resolve this during the walkthrough.
+
+[Details](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
 
 ### 6. Building the same page with Claude over MCP
 
-_To write._ · [Details](Walkthrough%20Details.md#6.%20Building%20the%20same%20page%20with%20Claude%20over%20MCP)
+- **Good:** I liked that Claude rendered and checked its page before handing it over.
+- **Stuck:** It couldn't save the page through MCP, so the handoff was code for me to paste into Studio.
+
+[Details](Walkthrough%20Details.md#6.%20Building%20the%20same%20page%20with%20Claude%20over%20MCP)
 
 ### 7. Inviting a teammate
 
@@ -70,11 +77,16 @@ _To write._ · [Details](Walkthrough%20Details.md#6.%20Building%20the%20same%20p
 
 ### 9. Coming back later
 
-_To write._ · [Details](Walkthrough%20Details.md#9.%20Coming%20back%20later)
+**Stuck:** Reopening a recent chat on my main account gave “chat not found,” even though its title was still listed. I couldn't get back to the conversation.
+
+[Details](Walkthrough%20Details.md#9.%20Coming%20back%20later)
 
 ### General navigation
 
-_To write._ · [Details](Walkthrough%20Details.md#General%20navigation)
+- **Surprised:** Docs opened a separate site; I expected it to stay in Studio like the other buttons next to it.
+- **Stuck:** The Support button on Schedules did nothing when I clicked it.
+
+[Details](Walkthrough%20Details.md#General%20navigation)
 
 ## Part 2: what I think it means
 

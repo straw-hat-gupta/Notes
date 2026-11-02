@@ -30,7 +30,7 @@ _To write: the open question on preview refresh. Any doc observations Claude rec
 
 ## 6. Building the same page with Claude over MCP
 
-_To write: prompt given, render-and-check loop, paste-in handoff. Agent-logged items labeled._
+I asked Claude to build a separate page with the same basic homelab goal through Evidence's Studio MCP. I liked that it rendered and checked the page before handing over the result. It couldn't save the page through that interface, so it supplied code for me to paste into Studio. This was a second build, not a controlled comparison of models or a check of every displayed value.
 
 ## 7. Inviting a teammate
 
@@ -42,7 +42,7 @@ _To write: existing GitHub installation not recognized; changing from all reposi
 
 ## 9. Coming back later
 
-_To write: "chat not found" for a recent chat; questions about which connections a project gets._
+After closing and reopening my main account, I could still see the title of a recent conversation, but opening it returned “chat not found.” I couldn't get back to that conversation. This describes lost access to the chat; I don't know what happened to it internally.
 
 ## General navigation
 
