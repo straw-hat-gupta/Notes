@@ -1017,6 +1017,25 @@ Date: 2026-11-01. Post-walkthrough reflection; no new comparative product test.
 
 **Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: differentiated value]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated Studio experience]]; [[Product Review Plan#Q5 — Which customer use cases matter most?|Q5: customer relevance]]; [[Hex vs Evidence - Product and Growth Research]]. Continues the post-creation questions in HLA-41 and the workflow-integration concerns in HLA-17. See [[Product Review Findings#F09 — The reason to choose Evidence remains difficult to articulate|F09]] for the synthesis.
 
+### HLA-43 — Published reader experience and project/data boundaries are unclear
+
+Date: 2026-11-01. Follow-up question; no new UI or permission test.
+
+**Sam's words:**
+> So if agent, evidence agent is just like the chat thing that comes up when I preview my project, how— what is this supposed to look like in actual company? Like, are they just supposed to preview their project from Studio, and that's just how they interact with it from preview, which doesn't make sense to me? Or, like, do they deploy it somewhere, and then from there they have this, like, project with, like, connections to, like, various databases and things like that? And, or, like, can I make— is every project access to all databases, or is it, like, do I have to select which project gets what connections?
+
+**Type:** Author/reader experience discovery and connection/access-scoping questions.
+
+**Observation:** Sam cannot yet map the editor-side agent, preview chat, published reports, and database connections into a company's day-to-day workflow. They ask whether readers use preview, whether hosting is separate, and whether each project selects its connections. This extends HLA-41/HLA-42: getting a report built has not yet made the operating model clear.
+
+**Documentation-informed answer, checked 2026-11-01:** Studio publishes reports for viewers; preview is part of authoring, and publishing does not require connecting an own GitHub repo. The editor-side agent can edit pages; the reader-facing agent answers from published report/query context when enabled. The CLI docs describe using the Studio organization's data connection, and managed-warehouse docs describe reusing connected sources across reports. Page grants govern content access; table/row rules govern data, with direct-connector-specific limits. [Publishing](https://docs.evidence.dev/publishing), [Editing](https://docs.evidence.dev/editing), [Evidence Agent](https://docs.evidence.dev/features/evidence-agent), [Connections](https://docs.evidence.dev/cli/connections), [Data access rules](https://docs.evidence.dev/features/row-level-security)
+
+**Scope not established:** No documented per-project connection allowlist was found in the consulted pages. Do not infer either that every project can query every database or that separate projects isolate data. Multiple synced sources in Evidence Warehouse also do not establish arbitrary cross-database joins between direct connections. For Sam's direct Neon/Postgres connector, queries run as the configured database role; the connector docs say per-Evidence-viewer Postgres session-identity mapping is not yet supported. [Warehouse](https://docs.evidence.dev/evidence-warehouse), [Postgres](https://docs.evidence.dev/direct-connectors/postgres)
+
+**Next test:** Use the second account to open the published report and agent outside the editor, then test allowed/denied pages and data under scoped credentials. Inspect whether Studio offers explicit connection-to-project assignment; record supported behavior rather than treating a project boundary or schema-browser filter as a security boundary.
+
+**Connections:** [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: hosted reader/agent experience]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: content versus data access]]; [[Product Review Findings#F09 — The reason to choose Evidence remains difficult to articulate|F09: explain the complete journey]].
+
 ## Emerging patterns
 
 - **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.

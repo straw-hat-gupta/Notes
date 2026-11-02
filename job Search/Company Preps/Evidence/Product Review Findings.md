@@ -2,7 +2,7 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
-This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-42); questions remain in [[Product Review Plan]].
+This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-43); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.
 
@@ -117,6 +117,8 @@ Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|docume
 
 **Direction:** Explain the complete author/reader journey and make differentiated value tangible through relevant customer stories: **who had which problem → what they used before → why Evidence fit → how the team builds, maintains, and delivers the work → what improved**. Repo control, self-hosting, and reusable report components are candidate selection reasons to validate with buyers, not substitutes for demonstrated outcomes. Compare a technical maintainer and a less technical reader/reviewer separately.
 
+**Follow-up evidence:** Sam also asks whether company users must interact through preview, where the published agent lives, and whether connections are assigned per project. This makes the author/reader and content/data boundary confusion concrete. Docs establish a published reader experience and organization-level data setup; per-project connection assignment remains unverified. [[Home Lab Analytics - Review Log#HLA-43 — Published reader experience and project/data boundaries are unclear|HLA-43]]
+
 ## Provisional answers to the review plan
 
 ### Q1 — Evidence's value
@@ -131,7 +133,7 @@ The research document now distinguishes current Core/Studio capabilities and pub
 
 ### Q3 — Collaboration
 
-**Partially answered.** Invitation/signup and shared editing worked (P03). Understanding roles required explanation, and external Git publication raised an overwrite decision (F01/F05). Permission isolation, reviewer handoff, conflict recovery, and a novice completing maintenance remain untested. Live co-editing is positive evidence, not proof of the entire review/publish/maintain workflow.
+**Partially answered.** Invitation/signup and shared editing worked (P03). Understanding roles required explanation, and external Git publication raised an overwrite decision (F01/F05). Permission isolation, reviewer handoff, conflict recovery, and a novice completing maintenance remain untested. Live co-editing is positive evidence, not proof of the entire review/publish/maintain workflow. HLA-43 adds an explicit test of published reader/agent access and project-versus-connection scoping; page visibility must be distinguished from underlying data access.
 
 ### Q4 — Usability
 
@@ -168,7 +170,7 @@ The research document now distinguishes current Core/Studio capabilities and pub
 
 | Investigation | State | Evidence |
 |---|---|---|
-| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-42 |
+| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-43 |
 | Customer-grounded business workflows | Proposed; not yet walked through | [[Customer Use Case Research]] |
 | Meeting/distribution/embed journey | Question framed; not yet tested | HLA-41 |
 | Hex vs Evidence product/growth research | Initial primary-source research complete; no comparative product runs | [[Hex vs Evidence - Product and Growth Research]] |
