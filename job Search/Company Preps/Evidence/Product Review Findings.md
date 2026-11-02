@@ -25,6 +25,15 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 
 **Rationale to validate:** A technical audience can still prefer agent-led work; code-oriented maintenance and a primary chat interface can support the same person. Sam's belief that this reflects how developers now work motivates the proposal, but adoption and audience expansion have not been measured. This would connect the existing suggestions/preview benefits (P01/P02) to the continuity and handoff issues (F03–F05/F08). [[Home Lab Analytics - Review Log#HLA-47 — Code-oriented maintenance with one conversation across chat and IDE views|HLA-47]]
 
+**Extension: the `agent/` directory, observability, and shared repo literacy (HLA-48, 2026-11-02):** Sam sees the version-controlled `agent/` directory as a real strength for AI-experienced teams. They can work on Evidence like any repo, with their own agent, instructions, and Git, and the proposed agent-centric interface would sit on top. Sam adds three reasons and one request:
+
+- **Lower first hill:** an agent-centric interface may ease learning the framework. *Hypothesis, untested.*
+- **Studio actions:** the interface should reach Studio's workflows and settings. *Not documented today; agent docs cover answers, insights, and page edits.*
+- **Shared repo literacy:** showing the repo inside an agent-centric view could help less technical users learn what a maintained project looks like, so they and technical teammates share expectations. *Hypothesis; connects to HLA-23.*
+- **Request, agent observability:** trace and log what the Evidence Agent does, possibly through an external service. *Partly exists:* answers show their query and source, insights keep prompt and implementation notes, and Enterprise streams audit logs to SIEMs (agent coverage unstated). No agent trace view or evals are documented by Evidence. The evals Sam recalled come from competitor research and must not be attributed to Evidence.
+
+Sources and the full check table are in [[Home Lab Analytics - Review Log#HLA-48 — The `agent/` directory, an agent-centric Studio, agent observability, and shared repo literacy|HLA-48]].
+
 **Hex research update:** Compare complete workflows, not AI/MCP checkboxes. Hex documents in-product reviews and external-agent authoring; Evidence documents its open-source Core and own-repo workflow. Hex's new code-backed 4.0 is private beta, so “only Evidence is code-based” is not a defensible distinction. These are research-backed comparison questions, not observed Hex usability wins. Details, release caveats, sources, and growth hypotheses are in [[Hex vs Evidence - Product and Growth Research]].
 
 **AI across the workflow — working comparison:** Hex appears to make AI a broader interface across the analytics lifecycle—from asking questions and investigating data to building apps and overseeing agent behavior. Evidence Studio also makes AI central to report creation and exploration; my testing so far raises questions about how smoothly its agent connects with the surrounding Studio workflow.
