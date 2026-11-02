@@ -54,3 +54,13 @@ Method sources consulted: [NN/G severity guidance](https://www.nngroup.com/artic
 This work produced a written synthesis and refreshed desk research. It did not reproduce the Studio failures, test Hex/Grafana, measure maintenance outcomes, contact customers, change infrastructure, or submit feedback externally. A later skill should include optional empirical checks when access, time, and authorization support them; the current report does not claim those checks occurred.
 
 No skill was created. Keep this note updated with any material final-review corrections and future lessons from delivering or testing the report.
+
+## Follow-up: target-market research, 2026-11-02
+
+Produced [[Target Market and Customer Needs]] using product pages, workflow blogs, specific docs, customer/employer accounts, and primary occupational references. No new subagents, product trials, or outreach were used in this pass.
+
+**Worked:** following the site's actual product links recovered canonical URLs after guessed paths failed. Full `list_docs` discovery revealed many more SaaS connectors than the warehouse overview lists; individual connector pages prevented false “missing Salesforce/Mixpanel/Notion/GitLab” claims. Reading actual embed requirements showed work retained by application engineers, and page-scoped embedded chat differed from broad internal agent exploration. Comparing Enterprise marketing with publishing docs exposed a GitHub Enterprise Server support discrepancy worth asking about.
+
+**Needed care:** broad searches for “Evidence analytics engineer” returned generic evidence language and aggregators. Exact employer/primary-domain searches were stronger. One GitLab job-family URL redirected to authentication, so accessible team/role documentation and dbt's role definition were used instead; no bypass was attempted. Brighthive again timed out on direct fetch but was recoverable through primary-domain search. Source ingestion must not be equated with action writeback, automatic agent-context sync, or version-control integration. An employer posting can describe intended work rather than a fully deployed workflow.
+
+**Product lesson:** define the recurring job, maintainer, decision user, buyer, and operating constraints before evaluating a feature. Industry logos and tool lists do not establish segment priority, purchase rationale, or value delivered. Keep the commercial hypothesis separate from the source-supported product map.

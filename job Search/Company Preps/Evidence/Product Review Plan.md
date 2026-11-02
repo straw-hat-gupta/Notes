@@ -19,6 +19,8 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
+**Target-market research, 2026-11-02:** [[Target Market and Customer Needs]] maps the current product portfolio to customer segments, author/consumer/buyer roles, end-to-end workflows, surrounding tools, integration boundaries, and value-validation questions. Use it to select relevant participants and tasks. Intended audience, documented adoption, inferred buying roles, and measured value remain distinct; this is not a verified commercial ICP.
+
 ## Review questions
 
 ### Q1 — Why choose Evidence?
@@ -82,6 +84,8 @@ A documentation visit is a signal to investigate, not automatically a defect. A 
 ### Q5 — Which customer use cases matter most?
 
 **Open pending customer validation and walkthroughs:** Research identifies candidates, not the highest-value workloads or largest customers. [[Product Review Findings#Q5 — Priority customer use cases|Current answer and next evidence]].
+
+[[Target Market and Customer Needs]] now grounds four candidate workflows: maintained business reporting, guided customer-health analysis, embedded customer reporting, and release-linked quality reporting. It distinguishes technical maintainers from downstream decision users and identifies adjacent work the product may not complete. Segment revenue, buying rationale, and realized value still need validation.
 
 Identify three high-value, recurring workflows among major Evidence customers and try them myself.
 

@@ -3,6 +3,8 @@
 Research date: **2026-10-31** (America/Edmonton).  
 Related: [[Product Review Plan]] · [[Home Lab Analytics - Review Log]] · [[Market Research]]
 
+**Broader market research, 2026-11-02:** [[Target Market and Customer Needs]] extends these adoption cases into a product-to-workflow-to-role map, checks the full connector catalog, adds historical Zitcha collaboration, and assesses candidate needs and integration handoffs. This original note retains its earlier research date and boundaries; neither document identifies the largest paying customers.
+
 ## Finding
 
 **Public sources establish named organizational adoption and useful workflows, but not Evidence's three largest paying customers or their three most common use cases.** Select review scenarios by the strength of the evidence, and ask Evidence to validate their commercial importance.

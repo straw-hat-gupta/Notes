@@ -1,6 +1,6 @@
 # Evidence product review — working findings
 
-Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
+Updated: **2026-11-02**. **Intermediate synthesis, not the final feedback to Evidence.**
 
 **Edited report:** [[Evidence Studio - Product Review]] now provides the concise shareable argument, with [[Evidence Studio - Review Evidence|evidence and research notes]]. This document remains the collective working synthesis for future investigations; it should not be forwarded as the final report. No new live-product reproduction was performed during the report-writing pass.
 
@@ -140,6 +140,8 @@ Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|docume
 
 ### Q1 — Evidence's value
 
+**Target-market refinement (2026-11-02):** [[Target Market and Customer Needs]] supports a maintainer-to-consumer hypothesis: data teams curate reports, definitions, and analytical procedures for colleagues or external customers. This is more precise than a technical-versus-nontechnical audience split. The current Agent product page and launch post explicitly cover business-user investigation and saved insights; the opportunity to investigate is delivery of that existing strategy, not presumed absence of conversational analytics.
+
 **Primary question for the remaining review:** What would make a specific team choose Evidence over Hex? Sam explicitly prioritizes this question in HLA-45. Candidate answers must connect a buyer constraint to a demonstrated outcome; more AI features or code files alone are insufficient. Prioritize testing ownership/deployment flexibility, report/definition reuse, and fit with an existing engineering workflow. These remain hypotheses, not established competitive wins.
 
 **Sam's candidate answer (HLA-47):** Evidence keeps the report's source code central and lets a team maintain dashboards through familiar codebase workflows. The value to demonstrate is continuity with existing development, review, and maintenance practices. Hex also exposes code and supports external authoring, so test the practical depth of that workflow rather than claiming code access is exclusive to Evidence. The proposed chat/IDE experience would make this value accessible through an agent while preserving direct code control; it is a future direction, not an existing advantage.
@@ -167,6 +169,8 @@ The research document now distinguishes current Core/Studio capabilities and pub
 ### Q5 — Priority customer use cases
 
 **Open pending validation.** [[Customer Use Case Research]] provides three evidence-informed scenarios, not a ranking of the largest customers or a verified top-three workload. Home Lab Analytics is a personal exploratory case. Complete customer-grounded business/reporting workflows before calling these findings representative.
+
+**Additional research:** [[Target Market and Customer Needs]] maps product/workflow signals, actual adoption examples, work roles, integration types, and value gaps. It adds historical Zitcha collaboration and distinguishes internal reporting, governed self-service, embedded delivery, research/framework use, and partners. Core adoption is not Studio demand; source connectors are not operational writeback or context synchronization. Prioritize a recurring business-report revision with an independent reader, then validate actual analytical-method reuse.
 
 ### Q6 — Alternatives and Hex growth
 
