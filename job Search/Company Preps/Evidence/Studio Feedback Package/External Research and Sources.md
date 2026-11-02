@@ -12,13 +12,23 @@ _To write: what I looked at (Evidence's docs, product pages, pricing, changelog,
 
 | ID | Claim | Source (MLA in-text) |
 | --- | --- | --- |
-| S1 | _To fill_ | _e.g. ("Pricing")_ |
+| | _Pending selection; no pricing claim is needed for the current analysis draft._ | |
 
 ## Evidence Agent, CLI, and MCP
 
 | ID | Claim | Source (MLA in-text) |
 | --- | --- | --- |
-| | _To fill: agent/ directory, CLI with your own agent, Studio MCP tools, insight provenance._ | _e.g. ("Evidence Agent," Evidence Docs)_ |
+| S1 | Project `agent/` files provide always-loaded context and on-demand skills, version-controlled with the project. This establishes a capability, not that I customized or tested it. | ("Evidence Agent," Evidence Docs) |
+| S2 | The CLI supports local development with an agent of your choice, with GitHub PR previews documented. I did not test the local CLI path in this walkthrough. | ("CLI") |
+| S3 | The editor agent proposes a diff and can update project/page settings. My integration wish must not imply either capability is absent. | ("Editing") |
+| S4 | The Analytics Agent page describes queries/sources behind answers and prompts/implementation notes saved with insights. This is not proof of a complete action trace. | ("Analytics Agent") |
+
+## Data setup and access
+
+| ID | Claim | Source (MLA in-text) |
+| --- | --- | --- |
+| S5 | The logged-in CLI uses the Studio organization's connection, credentials, and access rules. This alone does not establish every project's effective access or project-scoping options. | ("Connect Your CLI to Your Data") |
+| S6 | Table and row access controls are documented separately from report content; direct-connector users must check connector-specific rules. These were not tested here. | ("Row Level Security") |
 
 ## Publishing, Git, and collaboration
 
@@ -34,4 +44,4 @@ _To write: what I looked at (Evidence's docs, product pages, pricing, changelog,
 
 ## What I looked for and couldn't find
 
-_To write: agent traces or evals in Evidence's docs, the agent acting on Studio settings, and any docs I couldn't locate during the walkthrough, with the searches and pages checked._
+_To finish after scope selection: log any claims of missing documentation narrowly, with pages/searches checked. The Editing guide already documents project/page settings changes. Do not claim the agent cannot change settings in general. No absence claim about traces, evals, or connection/team administration is established by the current six-source check._

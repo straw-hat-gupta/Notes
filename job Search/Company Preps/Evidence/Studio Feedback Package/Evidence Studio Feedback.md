@@ -94,19 +94,21 @@ I created Home Lab Analytics and asked the agent to build a live dashboard from 
 
 ### The agent is great in the file and loosely connected to Studio
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
+I'd like one continuing conversation: a main chat view for exploring what to build, and a code view with the same conversation alongside the files. That could keep what I liked about seeing the queries while reducing backtracking. I'd also like that help to carry through connection setup and other Studio workflows, so a maintainer isn't repeatedly explaining the task before checking the report their colleagues will use.
 
-### "Done" didn't tell me what had been checked
+[Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#What%20was%20checked)
+### Knowing what the agent did and checked
+
+The diff showed the edit, but I couldn't tell what had been checked. I'd like the agent to say what changed, what it validated, and what remains open, with a record I can return to after an interruption. That would help a maintainer review a report and later explain a result to a reader.
+
+[Reasoning](Analysis%20and%20Customer%20Reasoning.md#What%20the%20agent%20did%20and%20checked)
 
 ### Which data a project and its agent can reach
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Data%20scope)
+I wasn't clear which connections a project and its agent could use. I'd like project-scoped connections and a visible way to choose the data for one investigation. For a data team serving several groups, I think that would make the intended scope easier to understand before sharing a report. I haven't established whether that configuration already exists; choosing relevant data and enforcing access are separate questions.
 
-### Seeing what the agent did
-
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20observability)
+[Reasoning](Analysis%20and%20Customer%20Reasoning.md#Data%20scope)
 
 ### Smaller wishes
 

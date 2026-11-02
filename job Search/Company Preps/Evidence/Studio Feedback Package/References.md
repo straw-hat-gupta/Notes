@@ -12,7 +12,11 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Claims th
 
 "Changelog." *Evidence Docs*, docs.evidence.dev/changelog. Accessed 2 Nov. 2026. %% URL to confirm %%
 
-"CLI." *Evidence Docs*, docs.evidence.dev/cli. Accessed 2 Nov. 2026. %% URL to confirm %%
+"CLI." *Evidence Docs*, docs.evidence.dev/cli. Accessed 2 Nov. 2026.
+
+"Connect Your CLI to Your Data." *Evidence Docs*, docs.evidence.dev/cli/connections. Accessed 2 Nov. 2026.
+
+"Editing." *Evidence Docs*, docs.evidence.dev/editing. Accessed 2 Nov. 2026.
 
 "Embedded Analytics." *Evidence*, evidence.dev/product/embedded-analytics. Accessed [date]. %% from notes %%
 
@@ -33,6 +37,8 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Claims th
 "Pricing." *Evidence*, evidence.dev/pricing. Accessed 2 Nov. 2026. %% from notes; checked in research on 2 Nov %%
 
 "Publishing." *Evidence Docs*, docs.evidence.dev/publishing. Accessed [date]. %% from notes %%
+
+"Row Level Security." *Evidence Docs*, docs.evidence.dev/features/row-level-security. Accessed 2 Nov. 2026.
 
 "Self-Hosting." *Evidence Docs*, docs.evidence.dev/self-host. Accessed [date]. %% from notes; confirm page title %%
 

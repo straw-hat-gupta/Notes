@@ -15,7 +15,14 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The summary's focus is agreed; its wording remains editable. The main walkthrough now has a working draft for every stage, including general navigation. Selected companion sections are drafted; remaining detail, introductory metadata, analysis, sources, and AI-use notes remain unfinished. Next: choose the scope and organization of the analysis before drafting it.
+The summary's focus is agreed; its wording remains editable. The main walkthrough is drafted. The main analysis and companion now have drafts for agent integration, combined action/check visibility, and data scope, with selected sources recorded. Smaller wishes, remaining walkthrough detail, introductory metadata, customer-source selection, and AI-use notes remain unfinished. Next: select smaller wishes and the strength of the proposed customer-benefit claims before polishing the analysis.
+
+## Analysis choices
+
+- Briefly include both the shared-conversation chat/IDE idea and help with Studio setup/workflows in the main analysis; keep details in the companion.
+- Include both project-scoped connections and a visible data choice for each investigation, framed as wishes/questions rather than unrestricted-access claims.
+- Combine readiness and action history into one section: what changed, what was checked, what remains open, and what can be revisited.
+- Current source check confirms the native agent already shows a diff and can modify project/page settings. Don't imply these are absent when discussing broader connection/team workflows.
 
 ## Walkthrough choices — latest round
 

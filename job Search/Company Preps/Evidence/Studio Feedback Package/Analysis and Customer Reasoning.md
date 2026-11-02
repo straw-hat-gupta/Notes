@@ -6,23 +6,33 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Sources: 
 
 ## Who I kept in mind
 
-_To write: data teams that own a reusable reporting system for people who don't maintain the code; maintainer and reader roles; the unlimited-user Team plan. Mark as my inference with citations._
+I kept two people in mind: the person maintaining reports, queries, and shared definitions, and the colleague using those reports to answer a business question. Evidence describes readers asking questions and saving shareable insights, with reports and project knowledge supplying context (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). My reasoning is that reducing the maintainer's repeated work leaves more time to check what readers will see. This is a customer lens for interpreting my experience, not a customer study.
 
 ## Agent integration
 
-_To write: strong in the file, loosely connected to Studio. The agent/ directory and CLI as existing strengths. The one-conversation chat and IDE views idea. Lower learning curve and shared repo literacy as hypotheses. Agent acting on Studio settings not documented._
+**What prompted this:** the agent helped me build the report, but I left it behind during connection setup and had to repeat a request after a repair interrupted it. My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
 
-## What was checked
+**What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent," Evidence Docs](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
-_To write: acceptance with errors visible, warnings sent as errors, the diff the agent already shows, and the render check the MCP path used._
+**What I'd explore:** a main chat view showing generated outputs, and a file/preview view with the same conversation alongside it. I'd like the agent to help with connection and team setup within my permissions too. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+
+For a maintainer, that could reduce re-explaining and backtracking without hiding the code they need to review. A lower learning curve or better collaboration with less technical colleagues are possibilities to test, not outcomes I measured.
+
+## What the agent did and checked
+
+**What prompted this:** I accepted changes while errors were visible, a repair interrupted requested work, and I later couldn't reopen a chat. Claude's render/check loop was a useful contrast in how the result was handed over. The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
+
+**What already exists:** Evidence describes queries and sources behind answers, with the prompt and implementation notes saved alongside insights (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). That is useful provenance; I did not test a complete record of agent actions during this walkthrough.
+
+**What I'd like:** a concise completion note saying what changed, which checks ran, and what remains open, plus a record of queries, edits, and check results I can return to. This would help the maintainer review an agent-made change and answer a reader asking where a number came from. A repair should also retain the original request so the record and the actual work stay aligned. I don't know whether the readiness mismatch came from unavailable diagnostics, missed feedback, or something else.
 
 ## Data scope
 
-_To write: which data a project and its agent can reach; project-scoped connections; choosing data for an investigation. Framed as questions._
+**My question:** which connections can this project and its agent use, and how do I make that scope explicit? The CLI docs describe using the organization's data connection; that does not establish every project's effective access (["Connect Your CLI to Your Data"](https://docs.evidence.dev/cli/connections)).
 
-## Agent observability
+I'd prefer project-scoped connections and a visible choice of data for an investigation. For a data team serving several groups, I think that could make the intended scope easier to understand before sharing a report. Central connections may also save repeated administration; I haven't tested that tradeoff.
 
-_To write: what exists (query and source on answers, insight notes, Enterprise audit logs with agent coverage unstated, deploy previews for context), what I couldn't find (agent trace, evals), and what I found myself wanting._
+Choosing relevant data is different from enforcing who can access it. Evidence documents table/row controls and directs users of direct connectors to connector-specific rules (["Row Level Security"](https://docs.evidence.dev/features/row-level-security)). I did not test those controls or establish whether hosted project-specific connection configuration exists. This is a question and a preference, not a claim that the agent can query everything.
 
 ## Smaller wishes
 
