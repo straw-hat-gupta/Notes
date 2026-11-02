@@ -34,7 +34,7 @@ I asked Claude to build a separate page with the same basic homelab goal through
 
 ## 7. Inviting a teammate
 
-I tested with a second account. The invitation let me create an account through the link, and I could see edits appear live in both sessions before connecting GitHub. I needed the docs to understand the roles, especially Viewer versus Org Viewer. This was my own two-account test, not a separate teammate trying the workflow.
+I tested with a second account. The invitation let me create an account through the link, and I could see edits appear live in both sessions before connecting GitHub. This was my own two-account test, not a separate teammate trying the workflow.
 
 ## 8. Connecting GitHub and publishing
 

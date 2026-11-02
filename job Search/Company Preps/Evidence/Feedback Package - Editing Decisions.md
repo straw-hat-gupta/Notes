@@ -10,12 +10,13 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 - Justify that continuity through less repeated work for maintainers and more time checking what readers will see.
 - Ground customer reasoning in the data team and its business readers together. Sam's firsthand perspective remains that of a report author; reader benefits should be explained as reasoning, not invented reader tests.
 - Aim for about **1,000 words in the main note**, retaining a brief entry for every walkthrough stage. Supporting detail is optional reading.
+- The main note must be self-contained: a reader should understand what was built, what happened, why it matters, and the limits without opening another document. Move the supporting-note menu to the end; links add depth and source detail rather than supply missing explanations.
 - Keep the tone generally positive, natural, brief, and honest. Show where Sam got stuck, what surprised him, what he wanted, and his labeled reasoning about the experience.
 - Keep competitor research out of the shared package; use it privately to sharpen the customer reasoning.
 
 ## Current stage
 
-The summary's focus is agreed; its wording remains editable. The main walkthrough is drafted. The main analysis and companion now have drafts for agent integration, combined action/check visibility, and data scope, with selected sources recorded. Smaller wishes, remaining walkthrough detail, introductory metadata, customer-source selection, and AI-use notes remain unfinished. Next: select smaller wishes and the strength of the proposed customer-benefit claims before polishing the analysis.
+The summary's focus is agreed; its wording remains editable. The main walkthrough and three analysis sections are drafted, with context, limits, and a brief AI-use disclosure so the main note can stand alone. Supporting links are at the end. Smaller wishes, remaining walkthrough detail, customer-source selection, and the fuller AI-use note remain unfinished. The three pending content questions about smaller wishes, a customer task, and learning/repo literacy still apply; this steering does not answer them.
 
 ## Analysis choices
 
@@ -30,7 +31,7 @@ The summary's focus is agreed; its wording remains editable. The main walkthroug
 - **Fixing errors:** retain the helpful prepared repair prompt, the interrupted temperature request requiring another prompt, and accepting changes without clarity on what had been checked.
 - **GitHub:** focus on recognition of the existing installation and the repository-selection workaround. Sam explicitly chose to leave the overwrite warning out of the entire shared package. Remove its screenshot and related mixed Studio/Git analysis placeholders from that folder; retain the private evidence/history. This is editorial selection, not retraction of the observation.
 - **Building:** give the most space to data-grounded component suggestions and missing telemetry that Sam acted on. Mention visible queries and progressive preview briefly.
-- **Teammate:** keep signup through the invitation and live editing positive in the main note. Put role confusion only in the supporting details, and identify this as Sam's second-account test.
+- **Teammate:** keep signup through the invitation and live editing positive, identified as Sam's second-account test. Latest steering removes role confusion from the entire shared package, including supporting details; retain it only in the private record.
 - **MCP:** keep the appreciated render/check loop and manual code handoff. Leave agent-logged metadata/catalog and image-size problems out of the whole shared package, including supporting details. Do not claim the Claude page was pasted or published.
 - **Data-scope questions:** analysis only; keep the returning-later walkthrough entry focused on the inaccessible conversation.
 - **Navigation:** keep both the Docs-button expectation and the unresponsive Schedules Support button in the main note. The latter describes Sam's click, not a universal claim about support availability.
