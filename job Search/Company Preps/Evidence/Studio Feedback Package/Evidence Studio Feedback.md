@@ -69,23 +69,23 @@ _To write._ · [Details](Walkthrough%20Details.md#General%20navigation)
 
 ### The agent is great in the file and loosely connected to Studio
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%201%20The%20agent%20is%20great%20in%20the%20file%20and%20loosely%20connected%20to%20Studio)
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
 
 ### "Done" didn't tell me what had been checked
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%202%20Done%20didn't%20tell%20me%20what%20had%20been%20checked)
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#What%20was%20checked)
 
 ### Mixing Studio and Git editing
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%203%20Mixing%20Studio%20and%20Git%20editing)
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Studio%20and%20Git%20editing)
 
 ### Which data a project and its agent can reach
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%204%20Which%20data%20a%20project%20and%20its%20agent%20can%20reach)
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Data%20scope)
 
 ### Seeing what the agent did
 
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Theme%205%20Seeing%20what%20the%20agent%20did)
+_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20observability)
 
 ### Smaller wishes
 
