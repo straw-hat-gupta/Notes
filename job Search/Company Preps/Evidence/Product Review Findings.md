@@ -14,6 +14,10 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 
 **Hex research update:** Compare complete workflows, not AI/MCP checkboxes. Hex documents in-product reviews and external-agent authoring; Evidence documents its open-source Core and own-repo workflow. Hex's new code-backed 4.0 is private beta, so “only Evidence is code-based” is not a defensible distinction. These are research-backed comparison questions, not observed Hex usability wins. Details, release caveats, sources, and growth hypotheses are in [[Hex vs Evidence - Product and Growth Research]].
 
+**AI across the workflow — working comparison:** Hex appears to make AI a broader interface across the analytics lifecycle—from asking questions and investigating data to building apps and overseeing agent behavior. Evidence Studio also makes AI central to report creation and exploration; my testing so far raises questions about how smoothly its agent connects with the surrounding Studio workflow.
+
+Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|documented capabilities]], not a hands-on comparison. The Studio integration concern is grounded in this walkthrough: repair interrupted the active request (F03), completion messages did not establish readiness (F04), and setup guidance lost continuity across pages (F05). This distinguishes breadth of AI capabilities from quality of integration; it does not establish that Hex works better in practice.
+
 ## What worked well
 
 | ID | Finding and evidence | Why it matters |
