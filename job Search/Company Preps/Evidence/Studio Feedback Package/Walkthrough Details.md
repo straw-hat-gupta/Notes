@@ -56,7 +56,7 @@ The useful takeaway for me was the render-and-check loop before handoff. I am no
 
 I tested with a second account. The invitation let me create an account through the link, and I could see edits appear live in both sessions before connecting GitHub. This was my own two-account test, not a separate teammate trying the workflow.
 
-I liked that someone could enter through an invitation without already having an Evidence account, and that shared editing worked before any repository setup.
+I liked that someone could enter through an invitation without already having an Evidence account, and that shared editing worked before I linked the project to GitHub.
 
 ## 8. Connecting GitHub and publishing
 
