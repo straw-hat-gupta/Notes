@@ -16,7 +16,7 @@
 
 ## Summary
 
-%% Working draft, 2 Nov. Opening emphasis chosen by Sam: approachable report writing with visible code/queries. Audience: data team and its business readers. Main-note target: about 1,000 words, retaining every walkthrough stage. Summary wording and emphasis are still being discussed. %%
+%% Working draft, 2 Nov. Direction chosen by Sam: approachable report writing with visible code/queries; continuity reduces repeated work and leaves more time to check what readers see. Save the shared chat/IDE proposal for the analysis. Audience: data team and its business readers. Main-note target: about 1,000 words, retaining every walkthrough stage. Wording remains editable. %%
 
 Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
 
