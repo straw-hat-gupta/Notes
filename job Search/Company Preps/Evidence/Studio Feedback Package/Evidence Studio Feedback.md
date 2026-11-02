@@ -16,9 +16,9 @@
 
 ## Summary
 
-%% Draft from the planning doc's overall verdict. Positive about writing reports as code with the agent and staying close to the code and queries. Then briefly: the agent felt like a side helper rather than part of Studio's workflows, and I wanted a more agent-centric view. %%
+%% Working draft, 2 Nov. Opening emphasis chosen by Sam: approachable report writing with visible code/queries. Audience: data team and its business readers. Main-note target: about 1,000 words, retaining every walkthrough stage. Summary wording and emphasis are still being discussed. %%
 
-_To write: 4 to 6 sentences._
+Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
 
 ## Part 1: what I did
 
