@@ -13,7 +13,7 @@ Focus primarily on usability, using collaboration as the main lens. Features mat
 
 **Working synthesis:** [[Product Review Findings]] — the collective intermediate document: key positives, pain points, source evidence, provisional answers, and next investigations. Refine this into the final feedback later.
 
-**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-45. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
+**Raw case notes:** [[Home Lab Analytics - Review Log]] — chronology and transcripts, HLA-01–HLA-46. The native-agent and Claude/MCP builds, two-account collaboration, and GitHub setup have initial findings; reuse, role isolation, conflict recovery, and meeting/distribution/embed workflows need further testing.
 
 Supporting material: [[Customer Use Case Research]] (provisional scenarios, not a largest-customer ranking) · [[Hex vs Evidence - Product and Growth Research]] (primary-source comparison, growth evidence, and hypotheses; no Hex trial) · [[Claude Dashboard Comparison Prompt]] · [[How I Use AI]].
 
@@ -72,6 +72,7 @@ Where do I feel frustrated, lose confidence, need help, or fail to complete the 
 - Is an obstacle caused by discoverability, unclear behavior, a missing capability, or something still unknown?
 - Which features or interactions make the workflow especially smooth?
 - Would a more agent-centric entry point let a less technical participant complete setup, building, validation, and delivery with fewer handoffs? Sam's proposed broader audience is a hypothesis, not measured demand or a demonstrated reason to choose Evidence over Hex.
+- Can I choose the data for a specific investigation, see what the agent actually used, inspect generated logic, and save a useful result as a maintained report? Distinguish source prioritization/prompt guidance from enforced data permissions; test both rather than assuming a selector restricts access.
 
 A documentation visit is a signal to investigate, not automatically a defect. A missing feature can cause a usability problem; the categories can overlap.
 

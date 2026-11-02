@@ -1064,6 +1064,23 @@ Date: 2026-11-01. Preference and review-priority clarification; no new product t
 
 **Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: primary value question]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: project/data boundaries]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: agent-centric participation]]; [[Product Review Findings#Q1 — Evidence's value|intermediate answer and limits]]. Existing candidate advantages and release boundaries remain in [[Hex vs Evidence - Product and Growth Research]].
 
+### HLA-46 — Conversation-first analysis and visible data scope matter to Sam
+
+Date: 2026-11-01. Comparative impression and desired workflow; no new test artifacts or reproducible sequence supplied.
+
+**Sam's words:**
+> Hex's experience is way more agent-heavy. In Evidence, you create a report and you can ask agent in the chat part about the report and all the data connected. But that agent now has access to all of the data. But what if I only want to analyze certain data? Yeah, I can just tell it not to, but then it's just like, why like that? On Hex, you start with an agent with your data and you ask it questions and make you reports as you go. The interface is like you're talking to an agent, and you can also inspect the things it makes in the chat. So you can look at the code of it there. You can import it as or export it as code with the new Hex 4.0, I believe.
+
+**Observation / preference:** Sam perceives Hex as a conversational starting point that develops into inspectable results, while Evidence feels organized around a report with adjacent chat. They want to select the data relevant to an investigation and inspect generated logic. This adds a focus/control requirement to HLA-44/HLA-45, beyond just moving an agent into more Studio workflows.
+
+**Keep separate:** User access permissions, the intended scope of one analysis, and the sources actually queried. The claim that Evidence's agent has all connected data is not established by this reflection. The earlier native-agent build also began with a broad goal and generated a report, so do not turn the perceived entry-point difference into a claim that Evidence cannot build conversationally.
+
+**Research clarification, checked 2026-11-01:** Hex Threads supports a conversation with adjacent Notebook/App views for Editors+, linking answers to underlying cells. Selecting a connection prioritizes it but does not prevent switching to other permitted sources. Governed mode guides the agent toward configured sources and explicitly is not a hard security boundary. Data permissions are separate. [Threads](https://learn.hex.tech/docs/explore-data/threads), [Governed mode](https://learn.hex.tech/docs/agent-management/governed-mode)
+
+**4.0 qualification:** The private-beta docs establish code-file-backed projects, underlying file editing, and inspection of logic/data dependencies. Sam's import/export belief remains to be verified as an actual full-project round trip; code files alone do not establish Git synchronization or a self-hosted runtime. [4.0 guide](https://learn.hex.tech/docs/hex-4-0/what-is-hex-4-0)
+
+**Connections / test:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: differentiated workflow value]]; [[Product Review Plan#Q3 — How well does collaboration work?|Q3: data boundaries]]; [[Product Review Plan#Q4 — How usable is the workflow?|Q4: focused investigation and inspectability]]. Use the same selected-data question in each product, inspect the actual source queries and generated logic, then save/revise the result. No new permission or code-portability test occurred. Synthesis is in [[Product Review Findings]].
+
 ## Emerging patterns
 
 - **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.

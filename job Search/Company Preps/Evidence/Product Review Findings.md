@@ -2,7 +2,7 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
-This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-45); questions remain in [[Product Review Plan]].
+This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-46); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.
 
@@ -17,6 +17,10 @@ Evidence helped turn a broad request and connected data into an evolving dashboa
 **Hex research update:** Compare complete workflows, not AI/MCP checkboxes. Hex documents in-product reviews and external-agent authoring; Evidence documents its open-source Core and own-repo workflow. Hex's new code-backed 4.0 is private beta, so “only Evidence is code-based” is not a defensible distinction. These are research-backed comparison questions, not observed Hex usability wins. Details, release caveats, sources, and growth hypotheses are in [[Hex vs Evidence - Product and Growth Research]].
 
 **AI across the workflow — working comparison:** Hex appears to make AI a broader interface across the analytics lifecycle—from asking questions and investigating data to building apps and overseeing agent behavior. Evidence Studio also makes AI central to report creation and exploration; my testing so far raises questions about how smoothly its agent connects with the surrounding Studio workflow.
+
+**Sam's interface distinction:** Hex feels like **a conversation that develops into inspectable analyses and reports**; Evidence has felt like **a report with an agent alongside it**. The desired interaction is to choose relevant data, investigate conversationally, inspect the generated logic, and turn useful results into a maintained report without losing context. This describes Sam's current impression, not exclusive capabilities: Evidence's native agent also built the homelab page from a broad request. [[Home Lab Analytics - Review Log#HLA-46 — Conversation-first analysis and visible data scope matter to Sam|HLA-46]]
+
+**New usability requirement to test — visible analysis scope:** Sam wants an explicit way to focus an investigation on selected data instead of relying only on “don't use the other data” in a prompt. Distinguish **what the user may access**, **what this investigation should use**, and **what the agent actually queried**. “The agent has all data” remains unverified for Evidence. Hex's connection selector prioritizes a source but can switch to other permitted sources; its Governed mode guides source selection and explicitly is not a security boundary. A fair test must inspect source use and enforced permissions separately. [Hex Threads](https://learn.hex.tech/docs/explore-data/threads), [Governed mode](https://learn.hex.tech/docs/agent-management/governed-mode)
 
 Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|documented capabilities]], not a hands-on comparison. The Studio integration concern is grounded in this walkthrough: repair interrupted the active request (F03), completion messages did not establish readiness (F04), and setup guidance lost continuity across pages (F05). This distinguishes breadth of AI capabilities from quality of integration; it does not establish that Hex works better in practice.
 
@@ -178,7 +182,7 @@ The research document now distinguishes current Core/Studio capabilities and pub
 
 | Investigation | State | Evidence |
 |---|---|---|
-| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-45 |
+| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-46 |
 | Customer-grounded business workflows | Proposed; not yet walked through | [[Customer Use Case Research]] |
 | Meeting/distribution/embed journey | Question framed; not yet tested | HLA-41 |
 | Hex vs Evidence product/growth research | Initial primary-source research complete; no comparative product runs | [[Hex vs Evidence - Product and Growth Research]] |
