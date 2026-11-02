@@ -2,7 +2,7 @@
 
 %% Skeleton. Draft from my private note "How I Use AI", rewritten for Evidence: no competitor mentions. Show where AI helped, where I made the calls, and how I checked its output. %%
 
-Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
+Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [References](References.md)
 
 ## Building and exploring
 

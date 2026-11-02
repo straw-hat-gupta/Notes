@@ -1,8 +1,8 @@
 # Analysis and customer reasoning
 
-%% Skeleton. The deeper reasoning behind Part 2 of the main note. Each theme: what I saw (link back to the walkthrough), my labeled guess at why it works this way, why it matters to Evidence's customers, and what I'd change or found myself wanting. Every customer claim cites an entry in External Research and Sources. Every "exists / not documented" claim about Evidence cites the doc page checked. %%
+%% Skeleton. The deeper reasoning behind Part 2 of the main note. Each theme: what I saw (link back to the walkthrough), my labeled guess at why it works this way, why it matters to Evidence's customers, and what I'd change or found myself wanting. Every customer claim and every "exists / not documented" claim about Evidence uses an MLA in-text citation from References. %%
 
-Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Sources: [External Research and Sources](External%20Research%20and%20Sources.md)
+Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Sources: [External Research and Sources](External%20Research%20and%20Sources.md) · [References](References.md)
 
 ## Who I kept in mind
 
