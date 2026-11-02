@@ -1,20 +1,14 @@
 # Evidence Studio: notes from building with it
 
-%% Working draft. This must stand alone: include the context, observations, reasoning, and limits needed to understand it. Supporting notes provide optional depth, never required explanations. Voice: what I did, what I saw, what I wished for, and why I think it matters to Evidence's users. No competitor mentions. %%
-
 **Time spent:** about 1 to 2 hours building and exploring the product, and 3 to 4 hours on market research and analysis.
 
 **What I built:** A live homelab health dashboard using data in Neon. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
 
 ## Summary
 
-%% Working draft, 2 Nov. Direction chosen by Sam: approachable report writing with visible code/queries; continuity reduces repeated work and leaves more time to check what readers see. Save the shared chat/IDE proposal for the analysis. Audience: data team and its business readers. Main-note target: about 1,000 words, retaining every walkthrough stage. Wording remains editable. %%
-
 Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
 
 ## Part 1: what I did
-
-%% One short block per stage: what I did, then my comments tagged Good, Stuck, Surprised, or Wished. Each stage ends with a link to its section in Walkthrough Details. %%
 
 ### 1. Creating the project
 
@@ -80,8 +74,6 @@ I created Home Lab Analytics and asked the agent to build a live dashboard from 
 [More detail](Walkthrough%20Details.md#General%20navigation)
 
 ## Part 2: what I think it means
-
-%% One short paragraph per theme: the point, the customer reason in one line, and a link to the full reasoning. %%
 
 One customer task I kept in mind was a data team maintaining guided account-health analysis for customer-success colleagues. I pictured the team updating the method and checking the results, while the colleague needs an account assessment they can understand and use. Evidence's account-health skill example helped make that workflow concrete ([McAskill, “That Dashboard”](https://evidence.dev/blog/that-dashboard-should-be-a-skill)).
 

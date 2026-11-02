@@ -1,7 +1,5 @@
 # External research and sources
 
-%% Skeleton. Every outside claim in this package and what it rests on. Each claim gets an ID (S1, S2...) that the other notes can point to. The Source column uses the MLA in-text citation from References, so the same source is cited the same way everywhere; full entries live only in References. Quotes stay under 15 words; otherwise paraphrase. No competitor material. %%
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Full citations: [References](References.md)
 
 ## Method

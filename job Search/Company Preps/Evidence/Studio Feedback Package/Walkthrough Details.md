@@ -1,7 +1,5 @@
 # Walkthrough details
 
-%% Working draft. A fuller, self-contained account of every stage, following Sam's selected scope. The private raw log and planning notes preserve the full record. Excluded observations must not be reintroduced here. %%
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
 
 ## Setup and environment

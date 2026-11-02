@@ -1,7 +1,5 @@
 # How I used AI
 
-%% Working draft, approximately 150 words. Describe actual uses and decisions without implying every output was independently verified. %%
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [References](References.md)
 
 - **Building:** I used Studio's agent to explore my Neon data, suggest components, build the dashboard, and work through errors. I also asked Claude to build a separate page through Studio MCP and appreciated its render/check loop.
