@@ -994,7 +994,32 @@ Date: 2026-11-01.
 
 **Next tests to consider:** Run a short review with a test participant using the published page; export a dated PDF and check filter/date context; try a one-off delivery to an authorized destination; if the account supports it, evaluate an authenticated embed in a separate test app. These are proposed tests only. No delivery, purchase, embedding implementation, or production change was performed.
 
+### HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear
+
+Date: 2026-11-01. Post-walkthrough reflection; no new comparative product test.
+
+**Sam's words:**
+> To me it also seems like with Hex, you can go from ideation to implementation and delivery, versus with Evidence, I think there isn't, like, a central interface. Like it's like in a project I can talk to an agent on the side, instead of, like, okay, I've connected all my data and now I'm talking to an agent. Oh, which they also have. Never mind, they have that as, like, Evidence Agent, I'm pretty sure it's called. But not in Studio.
+>
+> I feel like Hex focuses more on non-technical people who need to make things with a lot of data, versus Evidence is focusing for technical people who need to work with a lot of data but don't like the drag and drop.
+>
+> I think Evidence also needs to share stories from people using Evidence and how it was, like, helpful for them. Because right now I'm having a hard time thinking why somebody would choose Evidence over Hex.
+
+**Type:** Perceived workflow coherence, audience/positioning hypothesis, and request for clearer customer-value stories.
+
+**Observation:** Sam perceives Hex as connecting ideation, building, and delivery more clearly, while their Evidence experience centers on a project's agent sidebar. Sam immediately revises the initial suggestion that Evidence lacks a broader conversational interface. Even after producing a useful dashboard and reviewing competitor research, Sam still cannot articulate a compelling reason to choose Evidence over Hex. This is evidence about Sam's understanding and perceived value, not a demonstrated limit in Evidence's capabilities or a hands-on Hex result.
+
+**Clarification — documentation, checked 2026-11-01:** Evidence Agent is documented as part of Studio, including reader questions grounded in reports and underlying queries; it is not established as a separate product outside Studio. Evidence's homepage presents both an analytics agent and code-based reporting. Hex serves technical notebook authors as well as less technical conversational users, so “Hex for nontechnical users / Evidence for technical users” is too categorical. Distinguish the person maintaining analytical logic from the person consuming or questioning the result. [Evidence Agent](https://docs.evidence.dev/features/evidence-agent), [Evidence homepage](https://evidence.dev/), [Hex AI interfaces](https://learn.hex.tech/docs/getting-started/ai-overview)
+
+**Interpretation:** The possible gap is discoverability and communication of the complete workflow and differentiated value. The successful native-agent build already covers implementation and publication; it would overstate this observation to say Evidence cannot deliver an end-to-end workflow. The stronger question is whether a new user can understand where to start, how agent experiences connect, and why this approach fits their team better than alternatives.
+
+**Candidate improvement:** Make relevant customer stories easier to encounter and connect each to a concrete audience, problem, prior alternative, reason for choosing Evidence, maintained artifact, delivery workflow, and outcome. [[Customer Use Case Research]] already contains public adoption examples, but does not establish selection rationale against Hex or measured outcomes for those cases. Sam's request is for convincing, relevant proof, not a verified absence of stories.
+
+**Connections:** [[Product Review Plan#Q1 — Why choose Evidence?|Q1: differentiated value]]; [[Product Review Plan#Q2 — Why choose Studio over open source?|Q2: integrated Studio experience]]; [[Product Review Plan#Q5 — Which customer use cases matter most?|Q5: customer relevance]]; [[Hex vs Evidence - Product and Growth Research]]. Continues the post-creation questions in HLA-41 and the workflow-integration concerns in HLA-17. See [[Product Review Findings#F09 — The reason to choose Evidence remains difficult to articulate|F09]] for the synthesis.
+
 ## Emerging patterns
+
+- **Useful output has not yet translated into a clear purchase/selection rationale.** Sam has built a dashboard but still struggles to explain why choose Evidence over Hex ([[#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]). Treat audience differences as hypotheses and investigate the visibility of relevant customer outcomes rather than claiming features or stories are absent.
 
 - **Help is separated from setup.** [[#HLA-01 — Leaving the project separates setup from the agent; entered details are lost|HLA-01]] connects to the earlier Docs-button expectation in [[Product Feedback Notes]]. The new observation includes lost entered details, making the navigation cost more concrete.
 - **Instructions and navigation are not lining up for Sam.** [[#HLA-02 — A connector link exists, but clicking it does not navigate|HLA-02]], [[#HLA-04 — Sync schedule guidance leads to navigation and documentation uncertainty|HLA-04]], and [[#HLA-06 — Documentation describes navigation Sam cannot find|HLA-06]] provide related observations; a shared cause is not established.

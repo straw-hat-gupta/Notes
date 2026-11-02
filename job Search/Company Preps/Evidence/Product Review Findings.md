@@ -2,7 +2,7 @@
 
 Updated: **2026-11-01**. **Intermediate synthesis, not the final feedback to Evidence.**
 
-This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-41); questions remain in [[Product Review Plan]].
+This is the collective findings document for this review. Hands-on coverage is the Home Lab Analytics walkthrough: native Studio agent, Claude through MCP, two-account collaboration, and GitHub setup. Desk research now adds [[Hex vs Evidence - Product and Growth Research]]; it is not a hands-on Hex evaluation. Future use cases will extend these findings. Raw chronology and transcripts remain in [[Home Lab Analytics - Review Log]] (HLA-01–HLA-42); questions remain in [[Product Review Plan]].
 
 **Evidence labels:** **Sam** = firsthand experience reported by Sam; **Screenshot** = inspected artifact; **Claude** = the external agent's logged technical observations, not independently reproduced here. Proposed explanations and improvements are analysis. Priorities below reflect potential impact in this walkthrough, not customer-wide frequency or validated severity.
 
@@ -107,11 +107,21 @@ Hex's breadth is based on [[Hex vs Evidence - Product and Growth Research|docume
 
 **Direction:** Evaluate a reviewed page/diff handoff and clearer metadata/render contracts. Read-only authoring scope was documented; image-size friction spans MCP/client behavior. Neither proves that Studio itself lacks page creation or rendering.
 
+### F09 — The reason to choose Evidence remains difficult to articulate
+
+**Evidence — Sam's post-walkthrough impression:** After building the homelab dashboard and researching Hex, Sam still struggles to explain why choose Evidence. Hex appears to connect ideation, implementation, and delivery more clearly; Evidence's project sidebar feels less obviously connected to a broader agent experience. Sam hypothesizes different technical/nontechnical audiences and asks for customer stories showing Evidence's practical value. [[Home Lab Analytics - Review Log#HLA-42 — After the build and competitor research, the reason to choose Evidence remains unclear|HLA-42]]
+
+**Impact:** Useful output and positive features have not yet produced a clear selection rationale. This is a positioning/discoverability finding from one evaluator, alongside the concrete workflow friction above.
+
+**Qualification:** Evidence Agent is documented as part of Studio; Hex supports technical authors as well as business users. Sam's retraction is preserved in the raw log. Neither a missing conversational interface nor a strict “Hex = nontechnical / Evidence = technical” split is established. Public Evidence adoption examples already exist in [[Customer Use Case Research]], but those sources do not establish why customers chose Evidence over Hex or measured outcomes. [Evidence Agent](https://docs.evidence.dev/features/evidence-agent), [Hex AI](https://learn.hex.tech/docs/getting-started/ai-overview)
+
+**Direction:** Explain the complete author/reader journey and make differentiated value tangible through relevant customer stories: **who had which problem → what they used before → why Evidence fit → how the team builds, maintains, and delivers the work → what improved**. Repo control, self-hosting, and reusable report components are candidate selection reasons to validate with buyers, not substitutes for demonstrated outcomes. Compare a technical maintainer and a less technical reader/reviewer separately.
+
 ## Provisional answers to the review plan
 
 ### Q1 — Evidence's value
 
-**Partially answered.** P01/P04 support value in a structured reporting framework, reusable artifacts, and tools that help agents inspect data and produce useful output. [[Hex vs Evidence - Product and Growth Research]] adds a documented comparison of repository/deployment control versus a broader analytical workspace, with substantial overlap. A repo alone is not a differentiator—especially with Hex 4.0's code-backed direction. Long-term reuse and comparative task outcomes remain untested.
+**Partially answered.** P01/P04 support value in a structured reporting framework, reusable artifacts, and tools that help agents inspect data and produce useful output. [[Hex vs Evidence - Product and Growth Research]] adds a documented comparison of repository/deployment control versus a broader analytical workspace, with substantial overlap. A repo alone is not a differentiator—especially with Hex 4.0's code-backed direction. Long-term reuse and comparative task outcomes remain untested. Sam's continued difficulty explaining why choose Evidence is itself a positioning/discoverability finding (F09); clearer customer selection stories are needed alongside feature comparisons.
 
 ### Q2 — Studio's additional value
 
@@ -158,7 +168,7 @@ The research document now distinguishes current Core/Studio capabilities and pub
 
 | Investigation | State | Evidence |
 |---|---|---|
-| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-41 |
+| Home Lab Analytics: native + Claude/MCP + team/GitHub | Initial synthesis complete; targeted follow-ups open | HLA-01–HLA-42 |
 | Customer-grounded business workflows | Proposed; not yet walked through | [[Customer Use Case Research]] |
 | Meeting/distribution/embed journey | Question framed; not yet tested | HLA-41 |
 | Hex vs Evidence product/growth research | Initial primary-source research complete; no comparative product runs | [[Hex vs Evidence - Product and Growth Research]] |
