@@ -105,6 +105,22 @@ All figures are customer statements on Hex's own site with no stated method. The
 
 **Implication for the review-bottleneck project:** Hex's own reason for 4.0 (agent-built work without provenance) is the same problem Sean described at Evidence. A reviewable, reproducible check on agent-made changes is not a niche concern; it is where both companies are heading.
 
+### Can Hex maintain and version reports the way Evidence does?
+
+*Added 2026-11-02 after a follow-up question.*
+
+**Partly. Hex versions and reviews reports inside Hex, but in generally available Hex, Git is not the source of truth for a report the way it is in Evidence.** You cannot edit a report in a branch, open a PR, and have it deploy. Hex 4.0 moves toward code files, but it is in private beta and its guide does not describe Git sync or a PR workflow.
+
+| Capability | Hex (classic, GA) | Evidence |
+| --- | --- | --- |
+| History and restore | Built-in [version history](https://learn.hex.tech/docs/explore-data/projects/history-and-versions): autosaves, named saves, and publishes; restore a saved version. Professional keeps 30 days. No version diff is documented | Git history of every page, query, and metric file; any commit can be diffed or reverted |
+| Review before publish | In-product [reviews](https://learn.hex.tech/docs/collaborate/reviews) on Team and Enterprise: request, comment per cell, approve, optional required review. Admins, Managers, and Full Access users can bypass | GitHub PR review on your own repo, plus deploy previews ([[Customer Use Case Research]]) |
+| Git integration | [Git export](https://learn.hex.tech/docs/explore-data/projects/git-export) on Team and Enterprise is one-way: each publish commits a YAML file. Edits made in Git never flow back, and it fails on repos that require reviews, so Hex recommends a dedicated export repo | The repo is the project; edits in Studio or locally are commits on the same files |
+| Editing outside the UI | MCP and CLI let agents edit projects; [4.0](https://learn.hex.tech/docs/hex-4-0/what-is-hex-4-0) (private beta) stores the whole project as files you can view and edit. 4.0 does not yet support schedules, PDF export, or Slack agent | Local editor plus CLI on the same repo; Core is open source and self-hostable |
+| Shared definitions under Git | Yes for context: semantic models, guides, and evals can be managed in Git or CI and synced in, read only in Hex (Context Sync, see [[Hex vs Evidence - Product and Growth Research]]) | Metrics and agent context live in the repo with the reports |
+
+**What this means for customers (inference):** a team that already runs analytics through PRs and CI keeps its definitions in Git with Hex but its reports in Hex's own history. Evidence keeps both in one reviewed repo. Hex's approach suits analysts who never want to touch Git; Evidence's suits teams that want reports to follow the same review and rollback rules as code. Neither approach has been tested hands-on here.
+
 ## Durable trends vs fads
 
 | Signal | Durable or fad? | Why |
