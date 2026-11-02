@@ -186,6 +186,19 @@ Fluid Attacks documents evaluating Evidence while retaining D3/Billboard for pre
 
 ## 7. Implications for product feedback and market fit
 
+### Durable customer jobs versus product bets
+
+This is a judgment about what to validate, not a prediction of which interface will win.
+
+| Durable need supported by the workflow research | Product bet that still needs proof |
+|---|---|
+| People need to agree on a metric's meaning and understand its limitations. | That conversational output will preserve those definitions better than existing reports, semantic tools, or analyst help. Check known answers and definition changes. |
+| Data teams need to reduce repeated explanation and maintenance work. | That agent-generated insights reduce total effort after review, correction, and upkeep—not merely increase content production. |
+| A complex account investigation needs guided choices and a defensible conclusion. | That a skill is better than a well-designed stable report for this particular task. Some recurring questions benefit from a predictable page. |
+| Authors need inspectable, reviewable work and decision users need accessible answers. | That chat should be the default for every role, or that a shared chat/IDE interface expands the buying market. Compare behavior using the same underlying capabilities. |
+
+Evidence's 2023 context-switching/reporting posts and 2026 agent strategy address related longstanding needs through different interfaces. That continuity is a better basis for evaluation than treating a new agent surface as customer value by itself. [Historical problem](https://evidence.dev/blog/two-kinds-of-job), [Current strategy](https://evidence.dev/blog/evidence-agent)
+
 1. **Evaluate the maintainer-to-consumer contract.** The relevant outcome is not a technically impressive dashboard. It is a report or procedure the maintainer can change and someone else can use correctly. The original “technical Evidence versus nontechnical Hex” framing is too coarse; Evidence explicitly intends both roles.
 2. **Treat recurring use as the main value test.** Evidence's own historical explanation concerns fragmented authoring tools and repeated stakeholder questions. Test whether a maintained report/skill actually reduces repeat work, rather than whether the agent generates more content. [Two Kinds of Job, 2023](https://evidence.dev/blog/two-kinds-of-job)
 3. **Keep agent-centered interaction separate from unbounded autonomy.** A durable need is to carry approved definitions, scope, and methodology into new questions. Chat as the default layout, autonomous administration, and a larger addressable audience remain solution/commercial hypotheses. The platform already markets agent-first investigation; feedback should test how well that promise reaches users.
