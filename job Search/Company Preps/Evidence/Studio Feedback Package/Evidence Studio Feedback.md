@@ -8,7 +8,7 @@
 
 **Other notes in this folder:**
 
-- [Walkthrough Details](Walkthrough%20Details.md): the fuller account of each stage, with screenshots
+- [Walkthrough Details](Walkthrough%20Details.md): the fuller account of each stage
 - [Analysis and Customer Reasoning](Analysis%20and%20Customer%20Reasoning.md): why I think each point matters to Evidence's customers
 - [External Research and Sources](External%20Research%20and%20Sources.md): every outside claim and the source it rests on
 - [How I Used AI](How%20I%20Used%20AI.md): how AI helped with building, note-taking, research, and writing
