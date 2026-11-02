@@ -6,7 +6,7 @@
 
 Evidence helped me turn a broad goal and a connected database into a useful homelab dashboard. Its strongest moment was helping me decide **what was worth building**, not just generating charts I had already specified. Seeing components appear in preview, repairing errors through prepared prompts, and editing live with another account made the framework feel accessible.
 
-The opportunity I see is to make the surrounding workflow as dependable as that build experience. At several transitions—database setup, diagnostic repair, reopening a conversation, and GitHub publication—I had to recover context or reconcile product state myself. For a product that lets teams maintain reporting as code, those transitions are part of the value proposition.
+The opportunity I see is to make the surrounding workflow as dependable as that build experience. At several transitions—database setup, diagnostic repair, reopening a conversation, and GitHub publication—I had to recover context or interpret product state myself. For a product that lets teams maintain reporting as code, those transitions are part of the value proposition.
 
 **My central recommendation is to preserve Evidence's code-oriented foundation while making the agent a more continuous, state-aware interface to Studio.** I would start with work preservation, clear validation status, and understandable publication before committing to a larger interface redesign.
 
@@ -18,9 +18,9 @@ This is one technical evaluator using two accounts, not a representative custome
 
 ## Why I would consider Evidence over the alternatives
 
-My strongest candidate answer is: **Evidence can make recurring reporting part of an existing software-maintenance workflow.** A team can maintain source files, reuse reporting conventions, review changes, and choose a deployment model rather than treating each generated dashboard as a separate application to own.
+My strongest candidate answer is: **Evidence can make recurring reporting part of an existing software-maintenance workflow.** For a team reviewing data and software changes in GitHub, the potential value is keeping reports in that maintenance and release process, with an open-source runtime when deployment ownership matters.
 
-The distinction needs to be specific. Evidence documents Studio/local authoring through an owned repository. Hex's classic Git export is a one-way YAML audit trail, with restrictions around review-enforcing branch protection. That matters to a team that wants its existing repository and PR process to govern reports. However, Hex already exposes analytical code and supports external-agent authoring; its new code-backed 4.0 is in private beta. I would not claim that code access or agent compatibility belongs only to Evidence. [Evidence version control](https://docs.evidence.dev/features/version-control), [Hex Git export](https://learn.hex.tech/docs/explore-data/projects/git-export), [Hex 4.0](https://learn.hex.tech/docs/hex-4-0/what-is-hex-4-0)
+The distinction needs to be specific. Evidence documents Studio/local authoring through an owned repository. Hex's classic Git export is a one-way YAML audit trail, with restrictions around review-enforcing branch protection. That matters to a team that wants its existing repository and PR process to govern reports. However, Hex already exposes analytical code and supports external-agent authoring; its new code-backed 4.0 is in private beta. An equivalent repository-driven report workflow for 4.0 remains unverified here. I would not claim that code access or agent compatibility belongs only to Evidence. [Evidence version control](https://docs.evidence.dev/features/version-control), [Hex Git export](https://learn.hex.tech/docs/explore-data/projects/git-export), [Hex MCP](https://learn.hex.tech/docs/api-integrations/mcp-server), [Hex 4.0](https://learn.hex.tech/docs/hex-4-0/what-is-hex-4-0)
 
 Core's open-source runtime is another meaningful option for teams with deployment or ownership constraints. Self-hosting also brings operational responsibilities and does not include all Studio platform features. Studio's additional case is therefore the convenience of integrated authoring, collaboration, publishing, and reader services around that foundation—not simply access to the framework. [Self-hosting tradeoffs](https://docs.evidence.dev/self-host)
 
@@ -32,6 +32,8 @@ Core's open-source runtime is another meaningful option for teams with deploymen
 | A coding agent can build a custom dashboard | Test whether Evidence's components, validation, and conventions reduce later maintenance. A custom application can also have a repository; the comparison is the work the framework removes. |
 
 Public customer evidence suggests useful next tests. Every Cure pairs knowledge-graph releases with Evidence quality/composition dashboards: reporting tied to a released data artifact. Brighthive describes agents using open-source Evidence to refine and share visualizations. These are relevant workflow examples, not proof of current Studio adoption or why those organizations chose Evidence over Hex. [Every Cure release](https://docs.dev.everycure.org/releases/2025/03/06/v040/), [Brighthive interview](https://www.brighthive.io/post/brighthive-your-ai-powered-data-team)
+
+An illustrative job would be revising a quality report alongside a dataset release, reviewing the changes together, and retaining a report for that version. Every Cure makes the release-linked reporting need concrete; its actual Git/review process was not established by this research.
 
 ## Strengths I would preserve
 
@@ -71,7 +73,7 @@ After connecting GitHub, Publish displayed a warning that remote changes would b
 
 **What I would try first:** reproduce divergence in a disposable project, then examine whether an author can see the changes at risk, retain both working states, and take a clear review/reconciliation path. Make existing recovery options discoverable at the decision point.
 
-**Why it matters:** supporting code-editor and Studio authors is attractive precisely because they can maintain the same reports. Asking the Studio author to understand Git divergence without enough context weakens that promise.
+**Why it matters:** supporting code-editor and Studio authors is attractive precisely because they can maintain the same reports. At this decision point, I could see that remote work was at risk, but not which changes I would replace. That made the next action harder to judge.
 
 Evidence already documents PR checks/previews, publish history, and rollback. My recommendation is to make the relevant path understandable when it is needed, not to assume those capabilities are absent or prescribe a replacement Git implementation. [Publishing](https://docs.evidence.dev/publishing)
 
@@ -87,7 +89,7 @@ Make three questions legible: **what may I access, what should this investigatio
 
 Pair the walkthrough with a customer story explaining the prior alternative, selection constraint, maintenance/delivery workflow, and outcome. My request is for clearer proof of fit, not a claim that Evidence has no customer stories.
 
-**Check the outcome:** can an author and reader distinguish preview from publication, identify relevant data boundaries, complete a first revision, and name a concrete reason Evidence fits their team?
+**Check the outcome:** can a reader receive the published report, open it outside the editor, ask a relevant follow-up, and understand the sources behind the answer within their permitted access? Can the author identify the data boundaries and complete a later revision?
 
 ## A product direction I would test
 
@@ -100,9 +102,9 @@ Switching views should preserve the task and artifact state. Agent-assisted setu
 
 This aligns with Evidence's stated direction: its Core announcement already describes agents working with inspectable, editable artifacts and people steering and validating them. My feedback is about carrying that direction consistently through Studio. [Evidence Core](https://evidence.dev/blog/evidence-core)
 
-I would compare this prototype with a smaller continuity improvement using the same tools and task: add a component, inspect SQL, repair an error, and deliver to a reader. A prominent chat can help exploration but also obscure source inspection; two views can add confusion if their state differs. Broader adoption is a hypothesis, not an established outcome.
+I would treat this as an interaction-design experiment, not a dependency for fixing the continuity problems above. Compare it with a smaller continuity improvement using the same tools and task: add a component, inspect SQL, repair an error, and deliver to a reader. A prominent chat can help exploration but also obscure source inspection; two views can add confusion if their state differs. Broader adoption is a hypothesis, not an established outcome.
 
-The external-agent path deserves a separate decision. Claude could query/render through Studio MCP but could not save its page, so I pasted the output. The documented tools currently match that boundary. If external authoring is a target workflow, a proposed page/diff landing in Studio's review flow could remove that handoff. If CLI/Git is the intended authoring route, make that route clear early. [Studio MCP](https://docs.evidence.dev/mcp/studio)
+The external-agent path deserves a separate decision. Claude could query/render through Studio MCP but could not save its page, so the handoff was code for me to paste into Studio. The documented tools currently match that boundary. If external authoring is a target workflow, a proposed page/diff landing in Studio's review flow could remove that handoff. If CLI/Git is the intended authoring route, make that route clear early. [Studio MCP](https://docs.evidence.dev/mcp/studio)
 
 ## Where I would take the investigation next
 
