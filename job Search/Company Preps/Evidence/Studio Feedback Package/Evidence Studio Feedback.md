@@ -37,7 +37,9 @@ _To write._ · [Details](Walkthrough%20Details.md#1.%20Creating%20the%20project)
 
 ### 3. Building the report with the agent
 
-_To write._ · [Details](Walkthrough%20Details.md#3.%20Building%20the%20report%20with%20the%20agent)
+**Good:** It suggested components based on my data and pointed out telemetry I wasn't collecting yet. I added sources based on those suggestions. I could see the queries and watch components appear in preview as it wrote them.
+
+[Details](Walkthrough%20Details.md#3.%20Building%20the%20report%20with%20the%20agent)
 
 ### 4. Fixing errors
 
@@ -56,7 +58,9 @@ _To write._ · [Details](Walkthrough%20Details.md#6.%20Building%20the%20same%20p
 
 ### 7. Inviting a teammate
 
-_To write._ · [Details](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
+**Good:** Using a second account, I could sign up through the invitation link without an existing Evidence account. Changes showed up live in both sessions.
+
+[Details](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
 
 ### 8. Connecting GitHub and publishing
 
@@ -83,10 +87,6 @@ _To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20inte
 ### "Done" didn't tell me what had been checked
 
 _To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#What%20was%20checked)
-
-### Mixing Studio and Git editing
-
-_To write._ · [Reasoning](Analysis%20and%20Customer%20Reasoning.md#Studio%20and%20Git%20editing)
 
 ### Which data a project and its agent can reach
 

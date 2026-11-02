@@ -16,10 +16,6 @@ _To write: strong in the file, loosely connected to Studio. The agent/ directory
 
 _To write: acceptance with errors visible, warnings sent as errors, the diff the agent already shows, and the render check the MCP path used._
 
-## Studio and Git editing
-
-_To write: two places a report can change, and what a less technical teammate sees at Publish._
-
 ## Data scope
 
 _To write: which data a project and its agent can reach; project-scoped connections; choosing data for an investigation. Framed as questions._

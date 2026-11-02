@@ -34,13 +34,11 @@ _To write: prompt given, render-and-check loop, paste-in handoff. Agent-logged i
 
 ## 7. Inviting a teammate
 
-_To write: invite flow, roles, live co-editing._
+I tested with a second account. The invitation let me create an account through the link, and I could see edits appear live in both sessions before connecting GitHub. I needed the docs to understand the roles, especially Viewer versus Org Viewer. This was my own two-account test, not a separate teammate trying the workflow.
 
 ## 8. Connecting GitHub and publishing
 
-_To write: GitHub installation workaround, the overwrite warning, Force Publish not checked by default and used._
-
-![Publish warning that remote changes will be overwritten](Attachments/studio-remote-overwrite-warning-2026-10-31.png)
+_To write: existing GitHub installation not recognized; changing from all repositories to selected repositories and choosing the intended repo made it appear in Studio._
 
 ## 9. Coming back later
 
