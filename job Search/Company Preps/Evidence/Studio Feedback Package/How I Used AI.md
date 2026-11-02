@@ -1,29 +1,11 @@
 # How I used AI
 
-%% Skeleton. Draft from my private note "How I Use AI", rewritten for Evidence: no competitor mentions. Show where AI helped, where I made the calls, and how I checked its output. %%
+%% Working draft, approximately 150 words. Describe actual uses and decisions without implying every output was independently verified. %%
 
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [References](References.md)
 
-## Building and exploring
-
-_To write: the Studio agent for the dashboard, and Claude over the Studio MCP for a comparison build._
-
-## Capturing notes
-
-_To write: dictating observations as I worked, saved and organized in my notes, with my words kept separate from AI interpretation._
-
-## Research
-
-_To write: AI-assisted research on Evidence's market and customers, with sources opened and cited._
-
-## Analysis and writing
-
-_To write: turning notes into themes, checking claims against Evidence's docs, removing claims that didn't hold up._
-
-## What I did myself
-
-_To write: set the goals, used the product, judged what mattered, reviewed and edited every claim._
-
-## Limits
-
-_To write: what AI got wrong or I had to correct, and what wasn't independently verified._
+- **Building:** I used Studio's agent to explore my Neon data, suggest components, build the dashboard, and work through errors. I also asked Claude to build a separate page through Studio MCP and appreciated its render/check loop.
+- **Note-taking:** I dictated observations to Codex, which organized them in Obsidian and connected related moments. My observations were kept separate from AI explanations.
+- **Research:** AI agents helped investigate Evidence's customers and workflows, open sources, and distinguish documented features from assumptions. An early suggestion that Evidence had evals was corrected rather than carried into the feedback.
+- **Writing:** AI helped group findings and draft wording. I chose the emphasis, what to include or leave out, and the customer task behind the reasoning through an iterative question-and-answer process.
+- **My role:** I chose the project, used Studio, judged the suggestions, and supplied the observations. I haven't independently verified every AI explanation or reproduced every issue.

@@ -16,7 +16,13 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The main note now has a complete working draft: summary, all walkthrough stages, three analysis themes, smaller wishes, customer context, limits, and brief AI-use disclosure. Wording remains editable. The selected account-health source is checked and cited. Companion analysis is drafted; remaining walkthrough detail, source/reference cleanup, and the fuller AI-use note are unfinished. Next: review the main note as a whole and decide how much supporting detail to include without repeating it.
+The main note, fuller standalone walkthrough, companion analysis, and approximately 150-word AI-use note now have working drafts. The selected account-health source is checked and cited. Source/reference cleanup and the final editorial pass are unfinished. Next: decide whether to combine the sources and references, and choose how to review the main note's wording as a whole.
+
+## Reading and package choices
+
+- Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
+- The walkthrough companion should give a fuller, self-contained account of every stage, even where it repeats the main note. Its depth is optional, not required to understand the main note.
+- Keep the separate AI-use note near 150 words: tools, roles, and what Sam decided or checked. Do not claim every generated explanation, metric, or product issue was independently verified.
 
 ## Analysis choices
 
