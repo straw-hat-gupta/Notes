@@ -30,6 +30,8 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Claims th
 
 "Internal Analytics." *Evidence*, evidence.dev/product/internal-reporting. Accessed [date]. %% from notes; confirm page title %%
 
+McAskill, Adam. "That Dashboard Should Be a Skill." *Evidence*, 7 Aug. 2026, evidence.dev/blog/that-dashboard-should-be-a-skill. Accessed 2 Nov. 2026.
+
 "Metrics." *Evidence Docs*, docs.evidence.dev/core-concepts/metrics. Accessed [date]. %% from notes %%
 
 [Author]. "[Native warehouse support post title]." *Evidence Blog*, [date], evidence.dev/blog/native-warehouse-support. Accessed [date]. %% from notes %%
@@ -45,8 +47,6 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Claims th
 "Senior Data Analyst." *LinkedIn*, Existence, [date posted], www.linkedin.com/jobs/view/senior-data-analyst-at-existence-4471755972. Accessed [date]. %% from notes %%
 
 "Studio MCP." *Evidence Docs*, docs.evidence.dev/mcp/studio. Accessed [date]. %% from notes; confirm page title %%
-
-[Author]. "That Dashboard Should Be a Skill." *Evidence Blog*, [day] Aug. 2026, evidence.dev/blog/that-dashboard-should-be-a-skill. Accessed [date]. %% from notes; confirm title capitalization %%
 
 "v0.4.0." *Every Cure MATRIX Documentation*, Every Cure, 6 Mar. 2025, docs.dev.everycure.org/releases/2025/03/06/v040/. Accessed [date]. %% from notes; confirm page title %%
 

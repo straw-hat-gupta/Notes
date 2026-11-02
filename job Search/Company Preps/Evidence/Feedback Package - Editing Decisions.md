@@ -16,7 +16,7 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The summary's focus is agreed; its wording remains editable. The main walkthrough and three analysis sections are drafted, with context, limits, and a brief AI-use disclosure so the main note can stand alone. Supporting links are at the end. Smaller wishes, remaining walkthrough detail, customer-source selection, and the fuller AI-use note remain unfinished. The three pending content questions about smaller wishes, a customer task, and learning/repo literacy still apply; this steering does not answer them.
+The main note now has a complete working draft: summary, all walkthrough stages, three analysis themes, smaller wishes, customer context, limits, and brief AI-use disclosure. Wording remains editable. The selected account-health source is checked and cited. Companion analysis is drafted; remaining walkthrough detail, source/reference cleanup, and the fuller AI-use note are unfinished. Next: review the main note as a whole and decide how much supporting detail to include without repeating it.
 
 ## Analysis choices
 
@@ -24,6 +24,9 @@ The summary's focus is agreed; its wording remains editable. The main walkthroug
 - Include both project-scoped connections and a visible data choice for each investigation, framed as wishes/questions rather than unrestricted-access claims.
 - Combine readiness and action history into one section: what changed, what was checked, what remains open, and what can be revisited.
 - Current source check confirms the native agent already shows a diff and can modify project/page settings. Don't imply these are absent when discussing broader connection/team workflows.
+- Include a brief copy-button and voice-input wish in the main note, with fuller personal reasons in the companion.
+- Anchor customer reasoning in a data team maintaining guided account-health analysis for customer-success colleagues. Evidence's unnamed customer-health skill story is relevant source material; the specific roles and implications in the notes are Sam's interpretation, not disclosed customer facts or a tested scenario.
+- Briefly mention the possibility of easier learning and shared repo understanding in the main analysis, clearly untested, with fuller reasoning in the companion.
 
 ## Walkthrough choices — latest round
 

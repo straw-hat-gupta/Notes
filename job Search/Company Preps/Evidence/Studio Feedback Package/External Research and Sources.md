@@ -40,7 +40,7 @@ _To write: what I looked at (Evidence's docs, product pages, pricing, changelog,
 
 | ID | Claim | Source (MLA in-text) |
 | --- | --- | --- |
-| | _To fill: public adoption examples, with what each source does and doesn't establish._ | |
+| S7 | Evidence describes an unnamed customer refactoring an account-health dashboard into a guided skill, with product usage, support, and renewal context. This is a vendor-reported workflow, not a disclosed customer identity or measured result. The maintainer/customer-success roles in my example are my interpretation. | (McAskill, “That Dashboard”) |
 
 ## What I looked for and couldn't find
 

@@ -84,9 +84,13 @@ I created Home Lab Analytics and asked the agent to build a live dashboard from 
 
 %% One short paragraph per theme: the point, the customer reason in one line, and a link to the full reasoning. %%
 
+One customer task I kept in mind was a data team maintaining guided account-health analysis for customer-success colleagues. I pictured the team updating the method and checking the results, while the colleague needs an account assessment they can understand and use. Evidence's account-health skill example helped make that workflow concrete ([McAskill, “That Dashboard”](https://evidence.dev/blog/that-dashboard-should-be-a-skill)).
+
 ### The agent is great in the file and loosely connected to Studio
 
 I'd like one continuing conversation: a main chat view for exploring what to build, and a code view with the same conversation alongside the files. That could keep what I liked about seeing the queries while reducing backtracking. I'd also like that help to carry through connection setup and other Studio workflows, so a maintainer isn't repeatedly explaining the task before checking the report their colleagues will use.
+
+It might also make the framework easier to learn and help less technical teammates understand the repo. I haven't tested that possibility.
 
 [More reasoning](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
 
@@ -104,7 +108,9 @@ I wasn't clear which connections a project and its agent could use. I'd like pro
 
 ### Smaller wishes
 
-_To write: a short list._ · [More reasoning](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
+I'd use a copy button under agent responses to move SQL or explanations into a ticket or doc, and voice input to describe a report aloud.
+
+[More reasoning](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
 
 ## Limits of these notes
 
