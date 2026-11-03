@@ -12,7 +12,7 @@ My homelab dashboard is a monitoring use case. What carries over is the develope
 
 ## Agent integration
 
-**What prompted this:** Connecting Neon took me to a setup page outside the project, where the agent chat wasn't available. Sending an error to chat then interrupted a request to add temperature components, which I had to request again. Later, after reopening Studio, a listed conversation returned “chat not found” (walkthrough steps 2, 4, and 9). My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
+**What prompted this:** Connecting Neon took me to a setup page outside the project, where the agent chat wasn't available. Sending an error to chat then interrupted a request to add temperature components, which I had to request again. Later, after reopening Studio, a listed conversation returned “chat not found” (walkthrough steps 2, 4, and 9).
 
 **What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
@@ -30,21 +30,21 @@ For a maintainer, that could reduce re-explaining and backtracking without hidin
 
 **Where I'd start:** guided connection setup alongside the same agent, an error fix that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and an Agent View sharing its conversation with the existing IDE view are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
 
-**How I'd know:** a user can complete connection setup, handle an error fix, and return to a task without repeating instructions to the agent. Completion time and the number of repeated requests would help show whether this saves effort. Time recovered here can go toward reviewing the report colleagues will use. This workflow integration and continuity is my main recommendation, supported by clear information about which checks the agent ran on its report edits.
+**How I'd know:** a user can complete connection setup, handle an error fix, and return to a task without repeating instructions to the agent. Completion time and the number of repeated requests would help show whether this saves effort. Time recovered here can go toward reviewing the report colleagues will use. This workflow integration and continuity is my main recommendation, alongside the agent checking its report edits before handoff.
 
-## What the agent did and checked
+## Checking the report before handoff
 
-**What prompted this:** I accepted changes with about five errors visible, and a separate response about an error fix said the rendered section had not been inspected (step 4). Claude used Studio MCP's visualize tool to render and check its page before handoff (["Studio MCP"](https://docs.evidence.dev/mcp/studio)); that was a useful contrast (step 6). The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
+**What prompted this:** I accepted changes with about five errors visible, and a separate temperature-format error fix ended with the agent saying it had not inspected the rendered section (step 4). In the separate MCP build, Claude used renderer feedback to fix errors and checked the output before handoff. I appreciated that loop (step 6; ["Studio MCP"](https://docs.evidence.dev/mcp/studio)).
 
-**What already exists:** Evidence describes queries and sources behind answers, with the prompt and implementation notes saved alongside insights (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). That is useful provenance. I also liked selecting a component in the editor to inspect its query results and SQL. It gives a maintainer a way to investigate an unexpected value or explain a calculation to a colleague. Alongside those inspection tools, I wanted a clear record of what the agent had checked after making an edit.
+**What already exists:** Studio brings together the code, diagnostics, live preview, and component inspector. The diff helped me understand the edit, and the inspector's Results and SQL tabs let me examine a component's data and query. The agent can already query connected data, read visualization data, and diagnose errors (["Editing"](https://docs.evidence.dev/editing)). Studio MCP also exposes visualize for rendering components and Markdown (["Studio MCP"](https://docs.evidence.dev/mcp/studio)).
 
-**What I'd like:** a concise completion note saying what changed, whether the agent checked for code errors and inspected the updated charts and tables, and what remains open. A record of queries, edits, and check results would help a user pick up the work later. This would help the maintainer review an agent-made change and answer a reader asking where a number came from. Keeping this record with the task would make unfinished work easier to pick up after an error fix or a return visit. I don't know whether the readiness mismatch came from unavailable diagnostics, missed feedback, or something else.
+**What I'd like:** the agent to use that feedback to check its changes, fix issues it finds, and render the affected output again before handoff. A temperature-format change is a concrete example: inspecting the updated values would check the visible effect of the edit. I'd expect the agent to check its own changes before handing them back for my review.
 
-In the account-health scenario, a maintainer needs to distinguish a changed method from changed customer data when a colleague asks why an assessment moved. That is the practical value I see in keeping the change, its checks, and the sources understandable together.
+For a maintainer, the benefit would be fewer rounds of noticing an error, sending it to the agent, and reviewing another edit. The maintainer could spend more review time on whether the report answers the intended question and whether its definitions make sense.
 
-**Where I'd start:** a completion note before Accept with three short parts: changed, checked, and still open. Could the Studio agent run a render check like the one available through MCP and report its result? I haven't established how the native agent accesses those tools. Preserve warning/error severity and name the checks actually run. A broader action history can build on that.
+**Where I'd start:** could the Studio agent use the available diagnostics and a render check on the affected charts and tables before asking a user to accept changes? The MCP workflow showed the value of iterating on renderer feedback. I haven't established how the native agent accesses rendering tools. Keep warnings and errors distinct so a warning is not presented as a blocking error.
 
-**How I'd know:** a user can tell which code and render checks ran, and what remains, without reconstructing the conversation. Successful rendering alone does not establish that the analysis is correct.
+**How I'd know:** fewer code and component errors reach the user, the agent checks the changed output before handoff, and fewer prompts are needed to get a working result. A render check supports the author's review; it does not establish the correctness of every number.
 
 ## A framework focused on BI
 

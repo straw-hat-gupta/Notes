@@ -36,9 +36,9 @@ Hovering over a diagnostic gave me an action to send it to chat. It included the
 
 During a request to add temperature components, I used that shortcut. It interrupted the request, and the temperature work did not finish until I prompted the agent again.
 
-Separately, the agent asked me to accept changes while I could see about five errors at the top of the page. My recollection was a type issue around a `max` expression; I did not preserve the exact diagnostic text. I accepted anyway, without being clear about what had been checked.
+Separately, the agent asked me to accept changes while I could see about five errors at the top of the page. My recollection was a type issue around a `max` expression; I did not preserve the exact diagnostic text. I accepted the changes while those diagnostics were visible.
 
-Warnings also went into chat with the same “component error” wording. In one response about an error fix, the agent explained its change but said it had not looked at the rendered temperature section. These episodes made me want a clearer distinction between making an edit and checking the result.
+Warnings also went into chat with the same “component error” wording. In one response about an error fix, the agent explained its change but said it had not looked at the rendered temperature section. These episodes made me want the agent to use the editor's feedback and inspect its changed output before handing it back for review.
 
 ## 5. Previewing and live data
 
