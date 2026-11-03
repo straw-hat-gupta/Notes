@@ -1,5 +1,3 @@
-# References
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
 
 These are the sources behind the research-informed points in my notes. Under each citation, I explain what I took from it and what remains my interpretation. My firsthand experience is recorded in the [walkthrough](Walkthrough%20Details.md).

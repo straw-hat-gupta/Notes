@@ -20,6 +20,7 @@ The main note, full walkthrough, companion analysis, and approximately 150-word 
 
 ## Reading and package choices
 
+- Do not repeat the filename as an in-file title in the shared notes; Obsidian already displays it. Preserve Sam's removal of those headings.
 - Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
 - Name the main sections What I Did and My Feedback. Use modest section headings and bold labels for individual stages/themes; attach descriptive links to the relevant text rather than repeated More detail / More reasoning blocks.
 - Latest steering supersedes the earlier separate-files choice: merge the research explanations into References as sentences under each citation; delete the separate sources document and update its links.
