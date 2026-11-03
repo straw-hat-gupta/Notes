@@ -452,7 +452,7 @@ AI use is encouraged, but candidates should show where it helped, where it was w
 
 An optional 30-minute discussion with a current intern can be used to show work and ask questions. Listed areas include Software Engineering, Financial Automation, IDComply Product Operations, Talent Acquisition, TechOps, AI Integrations, and Marketing Automation.
 
-**Implication for brainstorming:** Choose two listed objects with distinct, necessary roles. For example, a support transcript could define an operational need while IDComply Data supplies the behavior a tool investigates; Explorer could supply check-level evidence while the QBR defines a customer outcome. Those combinations still need to demonstrate a real dependency rather than decorative references. A project using only several IDComply CSVs would need another meaningful Table object. The PDF does not provide a separate rotational rubric; Eleanor's email supplies the higher ownership expectation. Whether additional rotational guidance exists is being asked in [[Email to Brady requesting missing case materials]].
+**Implication for brainstorming:** Choose two listed objects with distinct, necessary roles. For example, a support transcript could define an operational need while IDComply Data supplies the behavior a tool investigates; Explorer could supply check-level evidence while the QBR defines a customer outcome. Those combinations still need to demonstrate a real dependency rather than decorative references. A project using only several IDComply CSVs would need another meaningful Table object. The PDF does not provide a separate rotational rubric; Eleanor's email supplies the higher ownership expectation. A graduate-program equivalent of “About the Intern Program” has not been supplied.
 
 ## How the materials connect
 
@@ -495,7 +495,7 @@ That would substantiate the email's claims about initiative, unfamiliar systems,
 
 ## Gaps to resolve before selecting and scoping a build
 
-- The newly supplied case PDF resolves the earlier gap about deliverables and presentation expectations; see the additional case brief section above. Brady's October 30 email gives an interview on Friday, November 13, 3:00–4:00 PM at GeoComply HQ, 545 Robson Street. Submission recipient and timezone remain unspecified in the PDF. Any additional rotational guidance is unconfirmed. See [[Email to Brady requesting missing case materials]].
+- The newly supplied case PDF resolves the earlier gap about deliverables and presentation expectations; see the additional case brief section above. Brady's October 30 email gives an interview on Friday, November 13, 3:00–4:00 PM at GeoComply HQ, 545 Robson Street. Submission recipient and timezone remain unspecified in the PDF. A graduate-program equivalent of “About the Intern Program” has not been supplied.
 - The 1,200-row IDComply support-ticket CSV is missing. Explorer's four referenced metadata CSVs are missing separately, although their records are embedded in the HTML.
 - IDComply final-pass reconciliation, fraud-label maturity, signal-category assignment, and permitted routing changes need clarification for stronger causal or optimization claims.
 - Operational telemetry, real internal knowledge sources, actual customer permissions, and financial loss outcomes are not supplied.
@@ -507,6 +507,6 @@ All 16 material files were inspected. DOCX body text, tables, headers/footers, a
 
 Source files were copied into this folder's `materials` directory and checked against the workspace originals by file hash. The resume and job description were already present and matched the workspace versions. This note and the correspondence note are analysis documents; the original materials remain unedited.
 
-This existing Obsidian folder is the home for GeoComply documents we generate together:
+This existing Obsidian folder is the home for lasting GeoComply reference material we intend to revisit. Email drafts and temporary wording revisions stay in chat:
 
 `/Users/samgupta/brain/Notes/job Search/Company Preps/geocomply`
