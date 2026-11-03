@@ -4,13 +4,13 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
 
 I wanted a primary dashboard for checking my homelab's health and load, using telemetry already stored in Neon Postgres. I built Home Lab Analytics in Evidence Studio using a direct Postgres connection, then tried a separate build with Claude through the Studio MCP. I also used a second account to test invitations and live editing, and created a GitHub repository for the project.
 
-These notes cover my exploration on 29–31 October 2026. The homelab build was a personal use case; I did not test the account-health customer scenario used in the analysis. The second account was also mine, rather than an independent participant. I ended with a promising first dashboard I'd keep using and develop further.
+The build walkthrough covers 29 to 31 October 2026; I later explored the published chat and insights. I used my own second account for the collaboration test and ended with a promising first dashboard I'd keep using and develop further.
 
 ## 1. Creating the project
 
 I created Home Lab Analytics and started with a broad request:
 
-> I want to create a live dashboard that shows various analytics from my homelab. I have the data being stored in a Neon DB. Help me create a dashboard.
+> *I want to create a live dashboard that shows various analytics from my homelab. I have the data being stored in a Neon DB. Help me create a dashboard.*
 
 I did not start with a detailed chart specification because I wanted to explore how the agent would handle that ambiguity and see what it would suggest based on the data it has access to. The agent first told me to connect Neon before it could build the dashboard.
 
@@ -36,7 +36,7 @@ During a request to add temperature components, I used that shortcut. It interru
 
 Separately, the agent asked me to accept changes while I could see about five errors at the top of the page. My recollection was a type issue around a `max` expression; I did not preserve the exact diagnostic text. I accepted anyway, without being clear about what had been checked.
 
-Warnings also went into chat with the same “component error” wording. In one supplied repair response, the agent explained its change but said it had not looked at the rendered temperature section. These episodes made me want a clearer distinction between making an edit and checking the result.
+Warnings also went into chat with the same “component error” wording. In one response about an error fix, the agent explained its change but said it had not looked at the rendered temperature section. These episodes made me want a clearer distinction between making an edit and checking the result.
 
 ## 5. Previewing and live data
 
@@ -70,4 +70,8 @@ When I clicked Docs, it opened a separate site. The other buttons next to it kep
 
 On the Schedules page, the Support button did nothing when I clicked it. I did not investigate the cause or test whether it behaved the same way in another session.
 
+## Published chat and insights
 
+In the published project, I liked seeing charts and tables inside the chat and being able to choose between a full-page chat and a small popup at the bottom. That made it easy to explore questions alongside the report.
+
+The Analytics Agent can answer questions about the report and explain its calculations. It can also build a standalone insight with written findings and charts, refine the draft through conversation, and let the user save it as its own report in their library. I particularly like this because readers can keep and share several useful analyses about a report and return to them later.
