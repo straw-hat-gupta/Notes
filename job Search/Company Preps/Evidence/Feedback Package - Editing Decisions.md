@@ -23,7 +23,7 @@ The revised main note leads with the verdict, customer lens, and three ordered t
 - Do not repeat the filename as an in-file title in the shared notes; Obsidian already displays it. Preserve Sam's removal of those headings.
 - Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
 - Use the order: opening verdict, Who I Had in Mind, My Feedback, What I Did, then smaller wishes and AI use/supporting links. Retain the main section names What I Did and My Feedback. Use modest section headings and bold labels for individual stages/themes; attach descriptive links to the relevant text rather than repeated More detail / More reasoning blocks.
-- Keep the research explanations in References as plain prose with inline MLA citations, followed by a separate Works Cited section containing all ten full bibliography entries. The merge must not replace the bibliography with annotations. The separate sources document stays deleted.
+- Keep the research explanations in References as plain prose with inline MLA citations, followed by a separate Works Cited section containing all thirteen full bibliography entries. The merge must not replace the bibliography with annotations. The separate sources document stays deleted.
 - The walkthrough companion should give a fuller, self-contained account of every stage, even where it repeats the main note. Its depth is optional, not required to understand the main note.
 - Keep the separate AI-use note near 150 words: tools, roles, and what Sam decided or checked. Do not claim every generated explanation, metric, or product issue was independently verified.
 
@@ -101,3 +101,16 @@ Working files: [[Studio Feedback Package/Evidence Studio Feedback]] and [[Produc
 - Remove the proposed completion note, “what remains open,” check-history requests, and related opening/bridge language throughout the shared package. The desired outcome is fewer errors reaching the user and fewer prompts needed to get a working result.
 - Keep Theme 1 about workflow integration and task continuity; Theme 2 concerns checking the generated report. The unresolved preview-refresh observation remains in the walkthrough without a Theme 2 cross-reference.
 - Update the main note, analysis, walkthrough, and reference explanations consistently. Preserve current Google Docs wording and comments before syncing Obsidian. No new Studio test was performed; the native agent's exact access to rendering tools remains unverified.
+
+## Final audit decisions, 3 November 2026
+
+- Sam confirmed personally refining an insight draft and saving it as its own report in the library. State those actions as firsthand experience in the main note, analysis, and walkthrough. Keep the Analytics Agent citation with its documented shareable insights, saved prompt/implementation notes, and reuse in maintained reports; References links the firsthand detail to the walkthrough.
+- Keep the current level of detail and make light edits. Do not cut the Agent View proposal to meet the earlier approximate 1,000-word target.
+- Correct Step 8's tag to Theme 3 and add the incoming-GitHub-change question to Theme 3's Git paragraph. Preserve the distinction between a pending-deletion observation and an actual overwrite.
+- Define the chosen term “IDE view” once in the main note and analysis as files, code editor, and preview. This is the package's description of the existing layout.
+- Use “customer-health” when describing McAskill's post; “account-health” remains Sam's own scenario. Use the documented “read the data behind charts and tables” for agent capability, keeping it distinct from inspecting a rendered image.
+- Correct References so only the Rendering label is bold, format visualize as code in the main note and companions, and italicize Evidence Docs in the Studio MCP bibliography entry. Preserve all thirteen entries and the current native Google Docs links.
+- Describe the feature-branch Publish behavior as the docs state it: a squash commit that overwrites published-branch changes. Do not infer that generic Git squash merging causes this behavior.
+- Keep team setup as a future integration wish, not an observed failure. Keep “framework and runtime” as Sam's characterization and retain useful repetition across standalone companions. Keep the Support observation in the main note and the Docs observation in the walkthrough, matching the current Google Docs.
+- Retain “error fix” while specifying that the temperature-format item was a warning. Replace the imperative on warning/error wording with a tentative improvement grounded in the prepared prompt.
+- Clarify the AI-use note's reference to agent evals as built-in tests of agent behavior. No new product test, PDF export, or external delivery is part of this revision.

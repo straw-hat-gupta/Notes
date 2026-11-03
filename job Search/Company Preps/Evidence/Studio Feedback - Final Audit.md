@@ -193,3 +193,28 @@ It makes sense without the companions. Within the first paragraph I know what wa
 Strongest point: Theme 2. Evidence already built the render-and-fix loop for external agents through Studio MCP, and the native agent asked for Accept with errors visible and said it had not looked at the rendered section. That is concrete, cheap to act on, and flattering to existing work.
 
 What might confuse or annoy: the Step 8 tag (M2); "IDE view" as if it were an Evidence term (S1); Theme 1 is long, and the Agent View idea appears in paragraphs 2 and 4 with the Analytics Agent paragraph between them, so a reader may need a second pass to see that it is a question building on existing insights. Length is a little over target but not tiring.
+
+## 11. Follow-through, 3 November 2026
+
+The review above is preserved as written. This section records the subsequent revisions to the Google Docs and Obsidian package.
+
+Sam clarified that he personally refined an insight draft and saved it as its own report in the library. He chose to keep the current detail and make light edits rather than trim toward 1,000 words.
+
+| Item | Resolution |
+|---|---|
+| M1 | Fixed Rendering formatting in Google Docs and Markdown: label bold, body regular, visualize in code style. |
+| M2 | Step 8 now points to Theme 3; the Git paragraph names the incoming-commit question and links to the fuller framework analysis. |
+| M3 | Main, analysis, and walkthrough describe refining/saving as firsthand. References distinguishes those observations from the product page's documented shareable insights and report reuse, with a link to the walkthrough. |
+| M4 | The two descriptions of McAskill's story now say customer-health. Sam's account-health scenario remains. |
+| S1 | IDE view is defined on first use in the main note and analysis. |
+| S2 | Rewrote What I built using Neon Postgres and two clearer sentences. |
+| S3 | Feature-branch Publish wording now states the documented squash-commit/overwrite behavior without implying a warning block. |
+| S4 | Agent capability now says read the data behind charts and tables. |
+| S5 | Warning/error wording is now a tentative improvement tied to the observed prepared prompt. |
+| S6 | Evidence Docs is italicized in the Studio MCP Works Cited entry. |
+| S7 | Kept the detail at Sam's request; the main note is about 1,300 words. |
+| S8 | Native Google Docs use links to the five documents and verified heading IDs; Markdown uses local note links. All 27 native cross-document links and corresponding Markdown targets were checked. No PDF was created. |
+
+Optional polish: named Studio MCP's visualize tool in the main note and formatted it as code in the relevant documents; clarified that the temperature-format item was a warning while retaining Sam's preferred error-fix terminology; clarified the AI-use note's reference to agent evaluations. Preserved runtime as Sam's characterization, the future team-setup wish, and useful repetition in standalone companions. Retained the current division of Docs/Support observations rather than restoring material removed from the main Google Doc.
+
+Verification: exact planned prose changes read back from all five Google Docs; original heading IDs and all nine existing comment threads preserved; formatting read back for Rendering, tool names, and the Studio MCP bibliography entry. The revised Google Docs were synced to all five Obsidian notes. No new live-product test, external send, or PDF export was performed.
