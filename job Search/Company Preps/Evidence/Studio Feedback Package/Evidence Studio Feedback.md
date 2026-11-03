@@ -1,8 +1,8 @@
 **Time spent:** about 1.5 to 2 hours building and exploring the product, and 3 to 4 hours on market research, analysis, and further exploring the product.
 
-**What I built:** A live homelab health dashboard using data in Neon. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
+**What I built:** A live homelab health dashboard using Neon as the db. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
 
- Writing the dashboard as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I also like having a framework focused on reporting. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
+Writing the dashboard as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow the build. I also like having a framework focused on BI. The agent could help build and repair the report, but keeping the conversation and task context was less consistent: a repair interrupted my existing request, and later I couldn't reopen a previous chat. I'd like that context to carry through my work, with the agent available during setup too. For a data team maintaining reports for others, that could mean less re-explaining and more time checking the result.
 
 ### What I Did
 
@@ -51,4 +51,4 @@ It might also make the framework easier to learn and help less technical teammat
 
 **AI use:** I used Studio's agent and Claude for building, and AI to organize dictated notes, research sources, and help draft the feedback. I chose the observations and emphasis.
 
-**Optional supporting notes:** [Full walkthrough](Walkthrough%20Details.md) · [Customer reasoning](Analysis%20and%20Customer%20Reasoning.md) · [Research and sources](External%20Research%20and%20Sources.md) · [How I used AI](How%20I%20Used%20AI.md) · [Full references](References.md)
+**Optional supporting notes:** [Full walkthrough](Walkthrough%20Details.md) · [Customer reasoning](Analysis%20and%20Customer%20Reasoning.md) · [How I used AI](How%20I%20Used%20AI.md) · [Sources and references](References.md)

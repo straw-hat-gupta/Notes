@@ -12,7 +12,7 @@ I created Home Lab Analytics and started with a broad request:
 
 > I want to create a live dashboard that shows various analytics from my homelab. I have the data being stored in a Neon DB. Help me create a dashboard.
 
-I did not start with a detailed chart specification. The agent first told me to connect Neon before it could build the dashboard.
+I did not start with a detailed chart specification because I wanted to explore how the agent would handle that ambiguity and see what it would suggest based on the data it has access to. The agent first told me to connect Neon before it could build the dashboard.
 
 ## 2. Connecting my database
 

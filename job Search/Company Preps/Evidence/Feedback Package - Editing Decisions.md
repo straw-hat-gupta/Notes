@@ -6,7 +6,7 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 - Build the package in stages, with Sam choosing what to include; do not fill the whole skeleton in one pass.
 - Lead the summary with the agent making report writing as code approachable while keeping code and queries visible.
-- Keep the summary about continuity; introduce the main-chat/shared-IDE interface proposal only in the analysis.
+- Keep the summary about chat/task continuity; introduce the main-chat/shared-IDE interface proposal only in the analysis. Explicitly recognize repair as an existing agent capability. Do not imply publishing caused a lost conversation or task; the actual examples are an interrupted request and an inaccessible earlier chat.
 - Justify that continuity through less repeated work for maintainers and more time checking what readers will see.
 - Ground customer reasoning in the data team and its business readers together. Sam's firsthand perspective remains that of a report author; reader benefits should be explained as reasoning, not invented reader tests.
 - Aim for about **1,000 words in the main note**, retaining a brief entry for every walkthrough stage. Supporting detail is optional reading.
@@ -16,13 +16,13 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Keep External Research and Sources separate from References. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
+The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Sam now wants a single annotated References note: prose explanations under the citations, without tables or claim IDs. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
 
 ## Reading and package choices
 
 - Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
 - Name the main sections What I Did and My Feedback. Use modest section headings and bold labels for individual stages/themes; attach descriptive links to the relevant text rather than repeated More detail / More reasoning blocks.
-- Keep External Research and Sources and References as separate optional documents.
+- Latest steering supersedes the earlier separate-files choice: merge the research explanations into References as sentences under each citation; delete the separate sources document and update its links.
 - The walkthrough companion should give a fuller, self-contained account of every stage, even where it repeats the main note. Its depth is optional, not required to understand the main note.
 - Keep the separate AI-use note near 150 words: tools, roles, and what Sam decided or checked. Do not claim every generated explanation, metric, or product issue was independently verified.
 
