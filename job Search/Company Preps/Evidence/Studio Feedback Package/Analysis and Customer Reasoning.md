@@ -16,11 +16,15 @@ My homelab is a personal monitoring use case. It does not establish a target mar
 
 **What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
-**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is a main chat view showing generated outputs and Studio's existing IDE view, with the same conversation and task carried between them. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is an Agent View and Studio's existing IDE view, with the same conversation and task carried between them. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+
+In Agent View, I could start with connected data and talk through the report or reusable analytical workflow I want. The agent could help organize the project and create the skills needed for that workflow. It could show individual components in the conversation, so I could explore the data further, ask follow-up questions about a component, and choose which ones to add to a page, dashboard, or report. This would give me room to brainstorm and explore before deciding what belongs in the maintained output.
+
+For a data team, I think this could make it easier to turn an exploratory conversation into a reusable report or workflow for colleagues. The IDE view would keep the files, queries, and implementation visible when the maintainer is ready to inspect or change them. These are ideas for a workflow I'd like to see, not outcomes I tested.
 
 For a maintainer, that could reduce re-explaining and backtracking without hiding the code they need to review. Seeing the files alongside the same conversation might also help someone learn the framework and understand how a maintained project is organized. That could give technical and less technical colleagues a shared reference when discussing changes. These are possibilities to test, not outcomes I measured.
 
-**Where I'd start:** guided connection setup alongside the same agent, a repair that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and a main chat view sharing its conversation with the existing IDE view are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
+**Where I'd start:** guided connection setup alongside the same agent, a repair that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and an Agent View sharing its conversation with the existing IDE view are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
 
 **How I'd know:** I can complete setup, handle a repair, and return later without restating the task or reconstructing the prior conversation. For a maintainer, time recovered here can go toward checking the report a colleague will use. This workflow integration and continuity is my main recommendation; clearer checks support it.
 
@@ -46,7 +50,7 @@ I like having that shared reporting structure built on familiar tools such as SQ
 
 The fit with a developer's existing workflow is another part of that value. Reports, metrics, and agent instructions can be version-controlled together. The documented CLI route supports local editing with an agent of your choice and pull requests with preview links (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)). For teams already using Git, those are familiar ways to track, review, and maintain changes.
 
-Studio's existing IDE view feels familiar too: files, code, preview, and an agent alongside the work. I liked being able to follow the Markdown and SQL while the dashboard was built. My main-chat proposal would add another way to work with that same project and conversation. The combination I value is a framework built for BI that fits the development practices a technical team already uses.
+Studio's existing IDE view feels familiar too: files, code, preview, and an agent alongside the work. I liked being able to follow the Markdown and SQL while the dashboard was built. My Agent View proposal would add another way to work with that same project and conversation. The combination I value is a framework built for BI that fits the development practices a technical team already uses.
 
 ## Data scope
 
@@ -60,6 +64,6 @@ Choosing relevant data is different from enforcing who can access it. Evidence d
 
 **A copy button under agent responses.** I'd use it to move SQL or an explanation into a ticket or doc when discussing a report. This is a convenience wish, not a verified claim that no copy interaction exists.
 
-**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes and in my experince have found it to be faster than typing and that it allows me to 
+**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes and in my experince have found it to be faster than typing and that it allows me to more naturally express my thoughts.
 
 The Docs and Support observations stay in the walkthrough rather than being repeated as additional wishes here.
