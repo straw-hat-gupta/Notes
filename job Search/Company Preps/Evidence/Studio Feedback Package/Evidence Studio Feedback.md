@@ -46,7 +46,7 @@ I also like how this fits into a developer's existing workflow. Reports, definit
 
 **9. Returning.** **Stuck:** A listed chat returned “chat not found” (Theme 1). [Chat history](Walkthrough%20Details.md#9.%20Coming%20back%20later)
 
-**Navigation:** Docs opened a separate site where I expected integrated help; Schedules' Support button did nothing when clicked. [Navigation notes](Walkthrough%20Details.md#General%20navigation)
+**Navigation:** The Support button on the  did nothing when clicked. [Navigation notes](Walkthrough%20Details.md#General%20navigation)
 
 **Smaller wishes:** Which connections can this project and its agent use, and can I narrow them per project and investigation? I'd also use a copy button under agent responses and voice input. [Data scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope) · [Copy and voice](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
 
