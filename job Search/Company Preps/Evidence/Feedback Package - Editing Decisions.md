@@ -1,6 +1,6 @@
 # Feedback package — editing decisions
 
-Private working note. Updated 2026-11-02. This is outside the folder intended for Evidence.
+Private working note. Updated 2026-11-03. This is outside the folder intended for Evidence.
 
 ## Agreed direction
 
@@ -16,7 +16,7 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The revised main note leads with the verdict, customer lens, and three ordered themes before a shortened walkthrough. The companion analysis follows that theme order, the walkthrough records Sam's clarified outcome, and the AI-use note remains unchanged. References must retain a distinct MLA Works Cited bibliography as well as the research explanations, with matching inline MLA citations. No tables or claim IDs. Sam's latest changes retain compact formatting, descriptive links, simple section names, claim-specific qualifications, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
+The revised main note leads with the verdict, customer lens, and three ordered themes before a shortened walkthrough. The companion analysis follows that theme order, the walkthrough records Sam's clarified outcome, and the AI-use note remains unchanged. References must retain a distinct MLA Works Cited bibliography as well as the research explanations, with matching inline MLA citations. No tables or claim IDs. Sam's latest changes retain compact formatting, descriptive links, simple section names, claim-specific qualifications, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the sources cited by the chosen notes, with no unused reference placeholders. A final user reading pass remains.
 
 ## Reading and package choices
 
@@ -70,6 +70,13 @@ The external documents are proposals. Their suggested reintroduction of excluded
 - Sam's homelab experience informs empathy with developers building, debugging, and revising projects over multiple sessions. Remove the abstract data-freshness bridge and the sentence dismissing that experience as evidence of customer needs.
 - Sam liked the published chat's inline charts and tables, its full-page and small-popup layouts, and standalone insights that readers can refine, save as reports in their library, share, and return to. Do not imply the Analytics Agent cannot create standalone reports. Keep the authoring proposal focused on connecting this existing experience with project setup, pages, skills, and the IDE view.
 - Remove the broad “What I didn't test” sentence, including its now-outdated statement that the published reader experience was not explored. Keep firsthand observations in Sam's voice and customer benefits and success criteria focused on users.
+
+## Component inspection and Git workflow additions
+
+- Add the component inspector as a positive in Theme 2, alongside the existing diff: selecting a component exposes Results and SQL for examining its data and query. Distinguish those manual inspection tools from the request for a record of the agent's own checks. Give the full experience in walkthrough Step 3 and explain its maintainer value in the analysis.
+- Update main-note Step 8 with successful updates between GitHub and Studio plus the later pending-deletion observation. Keep the installation workaround and full test sequence in the walkthrough. The Studio branch used during that later test was not established; do not call it a failed feature-branch test or claim an actual overwrite happened.
+- In the framework analysis, start with the documented recommendation of feature branches for teams, Commit for branch work, and the Studio Publish or GitHub PR release routes. Credit the documented PR checks and previews. Frame the shared-draft rationale as Sam's interpretation and the incoming-change/review workflow as his question.
+- Add Version Control and Publishing to the MLA references, accessed 3 November 2026. The earlier overwrite-dialog screenshot and the new component screenshots remain outside the shared package; the screenshots supplied here are context only.
 
 ## Walkthrough choices — latest round
 
