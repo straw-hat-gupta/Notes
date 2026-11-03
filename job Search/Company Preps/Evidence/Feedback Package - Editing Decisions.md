@@ -54,6 +54,14 @@ Sam answered the questions raised by the external review and revision plan:
 
 The external documents are proposals. Their suggested reintroduction of excluded findings, optional team questions, fresh-agent checks, and additional product tests were not automatically adopted. The revision uses a self-contained reading check and mechanical link/content checks; no independent cold reader or live-product reproduction is implied.
 
+## Second review decisions
+
+- Acknowledge the existing Analytics Agent in both the main note and analysis: questions, saved insights, insight content in reports, project context and skills, plus the Studio agent's documented authoring and settings capabilities. The proposed Agent View can be a more prominent view of the existing agent and an authoring experience alongside the IDE; these ideas can coexist.
+- Frame the Agent View as a question. Keep both priorities: helping set up the project and its pages, skills, and other contents, and agent-centric development through conversational analysis, trying components, follow-up questions, and adding selected components to reports. Preserve one conversation across the Agent and existing IDE views.
+- Credit the agent for settings changes and add the proper citation for version-controlled agent instructions. Attribute the render/check loop to Studio MCP's `visualize`; ask whether a similar check could run before Accept without claiming implementation cost or native tool access.
+- Clarify the opening, add a brief connection between the positive framework theme and the first two themes, and restore one sentence on what was not tested. Retain the two previously excluded findings outside the shared package.
+- Revise Obsidian first, then carry the agreed changes into the existing Google Docs while preserving any separate edits made there.
+
 ## Walkthrough choices — latest round
 
 - **Connecting data:** keep losing access to the agent as the lead. Re-entering form details is a small aside, not a major standalone finding; connect it to wondering whether the agent could handle setup with Sam. Also retain direct-versus-synced choice and difficulty finding documented navigation.

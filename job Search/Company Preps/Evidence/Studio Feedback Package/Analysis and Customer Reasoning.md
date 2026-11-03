@@ -12,13 +12,15 @@ My homelab is a personal monitoring use case. It does not establish a target mar
 
 ## Agent integration
 
-**What prompted this:** the agent helped me build the report, but I left it behind during connection setup, had to repeat a request after a repair interrupted it, and later could not reopen a listed chat (walkthrough stages 2, 4, and 9). My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
+**What prompted this:** the agent helped me build the report, but I left it behind during connection setup, had to repeat a request after a repair interrupted it, and later could not reopen a listed chat (walkthrough steps 2, 4, and 9). My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
 
 **What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
-**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is an Agent View and Studio's existing IDE view, with the same conversation and task carried between them. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is an Agent View and Studio's existing IDE view, with the same conversation and task carried between them. The agent can already adjust project and page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
 
-In Agent View, a user could start with connected data and talk through the report or reusable analytical workflow they want. The agent could help organize the project and create the skills needed for that workflow. It could show individual components in the conversation, so they could explore the data further, ask follow-up questions about a component, and choose which ones to add to a page, dashboard, or report. This would give them room to brainstorm and explore before deciding what belongs in the maintained output.
+**What already exists:** The Analytics Agent can answer questions using project knowledge, save shareable insights in Evidence Markdown, and bring insight content into maintained pages. It uses project context and skills, and those insights retain the prompt and implementation notes (["Analytics Agent"](https://evidence.dev/product/analytics-agent); ["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent)). The Studio agent can also query connected data, inspect visualizations, and edit pages and settings (["Editing"](https://docs.evidence.dev/editing)). I see the Agent View as a way to bring these experiences together and make them more central to authoring.
+
+**My question:** Could an Agent View make the existing agent a conversational way to develop a project, alongside the existing IDE view? I'd like to discuss a report or reusable analytical workflow using connected data, and have the agent help set up the project and the pages, skills, and other project contents it needs. I'd also like to explore individual components, ask follow-up questions about them, and add the ones I choose to a report or dashboard, while keeping the same conversation when I switch to the IDE. Evidence already describes bringing insights into pages; I would like to understand how this proposed authoring flow could build on that experience, rather than assume those capabilities are missing.
 
 For a data team, I think this could make it easier to turn an exploratory conversation into a reusable report or workflow for colleagues. The IDE view would keep the files, queries, and implementation visible when the maintainer is ready to inspect or change them. 
 
@@ -30,7 +32,7 @@ For a maintainer, that could reduce re-explaining and backtracking without hidin
 
 ## What the agent did and checked
 
-**What prompted this:** I accepted changes with about five errors visible, and a separate repair response said the rendered section had not been inspected (stage 4). Claude's render/check loop before handoff was a useful contrast (stage 6). The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
+**What prompted this:** I accepted changes with about five errors visible, and a separate repair response said the rendered section had not been inspected (step 4). Claude used Studio MCP's `visualize` tool to render and check its page before handoff (step 6; ["Studio MCP"](https://docs.evidence.dev/mcp/studio)). That was a useful contrast. The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
 
 **What already exists:** Evidence describes queries and sources behind answers, with the prompt and implementation notes saved alongside insights (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). That is useful provenance; I did not test a complete record of agent actions during this walkthrough.
 
@@ -38,7 +40,7 @@ For a maintainer, that could reduce re-explaining and backtracking without hidin
 
 In the account-health scenario, I would want the maintainer to distinguish a changed method from changed customer data when a colleague asks why an assessment moved. That is the practical value I see in keeping the change, its checks, and the sources understandable together.
 
-**Where I'd start:** a completion note before Accept with three short parts: changed, checked, and still open. Preserve warning/error severity and name the checks actually run. A broader action history can build on that.
+**Where I'd start:** a completion note before Accept with three short parts: changed, checked, and still open. Could the Studio agent run a render check like the one available through MCP and report its result? I haven't established how the native agent accesses those tools. Preserve warning/error severity and name the checks actually run. A broader action history can build on that.
 
 **How I'd know:** I can tell whether diagnostics and the rendered section were checked, and what remains, without reconstructing the conversation. Successful rendering alone does not establish that the analysis is correct.
 
@@ -64,6 +66,6 @@ Choosing relevant data is different from enforcing who can access it. Evidence d
 
 **A copy button under agent responses.** I'd use it to move SQL or an explanation into a ticket or doc when discussing a report. This is a convenience wish, not a verified claim that no copy interaction exists.
 
-**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes and in my experince have found it to be faster than typing and that it allows me to more naturally express my thoughts.
+**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes. In my experience it is faster than typing and lets me express my thoughts more naturally.
 
 The Docs and Support observations stay in the walkthrough rather than being repeated as additional wishes here.
