@@ -2,7 +2,7 @@
 
 **What I built:** A live homelab health dashboard on Neon, using Studio's agent, with a separate Claude/MCP build, a second-account collaboration test, and GitHub setup.
 
-I ended with a promising first dashboard I'd keep using and develop further. Building with the agent was the best part: suggestions came from my data, and I could follow the Markdown, SQL, and preview. The friction came when I needed help beyond the markdown files or had to recover task context. My main wish is for the agent to work more directly with Studio's workflows, carrying the conversation and task through setup, repairs, and return visits. Clearer checking would support that: in addition to telling me what changed, it'd be to know what was checked, and what remains open. For maintainers, that could mean less re-explaining and more time checking the result.
+I ended with a promising first dashboard I'd keep using and develop further. Building with the agent was the best part: suggestions came from my data, and I could follow the Markdown, SQL, and preview. The friction came when I needed help beyond the markdown files or had to recover task context. My main wish is for the agent to work more directly with Studio's workflows, carrying the conversation and task through setup, repairs, and return visits. Clearer checking would support that: in addition to telling me what changed, it'd like to know what was checked, and what remains open. For maintainers, that could mean less re-explaining and more time checking the result.
 
 ### Who I Had in Mind
 
@@ -49,8 +49,6 @@ I also like how this fits into a developer's existing workflow. Reports, definit
 **Navigation:** Docs opened a separate site where I expected integrated help; Schedules' Support button did nothing when clicked. [Navigation notes](Walkthrough%20Details.md#General%20navigation)
 
 **Smaller wishes:** Which connections can this project and its agent use, and can I narrow them per project and investigation? I'd also use a copy button under agent responses and voice input. [Data scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope) · [Copy and voice](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
-
-I didn't test the published reader experience, the account-health scenario, or access controls; the second account was mine.
 
 **AI use:** I used Studio's agent and Claude for building, and AI to organize dictated notes, research sources, and help draft the feedback. I chose the observations and emphasis.
 
