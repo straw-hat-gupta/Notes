@@ -80,4 +80,4 @@ On the Schedules page, the Support button did nothing when I clicked it. I did n
 
 In the published project, I liked seeing charts and tables inside the chat and being able to choose between a full-page chat and a small popup at the bottom. That made it easy to explore questions alongside the report.
 
-The Analytics Agent can answer questions about the report and explain its calculations. It can also build a standalone insight with written findings and charts, refine the draft through conversation, and let the user save it as its own report in their library. I particularly like this because readers can keep and share several useful analyses about a report and return to them later.
+The Analytics Agent can answer questions about the report, explain its calculations, and build insights with written findings and charts. I refined an insight draft through conversation and saved it as its own report in my library. I particularly like this because readers can keep and share several useful analyses about a report and return to them later.
