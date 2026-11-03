@@ -1,4 +1,4 @@
-**Time spent:** about 1 to 2 hours building and exploring the product, and 3 to 4 hours on market research and analysis.
+**Time spent:** about 1.5 to 2 hours building and exploring the product, and 3 to 4 hours on market research, analysis, and further exploring the product.
 
 **What I built:** A live homelab health dashboard using data in Neon. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
 

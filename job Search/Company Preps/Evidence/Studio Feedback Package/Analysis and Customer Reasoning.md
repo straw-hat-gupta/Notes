@@ -1,5 +1,3 @@
-# Analysis and customer reasoning
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Sources: [External Research and Sources](External%20Research%20and%20Sources.md) · [References](References.md)
 
 ## Who I kept in mind

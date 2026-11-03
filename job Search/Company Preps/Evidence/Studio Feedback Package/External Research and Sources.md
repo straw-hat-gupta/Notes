@@ -1,5 +1,3 @@
-# External research and sources
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Full citations: [References](References.md)
 
 ## How I used the research

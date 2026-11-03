@@ -1,5 +1,3 @@
-# Walkthrough details
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
 
 ## Setup and environment
