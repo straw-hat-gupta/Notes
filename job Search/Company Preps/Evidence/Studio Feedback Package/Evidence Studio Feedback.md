@@ -20,7 +20,7 @@ I'd start with guided connection setup alongside the same agent, repairs that re
 
 I'd add a brief completion note before Accept: what changed, what was checked, and what remains open, saved so I can revisit it. That supports the continuing workflow above: a maintainer returning to a report can see where to pick up and what still needs review. In the account-health scenario, that could help explain the basis of a changed assessment. I'd judge it by whether I can tell which checks ran, including a render check, without reconstructing the conversation. Rendering alone doesn't establish that the numbers are correct. [Checks and history](Analysis%20and%20Customer%20Reasoning.md#What%20the%20agent%20did%20and%20checked)
 
-**3. A shared framework for BI over time.** The longer-term appeal is a framework and runtime focused on BI, with queries, reusable metrics, components, and validation ([McAskill, “Evidence Core”](https://evidence.dev/blog/evidence-core)). I see potential for shared reporting conventions that data teams and their agents can build on. Keeping the code and queries visible was already useful in my build.
+**3. A shared framework for BI over time.** The longer-term appeal is a framework and runtime focused on BI, with queries, reusable metrics, components, and validation ([McAskill, “Evidence Core”](https://evidence.dev/blog/evidence-core)). As agents write more of the code, the value I see is in shared definitions, components, and checks that keep later reports consistent and understandable. Keeping the code and queries visible was already useful in my build.
 
 I'd make reuse tangible with one definition carried into a second report and then revised. In the account-health scenario, that could mean maintaining a method once rather than rebuilding it for each output. The test I'd want is whether the second report, or a later definition change, takes less effort and stays understandable to the next maintainer. That would give me stronger grounds for the framework's lasting value than the first build alone. [Framework and reuse](Analysis%20and%20Customer%20Reasoning.md#A%20framework%20focused%20on%20BI)
 
@@ -40,13 +40,13 @@ I'd make reuse tangible with one definition carried into a second report and the
 
 **7. Inviting a teammate.** **Good:** My second account signed up through the invitation; edits appeared live. [Invitation test](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
 
-**8. GitHub and publishing.** **Stuck:** An existing installation was recognized after switching to selected repositories. [Workaround](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
+**8. GitHub and publishing.** **Stuck:** Studio repeatedly sent me back to GitHub; switching an existing installation to selected repositories made my repo appear. [Workaround](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
 
 **9. Returning.** **Stuck:** A listed chat returned “chat not found” (Theme 1). [Chat history](Walkthrough%20Details.md#9.%20Coming%20back%20later)
 
 **Navigation:** Docs opened a separate site where I expected integrated help; Schedules' Support button did nothing when clicked. [Navigation notes](Walkthrough%20Details.md#General%20navigation)
 
-**Smaller wishes:** Which connections can this project and its agent use, and can I narrow them per project and investigation? I'd also use response copying and voice input. [Data scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope) · [Copy and voice](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
+**Smaller wishes:** Which connections can this project and its agent use, and can I narrow them per project and investigation? I'd also use a copy button under agent responses and voice input. [Data scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope) · [Copy and voice](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
 
 I didn't test the published reader experience, the account-health scenario, or access controls; the second account was mine.
 
