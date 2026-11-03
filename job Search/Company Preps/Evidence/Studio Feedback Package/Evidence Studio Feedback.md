@@ -28,15 +28,15 @@ I also like how this fits into a developer's existing workflow. Reports, definit
 
 ### What I Did
 
-**1. Creating the project.** **Good:** A broad request started Home Lab Analytics. [Starting prompt](Walkthrough%20Details.md#1.%20Creating%20the%20project)
+**Step 1. Creating the project.** **Good:** A broad request started Home Lab Analytics. [Starting prompt](Walkthrough%20Details.md#1.%20Creating%20the%20project)
 
-**2. Connecting my database.** **Stuck:** Setup took me away from the agent; direct versus synced guidance and navigation confused me (Theme 1). [Connection walkthrough](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
+**Step 2. Connecting my database.** **Stuck:** Setup took me away from the agent; direct versus synced guidance and navigation confused me (Theme 1). [Connection walkthrough](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
 
-**3. Building.** **Good:** Data-grounded suggestions prompted me to add telemetry; I watched queries and components appear. [Build sequence](Walkthrough%20Details.md#3.%20Building%20the%20report%20with%20the%20agent)
+**Step 3. Building.** **Good:** Data-grounded suggestions prompted me to add telemetry; I watched queries and components appear. [Build sequence](Walkthrough%20Details.md#3.%20Building%20the%20report%20with%20the%20agent)
 
-**4. Fixing errors.** **Good:** Prepared repair prompts. **Stuck:** A repair interrupted my request; I accepted edits with diagnostics visible (Themes 1–2). [Repair examples](Walkthrough%20Details.md#4.%20Fixing%20errors)
+**Step 4. Fixing errors.** **Good:** Prepared repair prompts. **Stuck:** A repair interrupted my request; I accepted edits with diagnostics visible (Themes 1–2). [Repair examples](Walkthrough%20Details.md#4.%20Fixing%20errors)
 
-**5. Previewing.** **Stuck:** I didn't resolve whether one-second refresh applied in preview (Theme 2). [Refresh question](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
+**Step 5. Previewing.** **Stuck:** I didn't resolve whether one-second refresh applied in preview (Theme 2). [Refresh question](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
 
 **6. Claude over MCP.** **Good:** Render/check loop. **Stuck:** Code needed manual handoff to Studio (Theme 2). [MCP build](Walkthrough%20Details.md#6.%20Building%20the%20same%20page%20with%20Claude%20over%20MCP)
 
