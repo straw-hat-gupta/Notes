@@ -10,17 +10,19 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 - Justify that continuity through less repeated work for maintainers and more time checking what readers will see.
 - Ground customer reasoning in the data team and its business readers together. Sam's firsthand perspective remains that of a report author; reader benefits should be explained as reasoning, not invented reader tests.
 - Aim for about **1,000 words in the main note**, retaining a brief entry for every walkthrough stage. Supporting detail is optional reading.
-- The main note must be self-contained: a reader should understand what was built, what happened, why it matters, and the limits without opening another document. Move the supporting-note menu to the end; links add depth and source detail rather than supply missing explanations.
+- The main note must be self-contained: a reader should understand what was built, what happened, and why it matters without opening another document. Supporting links at the end add depth and sources rather than missing explanations. Sam requested removal of the standalone limits section; preserve precise qualifications beside individual uncertain claims.
 - Keep the tone generally positive, natural, brief, and honest. Show where Sam got stuck, what surprised him, what he wanted, and his labeled reasoning about the experience.
 - Keep competitor research out of the shared package; use it privately to sharpen the customer reasoning.
 
 ## Current stage
 
-The main note, fuller standalone walkthrough, companion analysis, and approximately 150-word AI-use note now have working drafts. The selected account-health source is checked and cited. Source/reference cleanup and the final editorial pass are unfinished. Next: decide whether to combine the sources and references, and choose how to review the main note's wording as a whole.
+The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Keep External Research and Sources separate from References. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Source cleanup and a final reading pass remain.
 
 ## Reading and package choices
 
 - Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
+- Name the main sections What I Did and My Feedback. Use modest section headings and bold labels for individual stages/themes; attach descriptive links to the relevant text rather than repeated More detail / More reasoning blocks.
+- Keep External Research and Sources and References as separate optional documents.
 - The walkthrough companion should give a fuller, self-contained account of every stage, even where it repeats the main note. Its depth is optional, not required to understand the main note.
 - Keep the separate AI-use note near 150 words: tools, roles, and what Sam decided or checked. Do not claim every generated explanation, metric, or product issue was independently verified.
 
@@ -33,6 +35,7 @@ The main note, fuller standalone walkthrough, companion analysis, and approximat
 - Include a brief copy-button and voice-input wish in the main note, with fuller personal reasons in the companion.
 - Anchor customer reasoning in a data team maintaining guided account-health analysis for customer-success colleagues. Evidence's unnamed customer-health skill story is relevant source material; the specific roles and implications in the notes are Sam's interpretation, not disclosed customer facts or a tested scenario.
 - Briefly mention the possibility of easier learning and shared repo understanding in the main analysis, clearly untested, with fuller reasoning in the companion.
+- Add the positive framework/runtime thesis: Evidence's focus on BI could provide reusable conventions for data teams and their agents over time. Express the adoption potential as Sam's hypothesis. Describe the purpose-built framework on its merits; do not call it a new programming language, criticize Python/YAML, or reintroduce competitors into the shared package.
 
 ## Walkthrough choices — latest round
 

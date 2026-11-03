@@ -10,6 +10,14 @@ The concrete task I chose is a data team maintaining guided account-health analy
 
 In the scenario I pictured, the data team owns the method and its maintenance, while the customer-success colleague needs a relevant, explainable assessment. Those roles are my interpretation of the workflow, not disclosed details about the unnamed customer. It gives the feedback a practical question: can the maintainer update and check the method, then explain a changed assessment to the colleague using it? I did not build or test this account-health scenario.
 
+## A framework focused on BI
+
+A big part of Evidence's appeal for me is having a framework and runtime organized around BI work. Core powers Studio, connects components to live warehouse queries, and supports reusable metrics. The component system provides reporting elements and validation; metric definitions can carry a shared calculation, filter, format, and label ([McAskill, “Evidence Core”](https://evidence.dev/blog/evidence-core); ["Components"](https://docs.evidence.dev/core-concepts/components); ["Metrics"](https://docs.evidence.dev/core-concepts/metrics)).
+
+I see this as a BI-specific structure built on familiar tools such as SQL and Markdown. The potential is a shared set of reporting conventions that analysts, data teams, and their agents can build on. In the account-health scenario, I would want definitions, visual patterns, and the method to carry into later reports and skills without having to piece them together again.
+
+That is why I think the framework could have a lasting role in how teams work, beyond generating a first dashboard. The question I'd want to test is whether the second report or a later definition change actually takes less effort and stays understandable to the next maintainer. I see wider-adoption potential, but this walkthrough does not establish it.
+
 ## Agent integration
 
 **What prompted this:** the agent helped me build the report, but I left it behind during connection setup and had to repeat a request after a repair interrupted it. My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
