@@ -2,44 +2,40 @@
 
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Full citations: [References](References.md)
 
-## Method
+## How I used the research
 
-_To write: what I looked at (Evidence's docs, product pages, pricing, changelog, blog, public customer examples), when (October and November 2026), and how documented facts are kept separate from my inferences._
+I used Evidence's own documentation, product pages, and customer-workflow example to check the claims retained in these notes. The sources below were checked on 2 November 2026. They establish documented capabilities and a reported customer example; they do not turn my proposed benefits into measured outcomes. My walkthrough observations are recorded separately in [Walkthrough Details](Walkthrough%20Details.md).
 
-## Evidence product and pricing
+## Framework and reporting
 
-| ID | Claim | Source (MLA in-text) |
+| ID | Documented point | Source (MLA in-text) |
 | --- | --- | --- |
-| | _Pending selection; no pricing claim is needed for the current analysis draft._ | |
+| S8 | Core is the framework powering Studio, with live warehouse queries, reusable metrics, and validation tooling. My long-term adoption thesis is an interpretation of that foundation. | (McAskill, “Evidence Core”) |
+| S9 | A reusable metric definition can carry its aggregation, filter, format, and label for components to inherit. I did not test a shared-metric revision during this walkthrough. | ("Metrics") |
+| S10 | Evidence components provide reporting elements with typed attributes and validation. Their existence does not guarantee that every generated report is semantically correct. | ("Components") |
 
-## Evidence Agent, CLI, and MCP
+## Evidence Agent and authoring
 
-| ID | Claim | Source (MLA in-text) |
+| ID | Documented point | Source (MLA in-text) |
 | --- | --- | --- |
-| S1 | Project `agent/` files provide always-loaded context and on-demand skills, version-controlled with the project. This establishes a capability, not that I customized or tested it. | ("Evidence Agent," Evidence Docs) |
-| S2 | The CLI supports local development with an agent of your choice, with GitHub PR previews documented. I did not test the local CLI path in this walkthrough. | ("CLI") |
-| S3 | The editor agent proposes a diff and can update project/page settings. My integration wish must not imply either capability is absent. | ("Editing") |
-| S4 | The Analytics Agent page describes queries/sources behind answers and prompts/implementation notes saved with insights. This is not proof of a complete action trace. | ("Analytics Agent") |
+| S1 | Project `agent/` files provide always-loaded context and on-demand skills, version-controlled with the project. I noticed the directory but did not customize it. | ("Evidence Agent," Evidence Docs) |
+| S2 | The CLI supports local development with an agent of your choice, with GitHub PR previews documented. I did not test the local CLI path here. | ("CLI") |
+| S3 | The editor agent proposes a diff and can update project/page settings. My integration wish concerns continuity across surrounding workflows, not a lack of these capabilities. | ("Editing") |
+| S4 | The Analytics Agent page describes queries/sources behind answers and prompts/implementation notes saved with insights. That does not establish a complete action trace. | ("Analytics Agent") |
 
 ## Data setup and access
 
-| ID | Claim | Source (MLA in-text) |
+| ID | Documented point | Source (MLA in-text) |
 | --- | --- | --- |
-| S5 | The logged-in CLI uses the Studio organization's connection, credentials, and access rules. This alone does not establish every project's effective access or project-scoping options. | ("Connect Your CLI to Your Data") |
-| S6 | Table and row access controls are documented separately from report content; direct-connector users must check connector-specific rules. These were not tested here. | ("Row Level Security") |
+| S5 | The logged-in CLI uses the Studio organization's connection, credentials, and access rules. This alone does not establish every project's effective access or hosted project-scoping options. | ("Connect Your CLI to Your Data") |
+| S6 | Table and row access controls are documented separately; direct-connector users must check connector-specific rules. I did not test those controls. | ("Row Level Security") |
 
-## Publishing, Git, and collaboration
+## Account-health example
 
-| ID | Claim | Source (MLA in-text) |
+| ID | Reported point | Source (MLA in-text) |
 | --- | --- | --- |
-| | _To fill_ | |
+| S7 | Evidence describes an unnamed customer refactoring an account-health dashboard into a guided skill, using product usage, support, and renewal context. This is a vendor-reported workflow, not a disclosed customer identity or measured result. The maintainer/customer-success roles in my example are my interpretation. | (McAskill, “That Dashboard”) |
 
-## Who uses Evidence
+## What remains a question
 
-| ID | Claim | Source (MLA in-text) |
-| --- | --- | --- |
-| S7 | Evidence describes an unnamed customer refactoring an account-health dashboard into a guided skill, with product usage, support, and renewal context. This is a vendor-reported workflow, not a disclosed customer identity or measured result. The maintainer/customer-success roles in my example are my interpretation. | (McAskill, “That Dashboard”) |
-
-## What I looked for and couldn't find
-
-_To finish after scope selection: log any claims of missing documentation narrowly, with pages/searches checked. The Editing guide already documents project/page settings changes. Do not claim the agent cannot change settings in general. No absence claim about traces, evals, or connection/team administration is established by the current six-source check._
+I did not establish whether hosted project-specific connection configuration exists, or test a complete agent-action record. The notes therefore describe what I wanted to understand and revisit; they do not claim unrestricted data access, missing permissions, or the absence of every relevant logging feature. Wider adoption, a lower learning curve, and better collaboration remain ideas to test.

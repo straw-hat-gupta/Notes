@@ -2,9 +2,7 @@
 
 **What I built:** A live homelab health dashboard using data in Neon. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
 
-**Summary**
-
-Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I also like having a framework focused on reporting. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
+**Summary.** Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I also like having a framework focused on reporting. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
 
 ### What I Did
 
@@ -45,23 +43,15 @@ One customer task I kept in mind was a data team maintaining guided account-heal
 
 **A shared framework for BI.** A big part of the appeal for me is having a framework and runtime focused on BI: queries, reusable metrics, components, and the reports they produce. I see potential for this to become a shared way for data teams to express and maintain analysis over time. In the account-health example, that could mean reusing definitions and patterns in the next report or skill. Wider adoption is a possibility I see, not something this walkthrough establishes. [Framework and reuse](Analysis%20and%20Customer%20Reasoning.md#A%20framework%20focused%20on%20BI)
 
-**Keeping the conversation across Studio**
-
-I'd like one continuing conversation: a main chat view for exploring what to build, and a code view with the same conversation alongside the files. That could keep what I liked about seeing the queries while reducing backtracking. I'd also like that help to carry through connection setup and other Studio workflows, so a maintainer isn't repeatedly explaining the task before checking the report their colleagues will use.
+**Keeping the conversation across Studio.** I'd like one continuing conversation: a main chat view for exploring what to build, and a code view with the same conversation alongside the files. That could keep what I liked about seeing the queries while reducing backtracking. I'd also like that help to carry through connection setup and other Studio workflows, so a maintainer isn't repeatedly explaining the task before checking the report their colleagues will use.
 
 It might also make the framework easier to learn and help less technical teammates understand the repo. I haven't tested that possibility. [Chat and code views](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
 
-**Knowing what the agent did and checked**
+**Knowing what the agent did and checked.** The diff showed the edit, but I couldn't tell what had been checked. I'd like the agent to say what changed, what it validated, and what remains open, with a record I can return to after an interruption. That would help a maintainer review a report and later explain a result to a reader. [Checks and action history](Analysis%20and%20Customer%20Reasoning.md#What%20the%20agent%20did%20and%20checked)
 
-The diff showed the edit, but I couldn't tell what had been checked. I'd like the agent to say what changed, what it validated, and what remains open, with a record I can return to after an interruption. That would help a maintainer review a report and later explain a result to a reader. [Checks and action history](Analysis%20and%20Customer%20Reasoning.md#What%20the%20agent%20did%20and%20checked)
+**Which data a project and its agent can reach.** I wasn't clear which connections a project and its agent could use. I'd like project-scoped connections and a visible way to choose the data for one investigation. For a data team serving several groups, I think that would make the intended scope easier to understand before sharing a report. I haven't established whether that configuration already exists; choosing relevant data and enforcing access are separate questions. [Connection and investigation scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope)
 
-**Which data a project and its agent can reach**
-
-I wasn't clear which connections a project and its agent could use. I'd like project-scoped connections and a visible way to choose the data for one investigation. For a data team serving several groups, I think that would make the intended scope easier to understand before sharing a report. I haven't established whether that configuration already exists; choosing relevant data and enforcing access are separate questions. [Connection and investigation scope](Analysis%20and%20Customer%20Reasoning.md#Data%20scope)
-
-**Smaller wishes**
-
-I'd use a copy button under agent responses to move SQL or explanations into a ticket or doc, and voice input to describe a report aloud. [Copy and voice input](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
+**Smaller wishes.** I'd use a copy button under agent responses to move SQL or explanations into a ticket or doc, and voice input to describe a report aloud. [Copy and voice input](Analysis%20and%20Customer%20Reasoning.md#Smaller%20wishes)
 
 **AI use:** I used Studio's agent and Claude for building, and AI to organize dictated notes, research sources, and help draft the feedback. I chose the observations and emphasis.
 
