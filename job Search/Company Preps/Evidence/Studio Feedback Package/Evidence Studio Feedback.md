@@ -1,11 +1,9 @@
 **Time spent:** about 1 to 2 hours building and exploring the product, and 3 to 4 hours on market research and analysis.
 
 **What I built:** A live homelab health dashboard using data in Neon. I built with Studio's agent, tried a separate version with Claude through MCP, tested collaboration with a second account, and connected GitHub.
-
 ## Summary
 
 Writing the report as code with the agent was the best part of Studio for me. I could see the Markdown and SQL as it worked, its suggestions came from my actual data, and the live preview helped me follow what it was building. I wanted that experience to carry further into Studio: connecting data, fixing errors, and publishing without losing the conversation or the task. For a data team maintaining reports that other people rely on, I think that continuity could mean less time repeating work and more time checking and improving what readers will see.
-
 ## Part 1: what I did
 
 ### 1. Creating the project
@@ -13,14 +11,12 @@ Writing the report as code with the agent was the best part of Studio for me. I 
 I created Home Lab Analytics and asked the agent to build a live dashboard from my Neon data, starting with a broad request rather than a detailed specification.
 
 [More detail](Walkthrough%20Details.md#1.%20Creating%20the%20project)
-
 ### 2. Connecting my database
 
 - **Stuck:** Connecting Neon took me outside the project, away from the agent. Going back for help meant re-entering some details; I wondered whether the agent could handle setup with me.
 - **Stuck:** I also struggled to choose between direct and synced connections and find the pages the docs described.
 
 [More detail](Walkthrough%20Details.md#2.%20Connecting%20my%20database)
-
 ### 3. Building the report with the agent
 
 **Good:** It suggested components based on my data and pointed out telemetry I wasn't collecting yet. I added sources based on those suggestions. I could see the queries and watch components appear in preview as it wrote them.
