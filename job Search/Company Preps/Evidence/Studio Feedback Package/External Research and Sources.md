@@ -4,7 +4,7 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Full cita
 
 ## How I used the research
 
-I used Evidence's own documentation, product pages, and customer-workflow example to check the claims retained in these notes. The sources below were checked on 2 November 2026. They establish documented capabilities and a reported customer example; they do not turn my proposed benefits into measured outcomes. My walkthrough observations are recorded separately in [Walkthrough Details](Walkthrough%20Details.md).
+I used Evidence's own documentation, product pages, and customer-workflow example to check the claims retained in these notes. The sources below establish documented capabilities and a reported customer example; they do not turn my proposed benefits into measured outcomes. My walkthrough observations are recorded separately in [Walkthrough Details](Walkthrough%20Details.md).
 
 ## Framework and reporting
 
