@@ -60,6 +60,6 @@ Choosing relevant data is different from enforcing who can access it. Evidence d
 
 **A copy button under agent responses.** I'd use it to move SQL or an explanation into a ticket or doc when discussing a report. This is a convenience wish, not a verified claim that no copy interaction exists.
 
-**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes; I haven't measured whether it would be faster for other users.
+**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes 
 
 The Docs and Support observations stay in the walkthrough rather than being repeated as additional wishes here.
