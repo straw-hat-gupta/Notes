@@ -13,6 +13,8 @@ tags:
 
 This is a working reference for understanding all **16 files in the supplied materials folder**, with the submitted resume, Technology graduate job description, and Eleanor correspondence kept in view. Each item has a short explanation followed by findings, limitations, and implications for later brainstorming. No project has been selected.
 
+**Update:** The subsequently supplied [[STRETCH Case - The Table.pdf|case brief]] is now included below. Its heading covers STRETCH, FDE and Graduate Rotational. It confirms that the work must depend meaningfully on at least two objects from The Table and that the presentation is at most 15 minutes. The brief is an additional file outside the original 16-file materials directory.
+
 The strongest theme across the pack is that GeoComply needs people who connect technical evidence to customer outcomes. A closed ticket, successful identity check, busy account, or impressive feature can still leave the actual problem unresolved. Showing day-one ownership means identifying that gap, verifying it, choosing a manageable intervention, and explaining how someone would use and evaluate it.
 
 **How to read the evidence:** “Source” describes what a supplied file says. “Calculated” means recomputed from the supplied data. “Interpretation” means a possible explanation or implication. Most customer scenarios and all supplied datasets are synthetic. The company background and published articles provide context; their external claims have not been independently updated or verified here.
@@ -434,6 +436,24 @@ For `GTH-418864`, it notices verified identity and jurisdiction failures but cal
 
 **Limits:** This review inspected the HTML's interface structure, embedded data, and answer-selection logic; it did not perform a full browser interaction test. The sandbox is an exercise, not a specification of GeoComply's production permissions, AI capabilities, or detection system.
 
+## Additional case brief and deliverables
+
+[Source PDF](<STRETCH Case - The Table.pdf>) — four pages, titled Interview Finalist Case The Table, for Winter 2027. Although the filename says STRETCH, the heading explicitly includes **STRETCH, FDE and Graduate Rotational**.
+
+The instruction is to make something useful using at least two objects from The Table. Each object must carry enough weight that removing it would stop the result working. Mentioning a source for background does not count, and using more objects does not earn extra credit. The brief lists ten objects: the eight individual background/transcript/article/workbook documents, the Signal Explorer package, and IDComply Data. Multiple CSVs within one listed package should not be assumed to count as separate objects.
+
+The format is open: a tool, plan, screen, analysis, product proposal, video, or another useful output. It must identify its user and explain what changes for that person. The intended time investment is an afternoon or two of focused work, and working behavior is valued over polish alone.
+
+The brief specifies a 50-minute interview, with a presentation/demo of 15 minutes or less and approximately 30 minutes of discussion. Expected questions cover the user and impact, why the objects were chosen and what was intentionally omitted, whether it works and how that was checked, and what another week would enable. The remaining minutes are not explicitly allocated. The original scheduling email reserves 3:00–4:00 PM, a one-hour slot; that is not necessarily a change to the brief's presentation limit.
+
+Send the deliverable or a link by **9 am on the presentation day**. The PDF leaves the recipient as `[contact]` and does not state the timezone, so those details need confirmation before submission. For the currently scheduled November 13 presentation, this points to November 13 at 9 am subject to confirming the relevant timezone and any later instructions.
+
+AI use is encouraged, but candidates should show where it helped, where it was wrong and needed direction, and what human judgment added. GeoComply says it has already run the case through multiple LLMs. A general AI-generated summary or an untested suggestion therefore does not establish a distinctive contribution. Outside research is welcome with attribution. Candidates should not spend personal money on tools; the brief offers help through Eleanor. Materials must remain private and must not be posted or shared publicly.
+
+An optional 30-minute discussion with a current intern can be used to show work and ask questions. Listed areas include Software Engineering, Financial Automation, IDComply Product Operations, Talent Acquisition, TechOps, AI Integrations, and Marketing Automation.
+
+**Implication for brainstorming:** Choose two listed objects with distinct, necessary roles. For example, a support transcript could define an operational need while IDComply Data supplies the behavior a tool investigates; Explorer could supply check-level evidence while the QBR defines a customer outcome. Those combinations still need to demonstrate a real dependency rather than decorative references. A project using only several IDComply CSVs would need another meaningful Table object. The PDF does not provide a separate rotational rubric; Eleanor's email supplies the higher ownership expectation. Whether additional rotational guidance exists is being asked in [[Email to Brady requesting missing case materials]].
+
 ## How the materials connect
 
 | Recurring issue | Evidence across the pack | Useful question for brainstorming |
@@ -475,7 +495,7 @@ That would substantiate the email's claims about initiative, unfamiliar systems,
 
 ## Gaps to resolve before selecting and scoping a build
 
-- No separate case submission brief, deadline, evaluation rubric, or required delivery format was found among these 16 files. A subsequent check of Brady's October 30 email found case dates November 12 and 13 and an interview on Friday, November 13, 3:00–4:00 PM at GeoComply HQ, 545 Robson Street; the email does not explicitly state a timezone. A separate deliverables/presentation brief remains unconfirmed. The intern guide's showcase format is not automatically the case format. See [[Email to Brady requesting missing case materials]].
+- The newly supplied case PDF resolves the earlier gap about deliverables and presentation expectations; see the additional case brief section above. Brady's October 30 email gives an interview on Friday, November 13, 3:00–4:00 PM at GeoComply HQ, 545 Robson Street. Submission recipient and timezone remain unspecified in the PDF. Any additional rotational guidance is unconfirmed. See [[Email to Brady requesting missing case materials]].
 - The 1,200-row IDComply support-ticket CSV is missing. Explorer's four referenced metadata CSVs are missing separately, although their records are embedded in the HTML.
 - IDComply final-pass reconciliation, fraud-label maturity, signal-category assignment, and permitted routing changes need clarification for stronger causal or optimization claims.
 - Operational telemetry, real internal knowledge sources, actual customer permissions, and financial loss outcomes are not supplied.
