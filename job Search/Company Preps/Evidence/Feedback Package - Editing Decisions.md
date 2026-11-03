@@ -16,7 +16,7 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Keep External Research and Sources separate from References. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Source cleanup and a final reading pass remain.
+The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Keep External Research and Sources separate from References. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
 
 ## Reading and package choices
 
