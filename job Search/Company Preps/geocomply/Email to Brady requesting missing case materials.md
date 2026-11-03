@@ -16,7 +16,7 @@ Thanks again for sending over the case materials. I’ve been working through th
 
 The Signal Explorer dictionary also lists users.csv, devices.csv, operators.csv, and operator_flagged_accounts.csv. I can see the corresponding data embedded in the HTML sandbox, but wanted to check whether separate CSV versions were intended to be included.
 
-Eleanor also mentioned that I could be considered for both STRETCH and the Graduate Rotational Program. I noticed the case PDF lists both programs—could you confirm whether the same deliverables and presentation expectations apply, or whether there’s any additional guidance or a separate PDF for rotational candidates?
+Eleanor also mentioned that I could be considered for both STRETCH and the Graduate Rotational Program. Is there a document similar to “About the Intern Program” for the graduate program that you could share? I’d like to better understand how the program works and how participants are evaluated.
 
 Thanks for your help!
 
@@ -29,4 +29,4 @@ Brady's original email dated October 30 already gives the interview as Friday, N
 
 [Original case email](https://mail.google.com/mail/u/?authuser=gsmarth642%40gmail.com#all/1a18f0efa47ef848)
 
-The subsequently supplied [[STRETCH Case - The Table.pdf]] names STRETCH, FDE and Graduate Rotational in its heading. The revised question acknowledges that shared scope and asks only whether additional rotational guidance exists. The draft preserves Smarth's edited wording and replaces the earlier generic request for a case brief. It has not been sent.
+The subsequently supplied [[STRETCH Case - The Table.pdf]] names STRETCH, FDE and Graduate Rotational in its heading. Smarth clarified that his request is for a graduate-program equivalent of “About the Intern Program,” rather than another case brief. The draft preserves his edited missing-file requests and asks for that program guide. It has not been sent.
