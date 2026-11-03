@@ -21,7 +21,6 @@
 **5. Previewing and live data.** **Stuck:** I couldn't tell whether my one-second refresh setting applied in preview or only after publishing. I didn't resolve this during the walkthrough. [Refresh question](Walkthrough%20Details.md#5.%20Previewing%20and%20live%20data)
 
 **6. Building the same page with Claude over MCP**
-
 - **Good:** I liked that Claude rendered and checked its page before handing it over.
 - **Stuck:** It couldn't save the page through MCP, so the handoff was code for me to paste into Studio. [MCP build and handoff](Walkthrough%20Details.md#6.%20Building%20the%20same%20page%20with%20Claude%20over%20MCP)
 
@@ -32,7 +31,6 @@
 **9. Coming back later.** **Stuck:** Reopening a recent chat on my main account gave “chat not found,” even though its title was still listed. I couldn't get back to the conversation. [Chat history issue](Walkthrough%20Details.md#9.%20Coming%20back%20later)
 
 **General navigation**
-
 - **Stuck:** The Support button on Schedules did nothing when I clicked it. [Navigation notes](Walkthrough%20Details.md#General%20navigation)
 
 ### My Feedback
