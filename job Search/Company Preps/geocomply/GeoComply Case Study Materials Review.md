@@ -475,7 +475,7 @@ That would substantiate the email's claims about initiative, unfamiliar systems,
 
 ## Gaps to resolve before selecting and scoping a build
 
-- No separate case submission brief, deadline, evaluation rubric, or required delivery format was found among these 16 files. The intern guide's showcase format is not automatically the case format.
+- No separate case submission brief, deadline, evaluation rubric, or required delivery format was found among these 16 files. A subsequent check of Brady's October 30 email found case dates November 12 and 13 and an interview on Friday, November 13, 3:00–4:00 PM at GeoComply HQ, 545 Robson Street; the email does not explicitly state a timezone. A separate deliverables/presentation brief remains unconfirmed. The intern guide's showcase format is not automatically the case format. See [[Email to Brady requesting missing case materials]].
 - The 1,200-row IDComply support-ticket CSV is missing. Explorer's four referenced metadata CSVs are missing separately, although their records are embedded in the HTML.
 - IDComply final-pass reconciliation, fraud-label maturity, signal-category assignment, and permitted routing changes need clarification for stronger causal or optimization claims.
 - Operational telemetry, real internal knowledge sources, actual customer permissions, and financial loss outcomes are not supplied.
