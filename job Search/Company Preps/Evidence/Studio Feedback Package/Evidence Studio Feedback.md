@@ -2,7 +2,7 @@
 
 **What I built:** A live homelab health dashboard on Neon, using Studio's agent, with a separate Claude/MCP build, a second-account collaboration test, and GitHub setup.
 
-I ended with a promising first dashboard I'd keep using and develop further. Building with the agent was the best part: suggestions came from my data, and I could follow the Markdown, SQL, and preview. The friction came when I needed help beyond the markdown files or had to recover task context. My main wish is for the agent to work more directly with Studio's workflows, carrying the conversation and task through setup, repairs, and return visits. Clearer checking would support that: tell me what changed (which it does , what was checked, and what remains open. For maintainers, that could mean less re-explaining and more time checking the result.
+I ended with a promising first dashboard I'd keep using and develop further. Building with the agent was the best part: suggestions came from my data, and I could follow the Markdown, SQL, and preview. The friction came when I needed help beyond the markdown files or had to recover task context. My main wish is for the agent to work more directly with Studio's workflows, carrying the conversation and task through setup, repairs, and return visits. Clearer checking would support that: in addition to telling me what changed, it'd be to know what was checked, and what remains open. For maintainers, that could mean less re-explaining and more time checking the result.
 
 ### Who I Had in Mind
 
