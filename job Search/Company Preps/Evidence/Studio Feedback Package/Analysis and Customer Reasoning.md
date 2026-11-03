@@ -20,7 +20,7 @@ That is why I think the framework could have a lasting role in how teams work, b
 
 **What prompted this:** the agent helped me build the report, but I left it behind during connection setup and had to repeat a request after a repair interrupted it. My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
 
-**What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent," Evidence Docs](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
+**What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
 **What I'd explore:** a main chat view showing generated outputs, and a file/preview view with the same conversation alongside it. I'd like the agent to help with connection and team setup within my permissions too. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
 

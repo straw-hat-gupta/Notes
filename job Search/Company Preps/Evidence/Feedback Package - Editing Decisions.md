@@ -16,14 +16,14 @@ Private working note. Updated 2026-11-02. This is outside the folder intended fo
 
 ## Current stage
 
-The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. Sam now wants a single annotated References note: prose explanations under the citations, without tables or claim IDs. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
+The main note, full walkthrough, companion analysis, and approximately 150-word AI-use note have working drafts. References must retain a distinct MLA Works Cited bibliography as well as the research explanations, with matching inline MLA citations. No tables or claim IDs. Sam's latest changes require compact formatting, descriptive links, simpler section names, no standalone limits section, and a positive framework/runtime value thesis. Selected-source cleanup is complete: retain the ten sources supporting the chosen notes, with no unused reference placeholders. A final user reading pass remains.
 
 ## Reading and package choices
 
 - Do not repeat the filename as an in-file title in the shared notes; Obsidian already displays it. Preserve Sam's removal of those headings.
 - Keep the Good / Stuck / Surprised labels in the main walkthrough for skimming.
 - Name the main sections What I Did and My Feedback. Use modest section headings and bold labels for individual stages/themes; attach descriptive links to the relevant text rather than repeated More detail / More reasoning blocks.
-- Latest steering supersedes the earlier separate-files choice: merge the research explanations into References as sentences under each citation; delete the separate sources document and update its links.
+- Keep the research explanations in References as plain prose with inline MLA citations, followed by a separate Works Cited section containing all ten full bibliography entries. The merge must not replace the bibliography with annotations. The separate sources document stays deleted.
 - The walkthrough companion should give a fuller, self-contained account of every stage, even where it repeats the main note. Its depth is optional, not required to understand the main note.
 - Keep the separate AI-use note near 150 words: tools, roles, and what Sam decided or checked. Do not claim every generated explanation, metric, or product issue was independently verified.
 
