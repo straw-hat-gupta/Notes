@@ -1,0 +1,7 @@
+vendor_id,vendor_name,check_type,regions_covered,cost_per_check_usd,p50_latency_ms,notes
+V01,Northstar Registry,identity_registry,US-NJ;US-PA;US-MI;US-CO;US-AZ,0.12,420,Broad US coverage. Returns nothing for thin-file applicants.
+V02,CivicMatch,identity_registry,US-NJ;US-PA;US-MI;US-CO;US-AZ;CA-ON,0.07,690,Cheapest registry. Intermittent timeouts under load.
+V03,Meridian Data,identity_registry,US-NJ;US-PA;US-MI;US-CO;US-AZ;CA-ON;UK,0.38,360,Deepest coverage incl. UK and Canada; strongest on thin-file. Priced per query.
+V04,TelcoMatch,phone_cfa,US-NJ;US-PA;US-MI;US-CO;US-AZ;CA-ON;UK,0.15,540,Carrier-record match on the submitted phone number. Strong for younger applicants.
+V05,DocVerify,document,US-NJ;US-PA;US-MI;US-CO;US-AZ;CA-ON;UK,1.2,2900,Step-up document capture and liveness. Charged per upload.
+V06,SanctionScan,sanctions_pep,US-NJ;US-PA;US-MI;US-CO;US-AZ;CA-ON;UK,0.04,210,Mandatory screen on every submitted session. A hit routes to manual review.
