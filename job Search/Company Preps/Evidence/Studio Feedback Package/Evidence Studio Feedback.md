@@ -1,6 +1,6 @@
 **Time spent:** about 1.5 to 2 hours building and exploring, and 3 to 4 hours on research, analysis, and further exploration of the product.
 
-**What I built:** A live homelab health dashboard on Neon, using Studio's agent, with a separate Claude/MCP build, a second-account collaboration test, and GitHub setup.
+**What I built:** A live homelab health dashboard with Neon db, using Studio's agent, with a separate Claude/MCP build, a second-account collaboration test, and GitHub setup.
 
 I ended with a promising first dashboard I'd keep using and develop further. Building with the agent was the best part: suggestions came from my data, and I could follow the Markdown, SQL, and preview. The friction came during database setup, when an error fix interrupted my request, and when I couldn't reopen a previous Studio chat. My main wish is for the agent to work more directly with Studio's workflows, carrying the conversation and task through setup, error fixes, and return visits. When the agent changes a report, I'd like it to say which code errors it checked for, whether it inspected the updated charts and tables, and what still needs attention. That would help maintainers understand what has been verified before reviewing the result.
 
@@ -20,7 +20,7 @@ In the published project, I liked seeing charts and tables directly in the chat 
 
 Could an Agent View build on this for developing reports and dashboards? Users could set up a project, its pages and skills, and other project contents through the agent. They could also explore connected data, inspect individual components, ask follow-up questions about them, and add the ones they choose to a report. Keeping the conversation across the Agent and IDE views could help a data team move from an idea to a reusable report or workflow. [Agent integration](Analysis%20and%20Customer%20Reasoning.md#Agent%20integration)
 
-**2. Knowing what changed and what was checked.** I accepted changes with about five errors showing; a separate response about an error fix said the rendered section hadn't been inspected (step 4). I appreciated that Claude used Studio MCP's visualize tool to render and check the page before handoff (step 6; ["Studio MCP"](https://docs.evidence.dev/mcp/studio)). Could the Studio agent run a similar check and say what it checked before Accept? The diff showed the edit, but I wanted to understand its checks too.
+**2. Knowing what changed and what was checked.** I accepted changes with about five errors showing; a separate response about an error fix said the rendered section hadn't been inspected (step 4). I appreciated that Claude used Studio MCP's visualize tool to render and check the page before handoff (step 6; ["Studio MCP"](https://docs.evidence.dev/mcp/studio)). Could the Studio agent run a similar check and say what it checked before Accept? The diff showed the edit. I also liked selecting a component to inspect its query results and SQL; that helped me understand the displayed numbers. Alongside those tools, I wanted to know what the agent itself had checked.
 
 I'd add a brief completion note before Accept: what changed, what was checked, and what remains open. That supports the continuing workflow above: a maintainer returning to a report can see where to pick up and what still needs review. In the account-health scenario, that could help explain the basis of a changed assessment. I'd judge it by whether a user can tell which checks ran, including a render check of the updated charts and tables, without reconstructing the conversation. Rendering alone doesn't establish that the numbers are correct. [Checks and history](Analysis%20and%20Customer%20Reasoning.md#What%20the%20agent%20did%20and%20checked)
 
@@ -44,7 +44,7 @@ I also like how this fits into a developer's existing workflow. Reports, definit
 
 **Step 7. Inviting a teammate.** **Good:** My second account signed up through the invitation; edits appeared live. [Invitation test](Walkthrough%20Details.md#7.%20Inviting%20a%20teammate)
 
-**Step 8. GitHub and publishing.** **Stuck:** Studio repeatedly sent me back to GitHub; switching an existing installation to selected repositories made my repo appear (Theme 1). [Workaround](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
+**Step 8. GitHub and publishing.** **Good:** GitHub commits appeared in Studio, and Studio publishes appeared on GitHub. **Stuck:** With unpublished Studio edits present, a later GitHub addition appeared as a pending deletion in Studio (Theme 1). [GitHub walkthrough](Walkthrough%20Details.md#8.%20Connecting%20GitHub%20and%20publishing)
 
 **Step 9. Returning.** **Stuck:** A listed chat returned “chat not found” (Theme 1). [Chat history](Walkthrough%20Details.md#9.%20Coming%20back%20later)
 

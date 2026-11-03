@@ -14,6 +14,8 @@ These are the sources behind the research-informed points in my feedback. The ex
 
 **The customer example.** Evidence describes an unnamed customer turning a complex account-health dashboard into a guided skill, using product usage, support, and renewal context ([McAskill, “That Dashboard”](https://evidence.dev/blog/that-dashboard-should-be-a-skill)). That informed my scenario of a data team maintaining analysis for customer-success colleagues. Those roles are my interpretation, not disclosed details about the customer, and the post does not establish measured benefits.
 
+**Versioning and publishing.** Evidence documents main-only development for solo work and feature branches for teams. Studio edits are held in a shared working state before commit; a development branch can be committed and then published from Studio or reviewed and merged through a GitHub PR. The docs warn that the Studio Publish path can overwrite published-branch changes (["Version Control"](https://docs.evidence.dev/features/version-control)). PRs receive Markdown and access-rule checks plus a preview; merging into the published branch triggers publication (["Publishing"](https://docs.evidence.dev/publishing)). This informed my question about bringing incoming GitHub changes into an unpublished Studio draft and following the documented team workflow.
+
 ## Works Cited
 
 "Analytics Agent." *Evidence*, [evidence.dev/product/analytics-agent](https://evidence.dev/product/analytics-agent). Accessed 2 Nov. 2026.
@@ -34,6 +36,10 @@ McAskill, Adam. "Evidence Core." *Evidence*, 26 Aug. 2026, [evidence.dev/blog/ev
 
 "Metrics." *Evidence Docs*, [docs.evidence.dev/core-concepts/metrics](https://docs.evidence.dev/core-concepts/metrics). Accessed 2 Nov. 2026.
 
+"Publishing." *Evidence Docs*, [docs.evidence.dev/publishing](https://docs.evidence.dev/publishing). Accessed 3 Nov. 2026.
+
 "Row Level Security." *Evidence Docs*, [docs.evidence.dev/features/row-level-security](https://docs.evidence.dev/features/row-level-security). Accessed 2 Nov. 2026.
 
 "Studio MCP." Evidence Docs, [docs.evidence.dev/mcp/studio](https://docs.evidence.dev/mcp/studio). Accessed 2 Nov. 2026.
+
+"Version Control." *Evidence Docs*, [docs.evidence.dev/features/version-control](https://docs.evidence.dev/features/version-control). Accessed 3 Nov. 2026.

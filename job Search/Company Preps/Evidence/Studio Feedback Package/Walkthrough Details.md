@@ -28,6 +28,8 @@ I told the agent this would be my main view of homelab status, health, and load,
 
 Changes were staged for me to accept. I liked seeing components appear in preview as the agent wrote them, with the Markdown and SQL available to inspect. The agent seemed particularly good at working with Evidence's framework. That combination helped me decide what to build without losing sight of the code behind it.
 
+I also liked selecting a component in the editor to open its inspector. The Results and SQL tabs let me examine the query results behind that component and the SQL producing them. That made it easier to understand a displayed value and inspect the calculation without leaving the IDE view.
+
 ## 4. Fixing errors
 
 Hovering over a diagnostic gave me an action to send it to chat. It included the message and line reference in a prepared prompt asking for a concise edit. I liked not having to assemble that prompt myself.
@@ -59,6 +61,10 @@ I liked that someone could enter through an invitation without already having an
 I had already connected GitHub with access to all repositories before making this project. When I tried to link the project to its new repository, Studio did not recognize that existing installation. The connection flow kept taking me to GitHub, which said the app was already installed and offered configuration.
 
 I changed the installation to selected repositories and selected the repository I had created for this project. Studio then recognized it and let me select it. That was the workaround that worked in my session; I don't know why the existing configuration wasn't being picked up.
+
+In a later test, a change I committed to main on GitHub appeared in Studio, and a change published from Studio appeared on GitHub. I liked that updates flowed in both directions.
+
+With unpublished edits already in Studio, I then committed another change to main on GitHub. The GitHub addition appeared as a deletion among Studio's pending changes, alongside my existing edits. I couldn't tell how to bring the GitHub change into the draft while keeping the Studio work, or which review path to use next.
 
 ## 9. Coming back later
 
