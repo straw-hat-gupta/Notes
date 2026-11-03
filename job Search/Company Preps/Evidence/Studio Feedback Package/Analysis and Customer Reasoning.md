@@ -12,6 +12,8 @@ My homelab dashboard is a monitoring use case. What carries over is the develope
 
 ## Agent integration
 
+**Helping users decide what is worth building.** In my build, the agent connected the dashboard's purpose to my available data, suggested priorities, and pointed out missing telemetry. I added sources based on those recommendations (walkthrough step 3). That was valuable analytical guidance: the agent helped shape the work as well as implement it. For a user starting with a broad goal, this could help turn that goal into useful components and clarify where more data would improve the report. I'd preserve that guidance as the agent becomes more connected to Studio's workflows.
+
 **What prompted this:** Connecting Neon took me to a setup page outside the project, where the agent chat wasn't available. Sending an error to chat then interrupted a request to add temperature components, which I had to request again. Later, after reopening Studio, a listed conversation returned “chat not found” (walkthrough steps 2, 4, and 9).
 
 **What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
