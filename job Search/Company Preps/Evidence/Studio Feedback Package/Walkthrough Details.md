@@ -72,4 +72,4 @@ When I clicked Docs, it opened a separate site. The other buttons next to it kep
 
 On the Schedules page, the Support button did nothing when I clicked it. I did not investigate the cause or test whether it behaved the same way in another session.
 
-![Docs button in the Studio sidebar](Attachments/studio-docs-button-2026-10-29.png)
+
