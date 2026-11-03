@@ -36,7 +36,7 @@ The revised main note leads with the verdict, customer lens, and three ordered t
 - Include a brief copy-button and voice-input wish in the main note, with fuller personal reasons in the companion.
 - Anchor customer reasoning in a data team maintaining guided account-health analysis for customer-success colleagues. Evidence's unnamed customer-health skill story is relevant source material; the specific roles and implications in the notes are Sam's interpretation, not disclosed customer facts or a tested scenario.
 - Keep the untested possibilities of easier learning and shared repo understanding in the companion to leave room for the main argument.
-- Add the positive framework/runtime thesis: Evidence's focus on BI could provide reusable conventions for data teams and their agents over time. Express the adoption potential as Sam's hypothesis. Describe the purpose-built framework on its merits; do not call it a new programming language, criticize Python/YAML, or reintroduce competitors into the shared package.
+- Keep the framework theme positive: BI components, shared definitions, validation, and familiar Git/IDE development practices are the value Sam sees. Do not force this section into a recommendation/test format or claim every developer uses Git. Describe the framework on its merits; do not call it a new programming language, criticize Python/YAML, or reintroduce competitors into the shared package.
 
 ## Revision decisions — 2 November 2026
 
@@ -47,7 +47,8 @@ Sam answered the questions raised by the external review and revision plan:
 - **Overwrite warning:** keep it excluded from the entire shared package, including the screenshot. The private record remains.
 - **Missing-temperature example:** drop it. No reproduction is part of this revision.
 - **Structure:** accept feedback before the shortened walkthrough and one closing scope sentence. Retain all nine stages, including unresolved preview refresh, and Good / Stuck labels. The customer lens states the maintainer's job and explains what the personal homelab test can inform.
-- **Argument:** give each theme an observed basis, a customer consequence, a useful first step or test, and an outcome check. The third theme tests lasting framework value through a second report and definition revision; it is not an observed maintenance result.
+- **Argument:** the first two themes give an observed basis, a customer consequence, a useful first step, and an outcome check. Following Sam's clarification, the third theme is a positive assessment of the BI framework and its fit with familiar Git, local development, pull-request review, and IDE workflows. Remove the proposed second-report/definition-change test; do not present framework value as contingent on that test or claim to know what Evidence has tested internally.
+- **Terminology:** call Studio's existing files/code/preview layout the **IDE view**. The proposal is a main chat view sharing the conversation and task with that existing IDE view, not the addition of an IDE that Studio lacks.
 - **Writing:** about 1,000 words, no competitor names in the shared package, no em dashes, descriptive links, and the existing MLA bibliography. Work from the selected observations; no new research source is needed for these changes.
 
 The external documents are proposals. Their suggested reintroduction of excluded findings, optional team questions, fresh-agent checks, and additional product tests were not automatically adopted. The revision uses a self-contained reading check and mechanical link/content checks; no independent cold reader or live-product reproduction is implied.

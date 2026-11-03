@@ -16,11 +16,11 @@ My homelab is a personal monitoring use case. It does not establish a target mar
 
 **What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
 
-**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is a main chat view showing generated outputs, and a file/preview view with that same conversation alongside it. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is a main chat view showing generated outputs and Studio's existing IDE view, with the same conversation and task carried between them. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
 
 For a maintainer, that could reduce re-explaining and backtracking without hiding the code they need to review. Seeing the files alongside the same conversation might also help someone learn the framework and understand how a maintained project is organized. That could give technical and less technical colleagues a shared reference when discussing changes. These are possibilities to test, not outcomes I measured.
 
-**Where I'd start:** guided connection setup alongside the same agent, a repair that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and the shared chat/code views are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
+**Where I'd start:** guided connection setup alongside the same agent, a repair that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and a main chat view sharing its conversation with the existing IDE view are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
 
 **How I'd know:** I can complete setup, handle a repair, and return later without restating the task or reconstructing the prior conversation. For a maintainer, time recovered here can go toward checking the report a colleague will use. This workflow integration and continuity is my main recommendation; clearer checks support it.
 
@@ -42,13 +42,11 @@ In the account-health scenario, I would want the maintainer to distinguish a cha
 
 A big part of Evidence's appeal for me is having a framework and runtime organized around BI work. Core powers Studio, connects components to live warehouse queries, and supports reusable metrics. The component system provides reporting elements and validation; metric definitions can carry a shared calculation, filter, format, and label ([McAskill, “Evidence Core”](https://evidence.dev/blog/evidence-core); ["Components"](https://docs.evidence.dev/core-concepts/components); ["Metrics"](https://docs.evidence.dev/core-concepts/metrics)).
 
-I see this as a BI-specific structure built on familiar tools such as SQL and Markdown. The potential is a shared set of reporting conventions that analysts, data teams, and their agents can build on. In the account-health scenario, I would want definitions, visual patterns, and the method to carry into later reports and skills without having to piece them together again.
+I like having that shared reporting structure built on familiar tools such as SQL and Markdown. It gives data teams and their agents common components, definitions, and conventions to work with. In the account-health scenario, the appeal is keeping the method and its reporting logic in a form the team can inspect and maintain.
 
-That is why I think the framework could have a lasting role in how teams work, beyond generating a first dashboard. The question I'd want to test is whether the second report or a later definition change actually takes less effort and stays understandable to the next maintainer. I see wider-adoption potential, but this walkthrough does not establish it.
+The fit with a developer's existing workflow is another part of that value. Reports, metrics, and agent instructions can be version-controlled together. The documented CLI route supports local editing with an agent of your choice and pull requests with preview links (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)). For teams already using Git, those are familiar ways to track, review, and maintain changes.
 
-**Where I'd start:** carry one shared definition into a second report, revise it, and inspect both outputs. This tests reuse of reporting structure and meaning, beyond generating another page.
-
-**How I'd know:** the revision takes less effort, both outputs retain the intended definition, and another maintainer can understand the change. That is the basis on which I would assess the framework's long-term value; I did not run this test.
+Studio's existing IDE view feels familiar too: files, code, preview, and an agent alongside the work. I liked being able to follow the Markdown and SQL while the dashboard was built. My main-chat proposal would add another way to work with that same project and conversation. The combination I value is a framework built for BI that fits the development practices a technical team already uses.
 
 ## Data scope
 
