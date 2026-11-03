@@ -4,7 +4,7 @@ Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md)
 
 I wanted a primary dashboard for checking my homelab's health and load, using telemetry already stored in Neon Postgres. I built Home Lab Analytics in Evidence Studio using a direct Postgres connection, then tried a separate build with Claude through the Studio MCP. I also used a second account to test invitations and live editing, and created a GitHub repository for the project.
 
-These notes cover my exploration on 29–31 October 2026. The homelab build was a personal use case; I did not test the account-health customer scenario used in the analysis. The second account was also mine, rather than an independent participant.
+These notes cover my exploration on 29–31 October 2026. The homelab build was a personal use case; I did not test the account-health customer scenario used in the analysis. The second account was also mine, rather than an independent participant. I ended with a promising first dashboard I'd keep using and develop further.
 
 ## 1. Creating the project
 

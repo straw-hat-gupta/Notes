@@ -6,7 +6,37 @@ I kept two people in mind: the person maintaining reports, queries, and shared d
 
 The concrete task I chose is a data team maintaining guided account-health analysis for customer-success colleagues. Evidence describes an unnamed customer turning a complex health dashboard into a skill that asks relevant questions and guides the analysis. The original dashboard included product usage, support history, and renewal information; its growing set of inputs required knowledge of the customer's methodology ([McAskill, “That Dashboard”](https://evidence.dev/blog/that-dashboard-should-be-a-skill)).
 
-In the scenario I pictured, the data team owns the method and its maintenance, while the customer-success colleague needs a relevant, explainable assessment. Those roles are my interpretation of the workflow, not disclosed details about the unnamed customer. It gives the feedback a practical question: can the maintainer update and check the method, then explain a changed assessment to the colleague using it? I did not build or test this account-health scenario.
+In the scenario I pictured, the data team owns the method and its maintenance, while the customer-success colleague needs a relevant, explainable assessment. Those roles are my interpretation of the workflow, not disclosed details about the unnamed customer. The maintainer's job is to keep the analysis correct as data and methods change, and explain a changed result to the colleague relying on it. I did not build or test this account-health scenario.
+
+My homelab is a personal monitoring use case. It does not establish a target market for Evidence. What I can carry into this customer lens is the author's build-and-maintain loop and questions about freshness and data quality. I ended with a promising first dashboard I'd keep using and develop further; the recurring business-reporting benefit remains something to test.
+
+## Agent integration
+
+**What prompted this:** the agent helped me build the report, but I left it behind during connection setup, had to repeat a request after a repair interrupted it, and later could not reopen a listed chat (walkthrough stages 2, 4, and 9). My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
+
+**What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
+
+**What I'd explore:** the agent helping carry out Studio workflows, including connection and team setup within my permissions, while retaining the conversation and task. One possible interface is a main chat view showing generated outputs, and a file/preview view with that same conversation alongside it. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
+
+For a maintainer, that could reduce re-explaining and backtracking without hiding the code they need to review. Seeing the files alongside the same conversation might also help someone learn the framework and understand how a maintained project is organized. That could give technical and less technical colleagues a shared reference when discussing changes. These are possibilities to test, not outcomes I measured.
+
+**Where I'd start:** guided connection setup alongside the same agent, a repair that retains the original request, and reliable reopening of chats shown in the list. Broader workflow actions and the shared chat/code views are directions to explore from that starting point. These observations identify related user costs, not a proven common technical cause.
+
+**How I'd know:** I can complete setup, handle a repair, and return later without restating the task or reconstructing the prior conversation. For a maintainer, time recovered here can go toward checking the report a colleague will use. This workflow integration and continuity is my main recommendation; clearer checks support it.
+
+## What the agent did and checked
+
+**What prompted this:** I accepted changes with about five errors visible, and a separate repair response said the rendered section had not been inspected (stage 4). Claude's render/check loop before handoff was a useful contrast (stage 6). The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
+
+**What already exists:** Evidence describes queries and sources behind answers, with the prompt and implementation notes saved alongside insights (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). That is useful provenance; I did not test a complete record of agent actions during this walkthrough.
+
+**What I'd like:** a concise completion note saying what changed, which checks ran, and what remains open, plus a record of queries, edits, and check results I can return to. This would help the maintainer review an agent-made change and answer a reader asking where a number came from. Keeping this record with the task would make unfinished work easier to pick up after a repair or a return visit. I don't know whether the readiness mismatch came from unavailable diagnostics, missed feedback, or something else.
+
+In the account-health scenario, I would want the maintainer to distinguish a changed method from changed customer data when a colleague asks why an assessment moved. That is the practical value I see in keeping the change, its checks, and the sources understandable together.
+
+**Where I'd start:** a completion note before Accept with three short parts: changed, checked, and still open. Preserve warning/error severity and name the checks actually run. A broader action history can build on that.
+
+**How I'd know:** I can tell whether diagnostics and the rendered section were checked, and what remains, without reconstructing the conversation. Successful rendering alone does not establish that the analysis is correct.
 
 ## A framework focused on BI
 
@@ -16,25 +46,9 @@ I see this as a BI-specific structure built on familiar tools such as SQL and Ma
 
 That is why I think the framework could have a lasting role in how teams work, beyond generating a first dashboard. The question I'd want to test is whether the second report or a later definition change actually takes less effort and stays understandable to the next maintainer. I see wider-adoption potential, but this walkthrough does not establish it.
 
-## Agent integration
+**Where I'd start:** carry one shared definition into a second report, revise it, and inspect both outputs. This tests reuse of reporting structure and meaning, beyond generating another page.
 
-**What prompted this:** the agent helped me build the report, but I left it behind during connection setup and had to repeat a request after a repair interrupted it. My guess is that the interface separates report work from setup in a way that made those transitions harder; I haven't inspected the implementation.
-
-**What I'd keep:** the visible code and the ability to shape the agent through version-controlled context and skills. I noticed `agent/` in the project but did not edit it. The docs describe always-loaded context, on-demand skills, and CLI development with an agent of your choice (["Evidence Agent"](https://docs.evidence.dev/features/evidence-agent); ["CLI"](https://docs.evidence.dev/cli)).
-
-**What I'd explore:** a main chat view showing generated outputs, and a file/preview view with the same conversation alongside it. I'd like the agent to help with connection and team setup within my permissions too. The editor already supports some project/page settings; this wish concerns carrying help across the surrounding workflow (["Editing"](https://docs.evidence.dev/editing)).
-
-For a maintainer, that could reduce re-explaining and backtracking without hiding the code they need to review. Seeing the files alongside the same conversation might also help someone learn the framework and understand how a maintained project is organized. That could give technical and less technical colleagues a shared reference when discussing changes. These are possibilities to test, not outcomes I measured.
-
-## What the agent did and checked
-
-**What prompted this:** I accepted changes while errors were visible, a repair interrupted requested work, and I later couldn't reopen a chat. Claude's render/check loop was a useful contrast in how the result was handed over. The agent already shows a diff; what I wanted was clarity about checks and unfinished work.
-
-**What already exists:** Evidence describes queries and sources behind answers, with the prompt and implementation notes saved alongside insights (["Analytics Agent"](https://evidence.dev/product/analytics-agent)). That is useful provenance; I did not test a complete record of agent actions during this walkthrough.
-
-**What I'd like:** a concise completion note saying what changed, which checks ran, and what remains open, plus a record of queries, edits, and check results I can return to. This would help the maintainer review an agent-made change and answer a reader asking where a number came from. A repair should also retain the original request so the record and the actual work stay aligned. I don't know whether the readiness mismatch came from unavailable diagnostics, missed feedback, or something else.
-
-In the account-health scenario, I would want the maintainer to distinguish a changed method from changed customer data when a colleague asks why an assessment moved. That is the practical value I see in keeping the change, its checks, and the sources understandable together.
+**How I'd know:** the revision takes less effort, both outputs retain the intended definition, and another maintainer can understand the change. That is the basis on which I would assess the framework's long-term value; I did not run this test.
 
 ## Data scope
 
@@ -46,9 +60,8 @@ Choosing relevant data is different from enforcing who can access it. Evidence d
 
 ## Smaller wishes
 
-| What I found myself wanting | Why I would use it |
-| --- | --- |
-| A copy button under agent responses | Move SQL or an explanation into a ticket or doc when discussing or investigating a report. This is a convenience wish, not a verified claim that no copy interaction exists. |
-| Voice input in the agent | Describe the report or investigation aloud. I used dictation for these notes and would like that option in Studio; I haven't measured whether it would be faster for other users. |
+**A copy button under agent responses.** I'd use it to move SQL or an explanation into a ticket or doc when discussing a report. This is a convenience wish, not a verified claim that no copy interaction exists.
+
+**Voice input in the agent.** I'd use it to describe a report or investigation aloud. I used dictation for these notes; I haven't measured whether it would be faster for other users.
 
 The Docs and Support observations stay in the walkthrough rather than being repeated as additional wishes here.
