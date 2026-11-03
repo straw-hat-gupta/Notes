@@ -1,5 +1,3 @@
-# References
-
 Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · Claim summaries: [External Research and Sources](External%20Research%20and%20Sources.md)
 
 ## Works Cited
