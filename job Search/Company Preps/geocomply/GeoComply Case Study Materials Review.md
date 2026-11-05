@@ -8,7 +8,6 @@ tags:
   - job-search
   - case-study
 ---
-
 # GeoComply case study materials review
 
 This is a working reference for understanding all **16 files in the supplied materials folder**, with the submitted resume, Technology graduate job description, and Eleanor correspondence kept in view. Each item has a short explanation followed by findings, limitations, and implications for later brainstorming. No project has been selected.
