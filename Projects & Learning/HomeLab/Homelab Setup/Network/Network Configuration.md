@@ -106,3 +106,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - 2026-11-06 DIR-882 2.4 GHz Security Mode dropdown: user reports **WPA/WPA2-Personal is the only available secured option** (in addition to current None). Next select WPA/WPA2-Personal for 2.4 GHz, without saving or changing other fields yet. No Wi-Fi credentials recorded.
 
 - DIR-882 wireless setup progress: 2.4 GHz SSID changed from `D-Link_DIR-882` to `Sam`. WPA/WPA2-Personal selected. Changes are not yet saved to the router. No Wi-Fi passwords recorded.
+
+- 2026-11-06 DIR-882 wireless setup: user changed 5 GHz SSID from `dlink-B392` to `Sam`, matching the primary Technicolor SSID. This change is **not yet saved** to the router. The 2.4 GHz SSID was also set to `Sam` and WPA/WPA2-Personal selected without saving. Next configure Wi-Fi passwords locally, without sharing or recording credentials.
