@@ -96,3 +96,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - 2026-11-06 DIR-882 management connectivity verification: user selected **help** when instructed to configure a temporary static Ethernet IP on the laptop. They have **not yet confirmed** opening `http://10.44.0.254`. Next action: identify laptop operating system so exact static-IP instructions can be given one step at a time. D-Link remains isolated from basement switch.
 
 - 2026-11-06 laptop OS confirmed **macOS** for DIR-882 isolated management test. Next: configure Mac Ethernet interface manually with IPv4 `10.44.0.250`, subnet `255.255.255.0`, router blank, while connected to a numbered DIR-882 LAN port; do not connect D-Link to basement switch. Management URL `http://10.44.0.254` still unverified.
+
+- 2026-11-06 macOS Ethernet temporary static IP setup: user confirmed **saved successfully** with manual IPv4 `10.44.0.250/24` (`255.255.255.0`) and router/gateway left blank. Mac should remain directly connected to a numbered DIR-882 LAN port; D-Link remains isolated from basement switch. Next verify D-Link management UI at `http://10.44.0.254`.
