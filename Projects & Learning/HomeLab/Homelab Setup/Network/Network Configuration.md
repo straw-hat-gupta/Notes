@@ -112,3 +112,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - 2026-11-06 DIR-882 wireless configuration: 2.4 GHz credential was entered locally but changes remain unsaved. User reported an issue when attempting to enter the 5 GHz credential. Exact issue not yet known. No credential values are recorded. Next ask user what happens in the 5 GHz field before making any other changes.
 
 - 2026-11-06 DIR-882 wireless setup: user reports the 5 GHz Wi-Fi password field is **disabled/greyed out and cannot be edited**. Wireless changes remain unsaved. No credentials recorded. Next inspect whether Smart Connect or another setting is controlling the field, using a redacted screenshot before further edits.
+
+- 2026-11-06 DIR-882 wireless setup: user suspects the **5 GHz radio is currently disabled**, which may explain why the 5 GHz password field is greyed out. This is user observation, not yet independently verified. Next enable 5 GHz Status on Settings > Wireless without saving, then check whether password field becomes editable. No passwords recorded.
