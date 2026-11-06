@@ -1,4 +1,4 @@
-Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [References](References.md)
+Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [References](Notes/job%20Search/Company%20Preps/Evidence/Studio%20Feedback%20Package/References.md)
 
 - **Building:** I used Studio's agent to explore my Neon data, suggest components, build the dashboard, and work through errors. I also asked Claude to build a separate page through Studio MCP and appreciated its render/check loop.
 - **Note-taking:** I dictated observations to Codex, which organized them in Obsidian and connected related moments. My observations were kept separate from AI explanations.

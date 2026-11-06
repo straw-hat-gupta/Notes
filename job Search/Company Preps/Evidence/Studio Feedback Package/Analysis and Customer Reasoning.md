@@ -1,4 +1,4 @@
-Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [Sources and references](References.md)
+Back to [Evidence Studio Feedback](Evidence%20Studio%20Feedback.md) · [Sources and references](Notes/job%20Search/Company%20Preps/Evidence/Studio%20Feedback%20Package/References.md)
 
 ## Who I kept in mind
 
