@@ -7,5 +7,8 @@ Manish Setie - TAK Softwares:
 Phone: 825-712-3113
 Email: Manish@taksoftwares.com
 
-Paige Whitehead:
-P
+Paige Whitehead - Lux Bio:
+Phone: 
+Email: 
+
+Ivan? Tyler? Aradhya?
