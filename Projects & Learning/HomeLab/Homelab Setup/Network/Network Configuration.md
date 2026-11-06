@@ -76,3 +76,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - 2026-11-06 DIR-882 A1 setup progress: user connected directly to factory-reset device at `http://192.168.0.1` and sees the **initial setup wizard**. No configuration changes reported. Next: inspect first wizard screen before choosing any options.
 
 - 2026-11-06 DIR-882 A1 wizard screenshot: admin header shows **Firmware Version 1.04 currently installed**, whereas bottom sticker says 1.01. Initial Install wizard requests connecting the INTERNET/WAN port to a broadband modem and power cycling modem. **Do not follow this router-mode wizard** for the intended wired AP configuration. Next action: close wizard with top-right X, keeping D-Link isolated from basement switch.
+
+- 2026-11-06 DIR-882 A1 firmware 1.04: initial setup wizard successfully closed; Home dashboard visible. Dashboard reports Internet Disconnected, WAN cable disconnected, WAN connection type Dynamic IP (DHCP), no WAN IP/gateway/DNS, 1 connected client. WAN MAC displayed `28:3B:82:64:B3:95`. This is expected while isolated for AP configuration. Next: inspect Settings menu without changing settings.
