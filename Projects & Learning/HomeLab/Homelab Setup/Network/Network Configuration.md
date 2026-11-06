@@ -64,3 +64,11 @@ D1 and storage retained the recorded nic0/vmbr0 address/bridge layout at the rea
 Tailscale is installed on pve-d2 and llm-gpu (confirmed 2026-10-27). VM 301 has an observed `tailscale0` address of `100.78.156.52/32`. Pve-d2 Tailscale runtime details were not included in the live snapshot.
 
 My saved SSH aliases use `root` on port 22 for all five nodes, with key authentication. Proxmox administration uses each node's management address on HTTPS port 8006. Detailed access permissions and service endpoints are linked from [[Projects & Learning/HomeLab/Homelab Setup/Configuration/Workloads and Services|Workloads and Services]].
+
+## Home Wi-Fi access point setup (2026-11-06)
+
+- Main gateway: Technicolor CGM4141, `10.44.0.1/24`; DHCP pool `10.44.0.2`–`10.44.0.253` (2-day lease).
+- Main Wi-Fi: SSID `Sam` on both 2.4 GHz and 5 GHz; WPA2-PSK (AES). Automatic channels observed as 6 (2.4 GHz) and 44 (5 GHz).
+- Planned basement wired AP: D-Link DIR-882, **hardware revision A1**, **F/W Ver. 1.01 printed on bottom label** (factory-label version, currently installed version not yet verified). User confirms factory reset completed.
+- Existing unmanaged basement switch remains connected to homelab. D-Link must stay isolated until DHCP is disabled or genuine AP mode configured.
+- Candidate D-Link management IP `10.44.0.254/24` remains unverified for conflicts and is **not configured**.
