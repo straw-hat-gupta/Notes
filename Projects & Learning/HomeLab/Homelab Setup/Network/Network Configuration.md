@@ -146,3 +146,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - 2026-11-06 DIR-882 A1 firmware v1.30 local SHA-256 computed by user for `DIR882A1_FW130B06.bin`: `573ab7ae729c44ef9c4aa52941f5b0ec1d44dd4c2d921cc461a6cb912c40e4d9`. This is a local fingerprint, **not independently verified against an official vendor checksum**. No firmware installation yet. Next determine whether vendor publishes a checksum; avoid claiming authenticity from hash alone.
 
 - 2026-11-06 DIR-882 A1 firmware v1.30: user checked the official D-Link firmware download page and found **no published checksum**. Locally computed SHA-256 remains recorded but cannot be compared to a vendor-provided digest. No firmware uploaded or installed. Next verify that the firmware download was obtained from an official D-Link HTTPS domain before proceeding.
+
+- 2026-11-06 User explicitly trusts the downloaded DIR-882 A1 v1.30 firmware file despite no published vendor checksum and wants to proceed. Directed user to keep router isolated, open Management > Upgrade at 10.44.0.254, select `DIR882A1_FW130B06.bin`, and stop before starting flash. Firmware installation not yet confirmed.
