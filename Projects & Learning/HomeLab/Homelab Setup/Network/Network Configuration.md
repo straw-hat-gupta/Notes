@@ -72,3 +72,5 @@ My saved SSH aliases use `root` on port 22 for all five nodes, with key authenti
 - Planned basement wired AP: D-Link DIR-882, **hardware revision A1**, **F/W Ver. 1.01 printed on bottom label** (factory-label version, currently installed version not yet verified). User confirms factory reset completed.
 - Existing unmanaged basement switch remains connected to homelab. D-Link must stay isolated until DHCP is disabled or genuine AP mode configured.
 - Candidate D-Link management IP `10.44.0.254/24` remains unverified for conflicts and is **not configured**.
+
+- 2026-11-06 DIR-882 A1 setup progress: user connected directly to factory-reset device at `http://192.168.0.1` and sees the **initial setup wizard**. No configuration changes reported. Next: inspect first wizard screen before choosing any options.
