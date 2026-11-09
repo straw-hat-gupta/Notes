@@ -23,18 +23,18 @@ Each package below identifies its source type, the exact files that belong to it
 
 ## Package map
 
-| Package on The Table | Source type | Supplied files | What it contributes |
-| --- | --- | ---: | --- |
-| [[#Package 1 The Story So Far\|The Story So Far]] | Public sources | 1 | How GeoComply got here, and why its next growth opportunities need a different value proposition. |
-| [[#Package 2 Product Landscape Orientation\|Product Landscape Orientation]] | Real, with some details changed | 1 | What GeoComply makes, how its product layers fit together, and how customers buy. |
-| [[#Package 3 Pig-butchering white paper\|Pig-butchering white paper]] | Public | 1 | Why combining location and device evidence can help investigate relationship-based financial scams. |
-| [[#Package 4 Match Ready\|Match Ready]] | Public | 1 | How the company describes preparation, capacity, resilience, and cost decisions around sporting events. |
-| [[#Package 5 Quarterly business review transcript\|Quarterly business review transcript]] | Synthetic | 1 | Four customer accounts that reveal unresolved customer, product, commercial, and ownership problems. |
-| [[#Package 6 Technical support shadowing transcript\|Technical support shadowing transcript]] | Synthetic | 1 | How support coordinates requests, preserves evidence, and discovers knowledge and integration gaps. |
-| [[#Package 7 Signal Explorer package (HTML, CSV, MD)\|Signal Explorer package (HTML, CSV, MD)]] | Synthetic | 3 | A check-level investigation sandbox, its delivered CSV, and its data dictionary. |
-| [[#Package 8 IDComply Data\|IDComply Data]] | Synthetic | 5 | Six months of verification outcomes, vendor checks, cost, and Core signals, with documentation. |
-| [[#Package 9 Vertical pipeline extract\|Vertical pipeline extract]] | Synthetic | 1 | A sales workbook showing new-industry opportunities, buying obstacles, and changes in pipeline mix. |
-| [[#Package 10 About the Intern Program\|About the Intern Program]] | Real, with some details changed | 1 | The internship structure, expectations, support, evaluation, and retention process. |
+| Package on The Table                                                                            | Source type                     | Supplied files | What it contributes                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ------------------------------- | -------------: | ------------------------------------------------------------------------------------------------------- |
+| [[#Package 1 The Story So Far\|The Story So Far]]                                               | Public sources                  |              1 | How GeoComply got here, and why its next growth opportunities need a different value proposition.       |
+| [[#Package 2 Product Landscape Orientation\|Product Landscape Orientation]]                     | Real, with some details changed |              1 | What GeoComply makes, how its product layers fit together, and how customers buy.                       |
+| [[#Package 3 Pig-butchering white paper\|Pig-butchering white paper]]                           | Public                          |              1 | Why combining location and device evidence can help investigate relationship-based financial scams.     |
+| [[#Package 4 Match Ready\|Match Ready]]                                                         | Public                          |              1 | How the company describes preparation, capacity, resilience, and cost decisions around sporting events. |
+| [[#Package 5 Quarterly business review transcript\|Quarterly business review transcript]]       | Synthetic                       |              1 | Four customer accounts that reveal unresolved customer, product, commercial, and ownership problems.    |
+| [[#Package 6 Technical support shadowing transcript\|Technical support shadowing transcript]]   | Synthetic                       |              1 | How support coordinates requests, preserves evidence, and discovers knowledge and integration gaps.     |
+| [[#Package 7 Signal Explorer package (HTML, CSV, MD)\|Signal Explorer package (HTML, CSV, MD)]] | Synthetic                       |              3 | A check-level investigation sandbox, its delivered CSV, and its data dictionary.                        |
+| [[#Package 8 IDComply Data\|IDComply Data]]                                                     | Synthetic                       |              5 | Six months of verification outcomes, vendor checks, cost, and Core signals, with documentation.         |
+| [[#Package 9 Vertical pipeline extract\|Vertical pipeline extract]]                             | Synthetic                       |              1 | A sales workbook showing new-industry opportunities, buying obstacles, and changes in pipeline mix.     |
+| [[#Package 10 About the Intern Program\|About the Intern Program]]                              | Real, with some details changed |              1 | The internship structure, expectations, support, evaluation, and retention process.                     |
 
 **File count:** Eight single-file objects + three Signal Explorer files + five IDComply files = 16 material files. “Single-file object” means the file sits directly in `materials/`; it does not require a separate folder.
 
