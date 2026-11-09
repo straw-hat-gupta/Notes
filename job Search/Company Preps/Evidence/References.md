@@ -11,8 +11,8 @@ Paige Whitehead - Lux Bio:
 Phone: 
 Email: 
 
-Ajay Kumar:
+Ajay Kumar - Wealth Management Firm:
 phone: 4036142969
-email: ajayk
+email: ajaykumarcacfp@gmail.com
 
 Ivan? Tyler? Aradhya? Charf?
