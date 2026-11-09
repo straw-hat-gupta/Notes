@@ -15,4 +15,4 @@ Ajay Kumar - Wealth Management Firm:
 phone: 4036142969
 email: ajaykumarcacfp@gmail.com
 
-Ivan? Tyler? Aradhya? Charf?
+Charf?
