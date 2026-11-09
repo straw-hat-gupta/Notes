@@ -12,9 +12,9 @@ Phone:
 Email: 
 
 Ajay Kumar - Wealth Management Firm:
-phone: 4036142969
-email: ajaykumarcacfp@gmail.com
-4036304684
+phone: 4036304684
+email: ajay.kumar@igpwm.ca
+
 
 Charf?
 put in titles
