@@ -10,6 +10,8 @@ tags:
 ---
 # GeoComply case study materials review
 
+For the same detailed analysis grouped under the ten objects on The Table, see [[GeoComply Case Study Materials Review by Package]]. This note retains the original file-by-file organization.
+
 This is a working reference for understanding all **16 files in the supplied materials folder**, with the submitted resume, Technology graduate job description, and Eleanor correspondence kept in view. Each item has a short explanation followed by findings, limitations, and implications for later brainstorming. No project has been selected.
 
 **Update:** The subsequently supplied [[STRETCH Case - The Table.pdf|case brief]] is now included below. Its heading covers STRETCH, FDE and Graduate Rotational. It confirms that the work must depend meaningfully on at least two objects from The Table and that the presentation is at most 15 minutes. The brief is an additional file outside the original 16-file materials directory.
