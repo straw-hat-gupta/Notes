@@ -1,6 +1,6 @@
 ---
 created: 2026-11-03
-updated: 2026-11-03
+updated: 2026-11-09
 type: case-study-reference
 status: Understanding materials before choosing a project
 tags:
@@ -23,6 +23,7 @@ Related application documents:
 - [[GeoComply_Graduate_Rotational_Program_Technology|Technology graduate job description]] — supplied Markdown summary of the posting, rather than the complete original posting.
 - [[Smarth_Gupta_Resume_GeoComply_Graduate_Technology.pdf|Submitted resume]]
 - [[Eleanor correspondence and application context|Eleanor correspondence and application context]] — full emails supplied in chat, plus implications.
+- [[Brady case clarifications]] — confirms the ticket CSV is intentionally out of scope, the consolidated Explorer CSV delivery, and the lack of an additional graduate-program guide Brady could find.
 
 ## Materials at a glance
 
@@ -36,7 +37,7 @@ Related application documents:
 | 6. Match Ready article | Capacity planning, readiness, monitoring, resilience, and cost tradeoffs |
 | 7. Pig butchering white paper | Why combining location, device, network, and behavior matters |
 | 8. Vertical Pipeline workbook | New-industry demand, wins, stalled opportunities, and buying obstacles |
-| 9. IDComply Verification Support Tickets document | Dataset definitions, including a ticket dataset that is missing |
+| 9. IDComply Verification Support Tickets document | Dataset definitions, including a stale reference to a ticket dataset intentionally excluded from the case |
 | 10. IDComply verification funnel CSV | Where verification sessions drop out and which customers deteriorate |
 | 11. IDComply vendors CSV | Vendor coverage, prices, latency references, and mandatory screening |
 | 12. IDComply vendor funnel CSV | Live waterfall performance and separate calibration samples |
@@ -264,11 +265,11 @@ Among won non-gaming deals, the first product discussed shifts from location at 
 
 **In brief:** Despite its title, this is a data dictionary for five datasets, not a list of ticket records.
 
-It describes a **1,200-row support-ticket CSV**, a 208-row verification funnel, six vendors, a 2,054-row vendor funnel, and 780 core-signal rows. The four CSVs actually present match their stated row counts. The ticket CSV, named `idcomply_support_tickets_SYNTHETIC.csv`, is not present.
+It describes a **1,200-row support-ticket CSV**, a 208-row verification funnel, six vendors, a 2,054-row vendor funnel, and 780 core-signal rows. The four CSVs actually present match their stated row counts. Brady confirmed on November 4 that `idcomply_support_tickets_SYNTHETIC.csv` was intentionally omitted because it is outside the case scope; its reference was accidentally left in the documentation. See [[Brady case clarifications]].
 
-The missing dataset is supposed to include ticket ID, creation date, customer, region, channel, free-text subject, severity, resolution hours, agent touches, and whether the ticket reopened. Those fields could support workload and recurring-topic analysis. Without the rows, none of the ticket counts, resolution distributions, customer correlations, or proposed AI classifications can be calculated.
+The excluded dataset was described as including ticket ID, creation date, customer, region, channel, free-text subject, severity, resolution hours, agent touches, and whether the ticket reopened. Those definitions explain the stale documentation, but ticket counts, resolution distributions, customer correlations, and AI classifications cannot be calculated from the delivered pack. Obtaining those rows is not a prerequisite for this case.
 
-**Insights:** The pack still supports a verification/customer-health investigation, but it cannot demonstrate a ticket-analysis solution against real supplied records. If we later mock tickets for a prototype, they must be labeled as additional illustrative data. The support transcript supplies qualitative examples, not a replacement for the missing 1,200 records.
+**Insights:** The pack supports a verification/customer-health investigation using its four delivered CSVs. Do not make recovering or recreating the excluded ticket dataset part of the required case work. The separate support transcript supplies qualitative examples, not ticket-level quantitative evidence.
 
 ## 10. IDComply verification funnel CSV
 
@@ -375,7 +376,7 @@ The dictionary describes two fictional operators over October 5–11, 2026: Bett
 
 The status definitions distinguish jurisdiction restrictions and insufficient location evidence from suspected manipulation such as VPN, mock location, remote desktop, device-sharing limits, or impossible travel. A location pass does not mean trusted, and a failed location check does not automatically mean fraud.
 
-**Packaging gap:** The dictionary names `users.csv`, `devices.csv`, `operators.csv`, and `operator_flagged_accounts.csv`, but none is present as a separate file. Their corresponding records are embedded in the sandbox HTML. The package is therefore usable for richer analysis, but a CSV-only import would omit important context.
+**Packaging clarification:** The dictionary names `users.csv`, `devices.csv`, `operators.csv`, and `operator_flagged_accounts.csv`. Brady subsequently confirmed that all Signal Explorer files should be consolidated in the included `transactions.csv`, so these are not outstanding separate deliverables. The supplied CSV has 26 check-level columns; corresponding account, device, operator, and report metadata is embedded in the sandbox HTML. Use each source's actual fields rather than assume the dictionary's separate table schemas are present as CSV columns. See [[Brady case clarifications]].
 
 **Insights:** Account identity must be scoped by operator in a general design. A Wi-Fi name is weaker evidence of a shared physical point than a specific access-point ID, and neither alone proves common ownership. Smaller accuracy values mean more precise measurements, not greater risk.
 
