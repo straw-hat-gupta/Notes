@@ -15,6 +15,8 @@ This review follows the **ten objects on The Table**, in the order shown in the 
 
 Each package below identifies its source type, the exact files that belong to it, what those files do, and the detailed findings, calculations, insights, and limitations from [[GeoComply Case Study Materials Review|the original review]]. The original file-by-file review remains available. This version reorganizes the analysis without shortening it or rerunning its calculations.
 
+For a focused technical fraud project and specific questions to ask a Customer Success Manager, see [[Fraud Project Directions and CSM Discovery Guide]].
+
 **Case-object rule:** Using two files within Signal Explorer is still using one listed Table object. The same applies to the IDComply CSVs and the two sheets in the pipeline workbook. The case asks for at least two Table objects that each play a necessary role. Application documents, recruiting emails, and the case brief are supporting context outside the ten-object inventory.
 
 **Latest scope clarifications from Brady:** The support-ticket CSV was intentionally excluded as out of scope; its documentation reference is stale. Signal Explorer CSV delivery is intended to be consolidated in `transactions.csv`. Brady could not find a graduate-program guide beyond the job description and suggested speaking with Eleanor. These are resolved packaging/scope questions, not three missing-material requests. See [[Brady case clarifications]] for the supplied replies and their implications.

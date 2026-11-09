@@ -22,6 +22,8 @@ This guide identifies the most useful case packages for a technical fraud-relate
 
 Related references: [[GeoComply Case Study Materials Review by Package]], [[GeoComply Case Study Materials Review]], [[Brady case clarifications]], [[Eleanor correspondence and application context]], and [[GeoComply_Graduate_Rotational_Program_Technology|Graduate Technology job description]].
 
+**Quick navigation:** [[#Which packages matter most|Package priorities]] · [[#Technical directions to investigate|Four technical directions]] · [[#Ten priority questions for the CSM|Priority CSM questions]] · [[#Package-specific questions to use as follow-ups|Package question bank]] · [[#Translate their answers into a build decision|How to choose after the conversation]]. For an imminent conversation, start with the priority questions and read only the relevant follow-up branch.
+
 ## Start with these decisions
 
 Before choosing an implementation, answer these five questions in order:
