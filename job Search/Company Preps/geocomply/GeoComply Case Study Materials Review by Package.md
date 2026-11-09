@@ -476,7 +476,7 @@ Useful reconciliations hold for all 208 customer-weeks: V06 checks equal data su
 
 **In brief:** Verification outcomes, vendor cost, and 30-day confirmed fraud by Core signal for five US customers.
 
-There are 780 rows: five customers × 26 weeks × six signal categories. The five are Tidewater, Cobalt, Marigold, Selkirk, and Pinnacle. Rivet, Ashgrove, and Foundry are absent. These are 566,439 sessions, a subset of the verification funnel, not additional sessions to add to it.
+There are 780 rows: five customers × 26 weeks × six signal categories. The five are Tidewater, Cobalt, Marigold, Selkirk, and Foundry. Rivet, Ashgrove, and Pinnacle are absent. This coverage list was corrected on November 9 after rechecking the CSV customer values. These are 566,439 sessions, a subset of the verification funnel, not additional sessions to add to it.
 
 | Signal | Sessions | Final pass rate | Confirmed fraud per session | Vendor cost per session |
 | --- | ---: | ---: | ---: | ---: |
