@@ -2,7 +2,7 @@
 created: 2026-11-09
 updated: 2026-11-09
 type: project-findings-and-proposal
-status: Proposed direction, not yet committed or built
+status: Findings current; build direction superseded by Shadow Mode Value Report Build Plan
 tags:
   - geocomply
   - case-study
@@ -19,6 +19,8 @@ Related: [[GeoComply Case Study Materials Review by Package]], [[GeoComply Case 
 **How to read this note.** Every figure under "Calculated findings" was computed from the data embedded in `Signal Explorer (sandbox).html` (the same 9,120 checks as `transactions.csv`, plus account, device, operator and report tables that exist only in the HTML). All of it is synthetic. Sections marked "Interpretation" are judgment, not data. Nothing here has been validated with the CSM contact or anyone at GeoComply.
 
 ## Proposed direction
+
+> **Superseded November 10, 2026.** The chosen direction is a GeoComply-run shadow mode using Signal Explorer and IDComply Data as the two objects, with the QBR as the problem source. See [[Shadow Mode Value Report Build Plan]]. The text below is kept as a record of the earlier proposal.
 
 **Two weight-bearing objects:** Signal Explorer package and the Quarterly business review transcript. The support shadowing transcript supplies guardrails and test cases but is not one of the two.
 
@@ -62,7 +64,7 @@ Related: [[GeoComply Case Study Materials Review by Package]], [[GeoComply Case 
 
 **Border handling differs by operator in the data.** Betting.com has 75 "Too Close to Border" checks (27 accounts, Toledo and Cincinnati, accuracy 804 to 3,948 m) and zero passes in Cincinnati with accuracy over 1,000 m. GreenTeam's checks have only two statuses: Pass and Out of Jurisdiction.
 
-**Replay of a simple rule.** Rule: once a second verified GreenTeam member appears on a device, hold withdrawals on that device. Replaying checks in time order, it fires on the three phones at Wed 01:41, Wed 03:51 and Wed 03:53 Ohio time. $61,924 had passed before it fired; $83,557 of the $126,648 passed afterwards. It touches 9 of 65 GreenTeam accounts, and none outside the ring.
+**Replay of a simple rule.** Rule: once a second verified GreenTeam member appears on a device, hold withdrawals on that device. Replaying checks in time order, it fires on the three phones at Wed 01:41, Wed 03:51 and Wed 03:53 Ohio time. Of the nine's $126,648 in passed withdrawal requests, $43,091 passed before it fired and $83,557 after. (Corrected November 10: an earlier version said $61,924 passed before it fired, which wrongly included $18,833 from the 13 other members.) It touches 9 of 65 GreenTeam accounts, and none outside the ring.
 
 ### Betting.com's 82 reports collapse into six groups
 
