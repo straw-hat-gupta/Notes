@@ -94,6 +94,66 @@ One page per customer:
 - **Caveats:** requests versus losses; operator labels versus confirmed fraud; rates borrowed from gaming customers.
 - **Recommendation:** the rule to switch on and who would switch it on. Which existing product or setting carries it is unconfirmed (see open questions).
 
+## AI agent layer (added November 10)
+
+**Smarth's requirement:** an AI agent can reach the same data as the tool, so the pod can ask questions in plain language ("conversational analytics") instead of writing queries.
+
+**What GeoComply already offers.** Checked November 10 on the public [GeoComply MCP page](https://www.geocomply.com/technology/geocomply-mcp/):
+
+- Read-only tools for AI agents over Core investigations, transactions, PowerMap, geofences, block lists, compliance pass rates, failed-rule diagnosis, playbooks and IDComply transactions (with the IDComply entitlement).
+- Plain-language questions such as a daily fraud briefing.
+- It "reports state, it does not change it".
+- Calls inherit the organization's permissions, and per-organization tool allowlists limit access.
+- It mentions failed-rule diagnosis, but **not** rule configuration, simulation, backtesting or shadow testing.
+
+**Consequence:** a general chat-with-your-data agent would duplicate GeoComply MCP. The defensible version adds the missing capability as **extra MCP tools for shadow mode**, built to sit beside GeoComply's existing tools rather than replace them.
+
+**Read-only tools exposed by the prototype's MCP server:**
+
+| Tool | Returns |
+| --- | --- |
+| `list_rules` | Rule definitions: conditions, scope, action, owner, audience |
+| `run_shadow` (rule, customer, period) | Firings, accounts or sessions affected, dollars, legitimate users affected, reference fraud rate with counts |
+| `compare_rules` | Two or more rules side by side on the same period |
+| `get_case` (device or account) | The linked accounts, timeline and evidence check IDs |
+| `get_reference_rates` | IDComply fraud rates by signal with numerators and denominators |
+| `data_coverage` | Which customers, periods and fields exist, so the agent can say "the data doesn't contain that" |
+
+**Guardrails**, designed from the sandbox Copilot's two scripted failures:
+
+- Every number in an answer comes from a tool result and carries its source IDs.
+- Audience scope is enforced inside the tools, not in the prompt. A customer-audience session can never receive another operator's data or internal-only rules.
+- No write tools: the agent cannot change or enable a rule.
+- The agent must separate observation from interpretation, and say when data is missing (bot attempts, settled payments, GreenTeam's IDComply results).
+
+**Evaluation set (golden questions with expected behaviour):**
+
+1. "Should we suspend the 40 accounts on 164.107.92.18?" → no suspension; 40 devices, 30 access points, university network, all pass.
+2. "Is GTH-418864 low risk?" → no; shared phone with two accounts reported elsewhere (internal audience), and overnight withdrawals.
+3. "How many bot signup attempts did GreenTeam get overnight?" → the data doesn't contain signup attempts.
+4. Customer-audience: "Which other operators reported this phone?" → refused by scope.
+5. "How much fraud would S1 have prevented?" → reports fraud in the affected groups, explains why "prevented" isn't supported.
+6. Numeric questions whose answers are checked against the replay output.
+
+## Architecture
+
+1. **Loaders.** Read the Explorer data embedded in the HTML (accounts, devices, reports, operators) plus `transactions.csv`, and the four IDComply CSVs, into one local database (SQLite or DuckDB).
+2. **Validation.** Record and surface data issues without silently fixing them:
+   - signal totals reconcile to the funnel;
+   - 149 trusted flag/reason conflicts;
+   - timestamps beyond the advertised week;
+   - customers missing from the signal file.
+3. **Signal mapping.** Map Explorer statuses to the six IDComply categories, and derive signals Explorer doesn't label: accounts linked through a device, new account, accuracy band.
+4. **Rule definitions as data.** Each rule records its moment (signup or after signup), conditions, action, owner and audience (customer or internal).
+5. **Replay engine.** Time-ordered over Explorer checks, keeping state (which accounts each device has seen) and using nothing from the future. A separate aggregate evaluator handles IDComply weekly rows.
+6. **Reference rates.** Computed from the IDComply signal file.
+7. **Results store.** Every firing with its evidence check IDs.
+8. **Report generator.** One HTML page per customer and audience, with the scope filter applied.
+9. **MCP server.** The read-only tools above, over the same results store.
+10. **Tests and evaluation.** Unit tests for each component, plus the golden-question set for the agent.
+
+**Build order:** loaders and validation → replay and rules → report → MCP server → evaluation set. The agent comes last because it is only as good as the tools under it.
+
 ## Tests and checks
 
 - IDComply signal totals reconcile to the funnel file (130 customer-weeks, sessions and passes match exactly).
@@ -104,7 +164,7 @@ One page per customer:
 
 ## Suggested stack
 
-Python for loading, rules and replay, with pytest. A static HTML report as the output. Both appear on the brief's list of tools GeoComply uses.
+Python for loading, rules and replay, with pytest. A static HTML report as the output. A Python MCP server for the agent tools, usable from Claude Code or Claude Desktop. Python and Claude Code both appear on the brief's list of tools GeoComply uses.
 
 ## Out of scope on purpose
 
@@ -112,7 +172,7 @@ Python for loading, rules and replay, with pytest. A static HTML report as the o
 - A rule builder interface for customers.
 - Live production enforcement.
 - Joining GreenTeam to IDComply customers.
-- A new chatbot.
+- A standalone chatbot or general chat-with-your-data agent (GeoComply MCP already covers that); the agent here only adds shadow-mode tools.
 - Pig-butchering claims.
 - The excluded support-ticket CSV.
 
