@@ -2,7 +2,7 @@
 created: 2026-11-10
 updated: 2026-11-10
 type: project-decision-and-build-plan
-status: Direction chosen; prototype not yet built; CSM not yet interviewed
+status: Superseded by the built prototype (Backtest Workbench); CSM not yet interviewed
 tags:
   - geocomply
   - case-study
@@ -11,6 +11,8 @@ tags:
 ---
 
 # Shadow mode value report build plan
+
+> **Superseded November 11–12, 2026.** The prototype was built and renamed **Backtest Workbench**. Its spec, progress log, user documentation and demo script now live with the code, not in this vault: `/Users/samgupta/Documents/ChatGPT/Geocomply/prototypes/backtest-workbench/docs/` (`SPEC.md`, `PROGRESS.md`, `USER-GUIDE.md`, `DEMO-SCRIPT.md`). The two case objects are unchanged (Signal Explorer and IDComply Data). The MCP agent layer described below was not built. The text below is kept as a record of the plan.
 
 **Decision (November 10, 2026):** Smarth chose a GeoComply-run shadow mode as the case direction. GeoComply's customer pod runs rules that combine IDComply and location/device signals on a customer's own data, changes nothing for real users, and brings back the result as a report in the customer's own numbers.
 
